@@ -9,20 +9,23 @@ export interface GameProps {
 type CharIdx = [string, number | null];
 
 const shuffle = (chars: CharIdx[]) => {
-    return chars.sort(() => Math.random() - 0.5);
+    return chars.map(c => c).sort(() => Math.random() - 0.5);
 }
 
 const Game = ({ instance: { anagrams } }: GameProps) => {
     const words: number = anagrams.length;
     const [chars, setChars] = useState<CharIdx[]>(
-        shuffle(anagrams[words-1].split('').map((c) => [c, null]))
+        () => shuffle(anagrams[words-1].split('').map((c) => [c, null]))
+    );
+    const [guessed, setGuessed] = useState<boolean[]>(
+        () => Array(words).fill(false)
     );
 
     const word_length: number = chars.length;
     var selected_length: number = word_length;
-    const selected: string[] = chars
+    const selected: (string | null)[] = chars
         // Create a copy of the array
-        .map(i => i)
+        .map(c => c)
         // Sort by character, leaving 'null' at the end
         .sort(([_ca,ia], [_cb,ib]) => {
             return ia === null && ib === null ? 0
@@ -33,7 +36,7 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
         .map(([c,i]) => {
             if (i === null) {
                 selected_length--;
-                return " ";
+                return null;
             }
             return c;
         });
@@ -42,15 +45,20 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     const onKey = (e: React.KeyboardEvent) => {
         switch (e.key) {
         case " ": // Shuffle on 'Spacebar'
-            console.error("Shuffle TODO");
+            setChars(shuffle(chars)); // <-- TODO: different shuffle?
             break;
 
-        case "Backspace": // Remove Last on 'BackSpace'
-            console.error("Delete TODO");
+        case "Backspace": // Remove latest symbol
+            setChars(chars.map(([c,i]) => i === selected_length-1 ? [c,null] : [c,i]));
             break;
 
-        case "Enter": // Attempt to accept word on 'Enter'
-            console.error("Submit TODO");
+        case "Enter": // Check if guess exists and clear input
+            const guess: string = selected.map(c => c === null ? "" : c).reduce((acc,c) => acc+c);
+            if (anagrams.includes(guess)) {
+                setGuessed(guessed.map((v,idx) => v || anagrams[idx] === guess));
+            }
+            setChars(chars.map(([c,i]) => [c,null]));
+
             break;
 
         default: // Move character, if it exists
@@ -72,9 +80,11 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
 
     return (
         <div id='input-boxes' tabIndex={0} onKeyDown={onKey}>
-            {selected.map((c,idx) => (<InputBox content={c} key={idx} />))}
+            <p>{anagrams.map((a,idx) => guessed[idx] ? a : "?")}</p>
 
-            {chars.map(([c,i],idx) => (<InputBox content={c} key={idx} />))}
+            {selected.map((c,idx) => (<InputBox content={c || " "} key={idx} />))}
+
+            {chars.map(([c,i],idx) => (<InputBox content={i === null ? c : "_"} key={idx} />))}
         </div>
     );
 }
