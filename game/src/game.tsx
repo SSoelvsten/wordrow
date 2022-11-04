@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import { GameInstance } from './game-instance';
 import InputBox from './input-box';
 import './game.css';
@@ -101,17 +101,21 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
         }
     }
 
+    // https://stackabuse.com/how-to-set-focus-on-element-after-rendering-with-react/
+    const divRef = useRef<any>(null);
+    useEffect(() => { divRef.current.focus(); }, []);
+
     return (
-        <div className="Game fullscreen" tabIndex={0} onKeyDown={onKey}>
+        <div className="Game fullscreen" tabIndex={0} onKeyDown={onKey} ref={divRef}>
             <div className="Anagrams">
                 <div className="Anagrams-columns">
                     {
                         Array(max_word_length - min_word_length + 1).fill(0)
                             .map((_,i) => i + min_word_length)
-                            .map(word_length => (<div className="Anagrams-column">
+                            .map((word_length, i) => (<div className="Anagrams-column" key={i}>
                                 {anagrams.map((w,i) => [w,i] as [string,number])
-                                         .filter(([w,i]) => w.length === word_length)
-                                         .map(([w,i]) => <Word word={w} guessed={guessed[i]} />)}
+                                         .filter(([w,_]) => w.length === word_length)
+                                         .map(([w,i]) => <Word word={w} guessed={guessed[i]} key={i} />)}
                             </div>))
                     }
                 </div>
