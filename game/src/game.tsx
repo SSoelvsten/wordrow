@@ -26,13 +26,16 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
         // Sort by character, leaving 'null' at the end
         .sort(([_ca,ia], [_cb,ib]) => {
             return ia === null && ib === null ? 0
-                 : ia === null ? -1
-                 : ib === null ? 1
-                 : ia < ib ? -1 : 1})
+                 : ia === null ? 1
+                 : ib === null ? -1
+                 : ia - ib})
         // Display character, if selected
         .map(([c,i]) => {
-            selected_length--;
-            return i == null ? " " : c
+            if (i === null) {
+                selected_length--;
+                return " ";
+            }
+            return c;
         });
     ;
 
