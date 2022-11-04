@@ -1,12 +1,15 @@
 import React from 'react';
 import './app.css';
 import InputBox from './input/input-box';
+import { getGame, GameInstance } from './game-instance';
+import Game from './game';
 
-function App() {
+const App = () => {
+  const gi: GameInstance = getGame();
+
   return (
     <div className="App">
-      <InputBox content="a" />
-      <InputBox content="b" />
+      <Game instance={gi} />
     </div>
   );
 }
