@@ -23,8 +23,9 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
         () => Array(words).fill(false)
     );
 
-    const word_length: number = chars.length;
-    var selected_length: number = word_length;
+    const min_word_length: number = anagrams[0].length;
+    const max_word_length: number = anagrams[words-1].length;
+    var selected_length: number = max_word_length;
     const selected: (string | null)[] = chars
         // Create a copy of the array
         .map(c => c)
@@ -83,8 +84,16 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     return (
         <div className="Game fullscreen" tabIndex={0} onKeyDown={onKey}>
             <div className="Anagrams">
-                <div className="Anagrams-flex">
-                    {anagrams.map((a,idx) => <Word word={a} guessed={guessed[idx]} />)}
+                <div className="Anagrams-columns">
+                    {
+                        Array(max_word_length - min_word_length + 1).fill(0)
+                            .map((_,i) => i + min_word_length)
+                            .map(word_length => (<div className="Anagrams-column">
+                                {anagrams.map((w,i) => [w,i] as [string,number])
+                                         .filter(([w,i]) => w.length === word_length)
+                                         .map(([w,i]) => <Word word={w} guessed={guessed[i]} />)}
+                            </div>))
+                    }
                 </div>
             </div>
             <div className="Row">

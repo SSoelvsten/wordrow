@@ -1,26 +1,38 @@
 .Game {
+    height: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    justify-content: end;
 }
 
 .Game .Anagrams {
-    height: 50%; /* <-- TODO */
+    height: fit-content; /* <-- TODO */
     width: 100%;
-    margin-bottom: 2%;
-    flex: 1 1 1;
+    flex: 1;
 }
 
-.Game .Anagrams .Anagrams-flex {
+.Game .Anagrams .Anagrams-columns {
+    height: 100%;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 0;
+    justify-content: center;
+}
+
+.Game .Anagrams .Anagrams-columns .Anagrams-column {
     height: 100%;
 
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    gap: 0;
+    align-content: flex-start;
 }
 
 .Game .Row {
+    flex: 0;
     width: 100%;
     display: flex;
     flex-direction: row;
