@@ -1,3 +1,10 @@
 .App {
   text-align: center;
 }
+
+#input-boxes {
+  position: absolute;
+  bottom: 20%;
+  right: 50%;
+}
+

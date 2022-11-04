@@ -17,11 +17,9 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     const word_length: number = chars.length;
 
     return (
-        <>
-            {chars.map((c) => (<InputBox content={c} />))}
-
-            {JSON.stringify(anagrams)}
-        </>
+        <div id='input-boxes'>
+            {chars.map((c) => (<InputBox content={c}/>))}
+        </div>
     );
 }
 
