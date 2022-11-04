@@ -22,6 +22,9 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     const [guessed, setGuessed] = useState<boolean[]>(
         () => Array(words).fill(false)
     );
+    const [guessCache, setGuessCache] = useState<(string | null)[]>(
+        () => Array(words).fill(null)
+    );
 
     const min_word_length: number = anagrams[0].length;
     const max_word_length: number = anagrams[words-1].length;
@@ -56,6 +59,23 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
             break;
 
         case "Enter": // Check if guess exists and clear input
+            console.log(selected);
+            if (!selected[0]) {
+                var charsCopy: CharIdx[] = chars.map(_ => _);
+                guessCache.forEach((s, si) => {
+                    for (let idx = 0; s && idx < max_word_length; idx++) {
+                        const [c, i] = charsCopy[idx];
+                        if(!i && c===s) {
+                            charsCopy[idx][1] = si;
+                            break;
+                        }
+                    }
+                })
+                console.log(charsCopy);
+                setChars(charsCopy);
+                break;
+            }; //Put old word back*/
+            setGuessCache(selected);
             const guess: string = selected.map(c => c === null ? "" : c).reduce((acc,c) => acc+c);
             if (anagrams.includes(guess)) {
                 setGuessed(guessed.map((v,idx) => v || anagrams[idx] === guess));
