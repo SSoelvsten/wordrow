@@ -7,7 +7,7 @@ const App = () => {
   const gi: GameInstance = getGame();
 
   return (
-    <div className="App">
+    <div className="App fullscreen">
       <Game instance={gi} />
     </div>
   );

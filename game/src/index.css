@@ -1,13 +1,32 @@
+@font-face {
+  font-family: 'CMU Typewriter Text';
+  src: local('CMU Typewriter Text'), url(./fonts/cmuntt.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'CMU Typewriter Text (Bold)';
+  src: local('CMU Typewriter Text (Bold)'), url(./fonts/cmuntb.ttf) format('truetype');
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+
+  font-family: 'CMU Typewriter Text (Bold)','Courier New', Courier, monospace;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#root, .fullscreen {
+  height: 100%;
+  width: 100%;
 }

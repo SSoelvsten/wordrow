@@ -2,7 +2,7 @@ import React from 'react';
 import './input-box.css';
 
 export interface InputBoxProps {
-    content: string,
+    content: string;
 }
 
 const InputBox = ({ content }: InputBoxProps) => {

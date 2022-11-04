@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { GameInstance } from './game-instance';
 import InputBox from './input-box';
 import './game.css';
+import Word from './word';
 
 export interface GameProps {
-    instance: GameInstance,
+    instance: GameInstance;
 }
 
 type CharIdx = [string, number | null];
@@ -80,9 +81,11 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     }
 
     return (
-        <div className="Game" tabIndex={0} onKeyDown={onKey}>
+        <div className="Game fullscreen" tabIndex={0} onKeyDown={onKey}>
             <div className="Anagrams">
-                <p>{anagrams.map((a,idx) => guessed[idx] ? a : "?")}</p>
+                <div className="Anagrams-flex">
+                    {anagrams.map((a,idx) => <Word word={a} guessed={guessed[idx]} />)}
+                </div>
             </div>
             <div className="Row">
                 {selected.map((c,idx) => (<InputBox content={c || " "} key={idx} />))}

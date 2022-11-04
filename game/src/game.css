@@ -1,6 +1,23 @@
 .Game {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: end;
+}
+
+.Game .Anagrams {
+    height: 50%; /* <-- TODO */
     width: 100%;
+    margin-bottom: 2%;
+    flex: 1 1 1;
+}
+
+.Game .Anagrams .Anagrams-flex {
     height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 
 .Game .Row {
