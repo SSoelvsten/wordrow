@@ -1,6 +1,6 @@
 import React from 'react';
 import { GameInstance } from './game-instance';
-import InputBox from './input/input-box';
+import InputBox from './input-box';
 
 export interface GameProps {
     instance: GameInstance,

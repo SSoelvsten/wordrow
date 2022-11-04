@@ -1,6 +1,5 @@
 import React from 'react';
 import './app.css';
-import InputBox from './input/input-box';
 import { getGame, GameInstance } from './game-instance';
 import Game from './game';
 
