@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { GameInstance } from './game-instance';
 import InputBox from './input-box';
+import './game.css';
 
 export interface GameProps {
     instance: GameInstance,
@@ -79,12 +80,16 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     }
 
     return (
-        <div id='input-boxes' tabIndex={0} onKeyDown={onKey}>
-            <p>{anagrams.map((a,idx) => guessed[idx] ? a : "?")}</p>
-
-            {selected.map((c,idx) => (<InputBox content={c || " "} key={idx} />))}
-
-            {chars.map(([c,i],idx) => (<InputBox content={i === null ? c : "_"} key={idx} />))}
+        <div className="Game" tabIndex={0} onKeyDown={onKey}>
+            <div className="Anagrams">
+                <p>{anagrams.map((a,idx) => guessed[idx] ? a : "?")}</p>
+            </div>
+            <div className="Row">
+                {selected.map((c,idx) => (<InputBox content={c || " "} key={idx} />))}
+            </div>
+            <div className="Row">
+                {chars.map(([c,i],idx) => (<InputBox content={i === null ? c : "_"} key={idx} />))}
+            </div>
         </div>
     );
 }
