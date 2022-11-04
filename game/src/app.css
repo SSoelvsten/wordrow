@@ -8,6 +8,7 @@
   width: 100%;
   bottom: 10%;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-evenly;
 }

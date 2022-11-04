@@ -8,5 +8,6 @@
     padding: 1rem;
     text-align: center;
     background-color:lightgray;
+    flex: 1 0 calc(100%/8 + 1%);
     text-transform: capitalize;
-  }
+}
