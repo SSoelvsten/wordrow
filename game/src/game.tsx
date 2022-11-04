@@ -12,13 +12,16 @@ const shuffle = (chars: string[]) => {
 
 const Game = ({ instance: { anagrams } }: GameProps) => {
     const words: number = anagrams.length;
-    const [chars, setChars] = useState(shuffle(anagrams[words-1].split('')));
+    const [chars, setChars] = useState<string[]>(shuffle(anagrams[words-1].split('')));
+    const [selected, setSelected] = useState<number[]>([1,4]);
 
     const word_length: number = chars.length;
 
     return (
         <div id='input-boxes'>
-            {chars.map((c) => (<InputBox content={c}/>))}
+            {selected.map((i,idx) => (<InputBox content={i + chars[i]} />))}
+
+            {chars.map((c,idx) => (<InputBox content={c} />))}
         </div>
     );
 }
