@@ -33,9 +33,9 @@ public:
 
 	NodePtr AddNode(const std::string& word, std::string::iterator& it, const std::string& sortedword);
 	void TraverseNode();
+	char label{};
 
 private:
 	std::vector<NodePtr> nodes;
-	char label{};
 	std::vector<std::string> words;
 };

@@ -5,7 +5,7 @@
 
 Anatree::Anatree(std::string filePath)
 {
-	root = std::make_unique<Node>('a');
+	root = std::make_unique<Node>('c');
 
 	std::string temp;
 
@@ -15,13 +15,15 @@ Anatree::Anatree(std::string filePath)
 	if (file.good()) {
 		std::getline(file, temp, '\n');
 		std::string tempier(temp);
-		std::sort(temp.begin(), temp.end());
+		std::sort(tempier.begin(), tempier.end());
 
 		auto it = tempier.begin();
 
-		root.get()->AddNode(temp, it, tempier);
+		auto abc = root.get()->AddNode(temp, it, tempier);
 
-		std::cout << temp << " " << tempier;
+		std::cout << temp << " " << tempier << "\n";
+
+		std::cout << abc.get()->label << " FWEWE";
 
 		root.get()->TraverseNode();
 	}
@@ -51,23 +53,27 @@ NodePtr Node::AddNode(const std::string& word, std::string::iterator& it, const 
 		return std::make_unique<Node>(' ', word);
 	}
 	else if (*it < label) {
-		auto parent = std::make_unique<Node>(*(it++));
-		parent.get()->nodes.push_back(std::make_unique<Node>(*it));
+		//std::cout << *it << "\n";
+		auto parent = std::make_unique<Node>(*(it), word);
+		//parent.get()->nodes.emplace_back(std::make_unique<Node>(*(it)));
+		auto abc = AddNode(word, ++it, sortedword);
 		std::cout << "parent\n";
-		parent.get()->AddNode(word, it, sortedword);
+		std::cout << abc.get()->label << "\n";
+		parent.get()->nodes.emplace_back(std::move(abc));
 		return parent;
 	}
 	else {
+		//std::cout << *it << "\n";
 		std::cout << "child\n";
 		auto node = std::make_unique<Node>(*(it), word);
 		
 		auto abc = node.get()->AddNode(word, ++it, sortedword);
-
-		nodes.emplace_back(std::move(abc));
+		std::cout << abc.get()->label << "\n";
+		nodes.emplace_back(std::move(node));
 
 		//auto abc = AddNode(word, ++it, sortedword);
 
-		return node;
+		return abc;
 	}
 
 	//nodes.emplace_back(it);
