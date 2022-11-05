@@ -16,7 +16,6 @@ export function getGame(): GameInstance {
             "lea",
             "sea",
             "ales",
-            "ales",
             "earl",
             "ears",
             "eras",
