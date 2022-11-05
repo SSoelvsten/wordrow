@@ -40,30 +40,32 @@ int main(int argc, char* argv[]) {
   dict d("./en_US.dic", "./en_US.aff");
   anatree a;
 
-  //size_t words = 0u;
-  //size_t chars = 0u;
+  size_t words = 0u;
+  size_t chars = 0u;
 
   while(d.can_pull()) {
     std::string w = d.pull();
 
     if (MIN_LENGTH <= w.size() && w.size() <= MAX_LENGTH) {
-      //words++;
-      //chars += w.size();
+      words++;
+      chars += w.size();
       a.insert(w);
     }
   }
 
-  //std::cout << "words: " << words << ", chars: " << chars <<  ", nodes: " << a.size() << std::endl;
+  std::cout << "Processed " << words << " words (" << chars << " characters)." << std::endl
+            << "Size of Anatree: " << a.size() << std::endl;
 
   size_t idx = 0;
   for (std::string k : a.keys()) {
     std::stringstream ss;
     ss << "./out/" << idx << ".json";
+
     std::ofstream out_file(ss.str());
     out_file << gen_json(a.anagrams_of(k));
 
     idx++;
   }
-  std::cout << idx << std::endl;
+  std::cout << "Created " << idx << " games in '.out/'" << std::endl;
 }
 
