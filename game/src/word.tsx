@@ -1,5 +1,5 @@
 import React from 'react';
-import './word.css';
+import './word.scss';
 
 export interface WordProps {
     word: string;

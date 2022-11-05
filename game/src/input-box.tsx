@@ -1,5 +1,4 @@
-import React from 'react';
-import './input-box.css';
+import './input-box.scss';
 
 export interface InputBoxProps {
     content: string;

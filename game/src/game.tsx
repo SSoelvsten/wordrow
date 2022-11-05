@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
+import './game.scss';
 import { GameInstance } from './game-instance';
 import InputBox from './input-box';
-import './game.css';
 import Word from './word';
 import { shuffleTwo } from './shuffle';
 
