@@ -77,11 +77,15 @@ int main(int argc, char* argv[]) {
   // -----------------------------------------------------------------
   // Create game instances
   size_t idx = 0;
+
   for (std::string k : a.keys()) {
     std::stringstream ss;
     ss << "./out/" << idx << ".json";
 
     std::ofstream out_file(ss.str());
+    std::unordered_set<std::string> game = a.anagrams_of(k);
+    if (game.size() < 21) continue; // <-- ignore small games (def: 'small' less than half the answer)
+
     out_file << gen_json(a.anagrams_of(k));
 
     idx++;
