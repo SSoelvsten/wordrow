@@ -4,6 +4,7 @@
 #include<algorithm>
 #include<assert.h>
 #include<memory>
+#include<sstream>
 #include<string>
 #include<vector>
 
@@ -67,6 +68,18 @@ private:
     {
       return std::make_shared<node>(c);
     }
+
+  public:
+    string to_string()
+    {
+      std::stringstream ss;
+      ss << "{ char: " << _char << ", children: { " << _children[false] << ", " << _children[true] << " }, words [ ";
+      for (const string &w : _words) {
+        ss << w << " ";
+      }
+      ss << "] }";
+      return ss.str();
+    }
   };
 
   //////////////////////////////////////////////////////////////////////////////
@@ -78,24 +91,17 @@ private:
                         const string::iterator end)
   {
     assert(p != nullptr);
-    std::cout << "  (" << p->_char << ", [" << p->_children[false] << ", " << p->_children[true] << "]" << std::endl;
 
     // Case: Iterator done
     // -> Insert word
     if (curr_char == end) {
-      std::cout << "Case: done" << std::endl;
       p->_words.push_back(w);
-      for (const std::string ws : p->_words) {
-        std::cout << ws << ", ";
-      }
-      std::cout << std::endl;
       return p;
     }
 
     // Case: NIL
     // -> Turn into non-NIL node
     if (p->_char == node::NIL) {
-      std::cout << "Case: NIL" << std::endl;
       assert(p->_children[false] == nullptr && p->_children[true] == nullptr);
       p->_char = *curr_char;
       p->_children[false] = node::make_node();
@@ -106,8 +112,7 @@ private:
 
     // Case: Iterator behind
     // -> Insert new node in-between
-    if (p->_char < *curr_char) {
-      std::cout << "Case: behind" << std::endl;
+    if (*curr_char < p->_char) {
       const node::ptr np = node::make_node(*curr_char);
       np->_children[false] = p;
       //np->_children[true]  = node::make_node();
@@ -117,15 +122,13 @@ private:
 
     // Case: Iterator ahead
     // -> Follow 'false' child
-    if (*curr_char < p->_char) {
-      std::cout << "Case: ahead" << std::endl;
+    if (p->_char < *curr_char) {
       p->_children[false] = insert_word(p->_children[false], w, curr_char, end);
       return p;
     }
 
     // Case: Iterator and node matches
     // -> Follow 'true' child
-    std::cout << "Case: match" << std::endl;
     p->_children[true] = insert_word(p->_children[true], w, ++curr_char, end);
     return p;
   }
@@ -133,7 +136,41 @@ private:
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Recursively gets all word on the path that matches the iterator.
   //////////////////////////////////////////////////////////////////////////////
-  std::vector<string> get_words(string::iterator curr, const string::iterator end) const;
+  std::vector<string> get_words(const node::ptr p, string::iterator curr, const string::iterator end) const
+  {
+    std::cout << p->to_string() << std::endl;
+
+    // Case: Iterator or Anatree is done
+    if (curr == end || p->_char == node::NIL) {
+      return p->_words;
+    }
+
+    // Case: Iterator behind
+    // -> Insert new node in-between
+    if (*curr < p->_char) {
+      // Skip missing characters.
+      while (*curr < p->_char && curr != end) { ++curr; }
+      return get_words(p, curr, end);
+    }
+
+    // Case: Iterator ahead
+    // -> Follow 'false' child
+    if (p->_char < *curr) {
+      std::vector<string> ret(p->_words);
+      std::vector<string> rec = get_words(p->_children[false], curr, end);
+      ret.insert(ret.end(), rec.begin(), rec.end());
+      return ret;
+    }
+
+    // Case: Iterator and node matches
+    // -> Follow both children, merge results and add words on current node
+    std::vector<string> ret(p->_words);
+    std::vector<string> rec_false = get_words(p->_children[false], ++curr, end);
+    std::vector<string> rec_true = get_words(p->_children[true], ++curr, end);
+    ret.insert(ret.end(), rec_false.begin(), rec_false.end());
+    ret.insert(ret.end(), rec_true.begin(), rec_true.end());
+    return ret;
+  }
 
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Recursively obtain all words at the leaves.
@@ -154,7 +191,7 @@ private:
   //////////////////////////////////////////////////////////////////////////////
   /// \brief
   //////////////////////////////////////////////////////////////////////////////
-  string sorted_string(const string& w)
+  string sorted_string(const string& w) const
   {
     string ret(w);
     std::sort(ret.begin(), ret.end()); // <-- TODO: frequency-based ordering?
@@ -167,17 +204,18 @@ public:
   //////////////////////////////////////////////////////////////////////////////
   void insert(const string& w)
   {
-    std::cout << "insert(" << w << ")" << std::endl;
     string key = sorted_string(w);
-    std::cout << "key : " << key << std::endl;
     _root = insert_word(_root, w, key.begin(), key.end());
   }
 
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Obtain all words that are anagrams of 'w'.
   //////////////////////////////////////////////////////////////////////////////
-  std::vector<string> get_anagrams(const string& w) const;
-  // TODO
+  std::vector<string> anagrams_of(const string& w) const
+  {
+    string key = sorted_string(w);
+    return get_words(_root, key.begin(), key.end());
+  }
 
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Remove all nodes/anagrams.
