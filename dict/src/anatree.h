@@ -101,12 +101,10 @@ private:
                         const string::iterator end)
   {
     assert(p != nullptr);
-    //std::cout << p->to_string() << std::endl;
 
     // Case: Iterator done
     // -> Insert word
     if (curr_char == end) {
-      //std::cout << "  case: end" << std::endl;
       p->_words.insert(w);
       return p;
     }
@@ -114,7 +112,6 @@ private:
     // Case: NIL
     // -> Turn into non-NIL node
     if (p->_char == node::NIL) {
-      //std::cout << "  case: NIL" << std::endl;
       assert(p->_children[false] == nullptr && p->_children[true] == nullptr);
       p->init(*curr_char);
       p->_children[true] = insert_word(p->_children[true], w, ++curr_char, end);
@@ -124,7 +121,6 @@ private:
     // Case: Iterator behind
     // -> Insert new node in-between
     if (*curr_char < p->_char) {
-      //std::cout << "  case: behind" << std::endl;
       const node::ptr np = node::make_node(*curr_char, p, node::make_node());
       np->_children[true]  = insert_word(np->_children[true], w, ++curr_char, end);
       return np;
@@ -133,14 +129,12 @@ private:
     // Case: Iterator ahead
     // -> Follow 'false' child
     if (p->_char < *curr_char) {
-      //std::cout << "  case: ahead" << std::endl;
       p->_children[false] = insert_word(p->_children[false], w, curr_char, end);
       return p;
     }
 
     // Case: Iterator and node matches
     // -> Follow 'true' child
-    //std::cout << "  case: match" << std::endl;
     p->_children[true] = insert_word(p->_children[true], w, ++curr_char, end);
     return p;
   }
@@ -150,8 +144,6 @@ private:
   //////////////////////////////////////////////////////////////////////////////
   std::unordered_set<string> get_words(const node::ptr p, string::iterator curr, const string::iterator end) const
   {
-    std::cout << p->to_string() << std::endl;
-
     // Case: Iterator or Anatree is done
     if (curr == end || p->_char == node::NIL) {
       return p->_words;
