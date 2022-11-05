@@ -63,11 +63,13 @@ private:
   //////////////////////////////////////////////////////////////////////////////
   bool generate_composite_words()
   {
-    std::string _raw_line;
-    if (!std::getline(_dict_stream, _raw_line)) { exit(-1); };
+    std::vector<std::string> _dict_line;
+    do {
+      std::string _raw_line;
+      if (!std::getline(_dict_stream, _raw_line)) { exit(-1); };
 
-    std::vector<std::string> _dict_line = split(_raw_line, '/');
-    assert(_dict_line.size() <= 2);
+      _dict_line = split(_raw_line, '/');
+    } while (_dict_line.size() > 2);
 
     std::string _base_word = _dict_line[0];
     if (!regex_match(_base_word, _is_lower_char)) return false;
@@ -76,7 +78,6 @@ private:
     _out_strings = { _base_word };
 
     if (_dict_line.size() == 2) {
-      //std::cout << "_dict_line: " << _dict_line[1] << std::endl;
       for (const char i : _dict_line[1]) {
         for (const aff_rule ar : _rules[i]) {
           if (!regex_match(_base_word, ar.guard)) { continue; }
@@ -87,8 +88,6 @@ private:
           ss << (ar.ty == aff_rule::PREFIX ? ar.add : "")
              << _base_word.substr(start_idx, sub_len)
              << (ar.ty == aff_rule::SUFFIX ? ar.add : "");
-
-          //std::cout << "ar.add: " << ar.add << std::endl;
 
           _out_strings.push_back(ss.str());
           break;
