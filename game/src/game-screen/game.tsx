@@ -1,9 +1,9 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './game.scss';
-import { GameInstance } from './game-instance';
+import { GameInstance } from '../game-instance';
 import InputBox from './input-box';
 import Word from './word';
-import { shuffleTwo } from './shuffle';
+import { shuffleTwo } from '../shuffle';
 
 export interface GameProps {
     instance: GameInstance;
@@ -13,8 +13,8 @@ type CharIdx = [string, number | null];
 
 const shuffle = (chars: CharIdx[]) => {
     return chars.map(c => c).sort(([_ca,ia], [_cb,ib]) => {
-        if (ia === null) return  1;
-        if (ib === null) return -1;
+        if (ia !== null || ib !== null)
+             return ia === null ? -1 : -1;
         else return Math.random() - 0.5;
     })
 }
