@@ -14,13 +14,15 @@ const App = () => {
     // Fetch from the index file for the desired language
     fetch(`dict/${language}/index.json`, JSONHeader)
     // Convert response as a GameIndex object
-    .then((resp) => resp.json()).then((data) => (data as GameIndex).instances)
+    .then((resp: Response)     => resp.json())
     // Randomly choose an index
-    .then((games) => Math.round(Math.random() * (games-1)))
+    .then((data: GameIndex)    => Math.round(Math.random() * (data.instances-1)))
     // Fetch specific game based on language and index
-    .then((gameIdx) => fetch(`dict/${language}/${gameIdx}.json`, JSONHeader))
+    .then((gameIdx: number)    => fetch(`dict/${language}/${gameIdx}.json`, JSONHeader))
     // Convert response to GameInstance object
-    .then((resp) => resp.json()).then((data) => setGameInstance(data as GameInstance));
+    .then((resp: Response)     => resp.json())
+    // Set gameInstance
+    .then((data: GameInstance) => setGameInstance(data));
   }
 
   useEffect(getGame, []);
