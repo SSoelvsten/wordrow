@@ -114,6 +114,7 @@ private:
     if (p->_char == node::NIL) {
       assert(p->_children[false] == nullptr && p->_children[true] == nullptr);
       p->init(*curr_char);
+      _size += 2;
       p->_children[true] = insert_word(p->_children[true], w, ++curr_char, end);
       return p;
     }
@@ -122,6 +123,7 @@ private:
     // -> Insert new node in-between
     if (*curr_char < p->_char) {
       const node::ptr np = node::make_node(*curr_char, p, node::make_node());
+      _size += 1;
       np->_children[true]  = insert_word(np->_children[true], w, ++curr_char, end);
       return np;
     }
@@ -181,13 +183,29 @@ private:
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Recursively obtain all words at the leaves.
   //////////////////////////////////////////////////////////////////////////////
-  std::unordered_set<string> get_leaves(string::iterator curr, const string::iterator end) const;
+  std::unordered_set<string> get_leaves(const node::ptr p) const
+  {
+    std::unordered_set<string> ret;
+    if (p->_char == node::NIL) {
+      if (p->_words.size() > 0) {
+        ret.insert(*p->_words.begin());
+      }
+      return ret;
+    }
+
+    std::unordered_set<string> rec_false = get_leaves(p->_children[false]);
+    std::unordered_set<string> rec_true = get_leaves(p->_children[true]);
+    ret.insert(rec_false.begin(), rec_false.end());
+    ret.insert(rec_true.begin(), rec_true.end());
+    return ret;
+  }
 
 private:
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Root of the anatree (initially a NIL pointer).
   //////////////////////////////////////////////////////////////////////////////
   node::ptr _root = node::make_node();
+  size_t _size = 1u;
 
 public:
   anatree() = default;
@@ -217,6 +235,15 @@ public:
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Obtain all words that are anagrams of 'w'.
   //////////////////////////////////////////////////////////////////////////////
+  std::unordered_set<string> keys() const
+  {
+    return get_leaves(_root);
+  }
+
+
+  //////////////////////////////////////////////////////////////////////////////
+  /// \brief Obtain all words that are anagrams of 'w'.
+  //////////////////////////////////////////////////////////////////////////////
   std::unordered_set<string> anagrams_of(const string& w) const
   {
     string key = sorted_string(w);
@@ -229,6 +256,15 @@ public:
   void erase()
   {
     _root = node::make_node();
+    _size = 1u;
+  }
+
+  //////////////////////////////////////////////////////////////////////////////
+  /// \brief Number of nodes.
+  //////////////////////////////////////////////////////////////////////////////
+  size_t size()
+  {
+    return _size;
   }
 };
 
