@@ -1,8 +1,5 @@
 import React from "react";
 import { resourceLimits } from "worker_threads";
-import { GameInstance, getGame } from "./game-instance";
-
-const instance: GameInstance = getGame();
 
 export function shuffleTwo<A>(input: string[], check: string[]) {
     var result: Map<string, number>;

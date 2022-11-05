@@ -14,7 +14,7 @@ type CharIdx = [string, number | null];
 const shuffle = (chars: CharIdx[]) => {
     return chars.map(c => c).sort(([_ca,ia], [_cb,ib]) => {
         if (ia !== null || ib !== null)
-             return ia === null ? -1 : -1;
+             return ia === null ? 1 : -1;
         else return Math.random() - 0.5;
     })
 }
