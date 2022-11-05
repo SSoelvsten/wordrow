@@ -66,6 +66,10 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     const actionDelete = (idx?: number) => {
         setChars(chars.map(([c,i]) => i === selected_length-1 ? [c,null] : [c,i]));
     }
+    
+    const actionClear = () => {
+        setChars(chars.map(([c, _]) => ([c, null])));
+    }
 
     const actionSubmit = () => {
         const emptySelection : boolean = !selected[0];
@@ -117,7 +121,8 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     const onKey = (e: React.KeyboardEvent) => {
         switch (e.key) {
         case " ":         actionShuffle(); break;
-        case "Backspace": actionDelete();  break;
+        case "Backspace": (e.ctrlKey || e.altKey) ? actionClear() : actionDelete();  break;
+        case "Escape":    actionClear();   break;
         case "Enter":     actionSubmit();  break;
         default:          actionType(e.key)
         }
