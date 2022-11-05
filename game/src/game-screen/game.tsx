@@ -76,7 +76,7 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
             guessCache.forEach((s, si) => {
                 for (let idx = 0; s && idx < max_word_length; idx++) {
                     const [c, i] = charsCopy[idx];
-                    if(!i && c===s) {
+                    if(i === null && c === s) {
                         charsCopy[idx][1] = si;
                         break;
                     }
