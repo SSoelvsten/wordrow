@@ -70,7 +70,7 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     const actionSubmit = () => {
         const emptySelection : boolean = !selected[0];
 
-        // If nothing is selected, recreate the indeices for the word in 'guessCache'
+        // If nothing is selected, recreate the indices for the word in 'guessCache'
         if (emptySelection) {
             var charsCopy: CharIdx[] = chars.map(_ => _);
             guessCache.forEach((s, si) => {
@@ -81,18 +81,19 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
                         break;
                     }
                 }
-            })
+            });
             setChars(charsCopy);
-        }
-        // Save current selected word in 'guessCache'
-        setGuessCache(selected);
+        } else {
+            // Save current selected word in 'guessCache'
+            setGuessCache(selected);
 
-        // Collapse guess from a char[] to a string
-        const guess: string = selected.map(c => c === null ? "" : c).reduce((acc,c) => acc+c);
-        if (anagrams.includes(guess)) {
-            setGuessed(guessed.map((v,idx) => v || anagrams[idx] === guess));
+            // Collapse guess from a char[] to a string
+            const guess: string = selected.map(c => c === null ? "" : c).reduce((acc,c) => acc+c);
+            if (anagrams.includes(guess)) {
+                setGuessed(guessed.map((v,idx) => v || anagrams[idx] === guess));
+            }
+            setChars(chars.map(([c,i]) => [c,null]));
         }
-        setChars(chars.map(([c,i]) => [c,null]));
     }
 
     const actionType = (char: string) => {
