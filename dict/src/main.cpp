@@ -27,10 +27,11 @@ std::string gen_json(const std::unordered_set<std::string> &words)
      << "  \"anagrams\": [" << std::endl;
 
   for (const std::string &w : words_sorted) {
-    ss << "    \"" << w << "\"" << std::endl;
+    ss << "    \"" << w << "\"," << std::endl;
   }
-
-  ss << "  ]" << std::endl
+  ss.seekp(-2,ss.cur);
+  ss << std::endl 
+     << "  ]" << std::endl
      << "}" << std::endl;
 
   return ss.str();
