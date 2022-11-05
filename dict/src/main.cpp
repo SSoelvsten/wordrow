@@ -1,13 +1,10 @@
 #include <iostream>
 #include <sstream>
 #include <string>
-
+#include <getopt.h>
 
 #include "anatree.h" // <-- TODO: Use <anatree.h> instead
 #include "dict.h"
-
-constexpr size_t MIN_LENGTH = 3u;
-constexpr size_t MAX_LENGTH = 7u;
 
 struct lexicographical_lt
 {
@@ -38,7 +35,27 @@ std::string gen_json(const std::unordered_set<std::string> &words)
 }
 
 int main(int argc, char* argv[]) {
-  dict d("./en_US.dic", "./en_US.aff");
+  // -----------------------------------------------------------------
+  // Parse arguments from user
+  if (argc < 4) {
+    std::cerr << "Need 4 arguments" << std::endl
+              << " min-length : integer" << std::endl
+              << " max-length : integer" << std::endl
+              << " .dic path  : string"  << std::endl
+              << " .aff path  : string"  << std::endl
+      ;
+    return -1;
+  }
+
+  const size_t MIN_LENGTH = std::stoul(argv[1]);
+  const size_t MAX_LENGTH = std::stoul(argv[2]);
+
+  const std::string dic_file_path = argv[3];
+  const std::string aff_file_path = argv[4];
+
+  // -----------------------------------------------------------------
+  // Open dictionary and populate Anatree
+  dict d(dic_file_path, aff_file_path);
   anatree a;
 
   size_t words = 0u;
@@ -57,6 +74,8 @@ int main(int argc, char* argv[]) {
   std::cout << "Processed " << words << " words (" << chars << " characters)." << std::endl
             << "Size of Anatree: " << a.size() << std::endl;
 
+  // -----------------------------------------------------------------
+  // Create game instances
   size_t idx = 0;
   for (std::string k : a.keys()) {
     std::stringstream ss;
