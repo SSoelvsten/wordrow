@@ -3,6 +3,7 @@ import { GameInstance } from './game-instance';
 import InputBox from './input-box';
 import './game.css';
 import Word from './word';
+import { shuffleTwo } from './shuffle';
 
 export interface GameProps {
     instance: GameInstance;
@@ -11,7 +12,11 @@ export interface GameProps {
 type CharIdx = [string, number | null];
 
 const shuffle = (chars: CharIdx[]) => {
-    return chars.map(c => c).sort(() => Math.random() - 0.5);
+    return chars.map(c => c).sort(([_ca,ia], [_cb,ib]) => {
+        if (ia === null) return  1;
+        if (ib === null) return -1;
+        else return Math.random() - 0.5;
+    })
 }
 
 const Game = ({ instance: { anagrams } }: GameProps) => {
@@ -35,7 +40,7 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
         // Sort by character, leaving 'null' at the end
         .sort(([_ca,ia], [_cb,ib]) => {
             return ia === null && ib === null ? 0
-                 : ia === null ? 1
+                 : ia === null ?  1
                  : ib === null ? -1
                  : ia - ib})
         // Display character, if selected
@@ -51,7 +56,7 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     const onKey = (e: React.KeyboardEvent) => {
         switch (e.key) {
         case " ": // Shuffle on 'Spacebar'
-            setChars(shuffle(chars)); // <-- TODO: different shuffle?
+            setChars(shuffle(chars));//shuffleTwo(chars, anagrams)); // <-- TODO: different shuffle?
             break;
 
         case "Backspace": // Remove latest symbol
