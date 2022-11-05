@@ -40,9 +40,27 @@ private:
 
   public:
     ////////////////////////////////////////////////////////////////////////////
-    /// \brief Empty (NIL) node constructor
+    /// \brief Initialize a NIL node
+    ////////////////////////////////////////////////////////////////////////////
+    void init(char c, ptr f_ptr = nullptr, ptr t_ptr = nullptr)
+    {
+      assert(_char == NIL && c != NIL);
+      _char = c;
+      _children[false] = f_ptr ? f_ptr : std::make_shared<node>();
+      _children[true]  = t_ptr ? t_ptr : std::make_shared<node>();
+    }
+
+  public:
+    ////////////////////////////////////////////////////////////////////////////
+    /// \brief Empty (NIL) constructor
     ////////////////////////////////////////////////////////////////////////////
     node() = default;
+
+    ////////////////////////////////////////////////////////////////////////////
+    /// \brief Empty (NIL) ptr constructor
+    ////////////////////////////////////////////////////////////////////////////
+    static ptr make_node()
+    { return std::make_shared<node>(); }
 
     ////////////////////////////////////////////////////////////////////////////
     /// \brief Copy constructor
@@ -50,18 +68,16 @@ private:
     node(const node&) = default;
 
     ////////////////////////////////////////////////////////////////////////////
+    /// \brief Non-nil ptr constructor
+    ////////////////////////////////////////////////////////////////////////////
+    node(const char c, ptr f_ptr = make_node(), ptr t_ptr = make_node())
+    { init(c, f_ptr, t_ptr); };
+
+    ////////////////////////////////////////////////////////////////////////////
     /// \brief Non-nil constructor
     ////////////////////////////////////////////////////////////////////////////
-    node(const char c); // TODO
-
-  public:
-    static ptr make_node()
-    {
-      return std::make_shared<node>();
-    }
-
-    static ptr make_node(char c);
-    // TODO ?
+    static ptr make_node(char c, ptr f_ptr = make_node(), ptr t_ptr = make_node())
+    { return std::make_shared<node>(c, f_ptr, t_ptr); }
 
   public:
     string to_string()
@@ -100,10 +116,8 @@ private:
     if (p->_char == node::NIL) {
       std::cout << "  case: NIL" << std::endl;
       assert(p->_children[false] == nullptr && p->_children[true] == nullptr);
-      p->_char = *curr_char;
-      p->_children[false] = node::make_node();
-      p->_children[true]  = node::make_node();
-      p->_children[true]  = insert_word(p->_children[true], w, ++curr_char, end);
+      p->init(*curr_char);
+      p->_children[true] = insert_word(p->_children[true], w, ++curr_char, end);
       return p;
     }
 
@@ -111,10 +125,7 @@ private:
     // -> Insert new node in-between
     if (*curr_char < p->_char) {
       std::cout << "  case: behind" << std::endl;
-      const node::ptr np = node::make_node();
-      np->_char = *curr_char;
-      np->_children[false] = p;
-      np->_children[true]  = node::make_node();
+      const node::ptr np = node::make_node(*curr_char, p, node::make_node());
       np->_children[true]  = insert_word(np->_children[true], w, ++curr_char, end);
       return np;
     }
@@ -122,7 +133,7 @@ private:
     // Case: Iterator ahead
     // -> Follow 'false' child
     if (p->_char < *curr_char) {
-       std::cout << "  case: ahead" << std::endl;
+      std::cout << "  case: ahead" << std::endl;
       p->_children[false] = insert_word(p->_children[false], w, curr_char, end);
       return p;
     }
