@@ -65,7 +65,7 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     const actionDelete = (idx?: number) => {
         setChars(chars.map(([c,i]) => i === selected_length-1 ? [c,null] : [c,i]));
     }
-    
+
     const actionClear = () => {
         setChars(chars.map(([c, _]) => ([c, null])));
     }
@@ -91,7 +91,7 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
             setGuessCache(selected);
 
             // Collapse guess from a char[] to a string
-            const guess: string = selected.map(c => c === null ? "" : c).reduce((acc,c) => acc+c);
+            const guess: string = selected.map(c => c === null ? "" : c).join("");
             if (anagrams.includes(guess)) {
                 setGuessed(guessed.map((v,idx) => v || anagrams[idx] === guess));
             }
