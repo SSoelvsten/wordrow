@@ -2,18 +2,37 @@ import React from "react";
 import { resourceLimits } from "worker_threads";
 
 export function shuffleTwo<A>(input: string[], check: string[]) {
-    var result: Map<string, number>;
+    var result: Map<string, number> = new Map;
     const perms: string[][] = permutations(input);
-    perms.forEach(p => {
-        p.forEach((r, j) => {
-            result.set(r, 0);
-            for (let i = 0; i < r.length; i++) {
+    perms.forEach(r => {
+        const p = r.join();
+        result.set(p, 0);
+        for (let k = 0; k < check.length; k++) {
+            /*for (let i = 0; i < r.length; i++) {
                 const temp = result.get(r);
-                result.set(r, Number(check[j][i] === r[i]) + temp!);
-            }
-        })
+                const checkWord = check[k];
+                console.log("r: " + r + " c: " + checkWord);
+                for (let l = 0; l < checkWord.length; l++) {
+                    result.set(r, Number(checkWord[l] === r[i]) + temp!);
+                }
+                
+            }*/
+            result.set(p, result.get(p)! + hammingDist(p, check[k]));
+        }
     });
-    return result!;
+    return result;
+}
+
+function hammingDist(str1: string, str2: string)
+{
+    let i = 0, count = 0;
+    while (i < str1.length)
+    {
+        if (str1[i] != str2[i])
+            count++;
+        i++;
+    }
+    return count;
 }
 
 const permutations = (arr: any) => {

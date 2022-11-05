@@ -99,6 +99,33 @@ public:
     }
   }
 
+private:
+  void generate_composite_words() 
+  {
+    std::vector<std::string> _dict_line = split(_dict_stream.getline(), '/');
+    assert(_dict_line.size() <= 2);
+
+    std::string _base_word = _dict_line[0];
+
+    _out_strings.erase();
+    if (_dict_line.size() == 2) {
+      for (const char i : _dict_line[1]) {
+        for (const aff_rule ar : _rules[i]) {
+          if (!regex_match(_base_word, ar.guard)) continue;
+            int start_idx = ar.ty == aff_rule::PREFIX ? ar.del.size() : 0;
+            int sub_len = _base_word.size() - ar.del.size();
+
+            _out_strings.push_back((ar.ty == aff_rule::SUFFIX ? "" : ar.add) +
+                                    _base_word.substr(start_idx, sub_len) +
+                                    (ar.ty == aff_rule::SUFFIX ? "" : ar.add));
+        }
+      }
+    } else {
+      _out_strings = { _base_word };
+    }
+    _out_idx = (size_t) 0;
+  }
+
   bool can_pull()
   {
     return out_idx < out_strings.size() || _dict_stream.peek() != EOF;
@@ -115,26 +142,9 @@ public:
       return _out_strings[_out_idx];
     }
 
-    std::vector<std::string> _dict_line = split(_dict_stream.getline(), '/');
-    assert(_dict_line.size() <= 2);
+    generate_composite_words();
 
-    std::string _base_word = _dict_line[0];
-
-    if (_dict_line.size() == 2) {
-      for (const char i : _dict_line[1]) {
-        for (const aff_rule ar : _rules[i]) {
-          if (!regex_match(_base_word, ar.guard)) continue;
-
-          
-        }
-      }
-    } else {
-      _out_idx = (size_t) -1;
-      _out_strings = { _base_word };
-    }
-
-
-    // TODO
+    return _out_strings(_out_idx);
   }
 
   //////////////////////////////////////////////////////////////////////////////
@@ -142,7 +152,15 @@ public:
   //////////////////////////////////////////////////////////////////////////////
   std::string pull()
   {
-    
+    assert(can_pull());
+
+    if (_out_idx < _out_strings.size()) {
+      return _out_strings[_out_idx++];
+    }
+
+    generate_composite_words();
+
+    return _out_strings(_out_idx++);
   }
 };
 
