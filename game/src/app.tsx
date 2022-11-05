@@ -1,14 +1,26 @@
-import React from 'react';
-import { getGame, GameInstance } from './game-instance';
+import React, { useState } from 'react';
+import { GameInstance, GameLanguage } from './game-instance';
 import Game from './game-screen/game';
 
 const App = () => {
-  const gi: GameInstance = getGame();
+  const language: GameLanguage = GameLanguage.GB;
+  const gameIdx: number = 0;
+
+  const [GameInstance, setGameInstance] = useState<GameInstance | undefined>(undefined);
+
+  fetch(`dict/${language}/${gameIdx}.json`,
+        { headers : {  'Content-Type': 'application/json', 'Accept': 'application/json' } })
+    .then((resp) => resp.json())
+    .then((data) => setGameInstance(data as GameInstance));
 
   return (
-    <div className="App fullscreen">
-      <Game instance={gi} />
-    </div>
+      <>
+      { GameInstance &&
+        <div className="App fullscreen">
+          <Game instance={GameInstance} />
+        </div>
+      }
+      </>
   );
 }
 

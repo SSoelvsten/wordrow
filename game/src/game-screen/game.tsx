@@ -3,7 +3,6 @@ import './game.scss';
 import { GameInstance } from '../game-instance';
 import InputBox from './input-box';
 import Word from './word';
-import { shuffleTwo } from '../shuffle';
 
 export interface GameProps {
     instance: GameInstance;
