@@ -10,10 +10,11 @@ int main(int argc, char* argv[]) {
   a.insert("god");
   a.insert("gold");
   a.insert("dog");
+  a.insert("do");
   a.insert("food");
 
   std::cout << "anagrams_of..." << std::endl;
-  for (const std::string w : a.anagrams_of("god")) {
+  for (const std::string w : a.anagrams_of("food")) {
     std::cout << "  " << w << std::endl;
   }
 }

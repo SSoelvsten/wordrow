@@ -6,7 +6,7 @@
 #include<memory>
 #include<sstream>
 #include<string>
-#include<vector>
+#include<unordered_set>
 
 class anatree {
 public:
@@ -36,7 +36,7 @@ private:
     ////////////////////////////////////////////////////////////////////////////
     /// \brief
     ////////////////////////////////////////////////////////////////////////////
-    std::vector<string> _words;
+    std::unordered_set<string> _words;
 
   public:
     ////////////////////////////////////////////////////////////////////////////
@@ -91,8 +91,7 @@ private:
     // -> Insert word
     if (curr_char == end) {
       std::cout << "  case: end" << std::endl;
-      // TODO: check p->_words does not contain 'w' already
-      p->_words.push_back(w);
+      p->_words.insert(w);
       return p;
     }
 
@@ -138,7 +137,7 @@ private:
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Recursively gets all word on the path that matches the iterator.
   //////////////////////////////////////////////////////////////////////////////
-  std::vector<string> get_words(const node::ptr p, string::iterator curr, const string::iterator end) const
+  std::unordered_set<string> get_words(const node::ptr p, string::iterator curr, const string::iterator end) const
   {
     std::cout << p->to_string() << std::endl;
 
@@ -158,9 +157,9 @@ private:
     // Case: Iterator ahead
     // -> Follow 'false' child
     if (p->_char < *curr) {
-      std::vector<string> ret(p->_words);
-      std::vector<string> rec = get_words(p->_children[false], curr, end);
-      ret.insert(ret.end(), rec.begin(), rec.end());
+      std::unordered_set<string> ret(p->_words);
+      std::unordered_set<string> rec = get_words(p->_children[false], curr, end);
+      ret.insert(rec.begin(), rec.end());
       return ret;
     }
 
@@ -168,18 +167,18 @@ private:
     // -> Follow both children, merge results and add words on current node
     ++curr;
 
-    std::vector<string> ret(p->_words);
-    std::vector<string> rec_false = get_words(p->_children[false], curr, end);
-    std::vector<string> rec_true = get_words(p->_children[true], curr, end);
-    ret.insert(ret.end(), rec_false.begin(), rec_false.end());
-    ret.insert(ret.end(), rec_true.begin(), rec_true.end());
+    std::unordered_set<string> ret(p->_words);
+    std::unordered_set<string> rec_false = get_words(p->_children[false], curr, end);
+    std::unordered_set<string> rec_true = get_words(p->_children[true], curr, end);
+    ret.insert(rec_false.begin(), rec_false.end());
+    ret.insert(rec_true.begin(), rec_true.end());
     return ret;
   }
 
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Recursively obtain all words at the leaves.
   //////////////////////////////////////////////////////////////////////////////
-  std::vector<string> get_leaves(string::iterator curr, const string::iterator end) const;
+  std::unordered_set<string> get_leaves(string::iterator curr, const string::iterator end) const;
 
 private:
   //////////////////////////////////////////////////////////////////////////////
@@ -209,14 +208,13 @@ public:
   void insert(const string& w)
   {
     string key = sorted_string(w);
-    // TODO: w is unaffected of sort?
     _root = insert_word(_root, w, key.begin(), key.end());
   }
 
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Obtain all words that are anagrams of 'w'.
   //////////////////////////////////////////////////////////////////////////////
-  std::vector<string> anagrams_of(const string& w) const
+  std::unordered_set<string> anagrams_of(const string& w) const
   {
     string key = sorted_string(w);
     return get_words(_root, key.begin(), key.end());
