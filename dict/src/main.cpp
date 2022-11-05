@@ -90,6 +90,17 @@ int main(int argc, char* argv[]) {
 
     idx++;
   }
+  {
+    std::stringstream ss;
+    ss << "./out/index.json";
+
+    std::ofstream out_file(ss.str());
+    out_file << "{" << std::endl
+             << "  \"instances\": " << idx << std::endl
+             << "}" << std::endl;
+      ;
+  }
+
   std::cout << "Created " << idx << " games in '.out/'" << std::endl;
 }
 

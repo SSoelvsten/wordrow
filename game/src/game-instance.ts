@@ -4,7 +4,7 @@ export enum GameLanguage {
 }
 
 export interface GameIndex {
-    lang: GameLanguage;
+    //lang: GameLanguage;
     instances: number;
 }
 
