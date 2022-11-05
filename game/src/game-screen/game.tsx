@@ -72,7 +72,7 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
 
         // If nothing is selected, recreate the indices for the word in 'guessCache'
         if (emptySelection) {
-            var charsCopy: CharIdx[] = chars.map(_ => _);
+            let charsCopy: CharIdx[] = chars.map(_ => _);
             guessCache.forEach((s, si) => {
                 for (let idx = 0; s && idx < max_word_length; idx++) {
                     const [c, i] = charsCopy[idx];
