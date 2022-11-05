@@ -1,5 +1,4 @@
 import React from 'react';
-import './app.scss';
 import { getGame, GameInstance } from './game-instance';
 import Game from './game-screen/game';
 
