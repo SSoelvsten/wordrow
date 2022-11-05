@@ -11,13 +11,16 @@ const App = () => {
   const [GameInstance, setGameInstance] = useState<GameInstance | undefined>(undefined);
 
   const getGame = () => {
+    // Fetch from the index file for the desired language
     fetch(`dict/${language}/index.json`, JSONHeader)
-    .then((resp) => resp.json())
-    .then((data) => (data as GameIndex).instances)
-    .then((games) => Math.floor(Math.random() * games))
+    // Convert response as a GameIndex object
+    .then((resp) => resp.json()).then((data) => (data as GameIndex).instances)
+    // Randomly choose an index
+    .then((games) => Math.round(Math.random() * (games-1)))
+    // Fetch specific game based on language and index
     .then((gameIdx) => fetch(`dict/${language}/${gameIdx}.json`, JSONHeader))
-    .then((resp) => resp.json())
-    .then((data) => setGameInstance(data as GameInstance));
+    // Convert response to GameInstance object
+    .then((resp) => resp.json()).then((data) => setGameInstance(data as GameInstance));
   }
 
   useEffect(getGame, []);
