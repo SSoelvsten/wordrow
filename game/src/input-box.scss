@@ -1,15 +1,19 @@
 .InputBox {
-    flex: 0 0 0;
-    font-size: 2rem;
-    min-width: 2rem;
-    width: 2rem;
-    height: 2rem;
-    line-height: 2rem;
-    margin: 1rem;
-    padding: 1rem;
+    $input-font-size: 2rem;
+    $input-gap: 1rem;
+    $input-background-color: lightgray;
+
+    flex: 0;
+    font-size: $input-font-size;
+    min-width: $input-font-size;
+    width: $input-font-size;
+    height: $input-font-size;
+    line-height: $input-font-size;
+    margin:$input-gap;
+    padding: $input-gap;
     text-align: center;
     text-transform: capitalize;
 
-    background-color: lightgray;
+    background-color: $input-background-color;
     border-radius: 10%;
 }

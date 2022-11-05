@@ -1,38 +1,41 @@
 .Word {
+    $letter-font-size: 1rem;
+    $letter-gap: 0.3rem;
+    $missing-color: white;
+    $guessed-color: yellowgreen;
+
     display: flex;
     margin: 1rem;
 
-
     .Letter {
-        font-size: 1rem;
-        min-width: 1rem;
-        width: 1rem;
-        height: 1rem;
-        line-height: 1rem;
-        margin: 0.3rem;
-        padding: 0.3rem;
+        font-size: $letter-font-size;
+        min-width: $letter-font-size;
+        width: $letter-font-size;
+        height: $letter-font-size;
+        line-height: $letter-font-size;
+        margin: $letter-gap;
+        padding: $letter-gap;
         text-align: center;
         text-transform: capitalize;
 
-        margin-bottom: -1.7rem;
-
+        /* Nice border */
         border: black;
         border-style: solid;
         border-width: 1px;
         border-radius: 10%;
+
+        /* HACK: make spacing between individual words smaller */
+        margin-bottom: -1.7rem;
     }
 
     @keyframes WordReveal {
-        from {
-            background-color: yellowgreen;
-        }
-        to {
-            background-color: white;
-        }
+        /* flash animation when guessed */
+        from { background-color: $guessed-color; }
+        to { background-color: $missing-color; }
     }
 
     &.Guessed .Letter {
-        background-color: yellowgreen;
+        background-color: $guessed-color;
         animation-name: WordReveal;
         animation-duration: 0.1s;
     }
