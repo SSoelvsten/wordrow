@@ -105,7 +105,7 @@ public:
   dict(const std::string& dic_file_path, const std::string& aff_file_path)
     : _dic_file_path(dic_file_path), _aff_file_path(aff_file_path),
       _dict_stream(dic_file_path),
-      _is_lower_char("[a-z]*")
+      _is_lower_char("[a-zæøå]*")
   {
     std::stringstream buffer;
 
