@@ -52,11 +52,7 @@ private:
     ////////////////////////////////////////////////////////////////////////////
     /// \brief Non-nil constructor
     ////////////////////////////////////////////////////////////////////////////
-    node(const char c) : _char(c)
-    {
-      _children[false] = make_node();
-      _children[true]  = make_node();
-    }
+    node(const char c); // TODO
 
   public:
     static ptr make_node()
@@ -64,10 +60,8 @@ private:
       return std::make_shared<node>();
     }
 
-    static ptr make_node(char c)
-    {
-      return std::make_shared<node>(c);
-    }
+    static ptr make_node(char c);
+    // TODO ?
 
   public:
     string to_string()
@@ -91,10 +85,13 @@ private:
                         const string::iterator end)
   {
     assert(p != nullptr);
+    std::cout << p->to_string() << std::endl;
 
     // Case: Iterator done
     // -> Insert word
     if (curr_char == end) {
+      std::cout << "  case: end" << std::endl;
+      // TODO: check p->_words does not contain 'w' already
       p->_words.push_back(w);
       return p;
     }
@@ -102,6 +99,7 @@ private:
     // Case: NIL
     // -> Turn into non-NIL node
     if (p->_char == node::NIL) {
+      std::cout << "  case: NIL" << std::endl;
       assert(p->_children[false] == nullptr && p->_children[true] == nullptr);
       p->_char = *curr_char;
       p->_children[false] = node::make_node();
@@ -113,22 +111,26 @@ private:
     // Case: Iterator behind
     // -> Insert new node in-between
     if (*curr_char < p->_char) {
-      const node::ptr np = node::make_node(*curr_char);
+      std::cout << "  case: behind" << std::endl;
+      const node::ptr np = node::make_node();
+      np->_char = *curr_char;
       np->_children[false] = p;
-      //np->_children[true]  = node::make_node();
-      np->_children[true]  = insert_word(p->_children[true], w, ++curr_char, end);
+      np->_children[true]  = node::make_node();
+      np->_children[true]  = insert_word(np->_children[true], w, ++curr_char, end);
       return np;
     }
 
     // Case: Iterator ahead
     // -> Follow 'false' child
     if (p->_char < *curr_char) {
+       std::cout << "  case: ahead" << std::endl;
       p->_children[false] = insert_word(p->_children[false], w, curr_char, end);
       return p;
     }
 
     // Case: Iterator and node matches
     // -> Follow 'true' child
+    std::cout << "  case: match" << std::endl;
     p->_children[true] = insert_word(p->_children[true], w, ++curr_char, end);
     return p;
   }
@@ -164,9 +166,11 @@ private:
 
     // Case: Iterator and node matches
     // -> Follow both children, merge results and add words on current node
+    ++curr;
+
     std::vector<string> ret(p->_words);
-    std::vector<string> rec_false = get_words(p->_children[false], ++curr, end);
-    std::vector<string> rec_true = get_words(p->_children[true], ++curr, end);
+    std::vector<string> rec_false = get_words(p->_children[false], curr, end);
+    std::vector<string> rec_true = get_words(p->_children[true], curr, end);
     ret.insert(ret.end(), rec_false.begin(), rec_false.end());
     ret.insert(ret.end(), rec_true.begin(), rec_true.end());
     return ret;
@@ -205,6 +209,7 @@ public:
   void insert(const string& w)
   {
     string key = sorted_string(w);
+    // TODO: w is unaffected of sort?
     _root = insert_word(_root, w, key.begin(), key.end());
   }
 
