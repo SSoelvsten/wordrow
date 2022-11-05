@@ -1,8 +1,12 @@
 #include <iostream>
 
 #include "anatree.h" // <-- TODO: Use <anatree.h> instead
+#include "dict.h"
 
 int main(int argc, char* argv[]) {
+  dict("./en_US.dic", "./en_US.aff");
+
+  return 0;
   anatree a;
 
   std::cout << "insert..." << std::endl;
