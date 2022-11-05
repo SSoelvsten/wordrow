@@ -20,6 +20,8 @@ const shuffle = (chars: CharIdx[]) => {
 }
 
 const Game = ({ instance: { anagrams } }: GameProps) => {
+    // ------------------------------------------------------------------------
+    // GAME STATE
     const words: number = anagrams.length;
     const [chars, setChars] = useState<CharIdx[]>(
         () => shuffle(anagrams[words-1].split('').map((c) => [c, null]))
@@ -33,17 +35,19 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
 
     const min_word_length: number = anagrams[0].length;
     const max_word_length: number = anagrams[words-1].length;
+
+    // Derive selected word and its true length (i.e. the last index that is non-null)
     var selected_length: number = max_word_length;
     const selected: (string | null)[] = chars
         // Create a copy of the array
-        .map(c => c)
-        // Sort by character, leaving 'null' at the end
+        .map(_ => _)
+        // Sort by selection-index, leaving 'null' at the end
         .sort(([_ca,ia], [_cb,ib]) => {
             return ia === null && ib === null ? 0
                  : ia === null ?  1
                  : ib === null ? -1
                  : ia - ib})
-        // Display character, if selected
+        // Display character, if selected. Otherwise, decrement 'selected_length'
         .map(([c,i]) => {
             if (i === null) {
                 selected_length--;
@@ -53,58 +57,73 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
         });
     ;
 
-    const onKey = (e: React.KeyboardEvent) => {
-        switch (e.key) {
-        case " ": // Shuffle on 'Spacebar'
-            setChars(shuffle(chars));//shuffleTwo(chars, anagrams)); // <-- TODO: different shuffle?
-            break;
+    // ------------------------------------------------------------------------
+    // GAME LOGIC
+    const actionShuffle = () => {
+        setChars(shuffle(chars));//shuffleTwo(chars, anagrams)); // <-- TODO: different shuffle?
+    }
 
-        case "Backspace": // Remove latest symbol
-            setChars(chars.map(([c,i]) => i === selected_length-1 ? [c,null] : [c,i]));
-            break;
+    const actionDelete = (idx?: number) => {
+        setChars(chars.map(([c,i]) => i === selected_length-1 ? [c,null] : [c,i]));
+    }
 
-        case "Enter": // Check if guess exists and clear input
-            console.log(selected);
-            if (!selected[0]) {
-                var charsCopy: CharIdx[] = chars.map(_ => _);
-                guessCache.forEach((s, si) => {
-                    for (let idx = 0; s && idx < max_word_length; idx++) {
-                        const [c, i] = charsCopy[idx];
-                        if(!i && c===s) {
-                            charsCopy[idx][1] = si;
-                            break;
-                        }
+    const actionSubmit = () => {
+        const emptySelection : boolean = !selected[0];
+
+        // If nothing is selected, recreate the indeices for the word in 'guessCache'
+        if (emptySelection) {
+            var charsCopy: CharIdx[] = chars.map(_ => _);
+            guessCache.forEach((s, si) => {
+                for (let idx = 0; s && idx < max_word_length; idx++) {
+                    const [c, i] = charsCopy[idx];
+                    if(!i && c===s) {
+                        charsCopy[idx][1] = si;
+                        break;
                     }
-                })
-                console.log(charsCopy);
-                setChars(charsCopy);
-                break;
-            }; //Put old word back*/
-            setGuessCache(selected);
-            const guess: string = selected.map(c => c === null ? "" : c).reduce((acc,c) => acc+c);
-            if (anagrams.includes(guess)) {
-                setGuessed(guessed.map((v,idx) => v || anagrams[idx] === guess));
-            }
-            setChars(chars.map(([c,i]) => [c,null]));
+                }
+            })
+            setChars(charsCopy);
+        }
+        // Save current selected word in 'guessCache'
+        setGuessCache(selected);
 
-            break;
+        // Collapse guess from a char[] to a string
+        const guess: string = selected.map(c => c === null ? "" : c).reduce((acc,c) => acc+c);
+        if (anagrams.includes(guess)) {
+            setGuessed(guessed.map((v,idx) => v || anagrams[idx] === guess));
+        }
+        setChars(chars.map(([c,i]) => [c,null]));
+    }
 
-        default: // Move character, if it exists
-            if (chars.filter(([c,i]) => i === null).map(([c,i]) => c).includes(e.key)) {
-                var hasSelected: boolean = false;
-                setChars(chars.map(([c,i]) => {
-                    if (!hasSelected && i === null && c === e.key) {
-                        hasSelected = true;
-                        return [c,selected_length];
-                    } else {
-                        return [c,i];
-                    }
-                }));
-            }
+    const actionType = (char: string) => {
+        if (char.length !== 1) return; // <-- ignore non-char inputs
 
-            break;
+        if (chars.filter(([c,i]) => i === null).map(([c,i]) => c).includes(char)) {
+            var hasSelected: boolean = false;
+            setChars(chars.map(([c,i]) => {
+                if (!hasSelected && i === null && c === char) {
+                    hasSelected = true;
+                    return [c,selected_length];
+                } else {
+                    return [c,i];
+                }
+            }));
         }
     }
+
+    // ------------------------------------------------------------------------
+    // KEY LISTENER
+    const onKey = (e: React.KeyboardEvent) => {
+        switch (e.key) {
+        case " ":         actionShuffle(); break;
+        case "Backspace": actionDelete();  break;
+        case "Enter":     actionSubmit();  break;
+        default:          actionType(e.key)
+        }
+    }
+
+    // ------------------------------------------------------------------------
+    // VISUAL
 
     // https://stackabuse.com/how-to-set-focus-on-element-after-rendering-with-react/
     const divRef = useRef<any>(null);
