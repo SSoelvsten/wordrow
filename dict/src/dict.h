@@ -57,36 +57,49 @@ private:
   const std::regex _is_lower_char;
 
 private:
+  char parse_identifier(const std::string& s)
+  {
+    return (regex_match(s, std::regex("[A-Za-z]")))
+      ? s.at(0)
+      : std::stoi(s);
+  }
+
+private:
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Populates _out_strings with new words to pull and returns `true` if
   /// succesful. Keep running, until `can_pull` is empty or it returns `true`.
   //////////////////////////////////////////////////////////////////////////////
   bool generate_composite_words()
   {
-    std::vector<std::string> _dict_line;
-    do {
-      std::string _raw_line;
-      if (!std::getline(_dict_stream, _raw_line)) { exit(-1); };
+    std::string _raw_line;
+    if (!std::getline(_dict_stream, _raw_line)) { return false; };
+    if (_raw_line.size() == 0) { return false; }    // <-- skip empty lines
+    if (_raw_line.find(" ") == 0) { return false; } // <-- skip weird lines due to unintended line breaks
 
-      _dict_line = split(_raw_line, '/');
-    } while (_dict_line.size() > 2);
+    std::vector<std::string> _dict_line = split(_raw_line, '/');
+    if (_dict_line.size() > 2) { return false; }
 
-    std::string _base_word = _dict_line[0];
-    if (!regex_match(_base_word, _is_lower_char)) return false;
+    std::string _dict_word = _dict_line[0];
+    if (!regex_match(_dict_word, _is_lower_char)) { return false; }
+
+    std::vector<std::string> _dict_rules = _dict_line.size() == 1
+      ? std::vector<std::string>(0)
+      : split(split(_dict_line[1], ' ')[0], ',');
 
     _out_strings.clear();
-    _out_strings = { _base_word };
+    _out_strings = { _dict_word };
 
     if (_dict_line.size() == 2) {
-      for (const char i : _dict_line[1]) {
-        for (const aff_rule ar : _rules[i]) {
-          if (!regex_match(_base_word, ar.guard)) { continue; }
+      for (const std::string& i : _dict_rules) {
+        const char identifier = parse_identifier(i);
+        for (const aff_rule ar : _rules[identifier]) {
+          if (!regex_match(_dict_word, ar.guard)) { continue; }
           size_t start_idx = ar.ty == aff_rule::PREFIX ? ar.del.size() : 0u;
-          size_t sub_len = _base_word.size() - ar.del.size();
+          size_t sub_len = _dict_word.size() - ar.del.size();
 
           std::stringstream ss;
           ss << (ar.ty == aff_rule::PREFIX ? ar.add : "")
-             << _base_word.substr(start_idx, sub_len)
+             << _dict_word.substr(start_idx, sub_len)
              << (ar.ty == aff_rule::SUFFIX ? ar.add : "");
 
           _out_strings.push_back(ss.str());
@@ -94,7 +107,7 @@ private:
         }
       }
     } else {
-      _out_strings = { _base_word };
+      _out_strings = { _dict_word };
     }
     _out_idx = (size_t) 0;
     return true;
@@ -120,7 +133,7 @@ public:
 
       const std::vector<std::string> _line_args = split(_aff_line, ' ');
       const aff_rule::t type = _line_args[0] == "SFX" ? aff_rule::SUFFIX : aff_rule::PREFIX;
-      const char identifier = _line_args[1][0];
+      const char identifier = parse_identifier(_line_args[1]);
       const char something_weird = _line_args[2][0];
 
       for (size_t i = 0; i < std::stoul(_line_args[3]); ++i) {
@@ -140,7 +153,7 @@ public:
       _rules[identifier] = _rule_set;
     }
 
-    do { } while (can_pull() && !generate_composite_words());
+    while (can_pull() && !generate_composite_words()) { }
   }
 
 public:
@@ -178,8 +191,7 @@ public:
       return _out_strings[_out_idx++];
     }
 
-    if (_out_strings.size() <= _out_idx)
-      while(can_pull() && !generate_composite_words()) { }
+    while(can_pull() && !generate_composite_words()) { }
 
     std::string ret = _out_strings[_out_idx++];
 
