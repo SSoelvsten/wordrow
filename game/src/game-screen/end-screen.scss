@@ -1,0 +1,20 @@
+.EndScreen {
+    text-align: center;
+
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+
+    .Score {
+        font-size: 3rem;
+        font-weight: 600;
+
+        margin-top: 0.2rem;
+        margin-bottom: 0.05rem;
+    }
+
+    .Continue {
+        &.hide {
+            color: white;
+        }
+    }
+}

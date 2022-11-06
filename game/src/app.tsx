@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { GameIndex, GameInstance, GameLanguage } from './game-instance';
-import Game from './game-screen/game';
+import Game, { GameReport } from './game-screen/game';
 
 const JSONHeader = { headers : {  'Content-Type': 'application/json', 'Accept': 'application/json' } };
 
@@ -8,7 +8,8 @@ const App = () => {
   const language: GameLanguage = GameLanguage.DK;
   const gameIdx: number = 0;
 
-  const [GameInstance, setGameInstance] = useState<GameInstance | undefined>(undefined);
+  const [accScore, setAccScore] = useState<number>(0);
+  const [gameInstance, setGameInstance] = useState<GameInstance | undefined>(undefined);
 
   const getGame = () => {
     // Fetch from the index file for the desired language
@@ -27,11 +28,17 @@ const App = () => {
 
   useEffect(getGame, []);
 
+  const getNextGame = (previousGame: GameReport) => {
+    setGameInstance(undefined);
+    setAccScore(previousGame.qualified ? accScore + previousGame.score : 0);
+    getGame();
+  }
+
   return (
       <>
-      { GameInstance &&
+      { gameInstance &&
         <div className="App fullscreen">
-          <Game instance={GameInstance} />
+          <Game instance={gameInstance} accScore={accScore} onRequestNextGame={getNextGame} />
         </div>
       }
       </>

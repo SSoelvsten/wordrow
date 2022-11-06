@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import './scorekeeper.scss';
+import './scoreboard.scss';
 
 export interface ScoreBoardProps {
     endTime: number,
@@ -41,7 +41,7 @@ const ScoreBoard = ({ endTime, score, onTimeout }: ScoreBoardProps) => {
 
     return (
         <div className="ScoreBoard">
-            {formatTimeleft()} | {score.toLocaleString(undefined, {minimumIntegerDigits: 7 })}
+            {formatTimeleft()} | {Math.round(score).toLocaleString(undefined, {minimumIntegerDigits: 7 })}
         </div>
     );
 }

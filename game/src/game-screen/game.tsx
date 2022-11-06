@@ -4,10 +4,18 @@ import { GameInstance } from '../game-instance';
 import InputBox from './input-box';
 import Word from './word';
 import shuffle from '../shuffle';
-import ScoreBoard from './scorekeeper';
+import ScoreBoard from './scoreboard';
+import EndScreen from './end-screen';
+
+export interface GameReport {
+    qualified: boolean;
+    score: number;
+}
 
 export interface GameProps {
     instance: GameInstance;
+    accScore: number;
+    onRequestNextGame: (report: GameReport) => void;
 }
 
 type CharIdx = [string, number | null];
@@ -24,15 +32,17 @@ const charShuffle = (chars: CharIdx[]) => {
         }
     );
     const firstNonNull = charsCopy.findIndex(([_,i]) => i !== null);
-    console.log(charsCopy, firstNonNull);
     shuffle(charsCopy, firstNonNull, charsCopy.length);
     return charsCopy.reverse();
 }
 
-const Game = ({ instance: { anagrams } }: GameProps) => {
+const Game = ({ instance: { anagrams }, accScore, onRequestNextGame }: GameProps) => {
     // ------------------------------------------------------------------------
     // GAME STATE
     const words: number = anagrams.length;
+    const min_word_length: number = anagrams[0].length;
+    const max_word_length: number = anagrams[words-1].length;
+
     const [chars, setChars] = useState<CharIdx[]>(
         () => charShuffle(anagrams[words-1].split('').map((c) => [c, null]))
     );
@@ -45,18 +55,20 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     const [gameEnd, setGameEnd] = useState<boolean>(
         () => false
     );
-
-    const letterScore: number = 100;
-    const letterTime: number = 1000;
-    const maxScore: number = anagrams.reduce((acc, w) => acc + w.length, 0) * letterScore;
-    const [endTime, setEndTime] = useState<number>(
-        () => new Date().getTime() + 30 * 1000 /* 30 seconds */
+    const [activatePressToContinue, setActivatePressToContinue] = useState<boolean>(
+        () => false
     );
 
-    const currScore: number = anagrams.filter((w,i) => guessed[i]).reduce((acc,w) => acc+w.length, 0) * letterScore;
+    const scoreWord = (w : string) => Math.round(Math.exp(w.length) * 32);
 
-    const min_word_length: number = anagrams[0].length;
-    const max_word_length: number = anagrams[words-1].length;
+    const maxScore: number = anagrams.reduce((acc, w) => acc + scoreWord(w), 0);
+
+    const [endTime, setEndTime] = useState<number>(
+        () => new Date().getTime() + 60 * 1000 /* 30 seconds */
+    );
+
+    const currScore: number  = anagrams.filter((w,i) => guessed[i]).reduce((acc,w) => acc+scoreWord(w), 0);
+    const qualified: boolean = !!guessed.find((v,idx) => v && anagrams[idx].length == max_word_length);
 
     // Derive selected word and its true length (i.e. the last index that is non-null)
     var selected_length: number = max_word_length;
@@ -82,26 +94,18 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     // ------------------------------------------------------------------------
     // GAME LOGIC
     const actionShuffle = () => {
-        if (gameEnd) return;
-
-        setChars(charShuffle(chars));//shuffleTwo(chars, anagrams)); // <-- TODO: different shuffle?
+        setChars(charShuffle(chars));
     }
 
     const actionDelete = (idx?: number) => {
-        if (gameEnd) return;
-
         setChars(chars.map(([c,i]) => i === selected_length-1 ? [c,null] : [c,i]));
     }
 
     const actionClear = () => {
-        if (gameEnd) return;
-
         setChars(chars.map(([c, _]) => ([c, null])));
     }
 
     const actionSubmit = () => {
-        if (gameEnd) return;
-
         const emptySelection : boolean = !selected[0];
 
         // If nothing is selected, recreate the indices for the word in 'guessCache'
@@ -125,16 +129,16 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
             const guess: string = selected.map(c => c === null ? "" : c).join("");
             if (anagrams.includes(guess)) {
                 let guessedANewWord = false;
-                const newGuessed: boolean[] = guessed.map((v,idx) => {
+                const newGuessed: boolean[] = guessed.map((v: boolean, idx: number) => {
                     const match = anagrams[idx] === guess;
                     if (match) guessedANewWord = v === false;
-                    return v || anagrams[idx] === guess
+                    return v || anagrams[idx] === guess;
                 });
-                const hasWon: boolean = !guessed.find(v => !v);
+                const hasGuessedAll: boolean = !guessed.find(v => !v);
 
-                setGuessed(guessed.map((v,idx) => v || anagrams[idx] === guess));
-                if (guessedANewWord) { console.log(endTime, endTime+10000);setEndTime(endTime + 10000) };
-                setGameEnd(!hasWon);
+                setGuessed(newGuessed);
+                if (guessedANewWord) { setEndTime(endTime + scoreWord(guess)); }
+                setGameEnd(!hasGuessedAll);
             }
             setChars(chars.map(([c,i]) => [c,null]));
         }
@@ -142,7 +146,6 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
 
     const actionType = (char: string) => {
         if (char.length !== 1) return; // <-- ignore non-char inputs
-        if (gameEnd) return;
 
         if (chars.filter(([c,i]) => i === null).map(([c,i]) => c).includes(char)) {
             var hasSelected: boolean = false;
@@ -161,31 +164,45 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
         setGameEnd(true);
     }
 
+    const gameEndDelay = 2000;
+    useEffect(() => {
+        if (gameEnd)
+            setTimeout(() => setActivatePressToContinue(true), gameEndDelay);
+    }, [gameEnd]);
+
     // ------------------------------------------------------------------------
     // KEY LISTENER
     const onKey = (e: React.KeyboardEvent) => {
-        switch (e.key) {
-        case " ":         actionShuffle(); break;
-        case "Backspace": (e.ctrlKey || e.altKey) ? actionClear() : actionDelete();  break;
-        case "Escape":    actionClear();   break;
-        case "Enter":     actionSubmit();  break;
-        default:          actionType(e.key)
+        if (gameEnd) {
+            if (!activatePressToContinue) return;
+
+            const ignoredKeys = ["Alt", "Control", "Shift", "Tab"];
+            if (!ignoredKeys.includes(e.key) && e.altKey && e.ctrlKey) {
+                onRequestNextGame({ qualified, score: currScore });
+            }
+            return;
+        } else { // !gameEnd
+            switch (e.key) {
+                case " ":         actionShuffle(); break;
+                case "Backspace": (e.ctrlKey || e.altKey) ? actionClear() : actionDelete();  break;
+                case "Escape":    actionClear();   break;
+                case "Enter":     actionSubmit();  break;
+                default:          actionType(e.key)
+            }
         }
     }
 
     // ------------------------------------------------------------------------
-    // VISUAL - GAME
+    // VISUAL
 
     // https://stackabuse.com/how-to-set-focus-on-element-after-rendering-with-react/
     const divRef = useRef<any>(null);
     useEffect(() => { divRef.current.focus(); }, []);
 
-    // ------------------------------------------------------------------------
-    // VISUAL - scoreboard
     return (
         <div className="Game fullscreen" tabIndex={0} onKeyDown={onKey} ref={divRef}>
             <div className='ScoreBoard'>
-                <ScoreBoard endTime={endTime} score={currScore} onTimeout={onTimeout} />
+                <ScoreBoard endTime={endTime} score={accScore + currScore} onTimeout={onTimeout} />
             </div>
             <div className="Anagrams">
                 <div className="Anagrams-columns">
@@ -211,6 +228,11 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
                         {chars.map(([c,i],idx) => (<InputBox content={i === null ? c : "_"} key={idx} />))}
                     </div>
                 </>
+            }
+            {gameEnd &&
+                <div className="Row">
+                    <EndScreen qualified={qualified} score={currScore} showContinue={activatePressToContinue} />
+                </div>
             }
         </div>
     );
