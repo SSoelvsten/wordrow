@@ -45,9 +45,10 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     );
 
     const letterScore: number = 100;
+    const letterTime: number = 1000;
     const maxScore: number = anagrams.reduce((acc, w) => acc + w.length, 0) * letterScore;
     const [endTime, setEndTime] = useState<number>(
-        () => new Date().getTime() + maxScore * 10
+        () => new Date().getTime() + 30 * 1000 /* 30 seconds */
     );
 
     const currScore: number = anagrams.filter((w,i) => guessed[i]).reduce((acc,w) => acc+w.length, 0) * letterScore;
@@ -121,10 +122,16 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
             // Collapse guess from a char[] to a string
             const guess: string = selected.map(c => c === null ? "" : c).join("");
             if (anagrams.includes(guess)) {
-                const newGuessed: boolean[] = guessed.map((v,idx) => v || anagrams[idx] === guess);
+                let guessedANewWord = false;
+                const newGuessed: boolean[] = guessed.map((v,idx) => {
+                    const match = anagrams[idx] === guess;
+                    if (match) guessedANewWord = v === false;
+                    return v || anagrams[idx] === guess
+                });
                 const hasWon: boolean = !guessed.find(v => !v);
 
                 setGuessed(guessed.map((v,idx) => v || anagrams[idx] === guess));
+                if (guessedANewWord) { console.log(endTime, endTime+10000);setEndTime(endTime + 10000) };
                 setGameEnd(!hasWon);
             }
             setChars(chars.map(([c,i]) => [c,null]));
@@ -200,8 +207,6 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
             </div>
         </div>
     );
-
-    
 }
 
 export default Game;

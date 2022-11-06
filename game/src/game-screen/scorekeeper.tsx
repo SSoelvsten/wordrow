@@ -8,14 +8,15 @@ export interface ScoreBoardProps {
 };
 
 const ScoreBoard = ({ endTime, score, onTimeout }: ScoreBoardProps) => {
-    const secondsLeft = () => endTime - new Date().getTime();
-    const formatTimeleft = () => {
-        const left = secondsLeft();
-        if (left < 0) return "00:00:000";
+    const [currTime, setCurrTime] = useState(() => new Date().getTime());
 
-        const millis = Math.floor(left % 1000);
-        const seconds = Math.floor((left / 1000) % 60);
-        const minutes = Math.floor((left / 1000) / 60);
+    const formatTimeleft = () => {
+        const timeLeft = endTime - currTime;
+        if (timeLeft < 0) return "00:00:000";
+
+        const millis = Math.floor(timeLeft % 1000);
+        const seconds = Math.floor((timeLeft / 1000) % 60);
+        const minutes = Math.floor((timeLeft / 1000) / 60);
 
         return `${
             minutes.toLocaleString(undefined, { minimumIntegerDigits: 2 })
@@ -26,18 +27,18 @@ const ScoreBoard = ({ endTime, score, onTimeout }: ScoreBoardProps) => {
         }`;
     };
 
-    const [timeString, setTimeString] = useState<string>(
-        () => formatTimeleft()
-    );
-
-    useEffect(() => { setInterval(() => {
-        if (secondsLeft() < 0) onTimeout();
-        setTimeString(formatTimeleft())
-    }, 50) }, []);
+    useEffect(() => {
+        const timerId = setInterval(() => {
+            const tick = new Date().getTime();
+            if (endTime - tick < 0) onTimeout();
+            setCurrTime(tick);
+        }, 50);
+        return () => clearInterval(timerId);
+    }, []);
 
     return (
         <div className="ScoreBoard">
-            {timeString} | {score.toLocaleString(undefined, {minimumIntegerDigits: 7 })}
+            {formatTimeleft()} | {score.toLocaleString(undefined, {minimumIntegerDigits: 7 })}
         </div>
     );
 }
