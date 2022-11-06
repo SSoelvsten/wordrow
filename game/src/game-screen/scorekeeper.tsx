@@ -1,25 +1,35 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export interface ScoreBoardProps {
-    time: number, score: number;
+    endTime: number, score: number;
 };
 
-const ScoreBoard = ({ time, score }: ScoreBoardProps) => {
+const ScoreBoard = ({ endTime, score }: ScoreBoardProps) => {
+    const formatTimeleft = () => {
+        const time = new Date(endTime - new Date().getTime())
+        return `Time left: ${time.getSeconds()}`
+    }
+
+    const [timeString, setTimeString] = useState<string>(
+        () => formatTimeleft()
+    );
+    
+    useEffect(() => { setInterval(() => setTimeString(formatTimeleft())) }, []);
     return (
     <div className="ScoreBoard">
-        <Timer time={ time }/>
+        <Timer timeString={ timeString }/>
         <ScoreKeeper score={ score }/>
     </div>)
 }
 
 export interface TimerProps {
-    time: number;
+    timeString: string;
 };
 
-const Timer = ({time} : TimerProps ) => {
+const Timer = ({timeString} : TimerProps ) => {
     return (
     <div>
-        { time }
+        { timeString }
     </div>
     )
 }

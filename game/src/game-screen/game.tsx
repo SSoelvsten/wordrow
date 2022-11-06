@@ -41,8 +41,14 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
         () => Array(words).fill(null)
     );
 
+    const [endTime, setEndTime] = useState<number>(
+        () => new Date().getTime() + 120000
+    );
+
     const min_word_length: number = anagrams[0].length;
     const max_word_length: number = anagrams[words-1].length;
+    
+    
 
     // Derive selected word and its true length (i.e. the last index that is non-null)
     var selected_length: number = max_word_length;
@@ -147,7 +153,7 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     return (
         <div className="Game fullscreen" tabIndex={0} onKeyDown={onKey} ref={divRef}>
             <div className='ScoreBoard'> 
-                <ScoreBoard time={1000} score={0}/>
+                <ScoreBoard endTime={endTime} score={0}/>
             </div>
             <div className="Anagrams">
                 <div className="Anagrams-columns">
