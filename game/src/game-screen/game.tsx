@@ -178,8 +178,7 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
         if (gameEnd) {
             if (!activatePressToContinue) return;
 
-            const ignoredKeys = ["Alt", "Control", "Shift", "Tab"];
-            if (!ignoredKeys.includes(e.key) || e.altKey || e.ctrlKey) {
+            if (e.key == " ") {
                 onRequestNextGame({ qualified, score: currScore });
             }
             return;

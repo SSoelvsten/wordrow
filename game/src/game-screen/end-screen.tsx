@@ -18,13 +18,13 @@ const EndScreen = ({ language, qualified, score, showContinue }: EndScreenProps)
     case GameLanguage.DK: {
         success_text  = "Tillykke! Du er kvalificeret til den næste runde.";
         failed_text   = "Desværre! Find et ord, der bruger alle bogstaver, for at kvalificere til den næste runde.";
-        continue_texts = ["Tryk", "enhver knap", "for at fortsætte."]
+        continue_texts = ["Tryk", "mellemrum", "for at fortsætte."]
         break;
     }
     case GameLanguage.GB: {
         success_text  = "Congratulations! You qualify for the next round.";
         failed_text   = "Sorry! Find a word that uses all letters to qualify for the next round.";
-        continue_texts = ["Press", "any key", "to continue."];
+        continue_texts = ["Press", "space", "to continue."];
         break;
     }
     }
