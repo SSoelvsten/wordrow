@@ -9,6 +9,7 @@ const App = () => {
   const gameIdx: number = 0;
 
   const [accScore, setAccScore] = useState<number>(0);
+  const [round, setRound] = useState<number>(1);
   const [gameInstance, setGameInstance] = useState<GameInstance | undefined>(undefined);
 
   const getGame = () => {
@@ -30,6 +31,7 @@ const App = () => {
 
   const getNextGame = (previousGame: GameReport) => {
     setGameInstance(undefined);
+    setRound(previousGame.qualified ? round+1 : 1);
     setAccScore(previousGame.qualified ? accScore + previousGame.score : 0);
     getGame();
   }
@@ -38,7 +40,7 @@ const App = () => {
       <>
       { gameInstance &&
         <div className="App fullscreen">
-          <Game instance={gameInstance} accScore={accScore} onRequestNextGame={getNextGame} />
+          <Game instance={gameInstance} accScore={accScore} round={round} onRequestNextGame={getNextGame} />
         </div>
       }
       </>

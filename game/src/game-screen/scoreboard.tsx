@@ -4,10 +4,11 @@ import './scoreboard.scss';
 export interface ScoreBoardProps {
     endTime: number,
     score: number;
+    round: number;
     onTimeout: () => void;
 };
 
-const ScoreBoard = ({ endTime, score, onTimeout }: ScoreBoardProps) => {
+const ScoreBoard = ({ endTime, round, score, onTimeout }: ScoreBoardProps) => {
     const [currTime, setCurrTime] = useState(() => new Date().getTime());
 
     const formatTimeleft = () => {
@@ -41,7 +42,7 @@ const ScoreBoard = ({ endTime, score, onTimeout }: ScoreBoardProps) => {
 
     return (
         <div className="ScoreBoard">
-            {formatTimeleft()} | {Math.round(score).toLocaleString(undefined, {minimumIntegerDigits: 7 })}
+            {formatTimeleft()} | {round} | {Math.round(score).toLocaleString(undefined, {minimumIntegerDigits: 7 })}
         </div>
     );
 }

@@ -15,6 +15,7 @@ export interface GameReport {
 export interface GameProps {
     instance: GameInstance;
     accScore: number;
+    round: number;
     onRequestNextGame: (report: GameReport) => void;
 }
 
@@ -36,7 +37,7 @@ const charShuffle = (chars: CharIdx[]) => {
     return charsCopy.reverse();
 }
 
-const Game = ({ instance: { anagrams }, accScore, onRequestNextGame }: GameProps) => {
+const Game = ({ accScore, instance: { anagrams }, round, onRequestNextGame }: GameProps) => {
     // ------------------------------------------------------------------------
     // GAME STATE
     const words: number = anagrams.length;
@@ -177,7 +178,7 @@ const Game = ({ instance: { anagrams }, accScore, onRequestNextGame }: GameProps
             if (!activatePressToContinue) return;
 
             const ignoredKeys = ["Alt", "Control", "Shift", "Tab"];
-            if (!ignoredKeys.includes(e.key) && e.altKey && e.ctrlKey) {
+            if (!ignoredKeys.includes(e.key) || e.altKey || e.ctrlKey) {
                 onRequestNextGame({ qualified, score: currScore });
             }
             return;
@@ -202,7 +203,7 @@ const Game = ({ instance: { anagrams }, accScore, onRequestNextGame }: GameProps
     return (
         <div className="Game fullscreen" tabIndex={0} onKeyDown={onKey} ref={divRef}>
             <div className='ScoreBoard'>
-                <ScoreBoard endTime={endTime} score={accScore + currScore} onTimeout={onTimeout} />
+                <ScoreBoard endTime={endTime} score={accScore + currScore} round={round} onTimeout={onTimeout} />
             </div>
             <div className="Anagrams">
                 <div className="Anagrams-columns">
