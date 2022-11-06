@@ -3,6 +3,12 @@
 Wordrow is a reimplementation of the classic internet puzzle game [Text
 Twist](texttwist.info) as a static webpage with a modern and sleek design.
 
+<div align="center">
+  <img src="/example.jpg"
+       alt="Image of game"
+       style="max-width:32rem; width:32rem;" />
+</div>
+
 The _main_ branch is split in three:
 
 - **dict**
