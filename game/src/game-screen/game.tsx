@@ -16,15 +16,17 @@ const charShuffle = (chars: CharIdx[]) => {
     let charsCopy = chars.map(c => c);
     charsCopy.sort(
         ([_ca,ia], [_cb,ib]) => {
-            if (ia !== null || ib !== null)
-                 return ia === null ? 1 : -1;
-            else return -1;
+            if (ia === null && ib === null)
+                return 0;
+            if (ia === null || ib === null)
+                 return ia === null ? -1 : 1;
+            else return 0;
         }
     );
     const firstNonNull = charsCopy.findIndex(([_,i]) => i !== null);
     console.log(charsCopy, firstNonNull);
     shuffle(charsCopy, firstNonNull, charsCopy.length);
-    return charsCopy
+    return charsCopy.reverse();
 }
 
 const Game = ({ instance: { anagrams } }: GameProps) => {
