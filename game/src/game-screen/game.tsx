@@ -40,15 +40,15 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     const [guessCache, setGuessCache] = useState<(string | null)[]>(
         () => Array(words).fill(null)
     );
-
+    const [gameEnd, setGameEnd] = useState<boolean>(
+        () => false
+    );
     const [endTime, setEndTime] = useState<number>(
-        () => new Date().getTime() + 120000
+        () => new Date().getTime() + 1200
     );
 
     const min_word_length: number = anagrams[0].length;
     const max_word_length: number = anagrams[words-1].length;
-    
-    
 
     // Derive selected word and its true length (i.e. the last index that is non-null)
     var selected_length: number = max_word_length;
@@ -108,7 +108,11 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
             // Collapse guess from a char[] to a string
             const guess: string = selected.map(c => c === null ? "" : c).join("");
             if (anagrams.includes(guess)) {
+                const newGuessed: boolean[] = guessed.map((v,idx) => v || anagrams[idx] === guess);
+                const hasWon: boolean = !guessed.find(v => !v);
+
                 setGuessed(guessed.map((v,idx) => v || anagrams[idx] === guess));
+                setGameEnd(!hasWon);
             }
             setChars(chars.map(([c,i]) => [c,null]));
         }
@@ -128,6 +132,10 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
                 }
             }));
         }
+    }
+
+    const onTimeout = () => {
+        setGameEnd(true);
     }
 
     // ------------------------------------------------------------------------
@@ -152,8 +160,8 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     // VISUAL - scoreboard
     return (
         <div className="Game fullscreen" tabIndex={0} onKeyDown={onKey} ref={divRef}>
-            <div className='ScoreBoard'> 
-                <ScoreBoard endTime={endTime} score={0}/>
+            <div className='ScoreBoard'>
+                <ScoreBoard endTime={endTime} score={0} onTimeout={onTimeout} />
             </div>
             <div className="Anagrams">
                 <div className="Anagrams-columns">
@@ -163,7 +171,8 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
                             .map((word_length, i) => (<div className="Anagrams-column" key={i}>
                                 {anagrams.map((w,i) => [w,i] as [string,number])
                                          .filter(([w,_]) => w.length === word_length)
-                                         .map(([w,i]) => <Word word={w} guessed={guessed[i]} key={i}
+                                         .map(([w,i]) => <Word word={w}  key={i}
+                                                               guessed={guessed[i]} show={gameEnd}
                                                                url={`https://www.ordnet.dk/ddo/ordbog?query=${w}`}/>)}
                             </div>))
                     }
