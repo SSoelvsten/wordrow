@@ -51,8 +51,9 @@ private:
 
   std::unordered_map<char, std::vector<aff_rule>> _rules;
 
-  std::vector<std::string> _out_strings;
-  size_t _out_idx = (size_t) -1;
+  std::unordered_set<std::string> _out_strings;
+  std::unordered_set<std::string>::iterator _out_curr;
+  std::unordered_set<std::string>::iterator _out_end;
 
   const std::regex _is_lower_char;
 
@@ -87,7 +88,7 @@ private:
       : split(split(_dict_line[1], ' ')[0], ',');
 
     _out_strings.clear();
-    _out_strings = { _dict_word };
+    _out_strings.insert(_dict_word);
 
     if (_dict_line.size() == 2) {
       for (const std::string& i : _dict_rules) {
@@ -102,13 +103,11 @@ private:
              << _dict_word.substr(start_idx, sub_len)
              << (ar.ty == aff_rule::SUFFIX ? ar.add : "");
 
-          _out_strings.push_back(ss.str());
+          _out_strings.insert(ss.str());
         }
       }
-    } else {
-      _out_strings = { _dict_word };
     }
-    _out_idx = (size_t) 0;
+    _out_curr = _out_strings.begin();
     return true;
   }
 
@@ -161,7 +160,7 @@ public:
   //////////////////////////////////////////////////////////////////////////////
   bool can_pull()
   {
-    return _out_idx < _out_strings.size() || _dict_stream.peek() != EOF;
+    return _out_curr != _out_end || _dict_stream.peek() != EOF;
   }
 
 public:
@@ -171,11 +170,7 @@ public:
   std::string peek()
   {
     assert(can_pull());
-
-    if (_out_idx < _out_strings.size()) {
-      return _out_strings[_out_idx];
-    }
-    return _out_strings[_out_idx];
+    return *_out_curr;
   }
 
 public:
@@ -186,15 +181,9 @@ public:
   {
     assert(can_pull());
 
-    if (_out_idx < _out_strings.size()) {
-      return _out_strings[_out_idx++];
-    }
+    std::string ret = *(_out_curr++);
 
-    while(can_pull() && !generate_composite_words()) { }
-
-    std::string ret = _out_strings[_out_idx++];
-
-    if (_out_strings.size() <= _out_idx)
+    if (_out_curr == _out_end)
       while(can_pull() && !generate_composite_words()) { }
 
     return ret;

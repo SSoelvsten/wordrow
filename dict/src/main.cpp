@@ -27,7 +27,7 @@ std::string gen_json(const std::unordered_set<std::string> &words)
     ss << "    \"" << w << "\"," << std::endl;
   }
   ss.seekp(-2,ss.cur);
-  ss << std::endl 
+  ss << std::endl
      << "  ]" << std::endl
      << "}" << std::endl;
 
