@@ -3,6 +3,7 @@ import './game.scss';
 import { GameInstance } from '../game-instance';
 import InputBox from './input-box';
 import Word from './word';
+import shuffle from '../shuffle';
 
 export interface GameProps {
     instance: GameInstance;
@@ -10,12 +11,19 @@ export interface GameProps {
 
 type CharIdx = [string, number | null];
 
-const shuffle = (chars: CharIdx[]) => {
-    return chars.map(c => c).sort(([_ca,ia], [_cb,ib]) => {
-        if (ia !== null || ib !== null)
-             return ia === null ? 1 : -1;
-        else return Math.random() - 0.5;
-    })
+const charShuffle = (chars: CharIdx[]) => {
+    let charsCopy = chars.map(c => c);
+    charsCopy.sort(
+        ([_ca,ia], [_cb,ib]) => {
+            if (ia !== null || ib !== null)
+                 return ia === null ? 1 : -1;
+            else return -1;
+        }
+    );
+    const firstNonNull = charsCopy.findIndex(([_,i]) => i !== null);
+    console.log(charsCopy, firstNonNull);
+    shuffle(charsCopy, firstNonNull, charsCopy.length);
+    return charsCopy
 }
 
 const Game = ({ instance: { anagrams } }: GameProps) => {
@@ -23,7 +31,7 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     // GAME STATE
     const words: number = anagrams.length;
     const [chars, setChars] = useState<CharIdx[]>(
-        () => shuffle(anagrams[words-1].split('').map((c) => [c, null]))
+        () => charShuffle(anagrams[words-1].split('').map((c) => [c, null]))
     );
     const [guessed, setGuessed] = useState<boolean[]>(
         () => Array(words).fill(false)
@@ -59,7 +67,7 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     // ------------------------------------------------------------------------
     // GAME LOGIC
     const actionShuffle = () => {
-        setChars(shuffle(chars));//shuffleTwo(chars, anagrams)); // <-- TODO: different shuffle?
+        setChars(charShuffle(chars));//shuffleTwo(chars, anagrams)); // <-- TODO: different shuffle?
     }
 
     const actionDelete = (idx?: number) => {

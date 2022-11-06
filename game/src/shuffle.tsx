@@ -1,6 +1,27 @@
-import React from "react";
-import { resourceLimits } from "worker_threads";
+const swap = (arr: any[], i: number, j: number) => {
+  const tmp = arr[i]
+  arr[i] = arr[j];
+  arr[j] = tmp;
+}
 
+export const shuffle = (arr: any[], i: number, j: number) => {
+  if (i < 0) { i = 0; }
+  if (arr.length < i) { i = arr.length; }
+  if (arr.length < j) { j = arr.length; }
+
+  if (j <= i) return;
+
+  for (let k: number = i; k < j; k++) {
+    const other = i + Math.floor(Math.random() * (j-i));
+    swap(arr, k, other);
+  }
+}
+
+export default shuffle;
+
+// ----------------------------------------------------------------------------
+// Here be dragons
+/*
 export function shuffleTwo<A>(input: string[], check: string[]) {
     var result: Map<string, number> = new Map;
     const perms: string[][] = permutations(input);
@@ -15,8 +36,7 @@ export function shuffleTwo<A>(input: string[], check: string[]) {
                 for (let l = 0; l < checkWord.length; l++) {
                     result.set(r, Number(checkWord[l] === r[i]) + temp!);
                 }
-                
-            }*/
+            }*//*
             result.set(p, result.get(p)! + hammingDist(p, check[k]));
         }
     });
@@ -66,10 +86,4 @@ function findAllPermutations<A>(arr: A[]) {
         }
     }
   };
-
-const swapElements = (arr: any[], i: any, j: any) => {
-    var arr2 = arr.map(c => c);
-    arr2[i] = arr[j];
-    arr2[j] = arr[i];
-    return arr2;
-}
+*/
