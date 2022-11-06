@@ -10,7 +10,7 @@ export interface WordProps {
 
 export const Word = ({ guessed, show, url, word } : WordProps) => {
     const getDefinition = () => {
-        if(!guessed) return;
+        if(!guessed && !show) return;
         window.open(url, "_blank");
     }
     return (
