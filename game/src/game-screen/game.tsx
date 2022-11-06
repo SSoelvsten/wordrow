@@ -44,8 +44,12 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
         () => false
     );
     const [endTime, setEndTime] = useState<number>(
-        () => new Date().getTime() + 120000
+        () => new Date().getTime() + 1200
     );
+
+    const letterScore: number = 100;
+    const maxScore: number = anagrams.reduce((acc, w) => acc + w.length, 0) * letterScore;
+    const currScore: number = anagrams.filter((w,i) => guessed[i]).reduce((acc,w) => acc+w.length, 0) * letterScore;
 
     const min_word_length: number = anagrams[0].length;
     const max_word_length: number = anagrams[words-1].length;
@@ -74,18 +78,26 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     // ------------------------------------------------------------------------
     // GAME LOGIC
     const actionShuffle = () => {
+        if (gameEnd) return;
+
         setChars(charShuffle(chars));//shuffleTwo(chars, anagrams)); // <-- TODO: different shuffle?
     }
 
     const actionDelete = (idx?: number) => {
+        if (gameEnd) return;
+
         setChars(chars.map(([c,i]) => i === selected_length-1 ? [c,null] : [c,i]));
     }
 
     const actionClear = () => {
+        if (gameEnd) return;
+
         setChars(chars.map(([c, _]) => ([c, null])));
     }
 
     const actionSubmit = () => {
+        if (gameEnd) return;
+
         const emptySelection : boolean = !selected[0];
 
         // If nothing is selected, recreate the indices for the word in 'guessCache'
@@ -120,6 +132,7 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
 
     const actionType = (char: string) => {
         if (char.length !== 1) return; // <-- ignore non-char inputs
+        if (gameEnd) return;
 
         if (chars.filter(([c,i]) => i === null).map(([c,i]) => c).includes(char)) {
             var hasSelected: boolean = false;
@@ -161,7 +174,7 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     return (
         <div className="Game fullscreen" tabIndex={0} onKeyDown={onKey} ref={divRef}>
             <div className='ScoreBoard'>
-                <ScoreBoard endTime={endTime} score={0} onTimeout={onTimeout} />
+                <ScoreBoard endTime={endTime} score={currScore} onTimeout={onTimeout} />
             </div>
             <div className="Anagrams">
                 <div className="Anagrams-columns">
