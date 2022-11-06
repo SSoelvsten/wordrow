@@ -1,7 +1,7 @@
 MIN := 3
 MAX := 6
-DIC_PATH := libreoffice-dicts/en/en_GB.dic
-AFF_PATH := libreoffice-dicts/en/en_GB.aff
+DIC_PATH := ../dicts/da_DK.dic
+AFF_PATH := ../dicts/da_DK.aff
 
 main:
 	@mkdir -p out/
