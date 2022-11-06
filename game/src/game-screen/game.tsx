@@ -44,7 +44,7 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
         () => false
     );
     const [endTime, setEndTime] = useState<number>(
-        () => new Date().getTime() + 1200
+        () => new Date().getTime() + 120000
     );
 
     const min_word_length: number = anagrams[0].length;

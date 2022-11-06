@@ -12,9 +12,9 @@ const ScoreBoard = ({ endTime, score, onTimeout }: ScoreBoardProps) => {
         const left = secondsLeft();
         if (left < 0) return "00:00:000";
 
-        const millis = Math.round(left % 1000);
-        const seconds = Math.round((left / 1000) % 60);
-        const minutes = Math.round((left / 1000) / 60);
+        const millis = Math.floor(left % 1000);
+        const seconds = Math.floor((left / 1000) % 60);
+        const minutes = Math.floor((left / 1000) / 60);
 
         return `${
             minutes.toLocaleString(undefined, { minimumIntegerDigits: 2 })
