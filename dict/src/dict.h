@@ -65,6 +65,13 @@ private:
       : std::stoi(s);
   }
 
+  std::vector<std::string> parse_rules(const std::string &s)
+  {
+    return s.size() == 0
+      ? std::vector<std::string>()
+      : split(split(s, ' ')[0], ',');
+  }
+
 private:
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Populates _out_strings with new words to pull and returns `true` if
@@ -77,38 +84,60 @@ private:
     if (_raw_line.size() == 0) { return false; }    // <-- skip empty lines
     if (_raw_line.find(" ") == 0) { return false; } // <-- skip weird lines due to unintended line breaks
 
-    std::vector<std::string> _dict_line = split(_raw_line, '/');
-    if (_dict_line.size() > 2) { return false; }
+    std::vector<std::string> _next_with_rules = split(_raw_line, '/');
+    if (_next_with_rules.size() > 2) { return false; }
 
-    std::string _dict_word = _dict_line[0];
-    if (!regex_match(_dict_word, _is_lower_char)) { return false; }
-
-    std::vector<std::string> _dict_rules = _dict_line.size() == 1
-      ? std::vector<std::string>(0)
-      : split(split(_dict_line[1], ' ')[0], ',');
+    std::string _next_word = _next_with_rules[0];
+    if (!regex_match(_next_word, _is_lower_char)) { return false; }
 
     _out_strings.clear();
-    _out_strings.insert(_dict_word);
 
-    if (_dict_line.size() == 2) {
-      for (const std::string& i : _dict_rules) {
+    // Depth-first exploration of all words reachable.
+    std::vector<std::pair<std::string, std::string>> dfs_stack;
+    dfs_stack.push_back(std::make_pair(_next_word,
+                                       _next_with_rules.size() > 1 ? _next_with_rules[1] : ""));
+
+    while (!dfs_stack.empty()) {
+      _next_word = dfs_stack.back().first;
+      _out_strings.insert(_next_word);
+
+      std::vector<std::string> _next_rules = parse_rules(dfs_stack.back().second);
+      dfs_stack.pop_back();
+
+      for (const std::string &i : _next_rules) {
         const char identifier = parse_identifier(i);
-        for (const aff_rule ar : _rules[identifier]) {
-          if (!regex_match(_dict_word, ar.guard)) { continue; }
-          size_t start_idx = ar.ty == aff_rule::PREFIX ? ar.del.size() : 0u;
-          size_t sub_len = _dict_word.size() - ar.del.size();
 
-          std::stringstream ss;
-          ss << (ar.ty == aff_rule::PREFIX ? ar.add : "")
-             << _dict_word.substr(start_idx, sub_len)
+        auto aff_search = _rules.find(identifier);
+        if (aff_search == _rules.end()) {
+          continue;
+        }
+
+        for (const aff_rule &ar : (*aff_search).second) {
+          if (!regex_match(_next_word, ar.guard)) {
+            continue;
+          }
+          const size_t start_idx = ar.ty == aff_rule::PREFIX ? ar.del.size() : 0u;
+          const size_t sub_len = _next_word.size() - ar.del.size();
+
+          std::stringstream _ss;
+          _ss << (ar.ty == aff_rule::PREFIX ? ar.add : "")
+             << _next_word.substr(start_idx, sub_len)
              << (ar.ty == aff_rule::SUFFIX ? ar.add : "");
 
-          _out_strings.insert(ss.str());
+          const std::vector<std::string> _rec_with_rules = split(_ss.str(), '/');
+          assert(_rec_with_rules.size() > 0);
+          const std::string _rec_word = _rec_with_rules[0];
+
+          if (_out_strings.find(_rec_word) == _out_strings.end()) { // TODO: account for different rules?
+            dfs_stack.push_back(std::make_pair(_rec_word,
+                                               _rec_with_rules.size() > 1 ? _rec_with_rules[1] : ""));
+          }
         }
       }
     }
+
     _out_curr = _out_strings.begin();
-    return true;
+    return _out_strings.size() > 0;
   }
 
 public:
@@ -140,15 +169,18 @@ public:
 
         const std::string deletion = _line_args[2] == "0" ? "" : _line_args[2];
         const std::string addition = _line_args[3];
-        const std::string guard_regex = _line_args[4];
+        const std::string guard_regex = split(_line_args[4], '\t')[0];
 
-        if (!regex_match(addition, _is_lower_char)) continue;
+        if (!regex_match(split(addition, '/')[0], _is_lower_char)) {
+          //std::cerr << "skipping rule that adds: " << addition << "  (" << split(addition, '/')[0] << ")" << std::endl;
+          continue;
+        }
 
         _rule_set.push_back(aff_rule(type, deletion, addition, guard_regex));
       }
 
-      // if (_rule_set.size() > 0)
-      _rules[identifier] = _rule_set;
+      if (_rule_set.size() > 0)
+        _rules[identifier] = _rule_set;
     }
 
     while (can_pull() && !generate_composite_words()) { }
