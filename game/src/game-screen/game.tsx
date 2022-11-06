@@ -66,7 +66,7 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
     const maxScore: number = anagrams.reduce((acc, w) => acc + scoreWord(w), 0);
 
     const [endTime, setEndTime] = useState<number>(
-        () => new Date().getTime() + 60 * 1000 /* 30 seconds */
+        () => new Date().getTime() + maxScore
     );
 
     const currScore: number  = anagrams.filter((w,i) => guessed[i]).reduce((acc,w) => acc+scoreWord(w), 0);
