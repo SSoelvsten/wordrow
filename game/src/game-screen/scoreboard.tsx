@@ -1,14 +1,16 @@
 import React, { useEffect, useState } from "react";
+import { GameLanguage } from "../game-instance";
 import './scoreboard.scss';
 
 export interface ScoreBoardProps {
-    endTime: number,
+    endTime: number;
+    language: GameLanguage;
     score: number;
     round: number;
     onTimeout: () => void;
 };
 
-const ScoreBoard = ({ endTime, round, score, onTimeout }: ScoreBoardProps) => {
+const ScoreBoard = ({ endTime, language, round, score, onTimeout }: ScoreBoardProps) => {
     const [currTime, setCurrTime] = useState(() => new Date().getTime());
 
     const formatTimeleft = () => {
@@ -42,7 +44,7 @@ const ScoreBoard = ({ endTime, round, score, onTimeout }: ScoreBoardProps) => {
 
     return (
         <div className="ScoreBoard">
-            {formatTimeleft()} <b>| {round} |</b> {Math.round(score).toLocaleString(undefined, {minimumIntegerDigits: 7 })}
+            {formatTimeleft()} <b>| {round} |</b> {Math.round(score).toLocaleString(language, {minimumIntegerDigits: 7 })}
         </div>
     );
 }

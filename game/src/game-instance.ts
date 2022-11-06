@@ -1,6 +1,6 @@
 export enum GameLanguage {
-    GB = "en_GB",
-    DK = "da_DK",
+    GB = "en-GB",
+    DK = "da-DK",
 }
 
 export interface GameIndex {

@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './game.scss';
-import { GameInstance } from '../game-instance';
+import { GameInstance, GameLanguage } from '../game-instance';
 import InputBox from './input-box';
 import Word from './word';
 import shuffle from '../shuffle';
@@ -14,6 +14,7 @@ export interface GameReport {
 
 export interface GameProps {
     instance: GameInstance;
+    language: GameLanguage;
     accScore: number;
     round: number;
     onRequestNextGame: (report: GameReport) => void;
@@ -37,7 +38,7 @@ const charShuffle = (chars: CharIdx[]) => {
     return charsCopy.reverse();
 }
 
-const Game = ({ accScore, instance: { anagrams }, round, onRequestNextGame }: GameProps) => {
+const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNextGame }: GameProps) => {
     // ------------------------------------------------------------------------
     // GAME STATE
     const words: number = anagrams.length;
@@ -203,7 +204,7 @@ const Game = ({ accScore, instance: { anagrams }, round, onRequestNextGame }: Ga
     return (
         <div className="Game fullscreen" tabIndex={0} onKeyDown={onKey} ref={divRef}>
             <div className='ScoreBoard'>
-                <ScoreBoard endTime={endTime} score={accScore + currScore} round={round} onTimeout={onTimeout} />
+                <ScoreBoard endTime={endTime} language={language} score={accScore + currScore} round={round} onTimeout={onTimeout} />
             </div>
             <div className="Anagrams">
                 <div className="Anagrams-columns">
@@ -232,7 +233,10 @@ const Game = ({ accScore, instance: { anagrams }, round, onRequestNextGame }: Ga
             }
             {gameEnd &&
                 <div className="Row">
-                    <EndScreen qualified={qualified} score={currScore} showContinue={activatePressToContinue} />
+                    <EndScreen language={language}
+                               qualified={qualified}
+                               score={currScore}
+                               showContinue={activatePressToContinue} />
                 </div>
             }
         </div>

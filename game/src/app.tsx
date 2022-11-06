@@ -5,7 +5,7 @@ import Game, { GameReport } from './game-screen/game';
 const JSONHeader = { headers : {  'Content-Type': 'application/json', 'Accept': 'application/json' } };
 
 const App = () => {
-  const language: GameLanguage = GameLanguage.DK;
+  const gameLanguage: GameLanguage = GameLanguage.DK;
   const gameIdx: number = 0;
 
   const [accScore, setAccScore] = useState<number>(0);
@@ -14,13 +14,13 @@ const App = () => {
 
   const getGame = () => {
     // Fetch from the index file for the desired language
-    fetch(`dict/${language}/index.json`, JSONHeader)
+    fetch(`dict/${gameLanguage}/index.json`, JSONHeader)
     // Convert response as a GameIndex object
     .then((resp: Response)     => resp.json())
     // Randomly choose an index
     .then((data: GameIndex)    => Math.round(Math.random() * (data.instances-1)))
     // Fetch specific game based on language and index
-    .then((gameIdx: number)    => fetch(`dict/${language}/${gameIdx}.json`, JSONHeader))
+    .then((gameIdx: number)    => fetch(`dict/${gameLanguage}/${gameIdx}.json`, JSONHeader))
     // Convert response to GameInstance object
     .then((resp: Response)     => resp.json())
     // Set gameInstance
@@ -40,7 +40,11 @@ const App = () => {
       <>
       { gameInstance &&
         <div className="App fullscreen">
-          <Game instance={gameInstance} accScore={accScore} round={round} onRequestNextGame={getNextGame} />
+          <Game instance={gameInstance}
+                language={gameLanguage}
+                accScore={accScore}
+                round={round}
+                onRequestNextGame={getNextGame} />
         </div>
       }
       </>
