@@ -43,12 +43,13 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     const [gameEnd, setGameEnd] = useState<boolean>(
         () => false
     );
-    const [endTime, setEndTime] = useState<number>(
-        () => new Date().getTime() + 1200
-    );
 
     const letterScore: number = 100;
     const maxScore: number = anagrams.reduce((acc, w) => acc + w.length, 0) * letterScore;
+    const [endTime, setEndTime] = useState<number>(
+        () => new Date().getTime() + maxScore * 10
+    );
+
     const currScore: number = anagrams.filter((w,i) => guessed[i]).reduce((acc,w) => acc+w.length, 0) * letterScore;
 
     const min_word_length: number = anagrams[0].length;
