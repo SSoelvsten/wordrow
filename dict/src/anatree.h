@@ -123,6 +123,8 @@ private:
     // -> Insert new node in-between
     if (*curr_char < p->_char) {
       const node::ptr np = node::make_node(*curr_char, p, node::make_node());
+      np->_words = p->_words;
+      p->_words = std::unordered_set<string>();
       _size += 1;
       np->_children[true]  = insert_word(np->_children[true], w, ++curr_char, end);
       return np;
