@@ -103,7 +103,6 @@ private:
              << (ar.ty == aff_rule::SUFFIX ? ar.add : "");
 
           _out_strings.push_back(ss.str());
-          break;
         }
       }
     } else {
