@@ -20,7 +20,7 @@ The _main_ branch is split in three:
   the anagrams in the given dictionary.
 
 - **game**
-  The source files for the game logic of the very browser.
+  The source files for the game logic run in as a static website in the browser.
 
 These are precompiled into the final game served on the *gh-pages* branch.
 
