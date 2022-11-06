@@ -42,7 +42,7 @@ const ScoreBoard = ({ endTime, round, score, onTimeout }: ScoreBoardProps) => {
 
     return (
         <div className="ScoreBoard">
-            {formatTimeleft()} | {round} | {Math.round(score).toLocaleString(undefined, {minimumIntegerDigits: 7 })}
+            {formatTimeleft()} <b>| {round} |</b> {Math.round(score).toLocaleString(undefined, {minimumIntegerDigits: 7 })}
         </div>
     );
 }
