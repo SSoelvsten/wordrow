@@ -14,7 +14,7 @@ export const Word = ({ guessed, show, url, word } : WordProps) => {
         window.open(url, "_blank");
     }
     return (
-        <div className={"Word" + (guessed ? " Guessed" : "")} onClick={getDefinition}>
+        <div className={"Word" + (guessed ? " Guessed" : "") + (show ? " Show" : "")} onClick={getDefinition}>
             {word.split('')
                  .map(c => guessed || show ? c : "")
                  .map((c,i) => <div className="Letter"

@@ -7,7 +7,7 @@
     display: flex;
     margin: 1rem;
 
-    &.Guessed {
+    &.Guessed, &.Show {
         cursor: help;
     }
 
