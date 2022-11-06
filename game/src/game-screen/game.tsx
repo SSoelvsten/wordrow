@@ -179,6 +179,7 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     // https://stackabuse.com/how-to-set-focus-on-element-after-rendering-with-react/
     const divRef = useRef<any>(null);
     useEffect(() => { divRef.current.focus(); }, []);
+
     // ------------------------------------------------------------------------
     // VISUAL - scoreboard
     return (
@@ -201,12 +202,16 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
                     }
                 </div>
             </div>
-            <div className="Row">
-                {selected.map((c,idx) => (<InputBox content={c || " "} key={idx} />))}
-            </div>
-            <div className="Row">
-                {chars.map(([c,i],idx) => (<InputBox content={i === null ? c : "_"} key={idx} />))}
-            </div>
+            {!gameEnd &&
+                <>
+                    <div className="Row">
+                        {selected.map((c,idx) => (<InputBox content={c || " "} key={idx} />))}
+                    </div>
+                    <div className="Row">
+                        {chars.map(([c,i],idx) => (<InputBox content={i === null ? c : "_"} key={idx} />))}
+                    </div>
+                </>
+            }
         </div>
     );
 }
