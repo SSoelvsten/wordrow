@@ -5,7 +5,7 @@ import Game from './game-screen/game';
 const JSONHeader = { headers : {  'Content-Type': 'application/json', 'Accept': 'application/json' } };
 
 const App = () => {
-  const language: GameLanguage = GameLanguage.GB;
+  const language: GameLanguage = GameLanguage.DK;
   const gameIdx: number = 0;
 
   const [GameInstance, setGameInstance] = useState<GameInstance | undefined>(undefined);
