@@ -30,11 +30,14 @@ const ScoreBoard = ({ endTime, score, onTimeout }: ScoreBoardProps) => {
     useEffect(() => {
         const timerId = setInterval(() => {
             const tick = new Date().getTime();
-            if (endTime - tick < 0) onTimeout();
             setCurrTime(tick);
         }, 50);
         return () => clearInterval(timerId);
     }, []);
+
+    useEffect(() => {
+        if (endTime - currTime < 0) onTimeout();
+    }, [currTime]);
 
     return (
         <div className="ScoreBoard">
