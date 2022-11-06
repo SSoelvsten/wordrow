@@ -7,6 +7,10 @@
     display: flex;
     margin: 1rem;
 
+    &.Guessed {
+        cursor: help;
+    }
+
     .Letter {
         font-size: $letter-font-size;
         min-width: $letter-font-size;

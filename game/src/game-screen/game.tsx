@@ -4,6 +4,7 @@ import { GameInstance } from '../game-instance';
 import InputBox from './input-box';
 import Word from './word';
 import shuffle from '../shuffle';
+import ScoreBoard from './scorekeeper';
 
 export interface GameProps {
     instance: GameInstance;
@@ -136,14 +137,18 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
     }
 
     // ------------------------------------------------------------------------
-    // VISUAL
+    // VISUAL - GAME
 
     // https://stackabuse.com/how-to-set-focus-on-element-after-rendering-with-react/
     const divRef = useRef<any>(null);
     useEffect(() => { divRef.current.focus(); }, []);
-
+    // ------------------------------------------------------------------------
+    // VISUAL - scoreboard
     return (
         <div className="Game fullscreen" tabIndex={0} onKeyDown={onKey} ref={divRef}>
+            <div className='ScoreBoard'> 
+                <ScoreBoard time={1000} score={0}/>
+            </div>
             <div className="Anagrams">
                 <div className="Anagrams-columns">
                     {
@@ -152,7 +157,8 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
                             .map((word_length, i) => (<div className="Anagrams-column" key={i}>
                                 {anagrams.map((w,i) => [w,i] as [string,number])
                                          .filter(([w,_]) => w.length === word_length)
-                                         .map(([w,i]) => <Word word={w} guessed={guessed[i]} key={i} />)}
+                                         .map(([w,i]) => <Word word={w} guessed={guessed[i]} key={i}
+                                                               url={`https://www.ordnet.dk/ddo/ordbog?query=${w}`}/>)}
                             </div>))
                     }
                 </div>
@@ -165,6 +171,8 @@ const Game = ({ instance: { anagrams } }: GameProps) => {
             </div>
         </div>
     );
+
+    
 }
 
 export default Game;
