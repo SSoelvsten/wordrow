@@ -42,7 +42,7 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
     // ------------------------------------------------------------------------
     // GAME STATE
     const scoreWord = (w : string) => Math.round(Math.pow(w.length-2,2)*100);
-    const timeWord = (w : string) => scoreWord(w) * 10;
+    const timeWord = (w : string) => scoreWord(w) * 10 + 2000;
 
     // ------------------------------------------------------------------------
     // GAME STATE
