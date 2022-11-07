@@ -238,7 +238,7 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
                 <div className="Row">
                     <EndScreen language={language}
                                qualified={qualified}
-                               score={currScore}
+                               score={accScore + currScore}
                                showContinue={activatePressToContinue} />
                 </div>
             }
