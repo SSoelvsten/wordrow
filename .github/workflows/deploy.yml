@@ -1,0 +1,39 @@
+name: deploy
+
+on:
+  push:
+    branches:
+    - main
+
+jobs:
+  skip_trivial:
+    name: 'Skip Build and Deploy?'
+    continue-on-error: false
+    runs-on: ubuntu-latest
+
+    steps:
+      - id: skip_check
+        uses: fkirc/skip-duplicate-actions@master
+        with:
+          paths: '["dict/**", "game/**"]'
+
+  build:
+    name: 'Build and Deploy'
+    runs-on: ubuntu-latest
+
+    steps:
+    # Git repo set up
+    - name: Checkout commit
+      uses: actions/checkout@v2
+
+    # Make
+    - name: Make build
+      working-directory: ${{github.workspace}}
+      run: make
+
+    # Deploy on GitHub Pages if pushed to main
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@4.1.4
+      with:
+        branch: gh-pages
+        folder: ${{github.workspace}}/build/
