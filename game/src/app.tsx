@@ -6,7 +6,6 @@ const JSONHeader = { headers : {  'Content-Type': 'application/json', 'Accept': 
 
 const App = () => {
   const gameLanguage: GameLanguage = GameLanguage.DK;
-  const gameIdx: number = 0;
 
   const [accScore, setAccScore] = useState<number>(0);
   const [round, setRound] = useState<number>(1);
@@ -27,7 +26,7 @@ const App = () => {
     .then((data: GameInstance) => setGameInstance(data));
   }
 
-  useEffect(getGame, []);
+  useEffect(getGame, [gameLanguage]);
 
   const getNextGame = (previousGame: GameReport) => {
     setGameInstance(undefined);

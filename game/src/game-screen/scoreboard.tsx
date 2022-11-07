@@ -40,7 +40,7 @@ const ScoreBoard = ({ endTime, language, round, score, onTimeout }: ScoreBoardPr
 
     useEffect(() => {
         if (endTime - currTime < 0) onTimeout();
-    }, [currTime]);
+    }, [currTime, endTime, onTimeout]);
 
     return (
         <div className="ScoreBoard">

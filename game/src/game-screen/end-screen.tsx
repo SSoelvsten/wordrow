@@ -1,5 +1,4 @@
 import React from 'react';
-import { string } from 'yargs';
 import { GameLanguage } from '../game-instance';
 import './end-screen.scss';
 
