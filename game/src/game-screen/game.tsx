@@ -41,6 +41,11 @@ const charShuffle = (chars: CharIdx[]) => {
 const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNextGame }: GameProps) => {
     // ------------------------------------------------------------------------
     // GAME STATE
+    const scoreWord = (w : string) => Math.round(Math.pow(w.length-2,2)*100);
+    const timeWord = (w : string) => scoreWord(w) * 10;
+
+    // ------------------------------------------------------------------------
+    // GAME STATE
     const words: number = anagrams.length;
     const min_word_length: number = anagrams[0].length;
     const max_word_length: number = anagrams[words-1].length;
@@ -61,9 +66,7 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
         () => false
     );
 
-    const scoreWord = (w : string) => Math.round(Math.exp(w.length) * 32);
-
-    const maxScore: number = anagrams.reduce((acc, w) => acc + scoreWord(w), 0);
+    const maxScore: number = anagrams.reduce((acc, w) => acc + timeWord(w), 0);
 
     const [endTime, setEndTime] = useState<number>(
         () => new Date().getTime() + maxScore
@@ -139,7 +142,7 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
                 const hasGuessedAll: boolean = !guessed.find(v => !v);
 
                 setGuessed(newGuessed);
-                if (guessedANewWord) { setEndTime(endTime + scoreWord(guess)); }
+                if (guessedANewWord) { setEndTime(endTime + timeWord(guess)); }
                 setGameEnd(!hasGuessedAll);
             }
             setChars(chars.map(([c,i]) => [c,null]));
