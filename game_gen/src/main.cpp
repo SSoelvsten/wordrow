@@ -1,7 +1,8 @@
+#include <getopt.h>
 #include <iostream>
 #include <sstream>
 #include <string>
-#include <getopt.h>
+#include <regex>
 
 #include "anatree.h" // <-- TODO: Use <anatree.h> instead
 #include "dict.h"
@@ -61,10 +62,12 @@ int main(int argc, char* argv[]) {
   size_t words = 0u;
   size_t chars = 0u;
 
+  const std::regex is_lower_char("[a-zæøå]*");
+
   while(d.can_pull()) {
     std::string w = d.pull();
 
-    if (MIN_LENGTH <= w.size() && w.size() <= MAX_LENGTH) {
+    if (MIN_LENGTH <= w.size() && w.size() <= MAX_LENGTH && regex_match(w, is_lower_char)) {
       words++;
       chars += w.size();
       a.insert(w);
