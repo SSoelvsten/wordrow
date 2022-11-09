@@ -1,7 +1,9 @@
+.PHONY: build run clean
+
 MIN := 3
 MAX := 6
-DIC_PATH := ../dicts/da_DK.dic
-AFF_PATH := ../dicts/da_DK.aff
+DIC_PATH := ../dict/da-DK/da-DK.dic
+AFF_PATH := ../dict/da-DK/da-DK.aff
 
 build:
 	@mkdir -p build/
