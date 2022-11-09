@@ -13,47 +13,44 @@
 /// similar) data structures, enabling quick access to all 'anagrams' of each
 /// word (within or not).
 ////////////////////////////////////////////////////////////////////////////////
-// TODO: template
+template<typename word_t = std::string, typename char_t = std::string::value_type>
 class anatree {
-public:
-  typedef std::string string;
-
 private:
   class node {
   public:
     typedef std::shared_ptr<node> ptr; // <-- TODO: 'std::unique_ptr'
 
-    static constexpr char NIL = '~';
+    static constexpr char_t NIL = 0;
 
   public:
     ////////////////////////////////////////////////////////////////////////////
     /// \brief Character in this node
     ////////////////////////////////////////////////////////////////////////////
-    char _char = '~';
+    char_t m_char = NIL;
 
     ////////////////////////////////////////////////////////////////////////////
     /// \brief Binary choice on children.
     ///
-    /// Follow the 'false' pointer, if '_char' does not occur in the word.
+    /// Follow the 'false' pointer, if 'm_char' does not occur in the word.
     /// Otherwise follow the 'true' pointer, if it does.
     ////////////////////////////////////////////////////////////////////////////
-    ptr _children[2] = { nullptr, nullptr }; // <-- TODO: variable out-degree
+    ptr m_children[2] = { nullptr, nullptr }; // <-- TODO: variable out-degree
 
     ////////////////////////////////////////////////////////////////////////////
-    /// \brief
+    /// \brief Set of words that are anagrams of the path up to this node.
     ////////////////////////////////////////////////////////////////////////////
-    std::unordered_set<string> _words;
+    std::unordered_set<word_t> m_words;
 
   public:
     ////////////////////////////////////////////////////////////////////////////
     /// \brief Initialize a NIL node
     ////////////////////////////////////////////////////////////////////////////
-    void init(char c, ptr f_ptr = nullptr, ptr t_ptr = nullptr)
+    void init(char_t c, ptr f_ptr = nullptr, ptr t_ptr = nullptr)
     {
-      assert(_char == NIL && c != NIL);
-      _char = c;
-      _children[false] = f_ptr ? f_ptr : std::make_shared<node>();
-      _children[true]  = t_ptr ? t_ptr : std::make_shared<node>();
+      assert(m_char == NIL && c != NIL);
+      m_char = c;
+      m_children[false] = f_ptr ? f_ptr : std::make_shared<node>();
+      m_children[true]  = t_ptr ? t_ptr : std::make_shared<node>();
     }
 
   public:
@@ -76,21 +73,23 @@ private:
     ////////////////////////////////////////////////////////////////////////////
     /// \brief Non-nil ptr constructor
     ////////////////////////////////////////////////////////////////////////////
-    node(const char c, ptr f_ptr = make_node(), ptr t_ptr = make_node())
+    node(const char_t c, ptr f_ptr = make_node(), ptr t_ptr = make_node())
     { init(c, f_ptr, t_ptr); };
 
     ////////////////////////////////////////////////////////////////////////////
     /// \brief Non-nil constructor
     ////////////////////////////////////////////////////////////////////////////
-    static ptr make_node(char c, ptr f_ptr = make_node(), ptr t_ptr = make_node())
+    static ptr make_node(char_t c, ptr f_ptr = make_node(), ptr t_ptr = make_node())
     { return std::make_shared<node>(c, f_ptr, t_ptr); }
 
   public:
-    string to_string()
+    std::string to_string()
     {
       std::stringstream ss;
-      ss << "{ char: " << _char << ", children: { " << _children[false] << ", " << _children[true] << " }, words [ ";
-      for (const string &w : _words) {
+      ss << "{ char: " << m_char
+         << ", children: { " << m_children[false] << ", " << m_children[true]
+         << " }, words [ ";
+      for (const word_t &w : m_words) {
         ss << w << " ";
       }
       ss << "] }";
@@ -101,77 +100,81 @@ private:
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Recursively inserts a word into the anatree.
   //////////////////////////////////////////////////////////////////////////////
-  node::ptr insert_word(const node::ptr& p,
-                        const string& w,
-                        string::iterator curr_char,
-                        const string::iterator end)
+  typename node::ptr
+  insert_word(const typename node::ptr& p,
+              const word_t& w,
+              typename word_t::iterator curr,
+              const typename word_t::iterator end)
   {
     assert(p != nullptr);
 
     // Case: Iterator done
     // -> Insert word
-    if (curr_char == end) {
-      p->_words.insert(w);
+    if (curr == end) {
+      p->m_words.insert(w);
       return p;
     }
 
     // Case: NIL
     // -> Turn into non-NIL node
-    if (p->_char == node::NIL) {
-      assert(p->_children[false] == nullptr && p->_children[true] == nullptr);
-      p->init(*curr_char);
-      _size += 2;
-      p->_children[true] = insert_word(p->_children[true], w, ++curr_char, end);
+    if (p->m_char == node::NIL) {
+      assert(p->m_children[false] == nullptr && p->m_children[true] == nullptr);
+      p->init(*curr);
+      m_size += 2;
+      p->m_children[true] = insert_word(p->m_children[true], w, ++curr, end);
       return p;
     }
 
     // Case: Iterator behind
     // -> Insert new node in-between
-    if (*curr_char < p->_char) {
-      const node::ptr np = node::make_node(*curr_char, p, node::make_node());
-      np->_words = p->_words;
-      p->_words = std::unordered_set<string>();
-      _size += 1;
-      np->_children[true]  = insert_word(np->_children[true], w, ++curr_char, end);
+    if (*curr < p->m_char) {
+      const typename node::ptr np = node::make_node(*curr, p, node::make_node());
+      np->m_words = p->m_words;
+      p->m_words = std::unordered_set<word_t>();
+      m_size += 1;
+      np->m_children[true]  = insert_word(np->m_children[true], w, ++curr, end);
       return np;
     }
 
     // Case: Iterator ahead
     // -> Follow 'false' child
-    if (p->_char < *curr_char) {
-      p->_children[false] = insert_word(p->_children[false], w, curr_char, end);
+    if (p->m_char < *curr) {
+      p->m_children[false] = insert_word(p->m_children[false], w, curr, end);
       return p;
     }
 
     // Case: Iterator and node matches
     // -> Follow 'true' child
-    p->_children[true] = insert_word(p->_children[true], w, ++curr_char, end);
+    p->m_children[true] = insert_word(p->m_children[true], w, ++curr, end);
     return p;
   }
 
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Recursively gets all word on the path that matches the iterator.
   //////////////////////////////////////////////////////////////////////////////
-  std::unordered_set<string> get_words(const node::ptr p, string::iterator curr, const string::iterator end) const
+  typename std::unordered_set<word_t>
+  get_words(const typename node::ptr p,
+            typename word_t::iterator curr,
+            const typename word_t::iterator end) const
   {
     // Case: Iterator or Anatree is done
-    if (curr == end || p->_char == node::NIL) {
-      return p->_words;
+    if (curr == end || p->m_char == node::NIL) {
+      return p->m_words;
     }
 
     // Case: Iterator behind
     // -> Insert new node in-between
-    if (*curr < p->_char) {
+    if (*curr < p->m_char) {
       // Skip missing characters.
-      while (*curr < p->_char && curr != end) { ++curr; }
+      while (*curr < p->m_char && curr != end) { ++curr; }
       return get_words(p, curr, end);
     }
 
     // Case: Iterator ahead
     // -> Follow 'false' child
-    if (p->_char < *curr) {
-      std::unordered_set<string> ret(p->_words);
-      std::unordered_set<string> rec = get_words(p->_children[false], curr, end);
+    if (p->m_char < *curr) {
+      std::unordered_set<word_t> ret(p->m_words);
+      std::unordered_set<word_t> rec = get_words(p->m_children[false], curr, end);
       ret.insert(rec.begin(), rec.end());
       return ret;
     }
@@ -180,9 +183,9 @@ private:
     // -> Follow both children, merge results and add words on current node
     ++curr;
 
-    std::unordered_set<string> ret(p->_words);
-    std::unordered_set<string> rec_false = get_words(p->_children[false], curr, end);
-    std::unordered_set<string> rec_true = get_words(p->_children[true], curr, end);
+    std::unordered_set<word_t> ret(p->m_words);
+    std::unordered_set<word_t> rec_false = get_words(p->m_children[false], curr, end);
+    std::unordered_set<word_t> rec_true = get_words(p->m_children[true], curr, end);
     ret.insert(rec_false.begin(), rec_false.end());
     ret.insert(rec_true.begin(), rec_true.end());
     return ret;
@@ -191,18 +194,19 @@ private:
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Recursively obtain all words at the leaves.
   //////////////////////////////////////////////////////////////////////////////
-  std::unordered_set<string> get_leaves(const node::ptr p) const
+  typename std::unordered_set<word_t>
+  get_leaves(const typename node::ptr p) const
   {
-    std::unordered_set<string> ret;
-    if (p->_char == node::NIL) {
-      if (p->_words.size() > 0) {
-        ret.insert(*p->_words.begin());
+    std::unordered_set<word_t> ret;
+    if (p->m_char == node::NIL) {
+      if (p->m_words.size() > 0) {
+        ret.insert(*p->m_words.begin());
       }
       return ret;
     }
 
-    std::unordered_set<string> rec_false = get_leaves(p->_children[false]);
-    std::unordered_set<string> rec_true = get_leaves(p->_children[true]);
+    std::unordered_set<word_t> rec_false = get_leaves(p->m_children[false]);
+    std::unordered_set<word_t> rec_true = get_leaves(p->m_children[true]);
     ret.insert(rec_false.begin(), rec_false.end());
     ret.insert(rec_true.begin(), rec_true.end());
     return ret;
@@ -212,8 +216,8 @@ private:
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Root of the anatree (initially a NIL pointer).
   //////////////////////////////////////////////////////////////////////////////
-  node::ptr _root = node::make_node();
-  size_t _size = 1u;
+  typename node::ptr m_root = node::make_node();
+  size_t m_size = 1u;
 
 public:
   anatree() = default;
@@ -223,9 +227,9 @@ private:
   //////////////////////////////////////////////////////////////////////////////
   /// \brief
   //////////////////////////////////////////////////////////////////////////////
-  string sorted_string(const string& w) const
+  word_t sorted_word(const word_t& w) const
   {
-    string ret(w);
+    word_t ret(w);
     std::sort(ret.begin(), ret.end()); // <-- TODO: frequency-based ordering?
     return ret;
   }
@@ -234,45 +238,50 @@ public:
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Adds the word 'w' to the anatree.
   //////////////////////////////////////////////////////////////////////////////
-  void insert(const string& w)
+  void
+  insert(const word_t& w)
   {
-    string key = sorted_string(w);
-    _root = insert_word(_root, w, key.begin(), key.end());
+    word_t key = sorted_word(w);
+    m_root = insert_word(m_root, w, key.begin(), key.end());
   }
 
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Obtain all words that are anagrams of 'w'.
   //////////////////////////////////////////////////////////////////////////////
-  std::unordered_set<string> keys() const
+  typename std::unordered_set<word_t>
+  keys() const
   {
-    return get_leaves(_root);
+    return get_leaves(m_root);
   }
 
 
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Obtain all words that are anagrams of 'w'.
   //////////////////////////////////////////////////////////////////////////////
-  std::unordered_set<string> anagrams_of(const string& w) const
+  typename std::unordered_set<word_t>
+  anagrams_of(const word_t& w) const
   {
-    string key = sorted_string(w);
-    return get_words(_root, key.begin(), key.end());
+    word_t key = sorted_word(w);
+    return get_words(m_root, key.begin(), key.end());
   }
 
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Remove all nodes/anagrams.
   //////////////////////////////////////////////////////////////////////////////
-  void erase()
+  void
+  erase()
   {
-    _root = node::make_node();
-    _size = 1u;
+    m_root = node::make_node();
+    m_size = 1u;
   }
 
   //////////////////////////////////////////////////////////////////////////////
   /// \brief Number of nodes.
   //////////////////////////////////////////////////////////////////////////////
-  size_t size()
+  size_t
+  size()
   {
-    return _size;
+    return m_size;
   }
 };
 
