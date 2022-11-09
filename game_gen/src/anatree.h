@@ -8,6 +8,12 @@
 #include<string>
 #include<unordered_set>
 
+////////////////////////////////////////////////////////////////////////////////
+/// \brief A data structure capable of storing a set of 'std::string' (or
+/// similar) data structures, enabling quick access to all 'anagrams' of each
+/// word (within or not).
+////////////////////////////////////////////////////////////////////////////////
+// TODO: template
 class anatree {
 public:
   typedef std::string string;

@@ -6,7 +6,8 @@
 #include <unordered_map>
 #include <vector>
 
-//https://stackoverflow.com/a/236803/13300643
+////////////////////////////////////////////////////////////////////////////////
+// https://stackoverflow.com/a/236803/13300643
 template <typename Out>
 void split(const std::string &s, char delim, Out result) {
   std::istringstream iss(s);
@@ -23,6 +24,19 @@ std::vector<std::string> split(const std::string &s, char delim) {
   return elems;
 }
 
+////////////////////////////////////////////////////////////////////////////////
+// https://en.cppreference.com/w/cpp/string/basic_string/find_first_not_of
+std::string trim(std::string str)
+{
+  const std::string whitespace_definition = " \t\n\r\f\v";
+  str.erase(str.find_last_not_of(whitespace_definition) + 1);
+  str.erase(0,str.find_first_not_of(whitespace_definition));
+  return str;
+}
+
+////////////////////////////////////////////////////////////////////////////////
+/// \brief A stream-like parser for '.dic' and '.aff' files.
+////////////////////////////////////////////////////////////////////////////////
 class dict {
 private:
   class aff_rule {
@@ -47,11 +61,12 @@ private:
   const std::string& m_dic_file_path;
   const std::string& m_aff_file_path;
 
+  size_t m_dict_line_number = 0;
   std::fstream m_dict_stream;
 
   std::unordered_map<char, std::vector<aff_rule>> m_rules;
 
-  std::unordered_set<std::string> m_out_stringss;
+  std::unordered_set<std::string> m_out_strings;
   std::unordered_set<std::string>::iterator m_out_curr;
   std::unordered_set<std::string>::iterator m_out_end;
 
@@ -60,7 +75,7 @@ private:
 private:
   char parse_identifier(const std::string& s)
   {
-    // TODO: crash on empty string
+    // TODO: is called with an empty string
     return (regex_match(s, std::regex("[A-Za-z]")))
       ? s.at(0)
       : std::stoi(s);
@@ -75,24 +90,31 @@ private:
 
 private:
   //////////////////////////////////////////////////////////////////////////////
-  /// \brief Populates m_out_stringss with new words to pull and returns `true` if
+  /// \brief Populates m_out_strings with new words to pull and returns `true` if
   /// succesful. Keep running, until `can_pull` is empty or it returns `true`.
   //////////////////////////////////////////////////////////////////////////////
-  bool generate_composite_words()
+  bool parse_dic_line()
   {
+    m_dict_line_number += 1;
     std::string raw_line;
     if (!std::getline(m_dict_stream, raw_line)) { return false; };
     if (raw_line.size() == 0) { return false; }    // <-- skip empty lines
     if (raw_line.find("#") == 0) { return false; } // <-- skip comment lines
-    if (raw_line.find(" ") == 0) { return false; } // <-- skip weird lines due to unintended line breaks
+    if (raw_line.find(" ") == 0) {
+      std::cerr << m_dict_line_number << ": Skipped weird line, starting with whitespace" << std::endl;
+      return false;
+    }
 
     std::vector<std::string> next_with_rules = split(raw_line, '/');
-    if (next_with_rules.size() > 2) { return false; }
+    if (next_with_rules.size() > 2) {
+      std::cerr << m_dict_line_number << ": Skipped weird line, that includes two '/'" << std::endl;
+      return false;
+    }
 
     std::string next_word = next_with_rules[0];
     if (!regex_match(next_word, m_is_lower_char)) { return false; }
 
-    m_out_stringss.clear();
+    m_out_strings.clear();
 
     // Depth-first exploration of all words reachable.
     std::vector<std::pair<std::string, std::string>> dfs_stack;
@@ -101,23 +123,25 @@ private:
 
     while (!dfs_stack.empty()) {
       next_word = dfs_stack.back().first;
-      m_out_stringss.insert(next_word);
+      m_out_strings.insert(next_word);
 
-      std::vector<std::string> _next_rules = parse_rules(dfs_stack.back().second);
+      std::vector<std::string> next_rules = parse_rules(dfs_stack.back().second);
       dfs_stack.pop_back();
 
-      for (const std::string &i : _next_rules) {
-        const char identifier = parse_identifier(i);
+      // Loop through all rules to be applied to this word
+      for (const std::string &rule_str : next_rules) {
+        const char rule_id = parse_identifier(rule_str);
 
-        auto aff_search = m_rules.find(identifier);
+        auto aff_search = m_rules.find(rule_id);
         if (aff_search == m_rules.end()) {
+          // 'rule_id' is not a key in 'm_rules'. Abort this search-path.
           continue;
         }
 
+        // Loop through each specific case for this rule
         for (const aff_rule &ar : (*aff_search).second) {
-          if (!regex_match(next_word, ar.guard)) {
-            continue;
-          }
+          if (!regex_match(next_word, ar.guard)) continue;
+
           const size_t start_idx = ar.ty == aff_rule::PREFIX ? ar.del.size() : 0u;
           const size_t sub_len = next_word.size() - ar.del.size();
 
@@ -130,7 +154,7 @@ private:
           assert(rec_with_rules.size() > 0);
           const std::string rec_word = rec_with_rules[0];
 
-          if (m_out_stringss.find(rec_word) == m_out_stringss.end()) { // TODO: account for different rules?
+          if (m_out_strings.find(rec_word) == m_out_strings.end()) { // TODO: account for different rules?
             dfs_stack.push_back(std::make_pair(rec_word,
                                                rec_with_rules.size() > 1 ? rec_with_rules[1] : ""));
           }
@@ -138,24 +162,24 @@ private:
       }
     }
 
-    m_out_curr = m_out_stringss.begin();
-    return m_out_stringss.size() > 0;
+    m_out_curr = m_out_strings.begin();
+    return m_out_strings.size() > 0;
   }
 
-public:
-  dict(const std::string& dic_file_path, const std::string& aff_file_path)
-    : m_dic_file_path(dic_file_path), m_aff_file_path(aff_file_path),
-      m_dict_stream(dic_file_path),
-      m_is_lower_char("[a-zæøå]*")
+private:
+  void parse_aff()
   {
     std::stringstream buffer;
 
     // Read in rules from '.aff' file.
-    std::fstream _aff_stream(aff_file_path);
-    assert(_aff_stream.is_open());
+    std::fstream aff_stream(m_aff_file_path);
+    assert(aff_stream.is_open());
 
+    size_t line_number = 0;
     std::string aff_line;
-    while(std::getline(_aff_stream, aff_line)) {
+    while(std::getline(aff_stream, aff_line)) {
+      line_number += 1;
+
       if (aff_line.find("SFX") == -1 && aff_line.find("PFX") == -1) continue;
 
       std::vector<aff_rule> rule_set;
@@ -163,10 +187,18 @@ public:
       const std::vector<std::string> line_args = split(aff_line, ' ');
       const aff_rule::t type = line_args[0] == "SFX" ? aff_rule::SUFFIX : aff_rule::PREFIX;
       const char identifier = parse_identifier(line_args[1]);
-      const char something_weird = line_args[2][0];
+      /*const char unknown_value = line_args[2][0];*/
 
       for (size_t i = 0; i < std::stoul(line_args[3]); ++i) {
-        if (!std::getline(_aff_stream, aff_line)) { exit(-1); }
+        line_number += 1;
+
+        if (!std::getline(aff_stream, aff_line)) {
+          std::cerr << line_number
+                    << ": could not read as many .aff rules, as expected for '" << identifier << "'"
+                    << std::endl;
+          exit(-1);
+        }
+
         const std::vector<std::string> line_args = split(aff_line, ' ');
 
         const std::string deletion = line_args[2] == "0" ? "" : line_args[2];
@@ -174,7 +206,9 @@ public:
         const std::string guard_regex = split(line_args[4], '\t')[0];
 
         if (!regex_match(split(addition, '/')[0], m_is_lower_char)) {
-          //std::cerr << "skipping rule that adds: " << addition << "  (" << split(addition, '/')[0] << ")" << std::endl;
+          std::cerr << line_number
+                    << ": skipping rule that adds: " << addition << "  (" << split(addition, '/')[0] << ")"
+                    << std::endl;
           continue;
         }
 
@@ -184,22 +218,46 @@ public:
       if (rule_set.size() > 0)
         m_rules[identifier] = rule_set;
     }
-
-    while (can_pull() && !generate_composite_words()) { }
   }
 
 public:
   //////////////////////////////////////////////////////////////////////////////
-  /// \brief ...
+  /// \brief Constructor in which the dictionary parser is set up to generate
+  /// words based on the two '.dic' and '.aff' files.
+  ///
+  /// \param dic_file_path Path to the '.dic' file.
+  /// \param aff_file_path Path to the '.aff' file.
+  //////////////////////////////////////////////////////////////////////////////
+  dict(const std::string& dic_file_path, const std::string& aff_file_path)
+    : m_dic_file_path(dic_file_path), m_aff_file_path(aff_file_path),
+      m_dict_stream(dic_file_path),
+      m_is_lower_char("[a-zæøå]*")
+  {
+    // Parse the entire .aff file
+    parse_aff();
+
+    // Begin parsing the .dic file until the first set of the output has been
+    // generated in 'm_out_strings'.
+    while(m_dict_stream.peek() != EOF) {
+      const bool successfully_obtained_words = parse_dic_line();
+      if (successfully_obtained_words) break;
+    }
+  }
+
+  // TODO: constructor with a single file, guessing the path of the '.aff' file.
+
+public:
+  //////////////////////////////////////////////////////////////////////////////
+  /// \brief Whether more words exist in the library.
   //////////////////////////////////////////////////////////////////////////////
   bool can_pull()
   {
-    return m_out_curr != m_out_end || m_dict_stream.peek() != EOF;
+    return m_out_curr != m_out_end;
   }
 
 public:
   //////////////////////////////////////////////////////////////////////////////
-  /// \brief ...
+  /// \brief Obtain the next word without moving the read-head.
   //////////////////////////////////////////////////////////////////////////////
   std::string peek()
   {
@@ -209,16 +267,23 @@ public:
 
 public:
   //////////////////////////////////////////////////////////////////////////////
-  /// \brief ...
+  /// \brief Obtain the next word and move the read-head to the next.
   //////////////////////////////////////////////////////////////////////////////
   std::string pull()
   {
     assert(can_pull());
 
+    // Store next word to be returned later.
     std::string ret = *(m_out_curr++);
 
-    if (m_out_curr == m_out_end)
-      while(can_pull() && !generate_composite_words()) { }
+    // Repopulate 'm_out_strings' with the next set of words, if all words from
+    // it has been exhausted..
+    if (m_out_curr == m_out_end) {
+      while(m_dict_stream.peek() != EOF) {
+        const bool successfully_obtained_words = parse_dic_line();
+        if (successfully_obtained_words) break;
+      }
+    }
 
     return ret;
   }
