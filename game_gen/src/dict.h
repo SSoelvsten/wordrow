@@ -70,8 +70,6 @@ private:
   std::unordered_set<std::string>::iterator m_out_curr;
   std::unordered_set<std::string>::iterator m_out_end;
 
-  const std::regex m_is_lower_char;
-
 private:
   char parse_identifier(const std::string& s)
   {
@@ -112,7 +110,6 @@ private:
     }
 
     std::string next_word = next_with_rules[0];
-    if (!regex_match(next_word, m_is_lower_char)) { return false; }
 
     m_out_strings.clear();
 
@@ -188,8 +185,9 @@ private:
       const aff_rule::t type = line_args[0] == "SFX" ? aff_rule::SUFFIX : aff_rule::PREFIX;
       const char identifier = parse_identifier(line_args[1]);
       /*const char unknown_value = line_args[2][0];*/
+      const size_t number_of_rules = std::stoul(line_args[3]);
 
-      for (size_t i = 0; i < std::stoul(line_args[3]); ++i) {
+      for (size_t i = 0; i < number_of_rules; ++i) {
         line_number += 1;
 
         if (!std::getline(aff_stream, aff_line)) {
@@ -204,13 +202,6 @@ private:
         const std::string deletion = line_args[2] == "0" ? "" : line_args[2];
         const std::string addition = line_args[3];
         const std::string guard_regex = split(line_args[4], '\t')[0];
-
-        if (!regex_match(split(addition, '/')[0], m_is_lower_char)) {
-          std::cerr << line_number
-                    << ": skipping rule that adds: " << addition << "  (" << split(addition, '/')[0] << ")"
-                    << std::endl;
-          continue;
-        }
 
         rule_set.push_back(aff_rule(type, deletion, addition, guard_regex));
       }
@@ -230,8 +221,7 @@ public:
   //////////////////////////////////////////////////////////////////////////////
   dict(const std::string& dic_file_path, const std::string& aff_file_path)
     : m_dic_file_path(dic_file_path), m_aff_file_path(aff_file_path),
-      m_dict_stream(dic_file_path),
-      m_is_lower_char("[a-zæøå]*")
+      m_dict_stream(dic_file_path)
   {
     // Parse the entire .aff file
     parse_aff();
