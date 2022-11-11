@@ -73,17 +73,22 @@ private:
 private:
   char parse_identifier(const std::string& s)
   {
-    // TODO: is called with an empty string
-    return (regex_match(s, std::regex("[A-Za-z]")))
+    return (regex_match(s, std::regex("[A-Za-z]+")))
       ? s.at(0)
       : std::stoi(s);
   }
 
-  std::vector<std::string> parse_rules(const std::string &s)
+  std::vector<char> parse_rules(const std::string &s)
   {
-    return s.size() == 0
-      ? std::vector<std::string>()
-      : split(split(s, ' ')[0], ',');
+    const std::string s_trimmed = trim(s);
+
+    std::vector<char> res;
+    if (s_trimmed.size() > 0) {
+      for (const std::string &rs : split(split(s_trimmed, ' ')[0], ',')) {
+        res.push_back(parse_identifier(rs));
+      }
+    }
+    return res;
   }
 
 private:
@@ -113,47 +118,55 @@ private:
 
     m_out_strings.clear();
 
-    // Depth-first exploration of all words reachable.
-    std::vector<std::pair<std::string, std::string>> dfs_stack;
-    dfs_stack.push_back(std::make_pair(next_word,
-                                       next_with_rules.size() > 1 ? next_with_rules[1] : ""));
-
-    while (!dfs_stack.empty()) {
-      next_word = dfs_stack.back().first;
+    if (next_with_rules.size() == 1) {
+      // No rules to apply. Just add it to the output.
       m_out_strings.insert(next_word);
+    } else {
+      // Rules to apply! Do a depth-first exploration of all words reachable.
+      std::vector<std::pair<std::string, std::vector<char>>> dfs_stack;
+      dfs_stack.push_back(std::make_pair(next_word, parse_rules(next_with_rules[1])));
 
-      std::vector<std::string> next_rules = parse_rules(dfs_stack.back().second);
-      dfs_stack.pop_back();
+      while (!dfs_stack.empty()) {
+        next_word = dfs_stack.back().first;
+        std::vector<char> next_rules = dfs_stack.back().second;
+        dfs_stack.pop_back();
 
-      // Loop through all rules to be applied to this word
-      for (const std::string &rule_str : next_rules) {
-        const char rule_id = parse_identifier(rule_str);
+        // Loop through all rules to be applied to this word
+        for (const char rule_id : next_rules) {
+          auto aff_search = m_rules.find(rule_id);
+          if (aff_search == m_rules.end()) {
+            // 'rule_id' is not a key in 'm_rules'. Assuming the '.aff' file is
+            // correct, this means that the rule is a non PFX or SFX rule. These
+            // are leaves of the DFS traversal, i.e. a word to be output.
+            m_out_strings.insert(next_word);
+            continue;
+          }
 
-        auto aff_search = m_rules.find(rule_id);
-        if (aff_search == m_rules.end()) {
-          // 'rule_id' is not a key in 'm_rules'. Abort this search-path.
-          continue;
-        }
+          assert((*aff_search).second.size() > 0);
 
-        // Loop through each specific case for this rule
-        for (const aff_rule &ar : (*aff_search).second) {
-          if (!regex_match(next_word, ar.guard)) continue;
+          // Loop through each specific case for this rule
+          for (const aff_rule &ar : (*aff_search).second) {
+            if (!regex_match(next_word, ar.guard)) continue;
 
-          const size_t start_idx = ar.ty == aff_rule::PREFIX ? ar.del.size() : 0u;
-          const size_t sub_len = next_word.size() - ar.del.size();
+            const size_t start_idx = ar.ty == aff_rule::PREFIX ? ar.del.size() : 0u;
+            const size_t sub_len = next_word.size() - ar.del.size();
 
-          std::stringstream _ss;
-          _ss << (ar.ty == aff_rule::PREFIX ? ar.add : "")
-             << next_word.substr(start_idx, sub_len)
-             << (ar.ty == aff_rule::SUFFIX ? ar.add : "");
+            std::stringstream _ss;
+            _ss << (ar.ty == aff_rule::PREFIX ? ar.add : "")
+                << next_word.substr(start_idx, sub_len)
+                << (ar.ty == aff_rule::SUFFIX ? ar.add : "");
 
-          const std::vector<std::string> rec_with_rules = split(_ss.str(), '/');
-          assert(rec_with_rules.size() > 0);
-          const std::string rec_word = rec_with_rules[0];
+            const std::vector<std::string> rec_with_rules = split(_ss.str(), '/');
+            assert(rec_with_rules.size() > 0);
+            const std::string rec_word = rec_with_rules[0];
 
-          if (m_out_strings.find(rec_word) == m_out_strings.end()) { // TODO: account for different rules?
-            dfs_stack.push_back(std::make_pair(rec_word,
-                                               rec_with_rules.size() > 1 ? rec_with_rules[1] : ""));
+            if (rec_with_rules.size() == 1) {
+              // No more rules to apply: add it to the output
+              m_out_strings.insert(rec_word);
+            } else {
+              // More rules to apply: push it to the DFS stack
+              dfs_stack.push_back(std::make_pair(rec_word, parse_rules(rec_with_rules[1])));
+            }
           }
         }
       }
