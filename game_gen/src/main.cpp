@@ -109,7 +109,7 @@ int main(int argc, char* argv[]) {
   const time_point keys__end_time = get_timestamp();
 
   std::cout << "Dictionary:" << std::endl
-            << "| Generated " << total_words << " words" << std::endl
+            << "| # Words:           " << total_words << " words" << std::endl
             << "| Time:              " << std::endl
             << "| | Parsing:         " << dict_parse__time << " ms" << std::endl
     ;
