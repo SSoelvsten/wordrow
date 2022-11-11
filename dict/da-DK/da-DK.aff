@@ -657,10 +657,6 @@ COMPOUNDPERMITFLAG 35
 #Sammensætning, kun i sammensætninger
 ONLYINCOMPOUND 36
 
-#Sammensætning, bindestreg
-PFX 37 Y 1
-PFX 37 0 -/35 .	+FUGNING
-
 #Adjektiv, svagt bøjet, komparation -est
 SFX 38 Y 5
 SFX 38 0 ere/34 .	+KOMPARATIV
