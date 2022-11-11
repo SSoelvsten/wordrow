@@ -642,22 +642,6 @@ SFX 28 Y 2
 SFX 28 0 e/34 .	+PLUR_BEK
 SFX 28 0 es/34 .	+GENITIV
 
-#Sammensætning, fugeelement -s-
-SFX 29 Y 2
-SFX 29 0 s/32,35,36 .
-SFX 29 0 s/33,35,36 .
-
-#Sammensætning, fugeelement -e-
-SFX 30 Y 3
-SFX 30 0 e/32,36,35 .
-SFX 30 0 e/33,36,35 .
-SFX 30 0 e-/34 .
-
-#Sammensætning, fugeelement Ø
-SFX 31 Y 2
-SFX 31 0 0/32,36,35 .
-SFX 31 0 0/33,36,35 .
-
 #Sammensætning, start
 COMPOUNDBEGIN 32
 
@@ -1360,16 +1344,6 @@ PFX 54 Å Nordøstå/9 Å
 PFX 54 Å Sydvestå/9 Å
 PFX 54 Å Sydøstå/9 Å
 PFX 54 Å Midtå/9 Å
-
-#Sammensætning, fugeelement fjern e
-SFX 55 Y 2
-SFX 55 e 0/36,33,35 .
-SFX 55 e 0/36,35,32 .
-
-#Sammensætning, fugeelement fjern e tilføj s
-SFX 56 Y 2
-SFX 56 e s/36,32,35 .
-SFX 56 e s/36,33,35 .
 
 #Substantiv, konsonantfordobling, intetkøn, torso
 SFX 57 Y 20
