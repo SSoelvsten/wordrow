@@ -59,29 +59,41 @@ int main(int argc, char* argv[]) {
   dict d(dic_file_path, aff_file_path);
   anatree a;
 
-  size_t words = 0u;
-  size_t chars = 0u;
+  size_t total_words = 0u;
+  size_t used_words = 0u;
+  size_t used_chars = 0u;
 
   const std::regex is_lower_char("[a-zæøå]*");
 
   while(d.can_pull()) {
     std::string w = d.pull();
 
+    total_words++;
     if (MIN_LENGTH <= w.size() && w.size() <= MAX_LENGTH && regex_match(w, is_lower_char)) {
-      words++;
-      chars += w.size();
+      used_words++;
+      used_chars += w.size();
       a.insert(w);
     }
   }
 
-  std::cout << "Processed " << words << " words (" << chars << " characters)." << std::endl
-            << "Size of Anatree: " << a.size() << std::endl;
+  auto keys = a.keys();
+
+  std::cout << "Dictionary:" << std::endl
+            << "| Processed " << total_words << " words from the dictionary." << std::endl;
+
+  std::cout << std::endl;
+
+  std::cout << "Anatree:"
+            << "| # Words: " << used_words << " words (" << used_chars << " characters)." << std::endl
+            << "| # Nodes: " << a.size() << std::endl
+            << "| # Keys:  " << keys.size() << std::endl
+    ;
 
   // -----------------------------------------------------------------
   // Create game instances
   size_t idx = 0;
 
-  for (std::string k : a.keys()) {
+  for (std::string k : keys) {
     std::stringstream ss;
     ss << "./out/" << idx << ".json";
 
