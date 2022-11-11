@@ -151,12 +151,12 @@ private:
             const size_t start_idx = ar.ty == aff_rule::PREFIX ? ar.del.size() : 0u;
             const size_t sub_len = next_word.size() - ar.del.size();
 
-            std::stringstream _ss;
-            _ss << (ar.ty == aff_rule::PREFIX ? ar.add : "")
-                << next_word.substr(start_idx, sub_len)
-                << (ar.ty == aff_rule::SUFFIX ? ar.add : "");
+            assert(ar.ty != aff_rule::PREFIX); // <-- TODO: not implemented!
 
-            const std::vector<std::string> rec_with_rules = split(_ss.str(), '/');
+            std::stringstream ss;
+            ss << next_word.substr(start_idx, sub_len) << ar.add;
+
+            const std::vector<std::string> rec_with_rules = split(ss.str(), '/');
             assert(rec_with_rules.size() > 0);
             const std::string rec_word = rec_with_rules[0];
 
