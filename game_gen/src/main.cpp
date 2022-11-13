@@ -21,11 +21,24 @@ inline unsigned long int duration_of(const time_point &before, const time_point 
 #include "anatree.h" // <-- TODO: Use <anatree.h> instead
 #include "dict.h"
 
+size_t word_size(const std::string& w) {
+  // Regex of all characters that actually are two letters.
+  std::regex double_char("æ|ø|å");
+
+  // https://stackoverflow.com/a/8283994
+  const size_t double_chars = std::distance(std::sregex_iterator(w.begin(), w.end(), double_char),
+                                            std::sregex_iterator());
+
+  return w.size() - double_chars;
+}
+
 struct lexicographical_lt
 {
   bool operator()(const std::string &a, const std::string &b)
   {
-    return a.size() != b.size() ? a.size() < b.size() : a < b;
+    const size_t a_length = word_size(a);
+    const size_t b_length = word_size(b);
+    return a_length != b_length ? a_length < b_length : a < b;
   }
 };
 
@@ -47,17 +60,6 @@ std::string gen_json(const std::unordered_set<std::string> &words)
      << "}" << std::endl;
 
   return ss.str();
-}
-
-size_t word_size(const std::string& w) {
-  // Regex of all characters that actually are two letters.
-  std::regex double_char("æ|ø|å");
-
-  // https://stackoverflow.com/a/8283994
-  const size_t double_chars = std::distance(std::sregex_iterator(w.begin(), w.end(), double_char),
-                                            std::sregex_iterator());
-
-  return w.size() - double_chars;
 }
 
 int main(int argc, char* argv[]) {
