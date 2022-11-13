@@ -128,9 +128,16 @@ int main(int argc, char* argv[]) {
   // -----------------------------------------------------------------
   // Create game instances
   size_t idx = 0;
+  size_t skipped = 0;
   size_t anagrams__time = 0;
 
   for (std::string k : keys) {
+    if (k.size() < MAX_LENGTH) {
+      skipped += 1;
+      continue;
+    }
+    assert(k.size() == MAX_LENGTH);
+
     std::stringstream ss;
     ss << "./out/" << idx << ".json";
 
@@ -162,5 +169,6 @@ int main(int argc, char* argv[]) {
 
   std::cout << std::endl;
   std::cout << "Created " << idx << " games in '.out/'" << std::endl;
+  std::cout << "| Skipped " << skipped << " keys that were too short." << std::endl;
 }
 
