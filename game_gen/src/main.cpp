@@ -49,6 +49,17 @@ std::string gen_json(const std::unordered_set<std::string> &words)
   return ss.str();
 }
 
+size_t word_size(const std::string& w) {
+  // Regex of all characters that actually are two letters.
+  std::regex double_char("æ|ø|å");
+
+  // https://stackoverflow.com/a/8283994
+  const size_t double_chars = std::distance(std::sregex_iterator(w.begin(), w.end(), double_char),
+                                            std::sregex_iterator());
+
+  return w.size() - double_chars;
+}
+
 int main(int argc, char* argv[]) {
   // -----------------------------------------------------------------
   // Parse arguments from user
@@ -91,11 +102,11 @@ int main(int argc, char* argv[]) {
     dict_parse__time += duration_of(pull__start_time, pull__end_time);
 
     total_words += 1;
-    total_chars += w.size();
+    total_chars += word_size(w);
 
-    if (MIN_LENGTH <= w.size() && w.size() <= MAX_LENGTH && regex_match(w, is_lower_char)) {
+    if (MIN_LENGTH <= word_size(w) && word_size(w) <= MAX_LENGTH && regex_match(w, is_lower_char)) {
       used_words += 1;
-      used_chars += w.size();
+      used_chars += word_size(w);
 
       const time_point insert__start_time = get_timestamp();
       a.insert(w);
@@ -135,11 +146,11 @@ int main(int argc, char* argv[]) {
   for (std::string k : keys) {
     // Ignore keys that would lead to a game with the longest word not being of
     // MAX length
-    if (k.size() < MAX_LENGTH) {
+    if (word_size(k) < MAX_LENGTH) {
       skipped__short_keys += 1;
       continue;
     }
-    assert(k.size() == MAX_LENGTH);
+    assert(word_size(k) == MAX_LENGTH);
 
     std::stringstream ss;
     ss << "./out/" << idx << ".json";
