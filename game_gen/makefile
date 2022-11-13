@@ -20,3 +20,6 @@ run:
 
 clean:
 	@rm -rf build
+
+clean/out:
+	@rm -rf out
