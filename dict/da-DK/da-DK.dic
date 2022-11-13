@@ -221,7 +221,7 @@ adducere/1,21,22,79,39
 adductor/10,39
 adduktion/10,11,2,39
 adduktor/10,11,2,39
-adel/34,65,10,39
+adel/65,10,39
 adelen
 adelens
 adelbåren/12,49,10,39
@@ -311,7 +311,7 @@ adresseløs/24,10,49,39
 adressere/1,21,22,79,39
 adræt/59,10,49,39
 adræthed/44,10,39
-ådsel/64,10,34,66,39
+ådsel/64,10,66,39
 ådselbille/10,11,2,39
 ådselgrib/10,19,39
 ådselæder/5,2,10,39
@@ -336,7 +336,7 @@ adspurgtes
 adspørg
 adstadig/10,39,24,23,49
 advare/1,21,22,79,39
-advarsel/64,65,10,34,39
+advarsel/64,65,10,39
 advent/10,11,2,39
 adventist/10,11,2,39
 adventiv/24,10,49,39
@@ -344,7 +344,7 @@ adventstid/44,10,39
 adventure/10,39
 adverbial/10,4,11,39
 adverbiel/59,10,49,39
-adverbium/34,70,71,10,39,84,85
+adverbium/70,71,10,39,84,85
 adversativ/24,10,49,39
 advis/44,10,39
 advisere/1,21,22,79,39
@@ -774,7 +774,7 @@ afkviste/1,21,22,79,39
 afkøbe/20,21,22,79,39
 afkøle/1,21,22,79,39
 afkøling/10,11,2,39
-afkørsel/64,65,10,34,39
+afkørsel/64,65,10,39
 aflad/44,10,39
 aflade/1,21,22,79,39
 afladelse/10,39,86
@@ -1504,7 +1504,7 @@ agern/10,46,4,39
 ågerrente/10,11,2,39
 agersennep/7,10,39
 agersnegl/5,2,10,39
-agertidsel/64,65,10,34,39
+agertidsel/64,65,10,39
 aggadah/10,39
 aggravere/1,21,22,79,39
 aggregat/10,4,11,39
@@ -1663,7 +1663,7 @@ akryl/45,10,39
 akrylfarve/10,11,2,39
 aks/10,46,4,39
 akse/10,11,2,39
-aksel/64,65,10,34,39
+aksel/64,65,10,39
 akseltryk/10,47,39
 aksgræs/10,3,39
 aksial/24,10,49,39
@@ -1728,7 +1728,7 @@ akvamarin/10,11,2,39
 akvaplane/1,21,22,79,39
 akvarel/7,10,39
 akvarist/10,11,2,39
-akvarium/72,71,70,10,34,39
+akvarium/72,71,70,10,39
 akvatinte/10,11,2,39
 akvatisk/28,39
 akvavit/7,10,39
@@ -2163,7 +2163,7 @@ amfetamin/10,4,11,39
 amfibiebåd/5,2,10,39
 amfibiefly/10,46,4,39
 amfibisk/28,39
-amfibium/34,70,71,10,39,84,85
+amfibium/70,71,10,39,84,85
 amfibrak/7,10,39
 amfifil/24,10,49,39
 amfifil/10,11,2,39
@@ -2283,7 +2283,7 @@ anale
 anales
 analia
 analkanal/10,11,2,39
-analkirtel/64,65,10,34,39
+analkirtel/64,65,10,39
 analog/24,10,49,39
 analog/10,11,2,39
 analogi/10,11,2,39
@@ -2516,7 +2516,7 @@ anfægtelse/10,11,2,39
 anføre/20,21,22,79,39
 anførelse/10,11,2,39
 anfører/5,2,10,39
-anførsel/64,65,10,34,39
+anførsel/64,65,10,39
 angå
 angår
 angås
@@ -2648,7 +2648,7 @@ anke/10,11,2,39
 anke/1,21,22,79,39
 ankechef/10,11,2,39
 ankefrist/10,11,2,39
-ankel/64,65,10,34,39
+ankel/64,65,10,39
 ankellang/10,38,49,24,39
 ankelled/10,47,39
 ankelskade/10,11,2,39
@@ -3036,7 +3036,7 @@ apatit/7,10,39
 apatogen/24,10,49,39
 apeks/10,4,11,39
 apex/10,39
-aphelium/34,70,71,10,39,84,85
+aphelium/70,71,10,39,84,85
 aphonia/10,39
 apiaster
 apikal/24,10,49,39
@@ -3048,7 +3048,7 @@ apnø/10,11,2,39
 apoenzym/10,4,11,39
 apofatisk/28,39
 apoftegma/10,39
-apogæum/34,70,71,10,39,84,85
+apogæum/70,71,10,39,84,85
 apokalypse/10,11,2,39
 apokrin/24,10,49,39
 apokryf/24,10,49,39
@@ -3066,7 +3066,7 @@ apoptose/44,10,39
 apoptotisk/28,39
 apostasi/44,10,39
 apostat/10,11,2,39
-apostel/34,65,10,39
+apostel/65,10,39
 apostle/74,10,39
 apostolisk/28,39
 apostolsk/28,39
@@ -3199,7 +3199,7 @@ ardannelse/10,11,2,39
 åre/10,11,2,39
 areal/10,4,11,39
 arealenhed/10,11,2,39
-åregaffel/64,65,10,34,39
+åregaffel/64,65,10,39
 åregang/5,2,10,39
 åreknude/10,11,2,39
 åreladning/10,11,2,39
@@ -3326,7 +3326,7 @@ armlægning/10,11,2,39
 armlæn/10,46,4,39
 armlængde/10,11,2,39
 armlænke/10,11,2,39
-armmuskel/64,65,10,34,39
+armmuskel/64,65,10,39
 armod/44,10,39
 armodig/10,39,24,23,49
 armring/5,2,10,39
@@ -3416,7 +3416,7 @@ articulare
 artificiel/42,10,49,59,39
 artig/10,39,24,23,49
 artighed/10,11,2,39
-artikel/64,65,10,34,39
+artikel/64,65,10,39
 artikulere/1,21,22,79,39
 artikulær/24,10,49,39
 artilleri/10,4,11,39
@@ -3461,9 +3461,9 @@ arvemasse/10,11,2,39
 arvemæssig/10,39,24,23,49
 arvense
 arvensis
-arveonkel/64,65,10,34,39
+arveonkel/64,65,10,39
 arveprins/10,11,2,39
-arvereglen/64,65,10,34,39
+arvereglen/64,65,10,39
 arveret/58,10,39
 arveretlig/24,10,49,39
 arvesag/10,11,2,39
@@ -3701,7 +3701,7 @@ atrazin/44,10,39
 atrazin/45,10,39
 atresi/10,11,2,39
 atrial/24,10,49,39
-atrium/34,70,71,10,39,84,85
+atrium/70,71,10,39,84,85
 atrium/10,39
 atrii
 atria
@@ -3766,7 +3766,7 @@ auditering/10,11,2,39
 audition/44,10,39
 auditiv/24,10,49,39
 auditor/10,11,2,39
-auditorium/72,71,70,10,34,39
+auditorium/72,71,70,10,39
 auditør/10,11,2,39
 augment/10,4,11,39
 augmentere/1,21,22,79,39
@@ -3783,7 +3783,7 @@ aulos/7,10,39
 aura/10,11,2,39
 aurora/10,11,2,39
 auskultere/1,21,22,79,39
-auspicium/34,70,71,10,39,84,85
+auspicium/70,71,10,39,84,85
 australier/5,2,10,39
 australis
 australsk/28,39
@@ -4099,7 +4099,7 @@ bagage/44,10,39
 bagageboks/5,2,10,39
 bagagerum/10,47,39
 bagagevogn/5,2,10,39
-bagaksel/64,65,10,34,39
+bagaksel/64,65,10,39
 bagatel/7,10,39
 bagben/10,46,4,39
 bagbinde
@@ -4422,7 +4422,7 @@ bane/1,21,22,79,39
 bane/10,39
 bane/10,11,2,39
 banebryder/5,2,10,39
-banecykel/64,65,10,34,39
+banecykel/64,65,10,39
 banegård/5,2,10,39
 banegrav/5,2,10,39
 banelegeme/10,4,11,39
@@ -4575,7 +4575,7 @@ barneårs
 barneårene
 barnebarn/45,10,39
 barnebrud/5,2,10,39
-barnecykel/64,65,10,34,39
+barnecykel/64,65,10,39
 barnedåb/10,2,46,39
 barnefader/44,10,39
 barnefar/44,10,39
@@ -4637,7 +4637,7 @@ barre/10,11,2,39
 barriere/10,11,2,39
 barrikade/10,11,2,39
 bars/10,11,2,39
-barsel/64,65,10,34,39
+barsel/64,65,10,39
 barsk/10,38,49,24,39
 barskab/4,10,5,39
 barskhed/10,11,2,39
@@ -4740,7 +4740,7 @@ bastion/10,11,2,39
 bastning/10,11,2,39
 bastonade/44,10,39
 basun/10,11,2,39
-basunengel/34,65,10,39
+basunengel/65,10,39
 basunengle/74,10,39
 basunere/1,21,22,79,39
 basunere/1,21,22,79,39
@@ -5307,7 +5307,7 @@ benfri/10,38,49,24,39
 bengaler/5,2,10,39
 bengali/10,39
 bengalsk/28,39
-bengel/64,65,10,34,39
+bengel/64,65,10,39
 benhård/10,38,49,24,39
 benhus/4,10,5,39
 benign/24,10,49,39
@@ -5322,7 +5322,7 @@ benli/9
 benlængde/10,11,2,39
 benløs/10,38,49,24,39
 benmel/45,10,39
-benmuskel/64,65,10,34,39
+benmuskel/64,65,10,39
 benovelse/44,10,39
 benovet/10,26,39
 benplads/44,10,39
@@ -5620,7 +5620,7 @@ bestemt
 bestemt/24,10,49,39
 bestemthed/44,10,39
 bestialsk/28,39
-bestiarium/34,70,71,10,39,84,85
+bestiarium/70,71,10,39,84,85
 bestie/10,4,11,39
 bestige
 bestiger
@@ -6037,7 +6037,7 @@ bidrag
 bidragyder/5,2,10,39
 bidronning/10,11,2,39
 bidsår/10,46,4,39
-bidsel/64,10,34,66,39
+bidsel/64,10,66,39
 bidsk/10,38,49,24,39
 bidua
 bie/1,21,22,79,39
@@ -6153,7 +6153,7 @@ biliær/24,10,49,39
 biljagt/10,11,2,39
 bilkø/10,11,2,39
 bilkøb/10,46,4,39
-bilkørsel/64,65,10,34,39
+bilkørsel/64,65,10,39
 billån/10,46,4,39
 billard/10,4,11,39
 billardkø/10,11,2,39
@@ -6300,7 +6300,7 @@ bindevæv/10,46,4,39
 binding/10,11,2,39
 bindsål/10,11,2,39
 bindsål/10,11,2,39
-bindsel/64,10,34,66,39
+bindsel/64,10,66,39
 bindstærk/10,38,49,24,39
 bingelurt/10,11,2,39
 bingo/45,10,39
@@ -6464,7 +6464,7 @@ bitche/1,21,22,79,39
 bitchy/39
 bitcoin/10,39
 bitcoins
-bitestikel/64,65,10,34,39
+bitestikel/64,65,10,39
 biting/10,2,46,39
 bitmap/58,10,39
 bitmaps
@@ -6851,7 +6851,7 @@ blodkræft/44,10,39
 blodlegeme/10,4,11,39
 blodløs/10,38,49,24,39
 blodmåne/10,11,2,39
-blodmangel/34,65,10,39
+blodmangel/65,10,39
 blodmide/10,11,2,39
 blodomløb/10,46,4,39
 blodpenge/74,10,39
@@ -6978,14 +6978,14 @@ blyhagl/10,46,4,39
 blyholdig/24,10,49,39
 blyhvidt/45,10,39
 blyindhold/10,46,4,39
-blykapsel/64,65,10,34,39
+blykapsel/64,65,10,39
 blyrod/10,2,46,39
 blytung/10,38,49,24,39
 blytækker/5,2,10,39
 blæk/10,57,39
 blækhat/10,19,39
 blækhus/4,10,5,39
-blækkirtel/64,65,10,34,39
+blækkirtel/64,65,10,39
 blækklat/7,10,39
 blækpatron/10,11,2,39
 blæksort/24,10,49,39
@@ -7151,7 +7151,7 @@ bogstavret/59,10,49,39
 bogstavrim/10,46,4,39
 bogstavtro/24,10,49,39
 bogstøtte/10,11,2,39
-bogtitel/64,65,10,34,39
+bogtitel/64,65,10,39
 bogtryk/10,47,39
 bogtrykker/5,2,10,39
 bogtrykt/24,10,49,39
@@ -7455,7 +7455,7 @@ bortfløjen/12,82,10,39
 bortfragte/1,21,22,79,39
 bortføre/20,21,22,79,39
 bortfører/5,2,10,39
-bortførsel/64,65,10,34,39
+bortførsel/64,65,10,39
 bortgå
 bortgår
 bortgås
@@ -7478,7 +7478,7 @@ bortkommet
 bekom
 bortkommen/12,82,10,39
 bortkomst/44,10,39
-bortkørsel/64,65,10,34,39
+bortkørsel/64,65,10,39
 bortlede/20,21,22,79,39
 bortlodde/1,21,22,79,39
 bortløben/12,82,10,39
@@ -7801,7 +7801,7 @@ breves
 brevia
 brevkasse/10,11,2,39
 brevkort/10,46,4,39
-brevkursus/34,70,71,10,39,84,85
+brevkursus/70,71,10,39,84,85
 brevordner/5,2,10,39
 brevpapir/45,10,39
 brevsamler/5,2,10,39
@@ -7873,7 +7873,7 @@ brioche/10,11,2,39
 brisant/24,10,49,39
 brise/10,11,2,39
 brisling/10,11,2,39
-brissel/64,65,10,34,39
+brissel/64,65,10,39
 brist/10,46,4,39
 brist/10,11,2,39
 briste/1,21,22,79,39
@@ -8188,7 +8188,7 @@ bræk/10,47,39
 brækfarvet/10,26,39
 brækjern/10,46,4,39
 brække/1,21,22,79,39
-brækmiddel/64,10,34,66,39
+brækmiddel/64,10,66,39
 brækning/10,11,2,39
 bræknød/7,10,39
 brækpose/10,11,2,39
@@ -8210,7 +8210,7 @@ brændglas/10,47,39
 brænding/10,11,2,39
 brændoffer/10,15,13,39
 brændpunkt/10,4,11,39
-brændsel/64,10,34,66,39
+brændsel/64,10,66,39
 brændstof/10,3,39
 brændt/24,10,49,39
 brændvidde/10,11,2,39
@@ -8278,7 +8278,7 @@ budene
 budenes
 bud/10,47,39
 budbringer/5,2,10,39
-budcykel/64,65,10,34,39
+budcykel/64,65,10,39
 buddha/10,11,2,39
 buddhisme/44,10,39
 buddhist/10,11,2,39
@@ -8317,7 +8317,7 @@ bugfinne/10,11,2,39
 buggy/10,11,2,39
 bughinde/10,11,2,39
 bughule/10,11,2,39
-bugmuskel/64,65,10,34,39
+bugmuskel/64,65,10,39
 bugne/1,21,22,79,39
 bugserbåd/5,2,10,39
 bugsere/1,21,22,79,39
@@ -8550,7 +8550,7 @@ buskmand/44,10,39
 buskmænd/74,10,39
 buskning/10,11,2,39
 buskort/10,46,4,39
-buskørsel/64,65,10,34,39
+buskørsel/64,65,10,39
 buslinje/10,11,2,39
 buslomme/10,11,2,39
 busrejse/10,11,2,39
@@ -8626,7 +8626,7 @@ bybønder/74,10,39
 bybørn/74,10,39
 bycenter/10,15,13,39
 bycentrum/10,3,39
-bycykel/64,65,10,34,39
+bycykel/64,65,10,39
 byde
 byder
 bydes
@@ -8712,14 +8712,14 @@ byguerilla/10,11,2,39
 bygværk/10,4,11,39
 byhave/10,11,2,39
 byhus/4,10,5,39
-byjubilæum/34,70,71,10,39,84,85
+byjubilæum/70,71,10,39,84,85
 bykerne/10,11,2,39
 bykommune/10,11,2,39
 bykonge/10,11,2,39
 bykort/10,46,4,39
 bykultur/10,11,2,39
 bykvarter/10,4,11,39
-bykørsel/64,65,10,34,39
+bykørsel/64,65,10,39
 bylandmand/44,10,39
 bylandmænd/74,10,39
 bylandskab/10,4,11,39
@@ -8734,7 +8734,7 @@ bymenneske/10,4,11,39
 bymidte/44,10,39
 bymiljø/10,4,11,39
 bymur/5,2,10,39
-bymuseum/34,70,71,10,39,84,85
+bymuseum/70,71,10,39,84,85
 bymæssig/24,10,49,39
 bynavn/4,10,5,39
 bynke/10,11,2,39
@@ -8842,7 +8842,7 @@ bælte/10,4,11,39
 bælte/1,21,22,79,39
 bæltedyr/10,46,4,39
 bæltested/45,10,39
-bændel/64,10,34,66,39
+bændel/64,10,66,39
 bændelorm/5,2,10,39
 bændelorm/10,2,46,39
 bændeltang/44,10,39
@@ -8875,7 +8875,7 @@ bærebjælke/10,11,2,39
 bærebølge/10,11,2,39
 bæredygtig/10,39,24,23,49
 bæreevne/44,10,39
-bærekabel/64,10,34,66,39
+bærekabel/64,10,66,39
 bærekraft/44,10,39
 bærende/27,39
 bærepille/10,11,2,39
@@ -8919,7 +8919,7 @@ bødestraf/10,19,39
 bødker/5,2,10,39
 bøf/7,10,39
 bøffe/1,21,22,79,39
-bøffel/64,65,10,34,39
+bøffel/64,65,10,39
 bøfhus/4,10,5,39
 bøg/5,2,10,39
 bøge/1,21,22,79,39
@@ -8944,7 +8944,7 @@ bøje/1,21,22,79,39
 bøje/10,11,2,39
 bøjelig/10,39,24,23,49
 bøjelighed/44,10,39
-bøjemuskel/64,65,10,34,39
+bøjemuskel/64,65,10,39
 bøjle/10,11,2,39
 bøjlenål/5,2,10,39
 bøjlestang/44,10,39
@@ -9014,7 +9014,7 @@ børneby/10,11,2,39
 børnebøger/74,10,39
 børnebørn/74,10,39
 børnecheck/10,2,46,39
-børnecykel/64,65,10,34,39
+børnecykel/64,65,10,39
 børneeksem/10,4,11,39
 børneeksem/10,11,2,39
 børnefilm/10,2,46,39
@@ -9036,7 +9036,7 @@ børnelæge/10,11,2,39
 børnemad/44,10,39
 børnemenu/10,11,2,39
 børnemord/74,10,39
-børnemøbel/64,10,34,66,39
+børnemøbel/64,10,66,39
 børneorm/5,2,10,39
 børnepenge/74,10,39
 børneplade/10,11,2,39
@@ -9142,7 +9142,7 @@ caipirinha/10,11,2,39
 cajon/10,11,2,39
 cajun/10,39
 calcium/10,57,39
-caldarium/34,70,71,10,39,84,85
+caldarium/70,71,10,39,84,85
 calix/10,39
 calicis
 calices
@@ -9629,7 +9629,7 @@ chymorum
 ciabatta/10,11,2,39
 ciabatta/10,46,4,39
 cibarius
-ciborium/34,70,71,10,39,84,85
+ciborium/70,71,10,39,84,85
 cicatrice/10,11,2,39
 cicatrix/10,39
 cicatricis
@@ -9661,7 +9661,7 @@ ciliare
 ciliares
 ciliaria
 ciliat/10,11,2,39
-cilium/72,71,70,10,34,39
+cilium/72,71,70,10,39
 cilii
 cilia
 ciliorum
@@ -9683,7 +9683,7 @@ cirkadisk/28,39
 cirkapris/10,11,2,39
 cirkatal/10,47,39
 cirkatid/10,11,2,39
-cirkel/64,65,10,34,39
+cirkel/64,65,10,39
 cirkelbue/10,11,2,39
 cirkelrund/10,38,49,24,39
 cirkelslag/10,46,4,39
@@ -10006,7 +10006,7 @@ croquis/10,11,2,39
 croquis/10,4,11,39
 cross/10,47,39
 crossbane/10,11,2,39
-crosscykel/64,65,10,34,39
+crosscykel/64,65,10,39
 crosse/1,21,22,79,39
 crostini/10,11,2,39
 croupier/10,11,2,39
@@ -10042,7 +10042,7 @@ cubitorum
 cuboideum/10,39
 cuisine/10,39
 culotte/10,11,2,39
-culparegel/34,65,10,39
+culparegel/65,10,39
 culpøs/24,10,49,39
 cuneiforme
 cuneus/10,39
@@ -10087,7 +10087,7 @@ cyborg/10,11,2,39
 cyborgs
 cyclamen/10,48,39
 cygnea
-cykel/64,65,10,34,39
+cykel/64,65,10,39
 cykelbane/10,11,2,39
 cykelbil/10,11,2,39
 cykelbold/44,10,39
@@ -10336,7 +10336,7 @@ dame/10,11,2,39
 dameben/10,2,46,39
 damebesøg/10,46,4,39
 dameblad/4,10,5,39
-damecykel/64,65,10,34,39
+damecykel/64,65,10,39
 damedouble/10,11,2,39
 damefrisør/10,11,2,39
 dameglad/39
@@ -10369,7 +10369,7 @@ dampfløjte/10,11,2,39
 damphammer/5,2,10,39
 damphamre
 damphamres
-dampkedel/64,65,10,34,39
+dampkedel/64,65,10,39
 dampkoge/20,21,22,79,39
 dampkraft/44,10,39
 dampning/10,11,2,39
@@ -10546,7 +10546,7 @@ datja/10,11,2,39
 dato/10,11,2,39
 datolinje/10,11,2,39
 datomærke/1,21,22,79,39
-datoveksel/64,65,10,34,39
+datoveksel/64,65,10,39
 datten
 datter/44,10,39
 datterbank/10,11,2,39
@@ -10607,7 +10607,7 @@ decca/10,39
 decelerere/1,21,22,79,39
 december/10,39
 decembrist/10,11,2,39
-decennium/34,70,71,10,39,84,85
+decennium/70,71,10,39,84,85
 decent/24,10,49,39
 decentral/24,10,49,39
 decharge/44,10,39
@@ -10787,7 +10787,7 @@ delinkvent/10,11,2,39
 delirere/1,21,22,79,39
 delirisk/28,39
 delirist/10,11,2,39
-delirium/34,70,71,10,39,84,85
+delirium/70,71,10,39,84,85
 delirøs/24,10,49,39
 della/39
 delle/10,11,2,39
@@ -11255,7 +11255,7 @@ diftongere/1,21,22,79,39
 diftongisk/28,39
 dige/10,4,11,39
 digebrud/10,47,39
-digel/64,65,10,34,39
+digel/64,65,10,39
 digelag/10,46,4,39
 digenese/44,10,39
 diger/41,49,10,39
@@ -11276,7 +11276,7 @@ dignitas/10,39
 dignitet/44,10,39
 digression/10,11,2,39
 digt/4,10,5,39
-digtcykel/64,65,10,34,39
+digtcykel/64,65,10,39
 digtcyklus/7,10,39
 digte/1,21,22,79,39
 digtekunst/44,10,39
@@ -11412,7 +11412,7 @@ dis/10,3,39
 dis/10,11,2,39
 disakkarid/10,4,11,39
 discgolf/44,10,39
-discipel/34,65,10,39
+discipel/65,10,39
 disciple/74,10,39
 disciplin/10,11,2,39
 discjockey/10,11,2,39
@@ -11529,7 +11529,7 @@ diverse/39
 diversion/10,11,2,39
 diversitet/44,10,39
 divertere/1,21,22,79,39
-divertikel/64,10,34,66,39
+divertikel/64,10,66,39
 dividend/10,11,2,39
 dividende/10,11,2,39
 dividere/1,21,22,79,39
@@ -11555,7 +11555,7 @@ djiboutisk/28,39
 djinn/10,11,2,39
 djærv/10,38,49,24,39
 djærvhed/10,11,2,39
-djævel/34,65,10,39
+djævel/65,10,39
 djævelen
 djævelens
 djævelsbid/10,48,39
@@ -11674,7 +11674,7 @@ domino/10,11,2,39
 dominobrik/7,10,39
 dominus/10,39
 domini
-domkapitel/64,10,34,66,39
+domkapitel/64,10,66,39
 domkirke/10,11,2,39
 domkirkeby/10,11,2,39
 dommedag/44,10,39
@@ -11974,7 +11974,7 @@ dristig/10,39,24,23,49
 dristighed/10,11,2,39
 drittel/64,65,44,10,39
 driv/10,39
-drivaksel/64,65,10,34,39
+drivaksel/64,65,10,39
 drivanker/10,15,13,39
 drivbænk/5,2,10,39
 drive/10,39
@@ -12007,7 +12007,7 @@ drivhus/4,10,5,39
 drivhusgas/7,10,39
 drivis/44,10,39
 drivkraft/44,10,39
-drivmiddel/64,10,34,66,39
+drivmiddel/64,10,66,39
 drivnet/10,47,39
 drivning/10,11,2,39
 drivrem/10,19,39
@@ -12473,7 +12473,7 @@ dyrespor/10,46,4,39
 dyrestald/5,2,10,39
 dyretæmmer/5,2,10,39
 dyreunge/10,11,2,39
-dyreveksel/64,65,10,34,39
+dyreveksel/64,65,10,39
 dyreven/7,10,39
 dyrevenlig/10,39,24,23,49
 dyreverden/10,11,2,39
@@ -12530,7 +12530,7 @@ dysæstesi/44,10,39
 dyt/10,47,39
 dytte/1,21,22,79,39
 dyvel/64,65,44,10,39
-dyvel/64,65,10,34,39
+dyvel/64,65,10,39
 dyvelsdræk/10,57,39
 dægge/1,21,22,79,39
 dæggelam/10,47,39
@@ -12563,7 +12563,7 @@ dækplade/10,11,2,39
 dæksbåd/5,2,10,39
 dæksblad/4,10,5,39
 dæksdreng/5,2,10,39
-dæksel/64,10,34,66,39
+dæksel/64,10,66,39
 dækslast/10,11,2,39
 dækslip/10,57,39
 dæksmand/44,10,39
@@ -12594,7 +12594,7 @@ dæmpning/10,11,2,39
 dæmre/1,21,22,79,39
 dæmring/44,10,39
 dænge/1,21,22,79,39
-dævel/34,65,10,39
+dævel/65,10,39
 dævelen
 dævelens
 dævle/74,10,39
@@ -12635,7 +12635,7 @@ dødfarlig/10,39,24,23,49
 dødfunden/12,49,10,39
 dødfundet
 dødfundets
-dødfødsel/64,65,10,34,39
+dødfødsel/64,65,10,39
 dødfødt/24,10,49,39
 dødgerne
 dødgod/10,38,49,24,39
@@ -12668,7 +12668,7 @@ dødsdom/10,19,39
 dødsdrift/44,10,39
 dødsdrom/10,11,2,39
 dødsdømme/20,21,22,79,39
-dødsengel/34,65,10,39
+dødsengel/65,10,39
 dødsengle/74,10,39
 dødsens/39
 dødsfald/10,46,4,39
@@ -12684,7 +12684,7 @@ dødskamp/5,2,10,39
 dødsklage/10,11,2,39
 dødskys/10,47,39
 dødskøn/42,10,49,59,39
-dødskørsel/64,65,10,34,39
+dødskørsel/64,65,10,39
 dødsleje/10,4,11,39
 dødslejr/5,2,10,39
 dødsliste/10,11,2,39
@@ -12773,7 +12773,7 @@ dørhamre
 dørhamres
 dørhamrene
 dørhåndtag/10,46,4,39
-dørhængsel/64,10,34,66,39
+dørhængsel/64,10,66,39
 dørk/5,2,10,39
 dørkarm/5,2,10,39
 dørklokke/10,11,2,39
@@ -12795,7 +12795,7 @@ dørtelefon/10,11,2,39
 dørtrin/10,46,4,39
 dørtrin/10,47,39
 dørtræk/10,57,39
-dørtærskel/64,65,10,34,39
+dørtærskel/64,65,10,39
 dørvogter/5,2,10,39
 døs/44,10,39
 døse/1,21,22,79,39
@@ -13048,7 +13048,7 @@ egne/1,21,22,79,39
 egnet/10,26,39
 egnethed/44,10,39
 egnsdragt/10,11,2,39
-egnsmuseum/34,70,71,10,39,84,85
+egnsmuseum/70,71,10,39,84,85
 egnsteater/10,15,13,39
 ego/10,4,11,39
 egocentri/44,10,39
@@ -13123,7 +13123,7 @@ eksekutor/10,11,2,39
 eksekvere/1,21,22,79,39
 eksem/10,11,2,39
 eksem/10,4,11,39
-eksempel/64,10,34,66,39
+eksempel/64,10,66,39
 eksemplar/10,4,11,39
 eksercere/1,21,22,79,39
 eksercits/10,11,2,39
@@ -13250,7 +13250,7 @@ elamitisk/10,39
 elan/10,39
 elaphus
 elapparat/10,4,11,39
-elartikel/64,65,10,34,39
+elartikel/64,65,10,39
 elastik/7,10,39
 elastin/45,10,39
 elastisk/28,39
@@ -13260,7 +13260,7 @@ elbas/7,10,39
 elbassist/10,11,2,39
 elbil/10,11,2,39
 elbo/44,10,39
-elcykel/64,65,10,34,39
+elcykel/64,65,10,39
 eldorado/10,4,11,39
 eldreven/12,82,10,39
 elefant/10,11,2,39
@@ -13337,8 +13337,8 @@ elitisme/44,10,39
 elitist/10,11,2,39
 elitistisk/28,39
 elitær/10,38,49,24,39
-elkabel/64,10,34,66,39
-elkedel/64,65,10,34,39
+elkabel/64,10,66,39
+elkedel/64,65,10,39
 elkoger/5,2,10,39
 elkomfur/10,4,11,39
 elkoshit/7,10,39
@@ -13381,7 +13381,7 @@ elongation/44,10,39
 elongere/1,21,22,79,39
 elongering/10,11,2,39
 elopvarmet/10,26,39
-elorgel/64,10,34,66,39
+elorgel/64,10,66,39
 elorgelet
 elorgelets
 eloxere/1,21,22,79,39
@@ -13489,7 +13489,7 @@ emmetropi/44,10,39
 emne/10,4,11,39
 emnefelt/10,4,11,39
 emnekreds/5,2,10,39
-emnekursus/34,70,71,10,39,84,85
+emnekursus/70,71,10,39,84,85
 emnemæssig/24,10,49,39
 emneområde/10,4,11,39
 emneord/10,46,4,39
@@ -13690,7 +13690,7 @@ engangssum/7,10,39
 engareal/10,4,11,39
 engblomme/10,11,2,39
 engdrag/10,46,4,39
-engel/34,65,10,39
+engel/65,10,39
 engelsk/28,39
 engelsk/10,39
 engelsød/10,2,46,39
@@ -13899,7 +13899,7 @@ epistel/64,65,44,10,39
 epistemisk/28,39
 epistemisk/28,39
 epitaf/10,4,11,39
-epitafium/34,70,71,10,39,84,85
+epitafium/70,71,10,39,84,85
 epitel/10,4,11,39
 epitelial/24,10,49,39
 epitelvæv/10,46,4,39
@@ -14206,7 +14206,7 @@ europid/10,38,49,24,39
 europium/10,57,39
 europæer/5,2,10,39
 europæisk/28,39
-euroseddel/64,65,10,34,39
+euroseddel/64,65,10,39
 eurosport/44,10,39
 eurozone/44,10,39
 eurytmi/44,10,39
@@ -14226,7 +14226,7 @@ evaluere/1,21,22,79,39
 evaluering/10,11,2,39
 evangelisk/28,39
 evangelist/10,11,2,39
-evangelium/72,71,70,10,34,39
+evangelium/72,71,70,10,39
 evaporere/1,21,22,79,39
 evasorisk/28,39
 event/45,10,39
@@ -14454,7 +14454,7 @@ fake/10,39
 fake/24,10,49,39
 fake/1,21,22,79,39
 fakir/10,11,2,39
-fakkel/64,65,10,34,39
+fakkel/64,65,10,39
 fakkeltog/10,46,4,39
 faksimile/10,11,2,39
 fakta/74,10,39
@@ -14474,7 +14474,7 @@ faktura/10,11,2,39
 fakturere/1,21,22,79,39
 fakultativ/24,10,49,39
 fakultet/10,4,11,39
-falafel/64,65,10,34,39
+falafel/64,65,10,39
 falangeal/24,10,49,39
 falangist/10,11,2,39
 falanks/10,11,2,39
@@ -14736,7 +14736,7 @@ fartblind/10,38,49,24,39
 fartbøde/10,11,2,39
 fartbølle/10,11,2,39
 fartdjævel/44,10,39
-fartdjævel/34,65,10,39
+fartdjævel/65,10,39
 fartdjævle/74,10,39
 farte/1,21,22,79,39
 fartfælde/10,11,2,39
@@ -14811,7 +14811,7 @@ fasanjagt/10,11,2,39
 fasankok/10,19,39
 fasces/10,39
 fascie/10,11,2,39
-fascikel/64,10,34,66,39
+fascikel/64,10,66,39
 fascinere/1,21,22,79,39
 fascisme/44,10,39
 fascist/10,11,2,39
@@ -15035,7 +15035,7 @@ fedtfri/10,38,49,24,39
 fedthas/5,2,10,39
 fedtholdig/24,10,49,39
 fedtkant/10,11,2,39
-fedtkirtel/64,65,10,34,39
+fedtkirtel/64,65,10,39
 fedtklump/10,11,2,39
 fedtknude/10,11,2,39
 fedtkugle/10,11,2,39
@@ -15213,7 +15213,7 @@ fenacetin/45,10,39
 fender/5,2,10,39
 fenemal/45,10,39
 fenne/10,11,2,39
-fennikel/64,65,10,34,39
+fennikel/64,65,10,39
 fenol/10,11,2,39
 fenolat/10,11,2,39
 fenrik/7,10,39
@@ -15334,7 +15334,7 @@ fiber/14,10,13,39
 fiberbeton/44,10,39
 fiberdrys/10,47,39
 fiberglas/10,57,39
-fiberkabel/64,10,34,66,39
+fiberkabel/64,10,66,39
 fibernet/10,47,39
 fiberoptik/58,10,39
 fiberpels/5,2,10,39
@@ -15470,8 +15470,8 @@ filmlærred/10,4,11,39
 filmmager/5,2,10,39
 filmmand/44,10,39
 filmmarked/10,4,11,39
-filmmedium/72,71,70,10,34,39
-filmmuseum/34,70,71,10,39,84,85
+filmmedium/72,71,70,10,39
+filmmuseum/70,71,10,39,84,85
 filmmænd/74,10,39
 filmning/10,11,2,39
 filmografi/10,11,2,39
@@ -15824,7 +15824,7 @@ fiskegrej/10,4,11,39
 fiskegryde/10,11,2,39
 fiskehejre/10,11,2,39
 fiskekasse/10,11,2,39
-fiskekedel/64,65,10,34,39
+fiskekedel/64,65,10,39
 fiskekniv/5,2,10,39
 fiskekort/10,46,4,39
 fiskekrog/5,2,10,39
@@ -15863,7 +15863,7 @@ fiskesø/10,11,2,39
 fisketegn/10,46,4,39
 fisketur/5,2,10,39
 fiskevogn/5,2,10,39
-fiskeyngel/34,65,10,39
+fiskeyngel/65,10,39
 fiskeøje/10,4,11,39
 fiskeørn/5,2,10,39
 fisse/10,11,2,39,86
@@ -16021,7 +16021,7 @@ fladjern/10,46,4,39
 fladland/4,10,5,39
 fladlus/10,2,46,39
 fladmast/24,10,49,39
-fladmejsel/64,65,10,34,39
+fladmejsel/64,65,10,39
 flådning/10,11,2,39
 fladorm/5,2,10,39
 fladpande/10,11,2,39
@@ -16171,7 +16171,7 @@ flertydig/24,10,49,39
 flest/24,10,49,39
 flet/10,39
 flethegn/10,46,4,39
-fletmøbel/64,10,34,66,39
+fletmøbel/64,10,66,39
 fletning/10,11,2,39
 fletstol/5,2,10,39
 flette/1,21,22,79,39
@@ -16269,7 +16269,7 @@ flormelis/58,10,39
 florsukker/45,10,39
 flortynd/10,38,49,24,39
 flos/10,3,39
-floskel/64,65,10,34,39
+floskel/64,65,10,39
 flosning/10,11,2,39
 flosse/1,21,22,79,39
 flosset/10,26,39
@@ -16326,7 +16326,7 @@ fluorit/58,10,39
 fluorose/44,10,39
 flus/10,39
 flusjern/45,10,39
-flusmiddel/64,10,34,66,39
+flusmiddel/64,10,66,39
 flusspat/58,10,39
 flussyre/44,10,39
 flute/10,2,46,39
@@ -16360,7 +16360,7 @@ flydevægt/5,2,10,39
 flydning/10,11,2,39
 flyer/5,2,10,39
 flyfrisk/24,10,49,39
-flygel/64,10,34,66,39
+flygel/64,10,66,39
 flygelet
 flygelets
 flygelhorn/10,46,4,39
@@ -16375,7 +16375,7 @@ flykaprer/5,2,10,39
 flykapring/10,11,2,39
 flykøkken/10,4,11,39
 flymotor/10,11,2,39
-flymuseum/34,70,71,10,39,84,85
+flymuseum/70,71,10,39,84,85
 flynder/5,2,10,39
 flyrejse/10,11,2,39
 flyrute/10,11,2,39
@@ -16601,7 +16601,7 @@ fodsål/10,11,2,39
 fodsbred/10,39
 fodsid/10,38,49,24,39
 fodskade/10,11,2,39
-fodskammel/64,65,10,34,39
+fodskammel/64,65,10,39
 fodskifte/10,4,11,39
 fodslag/10,46,4,39
 fodspor/10,46,4,39
@@ -16638,7 +16638,7 @@ fold/10,11,2,39
 fold/5,2,10,39
 folde/1,21,22,79,39
 foldebjerg/4,10,5,39
-foldecykel/64,65,10,34,39
+foldecykel/64,65,10,39
 foldedør/5,2,10,39
 foldekniv/5,2,10,39
 folder/5,2,10,39
@@ -16706,7 +16706,7 @@ folklorist/10,11,2,39
 folkrock/44,10,39
 folliculus/10,39
 folliculi
-follikel/64,65,10,34,39
+follikel/64,65,10,39
 follikulær/24,10,49,39
 followup/10,39
 folsyre/10,11,2,39
@@ -16747,7 +16747,7 @@ foragt/44,10,39
 foragte/1,21,22,79,39
 foragtelig/10,39,24,23,49
 foragter/5,2,10,39
-foraksel/64,65,10,34,39
+foraksel/64,65,10,39
 foramen/10,39
 foraminis
 foramina
@@ -17214,7 +17214,7 @@ forgåedes
 forgabe/20,21,22,79,39
 forgabe/1,21,22,79,39
 forgabelse/44,10,39
-forgaffel/64,65,10,34,39
+forgaffel/64,65,10,39
 forgang/5,2,10,39
 forgangen/12,49,10,39
 forgård/5,2,10,39
@@ -17409,7 +17409,7 @@ forkuet/10,26,39
 forkulle/1,21,22,79,39
 forkullet/10,26,39
 forkulning/44,10,39
-forkursus/34,70,71,10,39,84,85
+forkursus/70,71,10,39,84,85
 forkvakle/1,21,22,79,39
 forkvinde/10,11,2,39
 forkynde/20,21,22,79,39
@@ -17953,7 +17953,7 @@ forståets
 forståede
 forståedes
 forstad/44,10,39
-forstadium/72,71,70,10,34,39
+forstadium/72,71,70,10,39
 forståelig/10,39,24,23,49
 forståelse/10,11,2,39
 forstag/10,11,2,39
@@ -17981,7 +17981,7 @@ forstop/10,47,39
 forstoppe/1,21,22,79,39
 forstopper/5,2,10,39
 forstrand/5,2,10,39
-forstudium/72,71,70,10,34,39
+forstudium/72,71,70,10,39
 forstue/10,11,2,39
 forstumme/1,21,22,79,39
 forstuve/1,21,22,79,39
@@ -18287,7 +18287,7 @@ forvaret/10,26,39
 forvaring/10,11,2,39
 forvarme/1,21,22,79,39
 forvarmer/5,2,10,39
-forvarsel/64,65,10,34,39
+forvarsel/64,65,10,39
 forvarsle/1,21,22,79,39
 forvask/44,10,39
 forvaske/1,21,22,79,39
@@ -18436,7 +18436,7 @@ fotokunst/44,10,39
 fotolyse/44,10,39
 fotometri/44,10,39
 fotomodel/7,10,39
-fotomuseum/34,70,71,10,39,84,85
+fotomuseum/70,71,10,39,84,85
 foton/10,11,2,39
 fotoramme/10,11,2,39
 fotosafari/10,11,2,39
@@ -18554,7 +18554,7 @@ fraktil/10,11,2,39
 fraktion/10,11,2,39
 fraktionel/59,10,49,39
 fraktur/10,11,2,39
-frakørsel/64,65,10,34,39
+frakørsel/64,65,10,39
 fralokke/1,21,22,79,39
 fralægge
 fralægger
@@ -18857,7 +18857,7 @@ fremfor
 fremfærd/44,10,39
 fremføre/20,21,22,79,39
 fremføring/10,11,2,39
-fremførsel/64,65,10,34,39
+fremførsel/64,65,10,39
 fremgå
 fremgår
 fremgås
@@ -19114,7 +19114,7 @@ frigjortes
 frigør
 frigørelse/10,11,2,39
 frigørende/27,39
-frihandel/34,65,10,39
+frihandel/65,10,39
 frihavn/5,2,10,39
 frihed/10,11,2,39
 frihedsdag/5,2,10,39
@@ -19436,7 +19436,7 @@ frøbid/10,48,39
 frøgemme/10,4,11,39
 frøgræs/10,3,39
 frøkappe/10,11,2,39
-frøkapsel/64,65,10,34,39
+frøkapsel/64,65,10,39
 frøken/10,11,2,39
 frøkner/74,10,39
 frøkorn/10,46,4,39
@@ -19621,10 +19621,10 @@ furnere/1,21,22,79,39
 furnering/10,11,2,39
 furore/10,39
 furosemid/10,39
-furunkel/64,65,10,34,39
+furunkel/64,65,10,39
 fus/7,10,39
 fuse/1,21,22,79,39
-fusel/34,65,10,39
+fusel/65,10,39
 fuselen
 fuselens
 fuselage/10,11,2,39
@@ -19721,7 +19721,7 @@ fyraftners
 fyrbækken/10,4,11,39
 fyrbøder/5,2,10,39
 fyre/1,21,22,79,39
-fyreseddel/64,65,10,34,39
+fyreseddel/64,65,10,39
 fyrfad/4,10,5,39
 fyrfadslys/10,46,4,39
 fyrgrav/5,2,10,39
@@ -19834,7 +19834,7 @@ fænge/1,21,22,79,39
 fængelig/10,39,24,23,49
 fænghul/10,3,39
 fænghætte/10,11,2,39
-fængsel/64,10,34,66,39
+fængsel/64,10,66,39
 fængsle/1,21,22,79,39
 fængsling/10,11,2,39
 fænokopi/10,11,2,39
@@ -19863,7 +19863,7 @@ færdigmål/10,46,4,39
 færdigret/7,10,39
 færdigsyet/10,26,39
 færdigvare/10,11,2,39
-færdsel/34,65,10,39
+færdsel/65,10,39
 færge/10,11,2,39
 færge/1,21,22,79,39
 færgeby/10,11,2,39
@@ -19905,7 +19905,7 @@ fødekar/10,47,39
 fødeklinik/7,10,39
 fødekæde/10,11,2,39
 fødelinje/10,11,2,39
-fødemiddel/64,10,34,66,39
+fødemiddel/64,10,66,39
 fødepumpe/10,11,2,39
 føderal/24,10,49,39
 føderalist/10,11,2,39
@@ -19915,7 +19915,7 @@ fødested/10,4,11,39
 fødestue/10,11,2,39
 fødevare/10,11,2,39
 fødeø/10,11,2,39
-fødsel/64,65,10,34,39
+fødsel/64,65,10,39
 fødselar/10,11,2,39
 fødselsår/10,46,4,39
 fødselsdag/5,2,10,39
@@ -20129,7 +20129,7 @@ gaf/7,10,39
 gåfelt/10,4,11,39
 gaffatape/44,10,39
 gaffe/1,21,22,79,39
-gaffel/64,65,10,34,39
+gaffel/64,65,10,39
 gaffelbuk/10,19,39
 gaffeldelt/24,10,49,39
 gaffelsejl/10,46,4,39
@@ -20450,7 +20450,7 @@ gasgrill/10,2,46,39
 gashane/10,11,2,39
 gasholdig/24,10,49,39
 gaskammer/10,13,4,39
-gaskedel/64,65,10,34,39
+gaskedel/64,65,10,39
 gaskomfur/10,4,11,39
 gaslampe/10,11,2,39
 gasledning/10,11,2,39
@@ -20514,7 +20514,7 @@ gatekeeper/5,2,10,39
 gatfinne/10,11,2,39
 gåtid/10,11,2,39
 gatit/7,10,39
-gatkirtel/64,65,10,34,39
+gatkirtel/64,65,10,39
 gåtur/5,2,10,39
 gaucho/10,11,2,39
 gauge/74,10,39
@@ -20567,7 +20567,7 @@ gazpacho/10,11,2,39
 gear/10,46,4,39
 geare/1,21,22,79,39
 gearing/10,11,2,39
-gearkabel/64,10,34,66,39
+gearkabel/64,10,66,39
 gearkasse/10,11,2,39
 gearskift/10,46,4,39
 gearskifte/10,4,11,39
@@ -20775,7 +20775,7 @@ genfremsæt
 genfærd/10,46,4,39
 genføde/20,21,22,79,39
 genfødelse/10,11,2,39
-genfødsel/64,65,10,34,39
+genfødsel/64,65,10,39
 genfødt/24,10,49,39
 genganger/5,2,10,39
 gengive
@@ -21256,13 +21256,13 @@ gidende
 gidendes
 gidet
 gid
-gidsel/64,10,34,66,39
+gidsel/64,10,66,39
 gidsle/1,21,22,79,39
 gie/1,21,22,79,39
 gi
 gie/10,11,2,39
 gieblok/10,19,39
-giffel/64,65,10,34,39
+giffel/64,65,10,39
 gift/24,10,49,39
 gift/5,2,10,39
 giftaffald/45,10,39
@@ -21283,7 +21283,7 @@ giftig/10,39,24,23,49
 giftiggrøn/42,10,49,59,39
 giftiggul/10,38,49,24,39
 giftighed/10,11,2,39
-giftkirtel/64,65,10,34,39
+giftkirtel/64,65,10,39
 giftlilje/10,11,2,39
 giftmord/10,46,4,39
 giftplante/10,11,2,39
@@ -21316,7 +21316,7 @@ gigolo/10,11,2,39
 gigt/44,10,39
 gigtfeber/44,10,39
 gigtisk/28,39
-gigtmiddel/64,10,34,66,39
+gigtmiddel/64,10,66,39
 gigtplaget/10,26,39
 gigtramt/24,10,49,39
 gigtsvag/10,38,49,24,39
@@ -21422,7 +21422,7 @@ glamour/44,10,39
 glamourøs/10,38,49,24,39
 glamping/44,10,39
 glamrock/44,10,39
-glandel/64,65,10,34,39
+glandel/64,65,10,39
 glandulær/24,10,49,39
 glane/1,21,22,79,39
 glanis
@@ -21466,7 +21466,7 @@ glaskolbe/10,11,2,39
 glaskrukke/10,11,2,39
 glaskugle/10,11,2,39
 glaskunst/44,10,39
-glaskuppel/64,65,10,34,39
+glaskuppel/64,65,10,39
 glaslegeme/10,4,11,39
 glasliste/10,11,2,39
 glasloft/10,4,11,39
@@ -21513,7 +21513,7 @@ glatføre/45,10,39
 glathåret/10,26,39
 glathed/44,10,39
 glatis/44,10,39
-glatkørsel/64,65,10,34,39
+glatkørsel/64,65,10,39
 glatløbet/10,26,39
 glatning/10,11,2,39
 glatpolere/1,21,22,79,39
@@ -21539,7 +21539,7 @@ gled/10,39
 glemme/20,21,22,79,39
 glemme/10,39
 glemmebog/44,10,39
-glemsel/34,65,10,39
+glemsel/65,10,39
 glemsom/40,49,10,39,59
 glemsomhed/44,10,39
 glemt/24,10,49,39
@@ -21621,13 +21621,13 @@ gloriøs/10,38,49,24,39
 glorværdig/10,39,24,23,49
 glorød/10,38,49,24,39
 glosar/10,4,11,39
-glosarium/34,70,71,10,39,84,85
+glosarium/70,71,10,39,84,85
 glose/10,11,2,39
 glosehæfte/10,4,11,39
 glosere/1,21,22,79,39
 glosevalg/10,46,4,39
 glossar/10,4,11,39
-glossarium/34,70,71,10,39,84,85
+glossarium/70,71,10,39,84,85
 glosse/10,11,2,39
 glossere/1,21,22,79,39
 glossolali/44,10,39
@@ -22005,7 +22005,7 @@ granatæble/10,4,11,39
 grand/10,11,2,39
 grande/10,11,2,39
 grandios/10,38,49,24,39
-grandonkel/64,65,10,34,39
+grandonkel/64,65,10,39
 grandprix/10,4,11,39
 grandtante/10,11,2,39
 gråne/1,21,22,79,39
@@ -22043,7 +22043,7 @@ grapefrugt/10,11,2,39
 grapejuice/10,11,2,39
 grapetonic/10,11,2,39
 gråpil/5,2,10,39
-gråpoppel/64,65,10,34,39
+gråpoppel/64,65,10,39
 graptolit/7,10,39
 gråpære/10,11,2,39
 gråris/10,2,46,39
@@ -22211,7 +22211,7 @@ gribepunkt/10,4,11,39
 griber/5,2,10,39
 grid/10,46,4,39
 grif/7,10,39
-griffel/64,65,10,34,39
+griffel/64,65,10,39
 grifle/1,21,22,79,39
 grill/10,11,2,39
 grill/10,2,46,39
@@ -22343,7 +22343,7 @@ grubleri/10,4,11,39
 grublisere/1,21,22,79,39
 grubning/10,11,2,39
 grue/1,21,22,79,39
-gruekedel/64,65,10,34,39
+gruekedel/64,65,10,39
 gruelig/10,39,24,23,49
 grufuld/10,38,49,24,39
 gruk/10,47,39
@@ -22393,7 +22393,7 @@ grundmur/5,2,10,39
 grundmuret/10,26,39
 grundpille/10,11,2,39
 grundplan/10,11,2,39
-grundregel/64,65,10,34,39
+grundregel/64,65,10,39
 grundrids/10,46,4,39
 grundrytme/10,11,2,39
 grundskat/7,10,39
@@ -22882,7 +22882,7 @@ gyltegris/5,2,10,39
 gymnasial/10,38,49,24,39
 gymnasiast/10,11,2,39
 gymnasieår/10,46,4,39
-gymnasium/72,71,70,10,34,39
+gymnasium/72,71,70,10,39
 gymnast/10,11,2,39
 gymnastik/58,10,39
 gymnastisk/28,39
@@ -22925,7 +22925,7 @@ gysning/10,11,2,39
 gysser/74,10,39
 gytje/44,10,39
 gyvel/10,11,2,39
-gyvel/64,65,10,34,39
+gyvel/64,65,10,39
 gyvel/10,2,46,39
 gyvelbusk/5,2,10,39
 gæk/10,19,39
@@ -23008,7 +23008,7 @@ gæv/10,38,49,24,39
 gø/1,21,22,79,39
 gøde/1,21,22,79,39
 gødning/10,11,2,39
-gødsel/34,65,10,39
+gødsel/65,10,39
 gødselen
 gødselens
 gødske/1,21,22,79,39
@@ -23198,7 +23198,7 @@ halskræft/44,10,39
 halskæde/10,11,2,39
 halslæge/10,11,2,39
 halsløs/10,38,49,24,39
-halsmuskel/64,65,10,34,39
+halsmuskel/64,65,10,39
 halspastil/7,10,39
 halssmykke/10,4,11,39
 halt/24,10,49,39
@@ -23225,8 +23225,8 @@ halvbror/44,10,39
 halvbrødre/74,10,39
 halvbue/10,11,2,39
 halvbusk/5,2,10,39
-halvcirkel/64,65,10,34,39
-halvcykel/64,65,10,34,39
+halvcirkel/64,65,10,39
+halvcykel/64,65,10,39
 halvdag/5,2,10,39
 halvdags/39
 halvdårlig/10,39,24,23,49
@@ -23283,7 +23283,7 @@ halvmørke/45,10,39
 halvnode/10,11,2,39
 halvnusset/10,26,39
 halvnøgen/12,49,10,39
-halvonkel/64,65,10,34,39
+halvonkel/64,65,10,39
 halvpart/10,11,2,39
 halvpebret/10,26,39
 halvprofil/10,11,2,39
@@ -23404,7 +23404,7 @@ håndbruse/10,11,2,39
 håndbygget/10,26,39
 håndbøger/74,10,39
 håndcreme/10,11,2,39
-håndcykel/64,65,10,34,39
+håndcykel/64,65,10,39
 hånddukke/10,11,2,39
 hånddyppet/10,26,39
 hånde/10,39
@@ -23698,14 +23698,14 @@ harmonik/58,10,39
 harmonika/10,11,2,39
 harmonisk/28,39
 harmonium/10,3,39
-harmonium/34,70,71,10,39,84,85
+harmonium/70,71,10,39,84,85
 hårnål/5,2,10,39
 hårnet/10,47,39
 harnisk/10,4,11,39
 harpe/10,11,2,39
 harpe/1,21,22,79,39
 harpenist/10,11,2,39
-hårpensel/64,65,10,34,39
+hårpensel/64,65,10,39
 harpiks/10,11,2,39
 hårpisk/5,2,10,39
 harpist/10,11,2,39
@@ -23881,7 +23881,7 @@ havelse/10,39
 havemand/44,10,39
 havemur/5,2,10,39
 havemænd/74,10,39
-havemøbel/64,10,34,66,39
+havemøbel/64,10,66,39
 havepynt/44,10,39
 havesal/5,2,10,39
 havesanger/5,2,10,39
@@ -24073,7 +24073,7 @@ heksameter/10,15,13,39
 hekse/1,21,22,79,39
 heksehyl/10,46,4,39
 heksejagt/10,11,2,39
-heksekedel/64,65,10,34,39
+heksekedel/64,65,10,39
 heksekunst/10,11,2,39
 hekseri/10,4,11,39
 heksering/5,2,10,39
@@ -24213,7 +24213,7 @@ helvetier/5,2,10,39
 helvetisk/28,39
 heman/10,11,2,39
 hemiazygos
-hemicykel/64,65,10,34,39
+hemicykel/64,65,10,39
 hemiparese/10,11,2,39
 hemiplegi/44,10,39
 hemisfære/10,11,2,39
@@ -24484,7 +24484,7 @@ heraf
 heraldik/7,10,39
 heraldiker/5,2,10,39
 heraldisk/28,39
-herbarium/34,70,71,10,39,84,85
+herbarium/70,71,10,39,84,85
 herberg/10,4,11,39
 herbicid/10,4,11,39
 herbivor/10,11,2,39
@@ -24565,7 +24565,7 @@ herpesvira/74,10,39
 herpetolog/10,11,2,39
 herre/10,11,2,39
 herrebesøg/10,46,4,39
-herrecykel/64,65,10,34,39
+herrecykel/64,65,10,39
 herred/10,4,11,39
 herredyr/24,10,49,39
 herredyst/10,11,2,39
@@ -24747,7 +24747,7 @@ hili
 hilorum
 himle/74,10,39
 himle/1,21,22,79,39
-himmel/34,65,10,39
+himmel/65,10,39
 himmelen
 himmelens
 himmelblå/24,10,49,39
@@ -24915,7 +24915,7 @@ hjemfaldne
 hjemfald
 hjemflage/1,21,22,79,39
 hjemføre/20,21,22,79,39
-hjemførsel/64,65,10,34,39
+hjemførsel/64,65,10,39
 hjemgående/27,39
 hjemgive
 hjemgiver
@@ -25045,7 +25045,7 @@ hjortekalv/5,2,10,39
 hjorterod/10,2,46,39
 hjortetak/7,10,39
 hjul/10,46,4,39
-hjulaksel/64,65,10,34,39
+hjulaksel/64,65,10,39
 hjulben/10,46,4,39
 hjulbenet/10,26,39
 hjuldamper/5,2,10,39
@@ -25055,7 +25055,7 @@ hjuleger/10,2,46,39
 hjulet/10,26,39
 hjulformet/10,26,39
 hjulfælg/5,2,10,39
-hjulkapsel/64,65,10,34,39
+hjulkapsel/64,65,10,39
 hjulkrone/10,11,2,39
 hjulmager/5,2,10,39
 hjulmand/44,10,39
@@ -25175,7 +25175,7 @@ holdig/24,10,49,39
 holdighed/44,10,39
 holding/44,10,39
 holdkamp/5,2,10,39
-holdkørsel/64,65,10,34,39
+holdkørsel/64,65,10,39
 holdleder/5,2,10,39
 holdløb/10,46,4,39
 holdning/10,11,2,39
@@ -25420,7 +25420,7 @@ hovedpart/10,11,2,39
 hovedpine/10,11,2,39
 hovedpude/10,11,2,39
 hovedpunkt/10,4,11,39
-hovedregel/64,65,10,34,39
+hovedregel/64,65,10,39
 hovedrent
 hovedret/7,10,39
 hovedrig/10,38,49,24,39
@@ -25675,7 +25675,7 @@ hundeæde/44,10,39
 hundeæde/45,10,39
 hundeøje/45,10,39
 hundeøjne/74,10,39
-hundjævel/34,65,10,39
+hundjævel/65,10,39
 hundjævle/74,10,39
 hundred/10
 hundred/10,39
@@ -25792,7 +25792,7 @@ huskekage/10,11,2,39
 huskeliste/10,11,2,39
 huskendt/24,10,49,39
 husker/5,2,10,39
-huskeregel/64,65,10,34,39
+huskeregel/64,65,10,39
 huskespil/10,47,39
 huskværdig/24,10,49,39
 husky/10,11,2,39
@@ -25825,7 +25825,7 @@ husordners
 huspoet/10,11,2,39
 huspris/10,11,2,39
 husråd/10,46,4,39
-husregel/64,65,10,34,39
+husregel/64,65,10,39
 husrum/10,57,39
 husrække/10,11,2,39
 husskade/10,11,2,39
@@ -25977,7 +25977,7 @@ hvine/1,21,22,79,39
 hvinen/10,39
 hvinende
 hvinænder/74,10,39
-hvirvel/64,65,10,34,39
+hvirvel/64,65,10,39
 hvirveldyr/10,46,4,39
 hvirvelløs/10,38,49,24,39
 hvirvle/1,21,22,79,39
@@ -26079,7 +26079,7 @@ hyggekrog/5,2,10,39
 hyggelig/10,39,24,23,49
 hyggenygge/1,21,22,79,39
 hyggenygge/44,10,39
-hyggeonkel/64,65,10,34,39
+hyggeonkel/64,65,10,39
 hyggestund/10,11,2,39
 hygiejne/44,10,39
 hygiejnisk/28,39
@@ -26347,7 +26347,7 @@ hænger/5,2,10,39
 hængerøv/5,2,10,39
 hængesofa/10,11,2,39
 hængning/10,11,2,39
-hængsel/64,10,34,66,39
+hængsel/64,10,66,39
 hængselled/10,47,39
 hængsle/1,21,22,79,39
 hængsling/10,11,2,39
@@ -26392,7 +26392,7 @@ hævegebyr/10,4,11,39
 hævekort/10,46,4,39
 hævekurv/5,2,10,39
 hævelse/10,11,2,39
-hævemiddel/64,10,34,66,39
+hævemiddel/64,10,66,39
 hæver/5,2,10,39
 hævert/10,11,2,39
 hævet/10,26,39
@@ -26425,7 +26425,7 @@ høhøst/10,11,2,39
 høj
 høj/5,2,10,39
 høj/10,38,49,24,39
-højadel/34,65,10,39
+højadel/65,10,39
 højadelen
 højadelens
 højadelig/10,39,24,23,49
@@ -26965,7 +26965,7 @@ iltforbrug/45,10,39
 iltfri/10,38,49,24,39
 iltholdig/24,10,49,39
 iltindhold/45,10,39
-iltmangel/34,65,10,39
+iltmangel/65,10,39
 iltmaske/10,11,2,39
 iltmætning/44,10,39
 iltning/44,10,39
@@ -27032,7 +27032,7 @@ imperativ/10,4,11,39
 imperator/10,11,2,39
 imperfekt/24,10,49,39
 imperial/24,10,49,39
-imperium/72,71,70,10,34,39
+imperium/72,71,70,10,39
 imperiøs/24,10,49,39
 implantat/10,4,11,39
 implantere/1,21,22,79,39
@@ -27415,7 +27415,7 @@ indføling/44,10,39
 indføre/20,21,22,79,39
 indførelse/10,11,2,39
 indføring/10,11,2,39
-indførsel/64,65,10,34,39
+indførsel/64,65,10,39
 indført/24,10,49,39
 indgå
 indgår
@@ -27503,7 +27503,7 @@ indianer/5,2,10,39
 indiansk/28,39
 indiapapir/10,4,11,39
 indicere/1,21,22,79,39
-indicium/72,71,70,10,34,39
+indicium/72,71,70,10,39
 indie/10,39
 indieband/10,46,4,39
 indiebands
@@ -27572,7 +27572,7 @@ indkøbsnet/10,47,39
 indkøbstur/5,2,10,39
 indkøre/20,21,22,79,39
 indkøring/10,11,2,39
-indkørsel/64,65,10,34,39
+indkørsel/64,65,10,39
 indlade/1,21,22,79,39
 indlade
 indlader
@@ -28156,7 +28156,7 @@ inkohærent/24,10,49,39
 inkretin/10,4,11,39
 inkubation/10,11,2,39
 inkubator/10,11,2,39
-inkunabel/64,65,10,34,39
+inkunabel/64,65,10,39
 inkvirere/1,21,22,79,39
 inkvisitor/10,11,2,39
 inkvit/10,3,39
@@ -28608,7 +28608,7 @@ isthmi
 isthmorum
 istid/10,11,2,39
 istjeneste/10,11,2,39
-isvaffel/64,65,10,34,39
+isvaffel/64,65,10,39
 isvand/45,10,39
 isvinter/14,10,13,39
 isværk/10,4,11,39
@@ -28730,7 +28730,7 @@ jagtmark/10,11,2,39
 jagtpatron/10,11,2,39
 jagtprøve/10,11,2,39
 jagtret/58,10,39
-jagtriffel/64,65,10,34,39
+jagtriffel/64,65,10,39
 jagtsæson/10,11,2,39
 jagttegn/10,46,4,39
 jagttid/10,11,2,39
@@ -28879,7 +28879,7 @@ jernlady/10,11,2,39
 jernladies
 jernmalm/5,2,10,39
 jernmand/44,10,39
-jernmangel/34,65,10,39
+jernmangel/65,10,39
 jernmine/10,11,2,39
 jernmænd/74,10,39
 jernpille/10,11,2,39
@@ -28978,7 +28978,7 @@ jodering/44,10,39
 jodholdig/24,10,49,39
 jodid/10,4,11,39
 jodle/1,21,22,79,39
-jodmangel/34,65,10,39
+jodmangel/65,10,39
 jogge/1,21,22,79,39
 jogger/5,2,10,39
 jogging/44,10,39
@@ -29070,7 +29070,7 @@ jordhøj/5,2,10,39
 jordhøjde/10,11,2,39
 jording/10,11,2,39
 jordisk/28,39
-jordkabel/64,10,34,66,39
+jordkabel/64,10,66,39
 jordklode/10,11,2,39
 jordklump/10,11,2,39
 jordknold/5,2,10,39
@@ -29116,7 +29116,7 @@ jovialitet/44,10,39
 jovist
 joystick/10,46,4,39
 jubatus
-jubel/34,65,10,39
+jubel/65,10,39
 jubelen
 jubelens
 jubelår/10,46,4,39
@@ -29128,7 +29128,7 @@ jubelskrig/10,46,4,39
 jubi
 jubilar/10,11,2,39
 jubilere/1,21,22,79,39
-jubilæum/34,70,71,10,39,84,85
+jubilæum/70,71,10,39,84,85
 juble/1,21,22,79,39
 judaisere/1,21,22,79,39
 judaisme/44,10,39
@@ -29139,7 +29139,7 @@ judaspenge/74,10,39
 judaspenge/10,2,46,39
 judasøre/10,4,11,39
 judiciel/42,10,49,59,39
-judicium/34,70,71,10,39,84,85
+judicium/70,71,10,39,84,85
 judo/44,10,39
 judoklub/7,10,39
 judosport/44,10,39
@@ -29380,7 +29380,7 @@ kabbalisme/44,10,39
 kabbalist/10,11,2,39
 kabbeleje/10,11,2,39
 kåbe/10,11,2,39
-kabel/64,10,34,66,39
+kabel/64,10,66,39
 kabelanlæg/10,47,39
 kabelbane/10,11,2,39
 kabelbrønd/5,2,10,39
@@ -29454,7 +29454,7 @@ kagecreme/10,11,2,39
 kagedåse/10,11,2,39
 kagedej/5,2,10,39
 kageform/5,2,10,39
-kagegaffel/64,65,10,34,39
+kagegaffel/64,65,10,39
 kagekone/10,11,2,39
 kagekrumme/10,11,2,39
 kagemand/44,10,39
@@ -29502,7 +29502,7 @@ kakifarve/10,11,2,39
 kakifarvet/10,26,39
 kakifrugt/10,11,2,39
 kakitræ/10,4,11,39
-kakkel/64,65,10,34,39
+kakkel/64,65,10,39
 kakkelbord/4,10,5,39
 kakkelovn/5,2,10,39
 kakofoni/10,11,2,39
@@ -29568,7 +29568,7 @@ kalkkost/5,2,10,39
 kalkkule/10,11,2,39
 kalklag/10,46,4,39
 kalkmaleri/10,4,11,39
-kalkmangel/34,65,10,39
+kalkmangel/65,10,39
 kalkmine/10,11,2,39
 kalkmørtel/64,65,44,10,39
 kalkning/10,11,2,39
@@ -29616,7 +29616,7 @@ kålroe/10,11,2,39
 kålstok/10,19,39
 kålsuppe/10,11,2,39
 kalv/5,2,10,39
-kalvarium/34,70,71,10,39,84,85
+kalvarium/70,71,10,39,84,85
 kalvebov/5,2,10,39
 kalvebryst/45,10,39
 kalvefilet/10,11,2,39
@@ -29694,7 +29694,7 @@ kampkunst/10,11,2,39
 kampleder/5,2,10,39
 kamplyst/44,10,39
 kamplysten/12,49,10,39
-kampmiddel/64,10,34,66,39
+kampmiddel/64,10,66,39
 kampmoral/44,10,39
 kamppilot/10,11,2,39
 kampplads/10,11,2,39
@@ -29706,7 +29706,7 @@ kampsport/44,10,39
 kampstart/10,11,2,39
 kampstof/10,3,39
 kampstyrke/10,11,2,39
-kamptummel/34,65,10,39
+kamptummel/65,10,39
 kampvalg/10,46,4,39
 kampvilje/44,10,39
 kampvogn/5,2,10,39
@@ -29878,7 +29878,7 @@ kapillær/10,4,11,39
 kapital/10,38,49,24,39
 kapital/10,11,2,39
 kapitalist/10,11,2,39
-kapitel/64,10,34,66,39
+kapitel/64,10,66,39
 kapitulere/1,21,22,79,39
 kapitæl/10,4,11,39
 kapitæl/10,11,2,39
@@ -29908,7 +29908,7 @@ kaproning/10,11,2,39
 kapsejlads/10,11,2,39
 kapsejler/5,2,10,39
 kapsejse/1,21,22,79,39
-kapsel/64,65,10,34,39
+kapsel/64,65,10,39
 kapsle/1,21,22,79,39
 kapslet/10,26,39
 kapsling/10,11,2,39
@@ -29924,7 +29924,7 @@ kårs
 kårene
 kårenes
 karabin/10,11,2,39
-karaffel/64,65,10,34,39
+karaffel/64,65,10,39
 karakter/10,11,2,39
 karambole/44,10,39
 karamel/7,10,39
@@ -29948,7 +29948,7 @@ karbon/24,10,49,39
 karbonade/10,11,2,39
 karbonat/10,4,11,39
 karbontid/44,10,39
-karbunkel/64,65,10,34,39
+karbunkel/64,65,10,39
 karburator/10,11,2,39
 karburere/1,21,22,79,39
 karcinogen/24,10,49,39
@@ -30061,7 +30061,7 @@ kartere/1,21,22,79,39
 kartesisk/28,39
 karteuser/5,2,10,39
 karting/44,10,39
-kartoffel/64,65,10,34,39
+kartoffel/64,65,10,39
 kartograf/10,11,2,39
 kartografi/44,10,39
 karton/10,11,2,39
@@ -30101,7 +30101,7 @@ kasse/10,11,2,39
 kassebil/10,11,2,39
 kassebog/44,10,39
 kassebøger/74,10,39
-kassecykel/64,65,10,34,39
+kassecykel/64,65,10,39
 kassedame/10,11,2,39
 kassekamp/5,2,10,39
 kassere/1,21,22,79,39
@@ -30241,7 +30241,7 @@ keds
 kede
 kedes
 kede/1,21,22,79,39
-kedel/64,65,10,34,39
+kedel/64,65,10,39
 kedelanlæg/10,47,39
 kedeldragt/10,11,2,39
 kedelhus/4,10,5,39
@@ -30325,7 +30325,7 @@ kenizzit/7,10,39
 kennel/10,11,2,39
 kennelklub/7,10,39
 kenotaf/10,4,11,39
-kenotafium/34,70,71,10,39,84,85
+kenotafium/70,71,10,39,84,85
 kentaur/10,11,2,39
 kenyaner/5,2,10,39
 kenyansk/28,39
@@ -30525,7 +30525,7 @@ kinky/39
 kino/10,11,2,39
 kinolon/10,4,11,39
 kinon/10,11,2,39
-kinoorgel/64,10,34,66,39
+kinoorgel/64,10,66,39
 kinæstesi/44,10,39
 kiosk/10,11,2,39
 kioskejer/5,2,10,39
@@ -30563,7 +30563,7 @@ kirkekor/10,46,4,39
 kirkelig/10,39,24,23,49
 kirkeliv/45,10,39
 kirkemusik/58,10,39
-kirkeorgel/64,10,34,66,39
+kirkeorgel/64,10,66,39
 kirkeplads/10,11,2,39
 kirkerist/10,11,2,39
 kirkerotte/10,11,2,39
@@ -30578,13 +30578,13 @@ kirkeværge/10,11,2,39
 kiromanti/44,10,39
 kirsch/10,11,2,39
 kirsebær/10,48,39
-kirtel/64,65,10,34,39
+kirtel/64,65,10,39
 kirtelhår/10,46,4,39
 kirurg/10,11,2,39
 kirurgi/44,10,39
 kirurgisk/28,39
 kis/44,10,39
-kisel/34,65,10,39
+kisel/65,10,39
 kiselen
 kiselens
 kiselalge/10,11,2,39
@@ -30618,7 +30618,7 @@ kitsch/10,39
 kitschet/10,26,39
 kitte/1,21,22,79,39
 kittedag/5,2,10,39
-kittel/64,65,10,34,39
+kittel/64,65,10,39
 kittæer/5,2,10,39
 kiv/44,10,39
 kives
@@ -30630,7 +30630,7 @@ kjoleklædt/24,10,49,39
 kjoleliv/10,46,4,39
 kjolesæt/10,47,39
 kjolesøm/10,19,39
-kjortel/64,65,10,34,39
+kjortel/64,65,10,39
 kjove/10,11,2,39
 kladde/10,11,2,39
 kladdebog/44,10,39
@@ -30796,7 +30796,7 @@ klaverløve/10,11,2,39
 klaverspil/10,47,39
 klaviatur/10,4,11,39
 klavichord/10,4,11,39
-klavikel/64,65,10,34,39
+klavikel/64,65,10,39
 klavikord/10,4,11,39
 klavikulær/24,10,49,39
 klavre/1,21,22,79,39
@@ -31022,7 +31022,7 @@ klovneri/10,4,11,39
 klovsyge/44,10,39
 klub/7,10,39
 klubblad/4,10,5,39
-klubcykel/64,65,10,34,39
+klubcykel/64,65,10,39
 klubdragt/10,11,2,39
 klubhold/10,46,4,39
 klubhus/4,10,5,39
@@ -31190,13 +31190,13 @@ knas/45,10,39
 knase/1,21,22,79,39
 knasen/10,39
 knast/10,11,2,39
-knastaksel/64,65,10,34,39
+knastaksel/64,65,10,39
 knastet/10,26,39
 knastfri/10,38,49,24,39
 knasthul/10,3,39
 knastør/59,10,49,39
 knavel/10,11,2,39
-knavel/64,65,10,34,39
+knavel/64,65,10,39
 knavel/10,2,46,39
 kneb/10,46,4,39
 knebel/64,65,44,10,39
@@ -31284,7 +31284,7 @@ knoglemarv/44,10,39
 knoglet/10,26,39
 knoglevæv/10,46,4,39
 knojern/10,46,4,39
-knokkel/64,65,10,34,39
+knokkel/64,65,10,39
 knokle/1,21,22,79,39
 knokleri/45,10,39
 knoklet/10,26,39
@@ -31401,7 +31401,7 @@ koala/10,11,2,39
 koalabjørn/5,2,10,39
 koalition/10,11,2,39
 koan/10,39
-kobbel/64,10,34,66,39
+kobbel/64,10,66,39
 kobbelet
 kobbelets
 kobber/45,10,39
@@ -31456,7 +31456,7 @@ kogefast/24,10,49,39
 kogeflæsk/45,10,39
 kogegrej/10,4,11,39
 kogekande/10,11,2,39
-kogekedel/64,65,10,34,39
+kogekedel/64,65,10,39
 kogekone/10,11,2,39
 kogekunst/44,10,39
 kogende/27,39
@@ -31582,7 +31582,7 @@ kollats/10,11,2,39
 kollega/10,11,2,39
 kolleger/74,10,39
 kollegial/10,38,49,24,39
-kollegium/72,71,70,10,34,39
+kollegium/72,71,70,10,39
 kollekt/10,11,2,39
 kollektion/10,11,2,39
 kollektiv/10,4,11,39
@@ -31597,10 +31597,10 @@ kollimere/1,21,22,79,39
 kollision/10,11,2,39
 kolloid/24,10,49,39
 kolloid/10,4,11,39
-kollokvium/72,71,70,10,34,39
+kollokvium/72,71,70,10,39
 koloenorm/24,10,49,39
 kolofon/10,11,2,39
-kolofonium/34,70,71,10,39,84,85
+kolofonium/70,71,10,39,84,85
 kolokvint/10,11,2,39
 kolon/10,4,11,39
 koloni/10,11,2,39
@@ -31638,7 +31638,7 @@ kolumnist/10,11,2,39
 koma/44,10,39
 komatøs/24,10,49,39
 kombattant/10,11,2,39
-kombikedel/64,65,10,34,39
+kombikedel/64,65,10,39
 kombinatør/10,11,2,39
 kombinere/1,21,22,79,39
 kombineret/10,26,39
@@ -31723,7 +31723,7 @@ kompas/10,3,39
 kompasnål/5,2,10,39
 kompasrose/10,11,2,39
 kompatibel/10,49,77,39
-kompendium/72,71,70,10,34,39
+kompendium/72,71,70,10,39
 kompensere/1,21,22,79,39
 kompetence/10,11,2,39
 kompetent/24,10,49,39
@@ -31777,7 +31777,7 @@ koncertsal/5,2,10,39
 koncession/10,11,2,39
 koncessiv/24,10,49,39
 koncil/10,4,11,39
-koncilium/34,70,71,10,39,84,85
+koncilium/70,71,10,39,84,85
 koncipere/1,21,22,79,39
 koncipist/10,11,2,39
 koncis/10,38,49,24,39
@@ -31788,7 +31788,7 @@ kondensere/1,21,22,79,39
 kondensfri/24,10,49,39
 kondensor/10,11,2,39
 kondi/44,10,39
-kondicykel/64,65,10,34,39
+kondicykel/64,65,10,39
 kondiløb/10,46,4,39
 kondiløber/5,2,10,39
 kondisko/10,2,46,39
@@ -31864,7 +31864,7 @@ kongerige/10,4,11,39
 kongerække/10,11,2,39
 kongestion/10,11,2,39
 kongesøn/7,10,39
-kongetitel/64,65,10,34,39
+kongetitel/64,65,10,39
 kongetro/24,10,49,39
 kongetrone/10,11,2,39
 kongevand/45,10,39
@@ -31916,7 +31916,7 @@ konsensus/58,10,39
 konservere/1,21,22,79,39
 konserves/44,10,39
 konsignere/1,21,22,79,39
-konsilium/34,70,71,10,39,84,85
+konsilium/70,71,10,39,84,85
 konsistens/44,10,39
 konsistent/24,10,49,39
 konsol/7,10,39
@@ -31925,9 +31925,9 @@ konsolspil/10,47,39
 konsonans/10,11,2,39
 konsonant/10,11,2,39
 konsort/10,11,2,39
-konsortium/34,70,71,10,39,84,85
+konsortium/70,71,10,39,84,85
 konspirere/1,21,22,79,39
-konstabel/64,65,10,34,39
+konstabel/64,65,10,39
 konstans/10,11,2,39
 konstant/10,11,2,39
 konstant/24,10,49,39
@@ -32130,7 +32130,7 @@ kornaks/10,46,4,39
 kornavl/44,10,39
 kornblå/24,10,49,39
 kornblomst/10,11,2,39
-korncirkel/64,65,10,34,39
+korncirkel/64,65,10,39
 korne/1,21,22,79,39
 kornel/7,10,39
 kornelbusk/5,2,10,39
@@ -32305,7 +32305,7 @@ kostal/24,10,49,39
 kostald/5,2,10,39
 kostbar/10,38,49,24,39
 kostbarhed/10,11,2,39
-kostcirkel/64,65,10,34,39
+kostcirkel/64,65,10,39
 koste/1,21,22,79,39
 koste/1,21,22,79,39
 kostelev/10,11,2,39
@@ -32385,7 +32385,7 @@ krakiler/5,2,10,39
 krakileri/10,4,11,39
 krakilsk/28,39
 krakke/1,21,22,79,39
-krakmandel/64,65,10,34,39
+krakmandel/64,65,10,39
 krakning/10,11,2,39
 krål/10,11,2,39
 kram/10,47,39
@@ -32412,10 +32412,10 @@ kraning/10,11,2,39
 kraniolog/10,11,2,39
 kraniologi/44,10,39
 kraniotomi/10,11,2,39
-kranium/72,71,70,10,34,39
+kranium/72,71,70,10,39
 krank/5,2,10,39
 krank/10,38,49,24,39
-krankaksel/64,65,10,34,39
+krankaksel/64,65,10,39
 krankleje/10,4,11,39
 krans/5,2,10,39
 kranse/1,21,22,79,39
@@ -32609,7 +32609,7 @@ kristning/10,11,2,39
 kristologi/44,10,39
 kristtjørn/10,2,46,39
 kristtorn/10,2,46,39
-kriterium/72,71,70,10,34,39
+kriterium/72,71,70,10,39
 kritik/7,10,39
 kritiker/5,2,10,39
 kritikløs/10,38,49,24,39
@@ -32728,7 +32728,7 @@ krummerik/7,10,39
 krumning/10,11,2,39
 krumnæset/10,26,39
 krumrygget/10,26,39
-krumsabel/64,65,10,34,39
+krumsabel/64,65,10,39
 krumslutte/1,21,22,79,39
 krumspring/10,46,4,39
 krumstav/5,2,10,39
@@ -33123,7 +33123,7 @@ kupmager/5,2,10,39
 kupon/10,11,2,39
 kuponhæfte/10,4,11,39
 kuppe/1,21,22,79,39
-kuppel/64,65,10,34,39
+kuppel/64,65,10,39
 kuppelsal/5,2,10,39
 kuppeltelt/4,10,5,39
 kur/44,10,39
@@ -33136,7 +33136,7 @@ kuratere/1,21,22,79,39
 kuratering/10,11,2,39
 kurativ/24,10,49,39
 kurator/10,11,2,39
-kuratorium/34,70,71,10,39,84,85
+kuratorium/70,71,10,39,84,85
 kurbad/4,10,5,39
 kurby/10,11,2,39
 kurder/5,2,10,39
@@ -33180,7 +33180,7 @@ kursskifte/10,4,11,39
 kursspring/10,46,4,39
 kurstab/10,46,4,39
 kursted/10,4,11,39
-kursus/34,70,71,10,39,84,85
+kursus/70,71,10,39,84,85
 kursusdag/5,2,10,39
 kursusplan/10,11,2,39
 kursussted/10,4,11,39
@@ -33196,7 +33196,7 @@ kurve/1,21,22,79,39
 kurve/10,11,2,39
 kurveflet/10,39
 kurvemager/5,2,10,39
-kurvemøbel/64,10,34,66,39
+kurvemøbel/64,10,66,39
 kurvestol/5,2,10,39
 kurvet/10,26,39
 kurvfuld/10,38,49,24,39
@@ -33505,7 +33505,7 @@ kystzone/10,11,2,39
 kæbe/10,11,2,39
 kæbeben/10,46,4,39
 kæbeled/10,47,39
-kæbemuskel/64,65,10,34,39
+kæbemuskel/64,65,10,39
 kæberasler/5,2,10,39
 kæbestød/10,46,4,39
 kæde/1,21,22,79,39
@@ -33754,7 +33754,7 @@ køkkenvask/5,2,10,39
 køkkenvej/5,2,10,39
 køkkenvægt/5,2,10,39
 køkultur/44,10,39
-køkørsel/64,65,10,34,39
+køkørsel/64,65,10,39
 køl/10,39
 køl/5,2,10,39
 kølbåd/5,2,10,39
@@ -33765,8 +33765,8 @@ køleboks/5,2,10,39
 køledisk/5,2,10,39
 kølehus/4,10,5,39
 kølemad/44,10,39
-kølemedium/72,71,70,10,34,39
-kølemiddel/64,10,34,66,39
+kølemedium/72,71,70,10,39
+kølemiddel/64,10,66,39
 kølemontre/10,11,2,39
 kølemontør/10,11,2,39
 køler/5,2,10,39
@@ -33811,7 +33811,7 @@ kønsdrift/44,10,39
 kønsfælle/10,11,2,39
 kønshår/10,46,4,39
 kønshormon/10,4,11,39
-kønskirtel/64,65,10,34,39
+kønskirtel/64,65,10,39
 kønskraft/44,10,39
 kønskrans/5,2,10,39
 kønslig/10,39,24,23,49
@@ -33859,7 +33859,7 @@ køretøj/10,4,11,39
 kørne/1,21,22,79,39
 kørner/5,2,10,39
 kørnerprik/7,10,39
-kørsel/64,65,10,34,39
+kørsel/64,65,10,39
 kørvel/44,10,39
 køter/5,2,10,39
 køtilbud/10,47,39
@@ -33891,7 +33891,7 @@ labyrint/10,11,2,39
 lad/10,38,49,24,39
 lad/10,47,39
 ladanum/44,10,39
-ladcykel/64,65,10,34,39
+ladcykel/64,65,10,39
 lade
 lader
 lades
@@ -34011,7 +34011,7 @@ laksegl/10,46,4,39
 laksere/1,21,22,79,39
 lakserende/27,39
 lakserød/10,38,49,24,39
-lakseyngel/34,65,10,39
+lakseyngel/65,10,39
 lakseørred/10,11,2,39
 laksko/10,2,46,39
 laksrosa/24,10,49,39
@@ -34108,7 +34108,7 @@ lancet/7,10,39
 lancetfisk/10,2,46,39
 lancier/10,11,2,39
 land/4,10,5,39
-landadel/34,65,10,39
+landadel/65,10,39
 landadelen
 landanlæg/10,47,39
 landareal/10,4,11,39
@@ -34239,10 +34239,10 @@ lånemarked/10,4,11,39
 låneord/10,46,4,39
 låner/5,2,10,39
 låneramme/10,11,2,39
-låneregel/64,65,10,34,39
+låneregel/64,65,10,39
 lånerente/10,11,2,39
 lånerkort/10,46,4,39
-låneseddel/64,65,10,34,39
+låneseddel/64,65,10,39
 lånevilkår/10,46,4,39
 lang/39
 langs
@@ -34387,7 +34387,7 @@ larm/44,10,39
 larme/1,21,22,79,39
 larmen/10,39
 larmende/27,39
-lårmuskel/64,65,10,34,39
+lårmuskel/64,65,10,39
 lårskade/10,11,2,39
 lårtunge/10,11,2,39
 larve/10,11,2,39
@@ -34480,7 +34480,7 @@ lav/10,46,4,39
 lav/10,11,2,39
 lav/10,38,49,24,39
 lava/10,11,2,39
-lavadel/34,65,10,39
+lavadel/65,10,39
 lavadelen
 lavadelens
 lavadelig/10,39,24,23,49
@@ -34607,7 +34607,7 @@ ledig/10,39,24,23,49
 lediggang/44,10,39
 ledighed/44,10,39
 leding/44,10,39
-ledkapsel/64,65,10,34,39
+ledkapsel/64,65,10,39
 ledmus/10,2,46,39
 ledning/10,11,2,39
 ledorm/5,2,10,39
@@ -34655,7 +34655,7 @@ legemsvægt/5,2,10,39
 legende/10,11,2,39
 legende/27,39
 legeområde/10,4,11,39
-legeonkel/64,65,10,34,39
+legeonkel/64,65,10,39
 legeplads/10,11,2,39
 leger/5,2,10,39
 legere/1,21,22,79,39
@@ -34870,7 +34870,7 @@ leverance/10,11,2,39
 leverandør/10,11,2,39
 levercelle/10,11,2,39
 levere/1,21,22,79,39
-leveregel/64,65,10,34,39
+leveregel/64,65,10,39
 leveret/10,26,39
 levergryde/44,10,39
 levering/10,11,2,39
@@ -35393,7 +35393,7 @@ livsarving/10,11,2,39
 livsbane/10,11,2,39
 livsbegær/10,46,4,39
 livsblod/45,10,39
-livscykel/64,65,10,34,39
+livscykel/64,65,10,39
 livscyklus/7,10,39
 livsdrift/44,10,39
 livsdrøm/10,19,39
@@ -35533,7 +35533,7 @@ lodret/59,10,49,39
 lods/10,11,2,39
 lodsbåd/5,2,10,39
 lodse/1,21,22,79,39
-lodseddel/64,65,10,34,39
+lodseddel/64,65,10,39
 lodsejer/5,2,10,39
 lodseri/10,4,11,39
 lodsning/10,11,2,39
@@ -35749,7 +35749,7 @@ lovgivende/27,39
 lovgiver/5,2,10,39
 lovgivning/10,11,2,39
 lovhjemlet/10,26,39
-lovhjemmel/34,65,10,39
+lovhjemmel/65,10,39
 lovindgreb/10,46,4,39
 lovjungle/44,10,39
 lovkraft/44,10,39
@@ -35769,7 +35769,7 @@ lovord/10,46,4,39
 lovpakke/10,11,2,39
 lovpligtig/10,39,24,23,49
 lovprise/20,21,22,79,39
-lovregel/64,65,10,34,39
+lovregel/64,65,10,39
 lovsamling/10,11,2,39
 lovsang/5,2,10,39
 lovsform/10,11,2,39
@@ -35865,7 +35865,7 @@ luftning/10,11,2,39
 luftnummer/10,13,4,39
 luftpistol/10,11,2,39
 luftpost/44,10,39
-luftriffel/64,65,10,34,39
+luftriffel/64,65,10,39
 luftrod/44,10,39
 luftrum/10,57,39
 luftrødder/74,10,39
@@ -36190,7 +36190,7 @@ lynhurtig/10,39,24,23,49
 lynild/44,10,39
 lynkineser/5,2,10,39
 lynkrig/5,2,10,39
-lynkursus/34,70,71,10,39,84,85
+lynkursus/70,71,10,39,84,85
 lynlås/5,2,10,39
 lynne/45,10,39
 lynnedslag/10,46,4,39
@@ -36406,7 +36406,7 @@ lædering/10,11,2,39
 læderjakke/10,11,2,39
 læderklædt/24,10,49,39
 lædermappe/10,11,2,39
-lædermøbel/64,10,34,66,39
+lædermøbel/64,10,66,39
 læderrat/10,47,39
 læderrem/10,19,39
 lædersål/10,11,2,39
@@ -36434,14 +36434,14 @@ lægefaglig/24,10,49,39
 lægehjælp/44,10,39
 lægehold/10,46,4,39
 lægehus/4,10,5,39
-lægekittel/64,65,10,34,39
+lægekittel/64,65,10,39
 lægeklinik/7,10,39
 lægekunst/44,10,39
 lægekyndig/10,39,24,23,49
 lægelig/10,39,24,23,49
 lægeløfte/10,4,11,39
-lægemangel/34,65,10,39
-lægemiddel/64,10,34,66,39
+lægemangel/65,10,39
+lægemiddel/64,10,66,39
 lægepar/10,47,39
 lægeplante/10,11,2,39
 lægeroman/10,11,2,39
@@ -36467,7 +36467,7 @@ læggebrod/10,19,39
 lægger/5,2,10,39
 lægget/10,26,39
 lægmand/44,10,39
-lægmuskel/64,65,10,34,39
+lægmuskel/64,65,10,39
 lægmænd/74,10,39
 lægning/10,11,2,39
 lægperson/10,11,2,39
@@ -36516,7 +36516,7 @@ længes
 længedes
 længes
 længtes
-længsel/64,65,10,34,39
+længsel/64,65,10,39
 længst
 længstetid/10,11,2,39
 lænke/10,11,2,39
@@ -36543,7 +36543,7 @@ lærebøger/74,10,39
 lærelyst/44,10,39
 lærelysten/12,49,10,39
 læremester/14,10,13,39
-læremiddel/64,10,34,66,39
+læremiddel/64,10,66,39
 læremæssig/24,10,49,39
 lærenem/59,10,49,39
 lærepenge/74,10,39
@@ -36596,7 +36596,7 @@ læsejl/10,46,4,39
 læseklasse/10,11,2,39
 læseklub/7,10,39
 læsekreds/5,2,10,39
-læsekursus/34,70,71,10,39,84,85
+læsekursus/70,71,10,39,84,85
 læselampe/10,11,2,39
 læselig/10,39,24,23,49
 læselighed/44,10,39
@@ -36662,7 +36662,7 @@ løbepensa
 løbepensas
 løber/5,2,10,39
 løberknæ/10,46,4,39
-løbeseddel/64,65,10,34,39
+løbeseddel/64,65,10,39
 løbeskade/10,11,2,39
 løbesko/10,2,46,39
 løbesod/44,10,39
@@ -36701,7 +36701,7 @@ løgformet/10,26,39
 løgfrø/10,46,4,39
 løgknold/5,2,10,39
 løgknoldet/10,26,39
-løgkuppel/64,65,10,34,39
+løgkuppel/64,65,10,39
 løgn/5,2,10,39
 løgnagtig/10,39,24,23,49
 løgner/5,2,10,39
@@ -36724,7 +36724,7 @@ løjpe/10,11,2,39
 løjser/5,2,10,39
 løjtnant/10,11,2,39
 løkke/10,11,2,39
-lømmel/64,65,10,34,39
+lømmel/64,65,10,39
 løn/58,10,39
 løn/10,39
 løn/10,19,39
@@ -36758,7 +36758,7 @@ lønpolitik/58,10,39
 lønpres/10,57,39
 lønramme/10,11,2,39
 lønsats/10,11,2,39
-lønseddel/64,65,10,34,39
+lønseddel/64,65,10,39
 lønslave/10,11,2,39
 lønsom/40,49,10,39,59
 lønsomhed/44,10,39
@@ -36944,7 +36944,7 @@ madrilensk/28,39
 madro/44,10,39
 madsminke/10,11,2,39
 madspild/45,10,39
-madtempel/64,10,34,66,39
+madtempel/64,10,66,39
 madtærte/10,11,2,39
 madvane/10,11,2,39
 madvare/10,11,2,39
@@ -37022,7 +37022,7 @@ magtfuld/24,10,49,39
 magtgal/24,10,49,39
 magthaver/5,2,10,39
 magtkamp/5,2,10,39
-magtmiddel/64,10,34,66,39
+magtmiddel/64,10,66,39
 magtorgan/10,4,11,39
 magtskifte/10,4,11,39
 magtspil/10,47,39
@@ -37336,7 +37336,7 @@ mandehul/10,3,39
 mandehørm/44,10,39
 mandejagt/10,11,2,39
 mandeknold/5,2,10,39
-mandel/64,65,10,34,39
+mandel/64,65,10,39
 mandeldrik/10,19,39
 mandelgave/10,11,2,39
 mandelkage/10,11,2,39
@@ -37436,7 +37436,7 @@ mangefold/10,39
 mangefold
 mangekamp/5,2,10,39
 mangekant/10,11,2,39
-mangel/64,65,10,34,39
+mangel/64,65,10,39
 mangelfri/10,38,49,24,39
 mangelfuld/10,38,49,24,39
 mangelvare/10,11,2,39
@@ -37634,7 +37634,7 @@ martsdag/5,2,10,39
 martyr/10,11,2,39
 martyrdød/44,10,39
 martyrisk/28,39
-martyrium/72,71,70,10,34,39
+martyrium/72,71,70,10,39
 martyrmine/10,11,2,39
 marv/44,10,39
 marvben/10,46,4,39
@@ -37775,7 +37775,7 @@ matpoleret/10,26,39
 matriark/10,11,2,39
 matriarkat/10,4,11,39
 matrice/10,11,2,39
-matrikel/64,65,10,34,39
+matrikel/64,65,10,39
 matrikulær/10,38,49,24,39
 matrix/10,11,2,39
 matrone/10,11,2,39
@@ -37797,7 +37797,7 @@ mauretansk/28,39
 maurisk/28,39
 mauritisk/28,39
 mausel/10,39
-mausoleum/34,70,71,10,39,84,85
+mausoleum/70,71,10,39,84,85
 mauve/24,10,49,39
 mave/10,11,2,39
 mave/1,21,22,79,39
@@ -37809,7 +37809,7 @@ mavekatar/10,11,2,39
 mavekneb/10,46,4,39
 mavekræft/44,10,39
 mavelande/1,21,22,79,39
-mavemuskel/64,65,10,34,39
+mavemuskel/64,65,10,39
 maveonde/10,4,11,39
 mavepine/10,11,2,39
 mavepumper/5,2,10,39
@@ -37981,7 +37981,7 @@ meditation/10,11,2,39
 meditativ/24,10,49,39
 meditere/1,21,22,79,39
 mediterran/10,38,49,24,39
-medium/72,71,70,10,34,39
+medium/72,71,70,10,39
 medius
 media
 medkæmper/5,2,10,39
@@ -38123,7 +38123,7 @@ mejning/10,11,2,39
 mejs/10,11,2,39
 mejse/10,11,2,39
 mejsekasse/10,11,2,39
-mejsel/64,65,10,34,39
+mejsel/64,65,10,39
 mejselstål/45,10,39
 mejsle/1,21,22,79,39
 mejsling/10,11,2,39
@@ -38311,7 +38311,7 @@ mercaptan/10,4,11,39
 mere/24,10,49,39
 mereværd/10,39
 merforbrug/45,10,39
-mergel/34,65,10,39
+mergel/65,10,39
 mergelen
 mergelens
 mergelgrav/5,2,10,39
@@ -38359,16 +38359,16 @@ meson/10,11,2,39
 mesotel/45,10,39
 mesotelial/24,10,49,39
 mesoteliom/10,4,11,39
-mesotelium/34,70,71,10,39,84,85
+mesotelium/70,71,10,39,84,85
 mesothel/45,10,39
-mesovarium/34,70,71,10,39,84,85
+mesovarium/70,71,10,39,84,85
 mesovarii
 mesovaria
 mesozoisk/28,39
 messe/10,11,2,39
 messe/1,21,22,79,39
 messedreng/5,2,10,39
-messehagel/64,65,10,34,39
+messehagel/64,65,10,39
 messehagel/10,11,2,39
 messehal/7,10,39
 messen/10,39
@@ -38498,7 +38498,7 @@ metras
 metres
 metrerne
 metrenes
-metrum/34,70,71,10,39,84,85
+metrum/70,71,10,39,84,85
 metyl/44,10,39
 mexicaner/5,2,10,39
 mexicansk/28,39
@@ -38518,7 +38518,7 @@ middagsmad/44,10,39
 middagsret/10,3,39
 middagstid/44,10,39
 middel/39
-middel/64,10,34,66,39
+middel/64,10,66,39
 middelbar/10,38,49,24,39
 middelgod/10,38,49,24,39
 middelhav/4,10,5,39
@@ -38695,7 +38695,7 @@ miljøzone/10,11,2,39
 milkshake/10,2,46,39
 mille/10,39
 mille/10
-millennium/34,70,71,10,39,84,85
+millennium/70,71,10,39,84,85
 milliard/10,11,2,39
 milliardær/10,11,2,39
 millibar/10,39
@@ -38809,7 +38809,7 @@ minibar/10,11,2,39
 minibil/10,11,2,39
 minibus/7,10,39
 minicruise/45,10,39
-minicykel/64,65,10,34,39
+minicykel/64,65,10,39
 miniferie/10,11,2,39
 miniformat/10,4,11,39
 minigolf/44,10,39
@@ -38880,7 +38880,7 @@ minør/10,11,2,39
 mirabel/7,10,39
 mirabelle/10,11,2,39
 mirabilis
-mirakel/64,10,34,66,39
+mirakel/64,10,66,39
 mirakelkur/5,2,10,39
 mirakle/1,21,22,79,39
 mirakuløs/10,38,49,24,39
@@ -38955,7 +38955,7 @@ mistillid/44,10,39
 mistolke/1,21,22,79,39
 mistral/44,10,39
 mistrives
-mistrivsel/34,65,10,39
+mistrivsel/65,10,39
 mistro/44,10,39
 mistroisk/28,39
 mistrøstig/10,39,24,23,49
@@ -39348,7 +39348,7 @@ monogami/45,10,39
 monogenese/44,10,39
 monografi/10,11,2,39
 monogram/10,3,39
-monokel/64,65,10,34,39
+monokel/64,65,10,39
 monokin/10,4,11,39
 monoklonal/10,38,49,24,39
 monoklonal/24,10,49,39
@@ -39409,7 +39409,7 @@ moralisme/44,10,39
 moralist/10,11,2,39
 moralitet/10,11,2,39
 morallære/10,11,2,39
-moralregel/64,65,10,34,39
+moralregel/64,65,10,39
 moralsk/28,39
 morbid/10,38,49,24,39
 morbiditet/10,11,2,39
@@ -39596,7 +39596,7 @@ motor/10,11,2,39
 motorbåd/5,2,10,39
 motorbane/10,11,2,39
 motorbølle/10,11,2,39
-motorcykel/64,65,10,34,39
+motorcykel/64,65,10,39
 motordel/5,2,10,39
 motorgade/10,11,2,39
 motorhjelm/5,2,10,39
@@ -39713,13 +39713,13 @@ multimodal/24,10,49,39
 multinodøs/24,10,49,39
 multipel/10,49,77,39
 multipla/74,10,39
-multiplum/34,70,71,10,39,84,85
+multiplum/70,71,10,39,84,85
 multipolar/24,10,49,39
 multitaske/1,21,22,79,39
 multivers/10,4,11,39
 multocida
 multtoilet/10,3,39
-mulæsel/64,10,34,66,39
+mulæsel/64,10,66,39
 mumi/10,11,2,39
 mumie/10,11,2,39
 mumiekiste/10,11,2,39
@@ -39830,7 +39830,7 @@ musestige/10,11,2,39
 musestille/24,10,49,39
 musetrappe/10,11,2,39
 musette/10,11,2,39
-museum/34,70,71,10,39,84,85
+museum/70,71,10,39,84,85
 museumsby/10,11,2,39
 musical/10,11,2,39
 musicals
@@ -39872,7 +39872,7 @@ musisk/28,39
 muskarin/45,10,39
 muskat/44,10,39
 muskatnød/7,10,39
-muskel/64,65,10,34,39
+muskel/64,65,10,39
 muskelhund/5,2,10,39
 muskelmand/44,10,39
 muskelmænd/74,10,39
@@ -39916,7 +39916,7 @@ myanmarsk/28,39
 myasteni/44,10,39
 myastenisk/28,39
 myasthenia/10,39
-mycelium/34,70,71,10,39,84,85
+mycelium/70,71,10,39,84,85
 mycoides
 mycoplasma/10,39
 mydas
@@ -39996,7 +39996,7 @@ myseost/5,2,10,39
 mysli/10,11,2,39
 myslibar/10,11,2,39
 mysofobi/44,10,39
-mysterium/72,71,70,10,34,39
+mysterium/72,71,70,10,39
 mysteriøs/10,38,49,24,39
 mysticetus
 mysticisme/44,10,39
@@ -40089,7 +40089,7 @@ mætte/1,21,22,79,39
 mættende/27,39
 mættet/10,26,39
 mø/10,11,2,39
-møbel/64,10,34,66,39
+møbel/64,10,66,39
 møbelfirma/10,4,11,39
 møbelhus/4,10,5,39
 møbelkunst/44,10,39
@@ -40156,7 +40156,7 @@ møller/5,2,10,39
 mølleri/10,4,11,39
 møllesten/10,2,46,39
 møllevinge/10,11,2,39
-mølmiddel/64,10,34,66,39
+mølmiddel/64,10,66,39
 mølpose/10,11,2,39
 mølædt/24,10,49,39
 mølægte/24,10,49,39
@@ -40272,7 +40272,7 @@ nabosprog/10,46,4,39
 nabostat/10,11,2,39
 nabostrid/44,10,39
 nabostøj/44,10,39
-nabovinkel/64,65,10,34,39
+nabovinkel/64,65,10,39
 naboø/10,11,2,39
 nacelle/10,11,2,39
 nachos/10,39
@@ -40427,7 +40427,7 @@ nasser/5,2,10,39
 nasseri/45,10,39
 nasserøv/5,2,10,39
 nasset/10,26,39
-nasturtium/72,71,70,10,34,39
+nasturtium/72,71,70,10,39
 nasus/10,39
 nasi
 nasorum
@@ -40462,7 +40462,7 @@ natkirke/10,11,2,39
 natkjole/10,11,2,39
 natklub/7,10,39
 natkvarter/10,4,11,39
-natkørsel/64,65,10,34,39
+natkørsel/64,65,10,39
 natlampe/10,11,2,39
 natlig/10,39,24,23,49
 natlogi/10,4,11,39
@@ -40830,7 +40830,7 @@ nedkæmpe/1,21,22,79,39
 nedkøle/1,21,22,79,39
 nedkøling/10,11,2,39
 nedkøre/20,21,22,79,39
-nedkørsel/64,65,10,34,39
+nedkørsel/64,65,10,39
 nedkørt/24,10,49,39
 nedlade/10,11,2,39
 nedlade
@@ -41170,7 +41170,7 @@ nestor/10,11,2,39
 net/10,47,39
 net/42,10,49,59,39
 netadgang/5,2,10,39
-netartikel/64,65,10,34,39
+netartikel/64,65,10,39
 netavis/10,11,2,39
 netbank/10,11,2,39
 netbaseret/10,26,39
@@ -41479,7 +41479,7 @@ nordfra
 nordfransk/28,39
 nordgående/27,39
 nordhimle/74,10,39
-nordhimmel/34,65,10,39
+nordhimmel/65,10,39
 nordirer/5,2,10,39
 nordirsk/28,39
 nordisk/28,39
@@ -41555,7 +41555,7 @@ nosografi/10,11,2,39
 nosokom/10,11,2,39
 nosokomi/44,10,39
 nosokomiel/59,10,49,39
-nosokomium/34,70,71,10,39,84,85
+nosokomium/70,71,10,39,84,85
 nosologi/44,10,39
 nosomani/44,10,39
 nosse/10,11,2,39
@@ -41567,7 +41567,7 @@ nostrum
 not/10,11,2,39
 not/10,11,2,39
 nota/10,11,2,39
-notabel/64,65,10,34,39
+notabel/64,65,10,39
 notabel/10,49,77,39
 notabene/10,4,11,39
 notabene
@@ -42071,7 +42071,7 @@ nærpunkt/10,4,11,39
 nærradio/10,11,2,39
 nærsamfund/10,46,4,39
 nærstudere/1,21,22,79,39
-nærstudium/72,71,70,10,34,39
+nærstudium/72,71,70,10,39
 nærsyn/45,10,39
 nærsynet/10,26,39
 nærtagende/27,39
@@ -42749,7 +42749,7 @@ omkring
 omkring
 omkuld
 omkvæd/10,46,4,39
-omkørsel/64,65,10,34,39
+omkørsel/64,65,10,39
 omlade/1,21,22,79,39
 omladning/10,11,2,39
 omlaste/1,21,22,79,39
@@ -42782,7 +42782,7 @@ ommøblere/1,21,22,79,39
 omnibus/7,10,39
 omnipotens/44,10,39
 omnipotent/24,10,49,39
-omnium/34,70,71,10,39,84,85
+omnium/70,71,10,39,84,85
 omnivor/10,11,2,39
 omnivor/24,10,49,39
 omnormere/1,21,22,79,39
@@ -42942,7 +42942,7 @@ ondulering/10,11,2,39
 onemanshow/10,46,4,39
 onesize/10,39
 onestep/7,10,39
-onkel/64,65,10,34,39
+onkel/64,65,10,39
 onkelagtig/10,39,24,23,49
 onkogen/10,4,11,39
 onkogen/24,10,49,39
@@ -43234,7 +43234,7 @@ opfølg
 opfølgning/10,11,2,39
 opføre/20,21,22,79,39
 opførelse/10,11,2,39
-opførsel/34,65,10,39
+opførsel/65,10,39
 opgå
 opgår
 opgås
@@ -43411,7 +43411,7 @@ opkøbe/20,21,22,79,39
 opkøber/5,2,10,39
 opkøbsemne/10,11,2,39
 opkøre/20,21,22,79,39
-opkørsel/64,65,10,34,39
+opkørsel/64,65,10,39
 opkørt/24,10,49,39
 oplade/1,21,22,79,39
 oplade
@@ -44048,7 +44048,7 @@ opæd
 opægge/1,21,22,79,39
 opøve/1,21,22,79,39
 opøvelse/10,11,2,39
-orakel/64,10,34,66,39
+orakel/64,10,66,39
 orakelsvar/10,46,4,39
 orakle/1,21,22,79,39
 oral/10,38,49,24,39
@@ -44073,7 +44073,7 @@ orangutang/10,11,2,39
 orator/10,11,2,39
 oratoriker/5,2,10,39
 oratorisk/28,39
-oratorium/72,71,70,10,34,39
+oratorium/72,71,70,10,39
 orbitarum
 orbodemål/10,46,4,39
 orchis/10,39
@@ -44170,7 +44170,7 @@ organorum
 organza/44,10,39
 orgasme/10,11,2,39
 orgastisk/28,39
-orgel/64,10,34,66,39
+orgel/64,10,66,39
 orgelet
 orgelets
 orgelbrus/10,46,4,39
@@ -44228,7 +44228,7 @@ orme/1,21,22,79,39
 ormegård/5,2,10,39
 ormehul/10,3,39
 ormekur/5,2,10,39
-ormemiddel/64,10,34,66,39
+ormemiddel/64,10,66,39
 ormstukken/12,49,10,39
 ormstukket
 ormædt/24,10,49,39
@@ -44287,7 +44287,7 @@ ossiculum/10,39
 ossiculi
 ossicula
 ossobuco/44,10,39
-ossuarium/34,70,71,10,39,84,85
+ossuarium/70,71,10,39,84,85
 ossøs/24,10,49,39
 ost/10,39
 ost/5,2,10,39
@@ -44335,7 +44335,7 @@ ostinat/10,11,2,39
 ostinat/10,4,11,39
 ostindisk/28,39
 ostitis/58,10,39
-ostium/34,70,71,10,39,84,85
+ostium/70,71,10,39,84,85
 ostii
 ostia
 ostiorum
@@ -44346,7 +44346,7 @@ ostrakon/45,10,39
 ostrogoter/5,2,10,39
 ostsydost
 otium/10,57,39
-otium/34,70,71,10,39,84,85
+otium/70,71,10,39,84,85
 otiumstol/5,2,10,39
 otolit/7,10,39
 otolog/10,11,2,39
@@ -44399,7 +44399,7 @@ ouverture/10,11,2,39
 ouzo/10,11,2,39
 oval/10,38,49,24,39
 oval/10,11,2,39
-ovarium/72,71,70,10,34,39
+ovarium/72,71,70,10,39
 ovation/10,11,2,39
 oven
 oven
@@ -44541,7 +44541,7 @@ overfølsom/42,10,49,59,39
 overførbar/10,38,49,24,39
 overføre/20,21,22,79,39
 overføring/10,11,2,39
-overførsel/64,65,10,34,39
+overførsel/64,65,10,39
 overgår
 overgås
 overgik
@@ -44652,7 +44652,7 @@ overkurs/10,11,2,39
 overkæbe/10,11,2,39
 overkøje/10,11,2,39
 overkøre/20,21,22,79,39
-overkørsel/64,65,10,34,39
+overkørsel/64,65,10,39
 overkørt/24,10,49,39
 overlade
 overlader
@@ -45055,7 +45055,7 @@ pacifisme/44,10,39
 pacifist/10,11,2,39
 padde/10,11,2,39
 paddehat/10,19,39
-paddel/64,65,10,34,39
+paddel/64,65,10,39
 padderok/7,10,39
 padderokke/10,11,2,39
 padle/1,21,22,79,39
@@ -45193,9 +45193,9 @@ påkræve/1,21,22,79,39
 påkrævet/10,26,39
 pakvogn/5,2,10,39
 påkære/1,21,22,79,39
-pakæsel/64,10,34,66,39
+pakæsel/64,10,66,39
 påkøre/20,21,22,79,39
-påkørsel/64,65,10,34,39
+påkørsel/64,65,10,39
 påkørt/24,10,49,39
 pal/10,11,2,39
 pal
@@ -45390,7 +45390,7 @@ papbrødre/74,10,39
 påpege/1,21,22,79,39
 påpegning/10,11,2,39
 papegøje/10,11,2,39
-papel/64,65,10,34,39
+papel/64,65,10,39
 paperback/44,10,39
 paperbacks
 papil/7,10,39
@@ -45445,7 +45445,7 @@ papænder/74,10,39
 papæske/10,11,2,39
 par/10,47,39
 paraatlet/10,11,2,39
-parabel/64,65,10,34,39
+parabel/64,65,10,39
 parabol/10,11,2,39
 parabolisk/28,39
 parabolsk/28,39
@@ -45558,7 +45558,7 @@ parkometer/10,15,13,39
 parkområde/10,4,11,39
 parkour/44,10,39
 parktræ/10,4,11,39
-parkursus/34,70,71,10,39,84,85
+parkursus/70,71,10,39,84,85
 parkvæsen/10,4,11,39
 parkvæsnet
 parkvæsner
@@ -45599,7 +45599,7 @@ partibøger/74,10,39
 partiel/42,10,49,59,39
 partifælle/10,11,2,39
 partihop/10,47,39
-partikel/64,65,10,34,39
+partikel/64,65,10,39
 partikulær/24,10,49,39
 partileder/5,2,10,39
 partiliste/10,11,2,39
@@ -46029,7 +46029,7 @@ penalhus/4,10,5,39
 pence/74,10,39
 pencil/10,11,2,39
 pendant/10,11,2,39
-pendel/64,65,10,34,39
+pendel/64,65,10,39
 pendle/1,21,22,79,39
 pendler/5,2,10,39
 pendling/10,11,2,39
@@ -46092,7 +46092,7 @@ pennestrøg/10,46,4,39
 penneven/7,10,39
 penning/5,2,10,39
 penny/10,11,2,39
-pensel/64,65,10,34,39
+pensel/64,65,10,39
 pension/10,11,2,39
 pensionat/10,4,11,39
 pensionere/1,21,22,79,39
@@ -46160,8 +46160,8 @@ perifer/10,38,49,24,39
 periferi/10,11,2,39
 periferisk/28,39
 perifrase/10,11,2,39
-perigæum/34,70,71,10,39,84,85
-perihelium/34,70,71,10,39,84,85
+perigæum/70,71,10,39,84,85
+perihelium/70,71,10,39,84,85
 perikaryon/10,3,39
 perikaryi
 perikarya
@@ -46437,7 +46437,7 @@ pigeben/10,46,4,39
 pigebog/44,10,39
 pigebøger/74,10,39
 pigebørn/74,10,39
-pigecykel/64,65,10,34,39
+pigecykel/64,65,10,39
 pigedrøm/10,19,39
 pigefnis/10,46,4,39
 pigeglad/39
@@ -46613,7 +46613,7 @@ pinsebal/10,3,39
 pinsedag/5,2,10,39
 pinseferie/10,11,2,39
 pinsekirke/10,11,2,39
-pinsel/64,65,10,34,39
+pinsel/64,65,10,39
 pinselilje/10,11,2,39
 pinsom/40,49,10,39,59
 pint/24,10,49,39
@@ -47144,7 +47144,7 @@ podekvist/5,2,10,39
 podepind/5,2,10,39
 poder/5,2,10,39
 podieplads/10,11,2,39
-podium/72,71,70,10,34,39
+podium/72,71,70,10,39
 podning/10,11,2,39
 poem/10,4,11,39
 poesi/10,11,2,39
@@ -47301,7 +47301,7 @@ polymyalgi/44,10,39
 polynesier/5,2,10,39
 polynesisk/28,39
 polynomiel/59,10,49,39
-polynomium/34,70,71,10,39,84,85
+polynomium/70,71,10,39,84,85
 polyp/7,10,39
 polypdyr/10,46,4,39
 polypeptid/10,4,11,39
@@ -47367,7 +47367,7 @@ popmusiker/5,2,10,39
 popo/10,11,2,39
 poppe/1,21,22,79,39
 poppedreng/5,2,10,39
-poppel/64,65,10,34,39
+poppel/64,65,10,39
 poppelalle/10,39
 poppelpil/5,2,10,39
 poppeltræ/10,4,11,39
@@ -47498,10 +47498,10 @@ postkasse/10,11,2,39
 postkontor/10,4,11,39
 postkort/10,46,4,39
 postliste/10,11,2,39
-postludium/34,70,71,10,39,84,85
+postludium/70,71,10,39,84,85
 postmand/44,10,39
 postmester/14,10,13,39
-postmuseum/34,70,71,10,39,84,85
+postmuseum/70,71,10,39,84,85
 postmænd/74,10,39
 postnatal/24,10,49,39
 postnummer/10,13,4,39
@@ -47771,7 +47771,7 @@ prismærke/10,4,11,39
 prismæssig/24,10,49,39
 prisniveau/10,4,11,39
 prisopgave/10,11,2,39
-prisseddel/64,65,10,34,39
+prisseddel/64,65,10,39
 prisshow/10,46,4,39
 prisshows
 prisskilt/4,10,5,39
@@ -47948,7 +47948,7 @@ proportion/10,11,2,39
 proppe/1,21,22,79,39
 proprietær/10,11,2,39
 proprietær/24,10,49,39
-proprium/34,70,71,10,39,84,85
+proprium/70,71,10,39,84,85
 propyl/44,10,39
 propylen/45,10,39
 prorektor/10,11,2,39
@@ -47959,7 +47959,7 @@ prosaiker/5,2,10,39
 prosaisk/28,39
 prosaist/10,11,2,39
 prosatekst/10,11,2,39
-proscenium/34,70,71,10,39,84,85
+proscenium/70,71,10,39,84,85
 prosecco/44,10,39
 proselyt/7,10,39
 prosfora/44,10,39
@@ -48061,7 +48061,7 @@ prygle/1,21,22,79,39
 prygling/10,11,2,39
 præ/10,4,11,39
 præambel/64,65,44,10,39
-præambel/64,10,34,66,39
+præambel/64,10,66,39
 præambelet
 præceptiv/10,38,49,24,39
 præcessere/1,21,22,79,39
@@ -48109,7 +48109,7 @@ præklinisk/28,39
 prælat/10,11,2,39
 præliminær/10,38,49,24,39
 præludere/1,21,22,79,39
-præludium/34,70,71,10,39,84,85
+præludium/70,71,10,39,84,85
 præmatur/24,10,49,39
 præmie/10,11,2,39
 præmiere/1,21,22,79,39
@@ -48143,7 +48143,7 @@ præsesers
 præseserne
 præsident/10,11,2,39
 præsidere/1,21,22,79,39
-præsidium/72,71,70,10,34,39
+præsidium/72,71,70,10,39
 præst/10,11,2,39
 præstation/10,11,2,39
 præstefrue/10,11,2,39
@@ -48313,7 +48313,7 @@ pugeri/45,10,39
 puh
 puha
 pukke/1,21,22,79,39
-pukkel/64,65,10,34,39
+pukkel/64,65,10,39
 pukkelhval/10,11,2,39
 pukkellæbe/10,11,2,39
 pukkelokse/10,11,2,39
@@ -48387,7 +48387,7 @@ puncta
 punctorum
 pund/10,46,4,39
 pundevis
-pundseddel/64,65,10,34,39
+pundseddel/64,65,10,39
 pung/5,2,10,39
 pungabe/10,11,2,39
 pungbjørn/5,2,10,39
@@ -48482,7 +48482,7 @@ pussyhats
 pust/10,46,4,39
 pust/44,10,39
 puste/1,21,22,79,39
-pustel/64,65,10,34,39
+pustel/64,65,10,39
 puster/5,2,10,39
 pusterum/10,47,39
 pusterør/10,46,4,39
@@ -48610,7 +48610,7 @@ pæretræ/45,10,39
 pæretræ/10,4,11,39
 pæretærte/10,11,2,39
 pø
-pøbel/34,65,10,39
+pøbel/65,10,39
 pøbelen
 pøbelens
 pøbelagtig/10,39,24,23,49
@@ -48718,7 +48718,7 @@ racemæssig/10,39,24,23,49
 racer/5,2,10,39
 racerbane/10,11,2,39
 racerbil/10,11,2,39
-racercykel/64,65,10,34,39
+racercykel/64,65,10,39
 raceren/10,38,49,24,39
 racerenhed/44,10,39
 racerkører/5,2,10,39
@@ -48757,7 +48757,7 @@ raderkniv/5,2,10,39
 radernål/5,2,10,39
 råderum/58,10,39
 rådføre/20,21,22,79,39
-rådførsel/64,65,10,34,39
+rådførsel/64,65,10,39
 rådgive
 rådgiver
 rådgives
@@ -49154,7 +49154,7 @@ råsulten/12,49,10,39
 råsylte/1,21,22,79,39
 råsyltning/10,11,2,39
 rat/10,47,39
-rataksel/64,65,10,34,39
+rataksel/64,65,10,39
 rate/1,21,22,79,39
 rate/10,11,2,39
 ratevis
@@ -49386,7 +49386,7 @@ refraktion/10,11,2,39
 refraktor/10,11,2,39
 refraktær/24,10,49,39
 refræn/10,4,11,39
-refugium/72,71,70,10,34,39
+refugium/72,71,70,10,39
 refundere/1,21,22,79,39
 refusere/1,21,22,79,39
 refusering/10,11,2,39
@@ -49397,7 +49397,7 @@ regalere/1,21,22,79,39
 regalier/74,10,39
 regatta/10,11,2,39
 regederlig/10,39,24,23,49
-regel/64,65,10,34,39
+regel/64,65,10,39
 regelbrud/10,47,39
 regelløs/10,38,49,24,39
 regelret/59,10,49,39
@@ -49449,7 +49449,7 @@ regnefejl/10,2,46,39
 regnekraft/44,10,39
 regnelærer/5,2,10,39
 regnemodel/7,10,39
-regneregel/64,65,10,34,39
+regneregel/64,65,10,39
 regnestok/10,19,39
 regnetime/10,11,2,39
 regnfald/10,46,4,39
@@ -49562,7 +49562,7 @@ rekreere/1,21,22,79,39
 rekrut/7,10,39
 rekruttere/1,21,22,79,39
 rektal/24,10,49,39
-rektangel/64,10,34,66,39
+rektangel/64,10,66,39
 rektor/10,11,2,39
 rektorat/10,4,11,39
 rektoskop/10,4,11,39
@@ -49629,7 +49629,7 @@ remarkabel/10,49,77,39
 rembours/10,11,2,39
 remburs/10,11,2,39
 remdesivir/10,39
-remedium/72,71,70,10,34,39
+remedium/72,71,70,10,39
 remikser/5,2,10,39
 reminder/5,2,10,39
 remis/10,11,2,39
@@ -49955,8 +49955,8 @@ rethaver/5,2,10,39
 rethaveri/10,4,11,39
 rethval/10,11,2,39
 reticulare
-reticulum/34,70,71,10,39,84,85
-retikulum/34,70,71,10,39,84,85
+reticulum/70,71,10,39,84,85
+retikulum/70,71,10,39,84,85
 retikulær/24,10,49,39
 retina/10,39
 retinere/1,21,22,79,39
@@ -50027,7 +50027,7 @@ retsopgør/10,46,4,39
 retsorden/44,10,39
 retsordnen
 retspleje/44,10,39
-retsregel/64,65,10,34,39
+retsregel/64,65,10,39
 retssag/10,11,2,39
 retssal/5,2,10,39
 retsstat/10,11,2,39
@@ -50204,7 +50204,7 @@ riesling/10,11,2,39
 rifampicin/10,39
 riff/10,46,4,39
 riffs
-riffel/64,65,10,34,39
+riffel/64,65,10,39
 riffelgang/5,2,10,39
 riffelløb/10,46,4,39
 riffelskud/10,47,39
@@ -50214,7 +50214,7 @@ rig/10,19,39
 rig/10,38,49,24,39
 rigdom/10,19,39
 rige/10,4,11,39
-rigel/64,65,10,34,39
+rigel/64,65,10,39
 rigelig
 rigelig/10,39,24,23,49
 rigelighed/44,10,39
@@ -50319,13 +50319,13 @@ ringhed/44,10,39
 ringhjørne/10,4,11,39
 ringle/1,21,22,79,39
 ringmur/5,2,10,39
-ringmuskel/64,65,10,34,39
+ringmuskel/64,65,10,39
 ringmærke/10,4,11,39
 ringmærke/1,21,22,79,39
 ringning/10,11,2,39
 ringorm/5,2,10,39
 ringovn/5,2,10,39
-ringpensel/64,65,10,34,39
+ringpensel/64,65,10,39
 ringrider/5,2,10,39
 ringside/44,10,39
 ringspil/10,47,39
@@ -50562,7 +50562,7 @@ roma/10,11,2,39
 roman/10,11,2,39
 romanblad/4,10,5,39
 romance/10,11,2,39
-romancykel/64,65,10,34,39
+romancykel/64,65,10,39
 romandebut/10,11,2,39
 romanfigur/10,11,2,39
 romanhelt/5,2,10,39
@@ -50794,7 +50794,7 @@ rumgitter/10,13,4,39
 rumination/10,11,2,39
 ruminere/1,21,22,79,39
 rumkabine/10,11,2,39
-rumkapsel/64,65,10,34,39
+rumkapsel/64,65,10,39
 rumklang/44,10,39
 rumle/1,21,22,79,39
 rumlekasse/10,11,2,39
@@ -50804,7 +50804,7 @@ rumlighed/10,11,2,39
 rummål/10,46,4,39
 rummand/44,10,39
 rumme/1,21,22,79,39
-rummel/34,65,10,39
+rummel/65,10,39
 rummelen
 rummelens
 rummelig/10,39,24,23,49
@@ -50861,7 +50861,7 @@ rundkaste/1,21,22,79,39
 rundkindet/10,26,39
 rundkirke/10,11,2,39
 rundkreds/5,2,10,39
-rundkørsel/64,65,10,34,39
+rundkørsel/64,65,10,39
 rundmund/5,2,10,39
 rundmundet/10,26,39
 rundorm/5,2,10,39
@@ -50927,8 +50927,8 @@ ruske/1,21,22,79,39
 rusken/10,39
 ruskind/10,46,4,39
 ruskregne/1,21,22,79,39
-ruskursus/34,70,71,10,39,84,85
-rusmiddel/64,10,34,66,39
+ruskursus/70,71,10,39,84,85
+rusmiddel/64,10,66,39
 russer/5,2,10,39
 russerpose/10,11,2,39
 russervin/10,2,46,39
@@ -51015,12 +51015,12 @@ rygestop/10,47,39
 rygevane/10,11,2,39
 rygfinne/10,11,2,39
 ryggesløs/10,38,49,24,39
-ryghvirvel/64,65,10,34,39
+ryghvirvel/64,65,10,39
 rygklapper/5,2,10,39
 ryglidelse/10,11,2,39
 ryglæn/10,46,4,39
 rygmarv/44,10,39
-rygmuskel/64,65,10,34,39
+rygmuskel/64,65,10,39
 rygmærke/10,4,11,39
 rygning/10,11,2,39
 rygpatient/10,11,2,39
@@ -51062,7 +51062,7 @@ ryle/10,11,2,39
 rynke/1,21,22,79,39
 rynke/10,11,2,39
 rynkefri/10,38,49,24,39
-rynkeorgel/64,10,34,66,39
+rynkeorgel/64,10,66,39
 rynket/10,26,39
 rynketråd/5,2,10,39
 rynkning/10,11,2,39
@@ -51093,7 +51093,7 @@ rædderlig/10,39,24,23,49
 ræddes
 ræddedes
 ræddike/10,11,2,39
-rædsel/64,65,10,34,39
+rædsel/64,65,10,39
 rædselsår/10,46,4,39
 rædsom/40,49,10,39,59
 ræer/74,10,39
@@ -51220,7 +51220,7 @@ rødtunge/10,11,2,39
 rødvin/5,2,10,39
 rødviolet/59,10,49,39
 rødøjet/10,26,39
-røffel/64,65,10,34,39
+røffel/64,65,10,39
 røfle/1,21,22,79,39
 røg/44,10,39
 røgalarm/10,11,2,39
@@ -51363,7 +51363,7 @@ sabbatdag/5,2,10,39
 sabbatsår/10,46,4,39
 sabbatsdag/5,2,10,39
 såbed/4,10,5,39
-sabel/64,65,10,34,39
+sabel/64,65,10,39
 sabelkat/10,19,39
 sable/1,21,22,79,39
 sabotage/10,11,2,39
@@ -51372,7 +51372,7 @@ sabotør/10,11,2,39
 sabæer/5,2,10,39
 sådan/42,10,49,59,39
 sådan
-saddel/64,65,10,34,39
+saddel/64,65,10,39
 saddelknap/7,10,39
 saddelled/10,47,39
 saddelpind/5,2,10,39
@@ -51380,7 +51380,7 @@ saddeltag/5,2,10,39
 saddeltøj/45,10,39
 saddukæer/5,2,10,39
 saddukæisk/28,39
-sadel/64,65,10,34,39
+sadel/64,65,10,39
 sadelgjord/5,2,10,39
 sadelknap/7,10,39
 sadelled/10,47,39
@@ -51571,7 +51571,7 @@ saltkværn/5,2,10,39
 saltkød/45,10,39
 saltlage/10,11,2,39
 saltmad/44,10,39
-saltmandel/64,65,10,34,39
+saltmandel/64,65,10,39
 saltning/10,11,2,39
 salto/10,11,2,39
 saltpastil/7,10,39
@@ -51616,10 +51616,10 @@ sameje/45,10,39
 samfuld/10,38,49,24,39
 samfulde/39
 samfund/10,46,4,39
-samfærdsel/34,65,10,39
+samfærdsel/65,10,39
 samfølelse/10,11,2,39
 samgift/10,38,49,24,39
-samhandel/34,65,10,39
+samhandel/65,10,39
 samhandlen/10,39
 samhør/45,10,39
 samhøre/20,21,22,79,39
@@ -51630,7 +51630,7 @@ samklang/5,2,10,39
 samkvem/10,57,39
 samkøre/20,21,22,79,39
 samkøring/10,11,2,39
-samkørsel/64,65,10,34,39
+samkørsel/64,65,10,39
 samle/1,21,22,79,39
 samlebånd/10,46,4,39
 samlebind/10,46,4,39
@@ -51775,7 +51775,7 @@ samvær/10,46,4,39
 samværsret/58,10,39
 såmænd
 san/10,39
-sanatorium/72,71,70,10,34,39
+sanatorium/72,71,70,10,39
 sand/45,10,39
 sand/10,38,49,24,39
 sandal/10,11,2,39
@@ -51836,7 +51836,7 @@ sangbar/10,38,49,24,39
 sangbog/44,10,39
 sangbund/5,2,10,39
 sangbøger/74,10,39
-sangcykel/64,65,10,34,39
+sangcykel/64,65,10,39
 sangcyklus/7,10,39
 sanger/5,2,10,39
 sangerinde/10,11,2,39
@@ -51865,7 +51865,7 @@ sangtime/10,11,2,39
 sanguinis
 sanguis
 sangvinsk/28,39
-sanikel/64,65,10,34,39
+sanikel/64,65,10,39
 såning/10,11,2,39
 sanitet/44,10,39
 sanitær/10,38,49,24,39
@@ -52017,7 +52017,7 @@ scartstik/10,47,39
 scenarie/10,4,11,39
 scenario/10,39
 scenarisk/28,39
-scenarium/72,71,70,10,34,39
+scenarium/72,71,70,10,39
 scene/10,11,2,39
 scenegang/44,10,39
 scenegulv/4,10,5,39
@@ -52105,7 +52105,7 @@ security/10,39
 sedan/10,11,2,39
 sedativ/24,10,49,39
 sedativ/10,4,11,39
-seddel/64,65,10,34,39
+seddel/64,65,10,39
 sedere/1,21,22,79,39
 sederende/27,39
 sederet/10,26,39
@@ -52212,7 +52212,7 @@ sejtruknes
 sejtræk
 sejtrækker/5,2,10,39
 sekant/10,11,2,39
-sekel/64,10,34,66,39
+sekel/64,10,66,39
 sekel/64,65,44,10,39
 sekret/10,4,11,39
 sekretin/45,10,39
@@ -52394,7 +52394,7 @@ seminales
 seminalia
 seminar/10,4,11,39
 seminarist/10,11,2,39
-seminarium/72,71,70,10,34,39
+seminarium/72,71,70,10,39
 seminom/10,4,11,39
 semiolog/10,11,2,39
 semiologi/44,10,39
@@ -52723,7 +52723,7 @@ siddendes
 siddet
 siddets
 sid
-siddemøbel/64,10,34,66,39
+siddemøbel/64,10,66,39
 sidden/10,39
 siddende/27,39
 siddeplads/10,11,2,39
@@ -52836,7 +52836,7 @@ sigtelse/10,11,2,39
 sigtemel/45,10,39
 sigtepunkt/10,4,11,39
 sigtning/10,11,2,39
-sigtveksel/64,65,10,34,39
+sigtveksel/64,65,10,39
 sigøjner/5,2,10,39
 sikahjort/5,2,10,39
 sikarier/5,2,10,39
@@ -53101,7 +53101,7 @@ sjusket/10,26,39
 sjuskethed/44,10,39
 sjusse/1,21,22,79,39
 sjægte/10,11,2,39
-sjækkel/64,65,10,34,39
+sjækkel/64,65,10,39
 sjækle/1,21,22,79,39
 sjæl/5,2,10,39
 sjælden/12,49,10,39
@@ -53257,7 +53257,7 @@ skamløs/10,38,49,24,39
 skamløshed/44,10,39
 skamme/1,21,22,79,39
 skammekrog/5,2,10,39
-skammel/64,65,10,34,39
+skammel/64,65,10,39
 skammelig/10,39,24,23,49
 skamplet/7,10,39
 skamrose/20,21,22,79,39
@@ -53292,7 +53292,7 @@ skanner/5,2,10,39
 skannerrum/10,47,39
 skanning/10,11,2,39
 skanse/10,11,2,39
-skånsel/34,65,10,39
+skånsel/65,10,39
 skånselen
 skånselens
 skånsk/28,39
@@ -53897,7 +53897,7 @@ skramme/10,11,2,39
 skrammel/45,10,39
 skramlet
 skramlets
-skråmuskel/64,65,10,34,39
+skråmuskel/64,65,10,39
 skråne/1,21,22,79,39
 skråning/10,11,2,39
 skranke/10,11,2,39
@@ -54047,7 +54047,7 @@ skrubtudse/10,11,2,39
 skrud/10,47,39
 skrue/10,11,2,39
 skrue/1,21,22,79,39
-skrueaksel/64,65,10,34,39
+skrueaksel/64,65,10,39
 skrueblad/4,10,5,39
 skruebold/5,2,10,39
 skruebolt/5,2,10,39
@@ -54064,7 +54064,7 @@ skrukhøne/10,11,2,39
 skrukhøns/74,10,39
 skrukke/1,21,22,79,39
 skrumle/1,21,22,79,39
-skrummel/64,10,34,66,39
+skrummel/64,10,66,39
 skrumpe/1,21,22,79,39
 skrumpen/12,49,10,39
 skrumple/1,21,22,79,39
@@ -54094,7 +54094,7 @@ skrælle/1,21,22,79,39
 skrælling/10,11,2,39
 skrælning/10,11,2,39
 skræmme/20,21,22,79,39
-skræmsel/64,10,34,66,39
+skræmsel/64,10,66,39
 skrænt/10,11,2,39
 skræppe/10,11,2,39
 skræppe/1,21,22,79,39
@@ -54126,14 +54126,14 @@ skudhold/45,10,39
 skudhul/10,3,39
 skudklar/10,38,49,24,39
 skudlinje/10,11,2,39
-skudrigel/64,65,10,34,39
+skudrigel/64,65,10,39
 skudsalve/10,11,2,39
 skudsår/10,46,4,39
 skudsikker/41,49,10,39
 skudsmål/10,46,4,39
 skudstærk/10,38,49,24,39
 skudvidde/10,11,2,39
-skudvinkel/64,65,10,34,39
+skudvinkel/64,65,10,39
 skue/10,4,11,39
 skue/10,11,2,39
 skue/1,21,22,79,39
@@ -54188,7 +54188,7 @@ skummel/10,49,77,78,39
 skummelhed/44,10,39
 skummeske/10,11,2,39
 skumning/10,11,2,39
-skumpensel/64,65,10,34,39
+skumpensel/64,65,10,39
 skumplast/10,2,46,39
 skumplast/10,46,4,39
 skumple/1,21,22,79,39
@@ -54322,7 +54322,7 @@ skythisk/28,39
 skytisk/28,39
 skyts/45,10,39
 skytsånd/10,11,2,39
-skytsengel/34,65,10,39
+skytsengel/65,10,39
 skytsengle/74,10,39
 skytte/10,11,2,39
 skyttefisk/10,2,46,39
@@ -54431,7 +54431,7 @@ skærmning/44,10,39
 skærmtrold/5,2,10,39
 skærmtække/10,39
 skærmvæg/10,19,39
-skærmydsel/64,65,10,34,39
+skærmydsel/64,65,10,39
 skærpe/1,21,22,79,39
 skærpelse/10,11,2,39
 skærpning/10,11,2,39
@@ -54784,7 +54784,7 @@ slimdyr/10,46,4,39
 slime/1,21,22,79,39
 slimet/10,26,39
 slimhinde/10,11,2,39
-slimkirtel/64,65,10,34,39
+slimkirtel/64,65,10,39
 slimline/39
 slimsæk/10,19,39
 slingback/44,10,39
@@ -54904,7 +54904,7 @@ slutreplik/7,10,39
 slutrunde/10,11,2,39
 slutsalg/10,46,4,39
 slutscene/10,11,2,39
-slutseddel/64,65,10,34,39
+slutseddel/64,65,10,39
 slutskat/7,10,39
 slutspil/10,47,39
 slutspurt/10,11,2,39
@@ -54923,7 +54923,7 @@ slyngbold/5,2,10,39
 slyngbælte/10,4,11,39
 slynge/10,11,2,39
 slynge/1,21,22,79,39
-slyngel/64,65,10,34,39
+slyngel/64,65,10,39
 slynggreb/10,46,4,39
 slyngning/10,11,2,39
 slyngrose/10,11,2,39
@@ -55231,7 +55231,7 @@ småstumper/74,10,39
 småstykker/74,10,39
 småsulten/12,49,10,39
 småsur/10,38,49,24,39
-småsvindel/34,65,10,39
+småsvindel/65,10,39
 småsvindle/1,21,22,79,39
 småsyg/10,38,49,24,39
 småsynge
@@ -55290,7 +55290,7 @@ smelter/5,2,10,39
 smelteri/10,4,11,39
 smeltevand/45,10,39
 smeltning/10,11,2,39
-smergel/34,65,10,39
+smergel/65,10,39
 smergelen
 smergelens
 smergle/1,21,22,79,39
@@ -55324,7 +55324,7 @@ smiget/10,26,39
 smigre/1,21,22,79,39
 smigrer/5,2,10,39
 smigreri/10,4,11,39
-smigvinkel/64,65,10,34,39
+smigvinkel/64,65,10,39
 smil/10,46,4,39
 smile/1,21,22,79,39
 smile/20,21,22,79,39
@@ -55511,7 +55511,7 @@ smørkage/10,11,2,39
 smørklat/7,10,39
 smørkrukke/10,11,2,39
 smørkærne/10,11,2,39
-smørpukkel/64,65,10,34,39
+smørpukkel/64,65,10,39
 smørrebrød/10,46,4,39
 smørret/10,26,39
 smørriste/1,21,22,79,39
@@ -55522,7 +55522,7 @@ smørstegt/24,10,49,39
 smørsyre/44,10,39
 smørtenor/10,11,2,39
 smørtyv/5,2,10,39
-snabel/64,65,10,34,39
+snabel/64,65,10,39
 snabelsko/10,2,46,39
 snack/10,2,46,39
 snackbar/10,11,2,39
@@ -55706,7 +55706,7 @@ snip
 snip/7,10,39
 snipe/10,11,2,39
 snippe/10,11,2,39
-snirkel/64,65,10,34,39
+snirkel/64,65,10,39
 snirkle/1,21,22,79,39
 snirklet/10,26,39
 snit/10,47,39
@@ -55828,7 +55828,7 @@ snylte/1,21,22,79,39
 snyltegæst/10,11,2,39
 snylter/5,2,10,39
 snylteri/45,10,39
-snæbel/64,65,10,34,39
+snæbel/64,65,10,39
 snære/1,21,22,79,39
 snært
 snæver/41,49,10,39
@@ -55838,7 +55838,7 @@ snæversyn/45,10,39
 snævertsyn/45,10,39
 snævre/1,21,22,79,39
 snævring/10,11,2,39
-snøbel/64,65,10,34,39
+snøbel/64,65,10,39
 snøft/10,46,4,39
 snøfte/1,21,22,79,39
 snøften/10,39
@@ -55849,7 +55849,7 @@ snørehul/10,3,39
 snøreliv/10,46,4,39
 snøresko/10,2,46,39
 snøring/10,11,2,39
-snørkel/64,65,10,34,39
+snørkel/64,65,10,39
 snørkle/1,21,22,79,39
 snørklet/10,26,39
 snørliv/10,46,4,39
@@ -55901,7 +55901,7 @@ sodomitisk/28,39
 sodsværtet/10,26,39
 sofa/10,11,2,39
 sofabord/4,10,5,39
-sofacykel/64,65,10,34,39
+sofacykel/64,65,10,39
 sofagruppe/10,11,2,39
 sofahygge/44,10,39
 sofapude/10,11,2,39
@@ -55961,8 +55961,8 @@ solaris
 solare
 solares
 solaria
-solarium/72,71,70,10,34,39
-solaveksel/64,65,10,34,39
+solarium/72,71,70,10,39
+solaveksel/64,65,10,39
 solbade/1,21,22,79,39
 solbadning/10,11,2,39
 solbane/10,11,2,39
@@ -55997,7 +55997,7 @@ soleksem/10,4,11,39
 solenergi/44,10,39
 soleus/10,39
 solei
-solfakkel/64,65,10,34,39
+solfakkel/64,65,10,39
 solfaktor/10,11,2,39
 solfald/10,46,4,39
 solfang/10,46,4,39
@@ -56270,7 +56270,7 @@ sovegemak/10,3,39
 sovehjerte/10,39
 sovekammer/10,13,4,39
 sovemaske/10,11,2,39
-sovemiddel/64,10,34,66,39
+sovemiddel/64,10,66,39
 sovepille/10,11,2,39
 sovepose/10,11,2,39
 sovepude/10,11,2,39
@@ -56374,7 +56374,7 @@ sparsom/40,49,10,39,59
 sparsomt
 spartaner/5,2,10,39
 spartansk/28,39
-spartel/64,65,10,34,39
+spartel/64,65,10,39
 spartle/1,21,22,79,39
 spartling/10,11,2,39
 sparto/10,39
@@ -56438,10 +56438,10 @@ spejlkugle/10,11,2,39
 spejlsal/5,2,10,39
 spejlvende/20,21,22,79,39
 spejlæg/10,47,39
-spektakel/64,10,34,66,39
+spektakel/64,10,66,39
 spekter/10,15,13,39
 spektral/24,10,49,39
-spektrum/34,70,71,10,39,84,85
+spektrum/70,71,10,39,84,85
 spekula/74,10,39
 spekulant/10,11,2,39
 spekulativ/24,10,49,39
@@ -56491,7 +56491,7 @@ spies/10,11,2,39
 spiger/4,10,5,39
 spigre/1,21,22,79,39
 spil/10,47,39
-spilaksel/64,65,10,34,39
+spilaksel/64,65,10,39
 spilbar/24,10,49,39
 spild/45,10,39
 spilddamp/44,10,39
@@ -56568,7 +56568,7 @@ spundne
 spundnes
 spind
 spindehør/58,10,39
-spindel/64,65,10,34,39
+spindel/64,65,10,39
 spindelvæv/10,46,4,39
 spinden/10,39
 spinder/5,2,10,39
@@ -56916,7 +56916,7 @@ spydspids/10,11,2,39
 spyflue/10,11,2,39
 spygat/10,3,39
 spyt/10,57,39
-spytkirtel/64,65,10,34,39
+spytkirtel/64,65,10,39
 spytklat/7,10,39
 spytning/10,11,2,39
 spytte/1,21,22,79,39
@@ -57018,7 +57018,7 @@ ståede
 ståedes
 stab/5,2,10,39
 stabejs/10,11,2,39
-stabel/64,65,10,34,39
+stabel/64,65,10,39
 stabelbar/10,38,49,24,39
 stabelstol/5,2,10,39
 stabelvare/10,11,2,39
@@ -57042,7 +57042,7 @@ stadig
 stadighed/44,10,39
 stadigvæk
 stadion/10,4,11,39
-stadium/72,71,70,10,34,39
+stadium/72,71,70,10,39
 stads/44,10,39
 stadsarkiv/10,4,11,39
 stadse/1,21,22,79,39
@@ -57077,7 +57077,7 @@ stakåndet/10,26,39
 stakater/74,10,39
 stakit/10,3,39
 stakke/1,21,22,79,39
-stakkel/64,65,10,34,39
+stakkel/64,65,10,39
 stakkels/39
 stakket/10,26,39
 stakkevis
@@ -57112,7 +57112,7 @@ stalking/10,11,2,39
 stålkugle/10,11,2,39
 stalle/1,21,22,79,39
 stalling/10,11,2,39
-stålmøbel/64,10,34,66,39
+stålmøbel/64,10,66,39
 stålorm/5,2,10,39
 stålorm/10,2,46,39
 stålpen/10,19,39
@@ -57225,7 +57225,7 @@ starte/1,21,22,79,39
 starter/5,2,10,39
 startfase/10,11,2,39
 starthul/10,3,39
-startkabel/64,10,34,66,39
+startkabel/64,10,66,39
 startklar/10,38,49,24,39
 startknap/7,10,39
 startlinje/10,11,2,39
@@ -57429,7 +57429,7 @@ stemmetal/10,47,39
 stemmeurne/10,11,2,39
 stemmeværk/10,4,11,39
 stemning/10,11,2,39
-stempel/64,10,34,66,39
+stempel/64,10,66,39
 stempelfri/10,38,49,24,39
 stempelur/4,10,5,39
 stemple/1,21,22,79,39
@@ -57676,7 +57676,7 @@ stillfotos
 stillids/10,11,2,39
 stilling/10,11,2,39
 stilløs/10,38,49,24,39
-stilmøbel/64,10,34,66,39
+stilmøbel/64,10,66,39
 stilne/1,21,22,79,39
 stilren/10,38,49,24,39
 stilrenhed/44,10,39
@@ -57697,7 +57697,7 @@ stimefisk/10,2,46,39
 stimevis
 stimle/1,21,22,79,39
 stimle/74,10,39
-stimmel/34,65,10,39
+stimmel/65,10,39
 stimulans/10,11,2,39
 stimulator/10,11,2,39
 stimulere/1,21,22,79,39
@@ -57722,7 +57722,7 @@ stinkskab/4,10,5,39
 stinksvamp/5,2,10,39
 stinksvamp/5,2,10,39
 stipendiat/10,11,2,39
-stipendium/72,71,70,10,34,39
+stipendium/72,71,70,10,39
 stiple/1,21,22,79,39
 stiplet/10,26,39
 stipulere/1,21,22,79,39
@@ -57880,7 +57880,7 @@ storbønder/74,10,39
 storbørs/10,11,2,39
 storcellet/10,26,39
 storcenter/10,15,13,39
-storcirkel/64,65,10,34,39
+storcirkel/64,65,10,39
 stordrift/44,10,39
 storebror/44,10,39
 storebælt/10,4,11,39
@@ -57900,7 +57900,7 @@ storgård/5,2,10,39
 storgods/10,4,11,39
 storgople/10,11,2,39
 storgrine/1,21,22,79,39
-storhandel/34,65,10,39
+storhandel/65,10,39
 storhed/10,11,2,39
 storhertug/10,11,2,39
 storhjerne/10,11,2,39
@@ -58163,7 +58163,7 @@ strikvare/10,11,2,39
 strime/10,11,2,39
 strimet/10,26,39
 strimle/1,21,22,79,39
-strimmel/64,65,10,34,39
+strimmel/64,65,10,39
 stringens/44,10,39
 stringent/24,10,49,39
 stringer/5,2,10,39
@@ -58323,7 +58323,7 @@ studievalg/10,46,4,39
 studievært/10,11,2,39
 studine/10,11,2,39
 studio/10,4,11,39
-studium/72,71,70,10,34,39
+studium/72,71,70,10,39
 studs/10,38,49,24,39
 studs/10,11,2,39
 studse
@@ -58345,7 +58345,7 @@ stuelærd/39
 stuelærds
 stuelærde
 stuelærdes
-stueorgel/64,10,34,66,39
+stueorgel/64,10,66,39
 stuepige/10,11,2,39
 stueplan/45,10,39
 stueplante/10,11,2,39
@@ -58478,7 +58478,7 @@ stænder/74,10,39
 stænge/1,21,22,79,39
 stænge/10,4,11,39
 stænge/20,21,22,79,39
-stængel/64,65,10,34,39
+stængel/64,65,10,39
 stænger/74,10,39
 stængning/10,11,2,39
 stænk/10,46,4,39
@@ -58708,7 +58708,7 @@ sugende/27,39
 suger/5,2,10,39
 sugerør/10,46,4,39
 sugeskive/10,11,2,39
-sugesnabel/64,65,10,34,39
+sugesnabel/64,65,10,39
 sugetablet/7,10,39
 suggerere/1,21,22,79,39
 suggestion/10,11,2,39
@@ -58780,7 +58780,7 @@ sumerisk/10,39
 sumformel/64,65,44,10,39
 summa
 summarisk/28,39
-summarium/34,70,71,10,39,84,85
+summarium/70,71,10,39,84,85
 summarum
 summativ/24,10,49,39
 summe/1,21,22,79,39
@@ -59013,7 +59013,7 @@ svedetur/5,2,10,39
 svedig/10,39,24,23,49
 svedisme/44,10,39
 svedjebrug/10,46,4,39
-svedkirtel/64,65,10,34,39
+svedkirtel/64,65,10,39
 svedlugt/5,2,10,39
 svedperle/10,11,2,39
 svedskjold/5,2,10,39
@@ -59107,7 +59107,7 @@ svigersøn/7,10,39
 svigt/10,46,4,39
 svigte/1,21,22,79,39
 svigten/10,39
-svikkel/64,65,10,34,39
+svikkel/64,65,10,39
 svikmølle/10,11,2,39
 svime
 svimle/1,21,22,79,39
@@ -59135,7 +59135,7 @@ svind
 svinebinde
 svinebandt
 svinebind
-svindel/34,65,10,39
+svindel/65,10,39
 svindel/44,10,39
 svindle/1,21,22,79,39
 svindler/5,2,10,39
@@ -59214,7 +59214,7 @@ svirp/10,46,4,39
 svirpe/1,21,22,79,39
 svirre/1,21,22,79,39
 svirreflue/10,11,2,39
-svirvel/64,65,10,34,39
+svirvel/64,65,10,39
 svitse/1,21,22,79,39
 svoger/14,10,13,39
 svogerskab/10,4,11,39
@@ -59238,7 +59238,7 @@ svulmen/10,39
 svulst/10,11,2,39
 svulstig/10,39,24,23,49
 svumme/1,21,22,79,39
-svumpukkel/64,65,10,34,39
+svumpukkel/64,65,10,39
 svungen/12,82,10,39
 svup/10,47,39
 svuppe/1,21,22,79,39
@@ -59417,7 +59417,7 @@ sygne/1,21,22,79,39
 sygrej/45,10,39
 syklub/7,10,39
 sykofant/10,11,2,39
-sykursus/34,70,71,10,39,84,85
+sykursus/70,71,10,39,84,85
 syl/5,2,10,39
 sylblad/10,2,46,39
 syld/44,10,39
@@ -59469,7 +59469,7 @@ symposiet
 symposiets
 symposier
 symposiers
-symposium/72,71,70,10,34,39
+symposium/72,71,70,10,39
 symptom/10,4,11,39
 symptomfri/10,38,49,24,39
 syn/10,46,4,39
@@ -59480,7 +59480,7 @@ synapse/10,11,2,39
 synaptisk/28,39
 synbar/10,38,49,24,39
 syncytiom/10,4,11,39
-syncytium/34,70,71,10,39,84,85
+syncytium/70,71,10,39,84,85
 synd/10,11,2,39
 synd/39
 synde/1,21,22,79,39
@@ -59501,7 +59501,7 @@ syndikere/1,21,22,79,39
 syndoffer/10,15,13,39
 syndrom/10,4,11,39
 syne/1,21,22,79,39
-synedrium/34,70,71,10,39,84,85
+synedrium/70,71,10,39,84,85
 synekdoke/10,11,2,39
 synergi/44,10,39
 synergisme/44,10,39
@@ -59600,7 +59600,7 @@ synstest/10,2,46,39
 synstests
 synstolke/1,21,22,79,39
 synsvidde/44,10,39
-synsvinkel/64,65,10,34,39
+synsvinkel/64,65,10,39
 syntagme/10,4,11,39
 syntaks/10,11,2,39
 syntaktisk/28,39
@@ -59642,7 +59642,7 @@ syskole/10,11,2,39
 syskrin/10,46,4,39
 sysle/1,21,22,79,39
 syslen/10,39
-syssel/64,10,34,66,39
+syssel/64,10,66,39
 sysselet
 sysselets
 syssel/64,65,44,10,39
@@ -59728,14 +59728,14 @@ sæddonor/10,11,2,39
 sæde/10,4,11,39
 sædebad/4,10,5,39
 sædeben/10,2,46,39
-sædefødsel/64,65,10,34,39
+sædefødsel/64,65,10,39
 sædeføler/5,2,10,39
 sædehynde/10,11,2,39
 sædekorn/10,46,4,39
 sædelig/10,39,24,23,49
 sædelighed/44,10,39
 sædemand/44,10,39
-sædemuskel/64,65,10,34,39
+sædemuskel/64,65,10,39
 sædemænd/74,10,39
 sæderegion/10,11,2,39
 sæderække/10,11,2,39
@@ -59768,7 +59768,7 @@ sækkevis
 sækkevogn/5,2,10,39
 sækspore/10,11,2,39
 sæl/10,11,2,39
-sælarium/72,71,70,10,34,39
+sælarium/72,71,70,10,39
 sældrab/10,46,4,39
 sælfanger/5,2,10,39
 sælfangst/10,11,2,39
@@ -59829,12 +59829,12 @@ særpris/10,11,2,39
 særpræg/10,46,4,39
 særpræge/1,21,22,79,39
 særpræget/10,26,39
-særregel/64,65,10,34,39
+særregel/64,65,10,39
 særskat/7,10,39
 særskilt/24,10,49,39
 særsprog/45,10,39
 særstatus/7,10,39
-særstempel/64,10,34,66,39
+særstempel/64,10,66,39
 særsyn/45,10,39
 særtilbud/10,47,39
 særtillæg/10,47,39
@@ -59887,7 +59887,7 @@ søde/1,21,22,79,39
 sødeevne/44,10,39
 sødelig
 sødeligt
-sødemiddel/64,10,34,66,39
+sødemiddel/64,10,66,39
 sødestof/10,3,39
 sødgrød/44,10,39
 sødladen/12,49,10,39
@@ -59937,7 +59937,7 @@ søgræs/10,57,39
 søgrøn/42,10,49,59,39
 søgsmål/10,46,4,39
 søgt/24,10,49,39
-søhandel/34,65,10,39
+søhandel/65,10,39
 søhandlen
 søhandlens
 søhelt/5,2,10,39
@@ -59948,7 +59948,7 @@ søjlebåren/12,82,10,39
 søjlefod/44,10,39
 søjlegang/5,2,10,39
 søjlehal/7,10,39
-søkabel/64,10,34,66,39
+søkabel/64,10,66,39
 søko/44,10,39
 søkok/10,19,39
 søkonge/10,11,2,39
@@ -59992,7 +59992,7 @@ sølvmønt/10,11,2,39
 sølvoxid/10,11,2,39
 sølvpapir/45,10,39
 sølvpenge/74,10,39
-sølvpoppel/64,65,10,34,39
+sølvpoppel/64,65,10,39
 sølvregn/10,2,46,39
 sølvring/5,2,10,39
 sølvræv/5,2,10,39
@@ -60142,7 +60142,7 @@ søvnig/10,39,24,23,49
 søvnighed/44,10,39
 søvnløs/10,38,49,24,39
 søvnløshed/44,10,39
-søvnmangel/34,65,10,39
+søvnmangel/65,10,39
 søvnryk/10,47,39
 søværn/10,46,4,39
 søværts
@@ -60166,7 +60166,7 @@ tåbelighed/10,11,2,39
 tabellere/1,21,22,79,39
 tabende/27,39
 taber/5,2,10,39
-tabernakel/64,10,34,66,39
+tabernakel/64,10,66,39
 tabersag/10,11,2,39
 tableau/10,4,11,39
 tablet/7,10,39
@@ -60203,7 +60203,7 @@ tacoenes
 tacoskal/7,10,39
 tadsjikisk/28,39
 taekwondo/44,10,39
-taffel/64,10,34,66,39
+taffel/64,10,66,39
 taffelet
 taffelets
 taffeland/44,10,39
@@ -60388,7 +60388,7 @@ talforhold/10,46,4,39
 talformat/10,4,11,39
 talfølge/10,11,2,39
 talg/44,10,39
-talgkirtel/64,65,10,34,39
+talgkirtel/64,65,10,39
 talgknop/7,10,39
 talibaner/5,2,10,39
 talisman/10,11,2,39
@@ -60494,7 +60494,7 @@ tandkrus/10,46,4,39
 tandkød/45,10,39
 tandlæge/10,11,2,39
 tandløs/10,38,49,24,39
-tandmejsel/64,65,10,34,39
+tandmejsel/64,65,10,39
 tandpasta/10,11,2,39
 tandpine/10,11,2,39
 tandpleje/44,10,39
@@ -60628,7 +60628,7 @@ tåreflod/10,11,2,39
 tårefyldt/24,10,49,39
 tåregas/7,10,39
 tårekanal/10,11,2,39
-tårekirtel/64,65,10,34,39
+tårekirtel/64,65,10,39
 tårekvalt/24,10,49,39
 tåreperser/5,2,10,39
 tarere/1,21,22,79,39
@@ -60723,14 +60723,14 @@ tavst
 taxa/10,11,2,39
 taxafly/10,46,4,39
 taxakunde/10,11,2,39
-taxakørsel/64,65,10,34,39
+taxakørsel/64,65,10,39
 taxameter/10,15,13,39
 taxfree/39
 taxi/10,11,2,39
 taxibon/10,11,2,39
 taxie/1,21,22,79,39
 taxifly/10,46,4,39
-taxikørsel/64,65,10,34,39
+taxikørsel/64,65,10,39
 tazet/7,10,39
 tchadensis
 tchader/5,2,10,39
@@ -60899,7 +60899,7 @@ telefotos
 telegraf/10,11,2,39
 telegrafi/44,10,39
 telegram/10,3,39
-telekabel/64,10,34,66,39
+telekabel/64,10,66,39
 telekinese/44,10,39
 telekort/10,46,4,39
 telelinse/10,11,2,39
@@ -60957,7 +60957,7 @@ tematik/7,10,39
 tematisere/1,21,22,79,39
 tematisk/28,39
 temmelig
-tempel/64,10,34,66,39
+tempel/64,10,66,39
 tempelblok/10,19,39
 tempelran/10,46,4,39
 tempeltræ/10,4,11,39
@@ -60999,7 +60999,7 @@ tenor/10,11,2,39
 tenorsax/10,11,2,39
 tension/10,11,2,39
 tensor/10,11,2,39
-tentakel/64,65,10,34,39
+tentakel/64,65,10,39
 tentativ/24,10,49,39
 tentorium/10,39
 tentorii
@@ -61032,7 +61032,7 @@ teosofi/44,10,39
 teosofisk/28,39
 tepause/10,11,2,39
 tepavillon/10,11,2,39
-tepidarium/34,70,71,10,39,84,85
+tepidarium/70,71,10,39,84,85
 teplantage/10,11,2,39
 teplukker/5,2,10,39
 tepose/10,11,2,39
@@ -61107,7 +61107,7 @@ terper/5,2,10,39
 terperi/10,4,11,39
 terraforme/1,21,22,79,39
 terrakotta/10,11,2,39
-terrarium/72,71,70,10,34,39
+terrarium/72,71,70,10,39
 terrasse/10,11,2,39
 terrassere/1,21,22,79,39
 terrazzo/44,10,39
@@ -61159,7 +61159,7 @@ testel/10,47,39
 tester/5,2,10,39
 testere/1,21,22,79,39
 testfase/10,11,2,39
-testikel/64,65,10,34,39
+testikel/64,65,10,39
 testikulær/24,10,49,39
 testis/10,39
 testes
@@ -61168,7 +61168,7 @@ testkamp/5,2,10,39
 testkit/10,57,39
 testkits
 testkører/5,2,10,39
-testkørsel/64,65,10,34,39
+testkørsel/64,65,10,39
 testning/10,11,2,39
 testperson/10,11,2,39
 testpilot/10,11,2,39
@@ -61280,7 +61280,7 @@ tidlønnet/10,26,39
 tidløs/10,38,49,24,39
 tidløs/10,2,46,39
 tidløshed/44,10,39
-tidmangel/34,65,10,39
+tidmangel/65,10,39
 tidnød/44,10,39
 tidobbelt/24,10,49,39
 tidoble/1,21,22,79,39
@@ -61298,7 +61298,7 @@ tidsbombe/10,11,2,39
 tidsbunden/12,82,10,39
 tidsdeling/10,11,2,39
 tidsdelt/24,10,49,39
-tidsel/64,65,10,34,39
+tidsel/64,65,10,39
 tidselgran/10,11,2,39
 tidselolie/10,11,2,39
 tidsenhed/10,11,2,39
@@ -61308,8 +61308,8 @@ tidsfrist/10,11,2,39
 tidsfæste/1,21,22,79,39
 tidsfølge/44,10,39
 tidsgrænse/10,11,2,39
-tidskapsel/64,65,10,34,39
-tidskørsel/64,65,10,34,39
+tidskapsel/64,65,10,39
+tidskørsel/64,65,10,39
 tidslås/5,2,10,39
 tidslig/10,39,24,23,49
 tidslinje/10,11,2,39
@@ -61318,7 +61318,7 @@ tidslomme/10,11,2,39
 tidslængde/10,11,2,39
 tidsmåler/5,2,10,39
 tidsmåling/10,11,2,39
-tidsmangel/34,65,10,39
+tidsmangel/65,10,39
 tidsmæssig/24,10,49,39
 tidsnok
 tidsnød/44,10,39
@@ -61540,7 +61540,7 @@ tilføje/1,21,22,79,39
 tilføjelse/10,11,2,39
 tilføre/20,21,22,79,39
 tilføring/10,11,2,39
-tilførsel/64,65,10,34,39
+tilførsel/64,65,10,39
 tilgå
 tilgår
 tilgås
@@ -61628,7 +61628,7 @@ tilkøb/10,46,4,39
 tilkøbe/20,21,22,79,39
 tilkøre/20,21,22,79,39
 tilkøring/10,11,2,39
-tilkørsel/64,65,10,34,39
+tilkørsel/64,65,10,39
 tillade
 tillader
 tillades
@@ -61997,7 +61997,7 @@ timepris/10,11,2,39
 timer/5,2,10,39
 times
 timedes
-timeseddel/64,65,10,34,39
+timeseddel/64,65,10,39
 timeshare/44,10,39
 timeslag/10,46,4,39
 timetakst/10,11,2,39
@@ -62092,7 +62092,7 @@ titan/45,10,39
 titanhvidt/45,10,39
 titanisk/28,39
 titanium/10,57,39
-titel/64,65,10,34,39
+titel/64,65,10,39
 titelblad/4,10,5,39
 titeldigt/4,10,5,39
 titelkamp/5,2,10,39
@@ -62459,7 +62459,7 @@ toptrænet/10,26,39
 toptunet/10,26,39
 toptyve/10,39
 topventil/10,11,2,39
-topvinkel/64,65,10,34,39
+topvinkel/64,65,10,39
 tor
 tora/10,11,2,39
 toradet/10,26,39
@@ -62640,7 +62640,7 @@ township/58,10,39
 townships
 toægget/10,26,39
 toøre/10,11,2,39
-trabekel/64,65,10,34,39
+trabekel/64,65,10,39
 trabekulær/24,10,49,39
 trace/10,39
 traces
@@ -62953,7 +62953,7 @@ trevlemund/5,2,10,39
 trevlerod/44,10,39
 trevlet/10,26,39
 triade/10,11,2,39
-triangel/64,65,10,34,39
+triangel/64,65,10,39
 triangulær/10,38,49,24,39
 triastid/44,10,39
 triatlet/10,11,2,39
@@ -62975,7 +62975,7 @@ tricks
 trickfilm/10,2,46,39
 tricktyv/5,2,10,39
 tricky/39
-tricykel/64,65,10,34,39
+tricykel/64,65,10,39
 tridentat/24,10,49,39
 triennale/10,11,2,39
 trifasisk/28,39
@@ -63078,7 +63078,7 @@ trivedes
 trivi/10,11,2,39
 trivial/10,38,49,24,39
 triviel/42,10,49,59,39
-trivsel/34,65,10,39
+trivsel/65,10,39
 ttro/44,10,39
 tro/24,10,49,39
 tro/1,21,22,79,39
@@ -63166,7 +63166,7 @@ trone/10,11,2,39
 tronfølge/44,10,39
 tronfølger/5,2,10,39
 tronhimle/74,10,39
-tronhimmel/34,65,10,39
+tronhimmel/65,10,39
 tronskifte/10,4,11,39
 tronstol/5,2,10,39
 trontale/10,11,2,39
@@ -63237,7 +63237,7 @@ trup/10,19,39
 trup/7,10,39
 trusse/10,11,2,39
 trussekant/10,11,2,39
-trussel/64,65,10,34,39
+trussel/64,65,10,39
 trusser/74,10,39
 trust/10,11,2,39
 trut/10,47,39
@@ -63435,8 +63435,8 @@ trænet/10,26,39
 trænge/20,21,22,79,39
 trængende/27,39
 trængning/10,11,2,39
-trængsel/64,65,10,34,39
-trængsel/34,65,10,39
+trængsel/64,65,10,39
+trængsel/65,10,39
 trængt/24,10,49,39
 træning/10,11,2,39
 træpanel/10,4,11,39
@@ -63489,7 +63489,7 @@ trævlemund/5,2,10,39
 trævlerod/44,10,39
 trævlet/10,26,39
 træværk/45,10,39
-trøffel/64,65,10,34,39
+trøffel/64,65,10,39
 trøje/10,11,2,39
 trøjeærme/10,4,11,39
 trøske/44,10,39
@@ -63588,7 +63588,7 @@ tumle/1,21,22,79,39
 tumleplads/10,11,2,39
 tumler/5,2,10,39
 tumling/10,11,2,39
-tummel/34,65,10,39
+tummel/65,10,39
 tummelen
 tummelens
 tummelumsk/28,39
@@ -63653,7 +63653,7 @@ turboladet/10,26,39
 turbomotor/10,11,2,39
 turbulens/10,11,2,39
 turbulent/24,10,49,39
-turcykel/64,65,10,34,39
+turcykel/64,65,10,39
 turdans/5,2,10,39
 turde
 tør
@@ -63939,7 +63939,7 @@ tyngdefelt/10,4,11,39
 tyngdelov/44,10,39
 tynge/1,21,22,79,39
 tynge/44,10,39
-tyngsel/64,65,10,34,39
+tyngsel/64,65,10,39
 type/10,11,2,39
 typeenhed/10,11,2,39
 typehus/4,10,5,39
@@ -64074,7 +64074,7 @@ tænde/20,21,22,79,39
 tænder/5,2,10,39
 tænder/74,10,39
 tænding/10,11,2,39
-tændkabel/64,10,34,66,39
+tændkabel/64,10,66,39
 tændrør/10,46,4,39
 tændsats/10,11,2,39
 tændspole/10,11,2,39
@@ -64109,7 +64109,7 @@ tærende/27,39
 tæret/10,26,39
 tæring/10,11,2,39
 tærske/1,21,22,79,39
-tærskel/64,65,10,34,39
+tærskel/64,65,10,39
 tærsker/5,2,10,39
 tærskeværk/10,4,11,39
 tærskning/10,11,2,39
@@ -64149,7 +64149,7 @@ tøbrud/10,47,39
 tøddel/64,65,44,10,39
 tøf
 tøffe/1,21,22,79,39
-tøffel/64,65,10,34,39
+tøffel/64,65,10,39
 tøffeldyr/10,46,4,39
 tøffelhelt/5,2,10,39
 tøfle/1,21,22,79,39
@@ -64738,7 +64738,7 @@ udføre/20,21,22,79,39
 udførelse/10,11,2,39
 udføring/10,11,2,39
 udførlig/10,39,24,23,49
-udførsel/64,65,10,34,39
+udførsel/64,65,10,39
 udgå
 udgår
 udgås
@@ -64908,7 +64908,7 @@ udkæmpe/1,21,22,79,39
 udkæmpelse/10,11,2,39
 udkæmpning/10,11,2,39
 udkøre/20,21,22,79,39
-udkørsel/64,65,10,34,39
+udkørsel/64,65,10,39
 udkørt/24,10,49,39
 udkørthed/44,10,39
 udlade/1,21,22,79,39
@@ -64984,7 +64984,7 @@ udlægger/5,2,10,39
 udlægning/10,11,2,39
 udlænding/5,2,10,39
 udlænge/10,11,2,39
-udlængsel/34,65,10,39
+udlængsel/65,10,39
 udlære/20,21,22,79,39
 udlæse/20,21,22,79,39
 udlæsning/10,11,2,39
@@ -65837,7 +65837,7 @@ ugebrev/4,10,5,39
 ugedag/5,2,10,39
 ugegammel/10,49,77,39
 ugekort/10,46,4,39
-ugekursus/34,70,71,10,39,84,85
+ugekursus/70,71,10,39,84,85
 ugelang/10,38,49,24,39
 ugeløn/58,10,39
 ugelønnet/10,26,39
@@ -66054,7 +66054,7 @@ ulvegab/10,46,4,39
 ulvehund/5,2,10,39
 ulvehunger/44,10,39
 ulvejagt/10,11,2,39
-ulvekobbel/64,10,34,66,39
+ulvekobbel/64,10,66,39
 ulverøn/58,10,39
 ulverønne
 ulverønnes
@@ -66314,7 +66314,7 @@ undertegne/1,21,22,79,39
 undertekst/10,11,2,39
 undertiden
 undertippe/1,21,22,79,39
-undertitel/64,65,10,34,39
+undertitel/64,65,10,39
 undertone/10,11,2,39
 undertråd/5,2,10,39
 undertryk/10,47,39
@@ -66708,7 +66708,7 @@ urinsur/10,38,49,24,39
 urinsyre/44,10,39
 urinveje/74,10,39
 urinøs/24,10,49,39
-urkapsel/64,65,10,34,39
+urkapsel/64,65,10,39
 urkasse/10,11,2,39
 urkomisk/28,39
 urkraft/44,10,39
@@ -66754,7 +66754,7 @@ urosignal/10,4,11,39
 urostifter/5,2,10,39
 urotel/45,10,39
 urotelial/24,10,49,39
-urovarsel/64,10,34,66,39
+urovarsel/64,10,66,39
 urpremiere/10,11,2,39
 urrem/10,19,39
 urskive/10,11,2,39
@@ -67042,7 +67042,7 @@ uøkonomisk/28,39
 uønskelig/10,39,24,23,49
 uønsket/10,26,39
 uøvet/10,26,39
-vabel/64,65,10,34,39
+vabel/64,65,10,39
 våben/10,39
 våbenet
 våbnet
@@ -67104,7 +67104,7 @@ vådserviet/7,10,39
 vådskoet/10,26,39
 vadsæk/10,19,39
 vådte/1,21,22,79,39
-vaffel/64,65,10,34,39
+vaffel/64,65,10,39
 vaffeldej/5,2,10,39
 vaffelis/10,2,46,39
 vaffeljern/10,46,4,39
@@ -67295,8 +67295,8 @@ vandbåren/12,82,10,39
 vandbasis/10,39
 vandblå/24,10,49,39
 vandbærer/5,2,10,39
-vandbøffel/64,65,10,34,39
-vandcykel/64,65,10,34,39
+vandbøffel/64,65,10,39
+vandcykel/64,65,10,39
 vanddamp/5,2,10,39
 vanddråbe/10,11,2,39
 vanddybde/10,11,2,39
@@ -67337,7 +67337,7 @@ vandkamp/5,2,10,39
 vandkande/10,11,2,39
 vandkanon/10,11,2,39
 vandkant/10,11,2,39
-vandkedel/64,65,10,34,39
+vandkedel/64,65,10,39
 vandklar/10,38,49,24,39
 vandkraft/44,10,39
 vandkunst/10,11,2,39
@@ -67351,7 +67351,7 @@ vandløb/10,46,4,39
 vandløs/10,38,49,24,39
 vandmadras/7,10,39
 vandmand/44,10,39
-vandmangel/34,65,10,39
+vandmangel/65,10,39
 vandmasse/10,11,2,39
 vandmelon/10,11,2,39
 vandmiljø/10,4,11,39
@@ -67463,7 +67463,7 @@ vant/10,4,11,39
 vante/10,11,2,39
 vantreven/12,49,10,39
 vantrives
-vantrivsel/34,65,10,39
+vantrivsel/65,10,39
 vantro/24,10,49,39
 vantro/44,10,39
 vanuatisk/28,39
@@ -67491,10 +67491,10 @@ varefakta/74,10,39
 varegruppe/10,11,2,39
 varehandel/64,65,44,10,39
 varehus/4,10,5,39
-varekørsel/64,65,10,34,39
+varekørsel/64,65,10,39
 varelager/10,13,4,39
 varelagere
-varemangel/34,65,10,39
+varemangel/65,10,39
 varemarked/10,4,11,39
 varemængde/10,11,2,39
 varemærke/10,4,11,39
@@ -67519,7 +67519,7 @@ vårgrøn/42,10,49,59,39
 vårguld/44,10,39
 vårhare/10,11,2,39
 vårhavre/44,10,39
-variabel/64,65,10,34,39
+variabel/64,65,10,39
 variabel/10,49,77,39
 variable/74,10,39
 varians/10,11,2,39
@@ -67575,7 +67575,7 @@ varpning/10,11,2,39
 vårraps/44,10,39
 varroa/44,10,39
 varroamide/10,11,2,39
-varsel/64,10,34,66,39
+varsel/64,10,66,39
 vårsild/10,2,46,39
 varsko/10,4,11,39
 varsko/10,46,4,39
@@ -67765,7 +67765,7 @@ veghed/44,10,39
 vegne/74,10,39
 vegne/1,21,22,79,39
 vehement/24,10,49,39
-vehikel/64,10,34,66,39
+vehikel/64,10,66,39
 vej/5,2,10,39
 vejanlæg/10,47,39
 vejarbejde/10,4,11,39
@@ -67781,7 +67781,7 @@ vejerbod/10,11,2,39
 vejfarende/27,39
 vejfest/10,11,2,39
 vejføring/10,11,2,39
-vejgaffel/64,65,10,34,39
+vejgaffel/64,65,10,39
 vejgreb/45,10,39
 vejgrøft/10,11,2,39
 vejkant/10,11,2,39
@@ -67839,7 +67839,7 @@ vejvæsnets
 vejvæsner
 vejvæsners
 vekao/44,10,39
-veksel/64,65,10,34,39
+veksel/64,65,10,39
 vekselerer/5,2,10,39
 vekselkurs/10,11,2,39
 veksellad/10,47,39
@@ -68039,7 +68039,7 @@ ventrale
 ventrales
 ventralia
 ventriculi
-ventrikel/64,65,10,34,39
+ventrikel/64,65,10,39
 venusbjerg/4,10,5,39
 venushår/10,2,46,39
 venusvogn/5,2,10,39
@@ -68049,7 +68049,7 @@ veranda/10,11,2,39
 verbal/10,38,49,24,39
 verbal/10,4,11,39
 verballed/10,47,39
-verbum/34,70,71,10,39,84,85
+verbum/70,71,10,39,84,85
 verden/10,11,2,39
 verdner
 verdners
@@ -68109,7 +68109,7 @@ vertiginøs/24,10,49,39
 vertigo/10,39
 vertikal/10,38,49,24,39
 vertikal/10,11,2,39
-vesikel/64,65,10,34,39
+vesikel/64,65,10,39
 vesikulær/24,10,49,39
 vesikulær/44,10,39
 vesir/10,11,2,39
@@ -68267,7 +68267,7 @@ vidtløftig/10,39,24,23,49
 vidtspredt/24,10,49,39
 vidtstrakt/24,10,49,39
 vidunder/4,10,5,39
-vidvinkel/64,65,10,34,39
+vidvinkel/64,65,10,39
 vie/1,21,22,79,39
 vielse/10,11,2,39
 vievand/45,10,39
@@ -68323,7 +68323,7 @@ viking/10,11,2,39
 vikingeby/10,11,2,39
 vikingetid/44,10,39
 vikke/10,11,2,39
-vikkel/64,65,10,34,39
+vikkel/64,65,10,39
 vikle/1,21,22,79,39
 vikler/14,10,13,39
 vikler/5,2,10,39
@@ -68371,7 +68371,7 @@ vildtype/10,11,2,39
 vildvej/5,2,10,39
 vildvin/10,2,46,39
 vildænder/74,10,39
-vildæsel/64,10,34,66,39
+vildæsel/64,10,66,39
 vilje/10,11,2,39
 viljefast/24,10,49,39
 viljekraft/44,10,39
@@ -68405,7 +68405,7 @@ villi
 villorum
 vilter/41,49,10,39
 vimmer/39
-vimpel/64,65,10,34,39
+vimpel/64,65,10,39
 vimre/1,21,22,79,39
 vims/10,38,49,24,39
 vimse/1,21,22,79,39
@@ -68474,7 +68474,7 @@ vindrikker/5,2,10,39
 vindrose/10,11,2,39
 vindrossel/64,65,44,10,39
 vindrue/10,11,2,39
-vindsel/64,10,34,66,39
+vindsel/64,10,66,39
 vindselet
 vindselets
 vindside/44,10,39
@@ -68536,7 +68536,7 @@ vinificere/1,21,22,79,39
 vinimport/44,10,39
 vink/10,46,4,39
 vinke/1,21,22,79,39
-vinkel/64,65,10,34,39
+vinkel/64,65,10,39
 vinkelben/10,46,4,39
 vinkelbue/10,11,2,39
 vinkelhage/10,11,2,39
@@ -68773,7 +68773,7 @@ vittighed/10,11,2,39
 viv/44,10,39
 vivace
 vivacitet/44,10,39
-vivarium/34,70,71,10,39,84,85
+vivarium/70,71,10,39,84,85
 vivat
 vivendi
 vivisekere/1,21,22,79,39
@@ -68798,7 +68798,7 @@ vodbinderi/10,4,11,39
 vodfiskeri/45,10,39
 vodka/10,11,2,39
 vogn/5,2,10,39
-vognaksel/64,65,10,34,39
+vognaksel/64,65,10,39
 vognbane/10,11,2,39
 vogndæk/10,47,39
 vognfuld/5,2,10,39
@@ -69053,7 +69053,7 @@ vrik/10,47,39
 vrikke/1,21,22,79,39
 vrimle/1,21,22,79,39
 vrimlen/10,39
-vrimmel/34,65,10,39
+vrimmel/65,10,39
 vrinsk/10,46,4,39
 vrinske/1,21,22,79,39
 vrinsken/10,39
@@ -69590,7 +69590,7 @@ yndest/44,10,39
 yndig/10,39,24,23,49
 yndighed/10,11,2,39
 yndling/5,2,10,39
-yngel/34,65,10,39
+yngel/65,10,39
 yngelpleje/44,10,39
 yngle/1,21,22,79,39
 yngledam/10,19,39
@@ -69670,7 +69670,7 @@ zeppeliner/5,2,10,39
 zerait/7,10,39
 zeta/10,4,11,39
 zeugma/45,10,39
-zeustempel/64,10,34,66,39
+zeustempel/64,10,66,39
 ziehklinge/10,11,2,39
 zifit/7,10,39
 ziggurat/10,11,2,39
@@ -69855,7 +69855,7 @@ zweck/10,39
 ægteviv/44,10,39
 ægthed/10,11,2,39
 ægvende/20,21,22,79,39
-ægvinkel/64,65,10,34,39
+ægvinkel/64,65,10,39
 ægypter/5,2,10,39
 ægyptisk/28,39
 ægyptolog/10,11,2,39
@@ -69944,7 +69944,7 @@ zweck/10,39
 æresrunde/10,11,2,39
 æressag/10,11,2,39
 ærestegn/10,46,4,39
-ærestitel/64,65,10,34,39
+ærestitel/64,65,10,39
 æresvagt/10,11,2,39
 æresvold/44,10,39
 ærgerlig/10,39,24,23,49
@@ -69956,7 +69956,7 @@ zweck/10,39
 ærkebisp/10,11,2,39
 ærkedansk/28,39
 ærkediakon/10,11,2,39
-ærkeengel/34,65,10,39
+ærkeengel/65,10,39
 ærkeengle/74,10,39
 ærkefjende/10,11,2,39
 ærkefjols/10,4,11,39
@@ -69987,7 +69987,7 @@ zweck/10,39
 ærøbo/10,11,2,39
 ærøsk/28,39
 æs/44,10,39
-æsel/64,10,34,66,39
+æsel/64,10,66,39
 æseldriver/5,2,10,39
 æselføl/10,47,39
 æselhoppe/10,11,2,39
@@ -70010,13 +70010,13 @@ zweck/10,39
 æter/5,2,10,39
 æterbåren/12,82,10,39
 æterisk/28,39
-ætermedium/72,71,70,10,34,39
+ætermedium/72,71,70,10,39
 ætervader/5,2,10,39
 ætiologi/10,11,2,39
 ætiologisk/28,39
 ætling/5,2,10,39
 ætse/1,21,22,79,39
-ætsemiddel/64,10,34,66,39
+ætsemiddel/64,10,66,39
 ætsende/27,39
 ætskali/45,10,39
 ætsnatron/44,10,39
@@ -70161,7 +70161,7 @@ zweck/10,39
 ølgær/44,10,39
 ølhund/5,2,10,39
 ølkande/10,11,2,39
-ølkapsel/64,65,10,34,39
+ølkapsel/64,65,10,39
 ølkasse/10,11,2,39
 ølknejpe/10,11,2,39
 ølkrus/10,46,4,39
