@@ -2,16 +2,15 @@
   "anagrams": [
     "eks",
     "ker",
-    "res",
-    "ser",
-    "ske",
     "kræ",
     "kær",
     "kør",
     "køs",
+    "res",
     "ræk",
     "ræs",
-    "sker",
+    "ser",
+    "ske",
     "sæk",
     "sær",
     "ære",
@@ -31,6 +30,7 @@
     "ræks",
     "ræse",
     "røse",
+    "sker",
     "skær",
     "skør",
     "sære",
@@ -49,9 +49,9 @@
     "skære",
     "skøre",
     "særke",
+    "ærøsk",
     "æsker",
     "økser",
-    "ærøsk",
     "ærøske"
   ]
 }
