@@ -9,7 +9,7 @@ inline time_point get_timestamp() {
 typedef unsigned long int time_duration;
 
 inline unsigned long int duration_of(const time_point &before, const time_point &after) {
-  return std::chrono::duration_cast<std::chrono::milliseconds>(after - before).count();
+  return std::chrono::duration_cast<std::chrono::nanoseconds>(after - before).count();
 }
 
 #include <getopt.h>
@@ -111,7 +111,7 @@ int main(int argc, char* argv[]) {
   std::cout << "Dictionary:" << std::endl
             << "| # Words:           " << total_words << " words" << std::endl
             << "| Time:              " << std::endl
-            << "| | Parsing:         " << dict_parse__time << " ms" << std::endl
+            << "| | Parsing:         " << dict_parse__time << " ns" << std::endl
     ;
 
   std::cout << std::endl;
@@ -121,8 +121,8 @@ int main(int argc, char* argv[]) {
             << "| # Nodes:           " << a.size() << std::endl
             << "| # Keys:            " << keys.size() << std::endl
             << "| Time:              " << std::endl
-            << "| | Insertion:       " << anatree_insert__time << " ms" << std::endl
-            << "| | Keys:            " << duration_of(keys__start_time, keys__end_time) << " ms" << std::endl
+            << "| | Insertion:       " << anatree_insert__time << " ns" << std::endl
+            << "| | Keys:            " << duration_of(keys__start_time, keys__end_time) << " ns" << std::endl
     ;
 
   // -----------------------------------------------------------------
@@ -158,7 +158,7 @@ int main(int argc, char* argv[]) {
       ;
   }
 
-  std::cout << "| | Anagrams:        " << anagrams__time << " ms" << std::endl;
+  std::cout << "| | Anagrams:        " << anagrams__time << " ns" << std::endl;
 
   std::cout << std::endl;
   std::cout << "Created " << idx << " games in '.out/'" << std::endl;
