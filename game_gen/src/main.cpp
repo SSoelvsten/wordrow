@@ -128,12 +128,15 @@ int main(int argc, char* argv[]) {
   // -----------------------------------------------------------------
   // Create game instances
   size_t idx = 0;
-  size_t skipped = 0;
+  size_t skipped__short_keys = 0;
+  size_t skipped__short_games = 0;
   size_t anagrams__time = 0;
 
   for (std::string k : keys) {
+    // Ignore keys that would lead to a game with the longest word not being of
+    // MAX length
     if (k.size() < MAX_LENGTH) {
-      skipped += 1;
+      skipped__short_keys += 1;
       continue;
     }
     assert(k.size() == MAX_LENGTH);
@@ -148,7 +151,11 @@ int main(int argc, char* argv[]) {
     const time_point anagrams__end_time = get_timestamp();
     anagrams__time += duration_of(anagrams__start_time, anagrams__end_time);
 
-    if (game.size() < 21) continue; // <-- ignore small games (def: 'small' less than half the answer)
+    // Ignore small games (def: 'small' less than half the answer)
+    if (game.size() < 21) {
+      skipped__short_games += 1;
+      continue;
+    }
 
     out_file << gen_json(a.anagrams_of(k));
 
@@ -169,6 +176,7 @@ int main(int argc, char* argv[]) {
 
   std::cout << std::endl;
   std::cout << "Created " << idx << " games in '.out/'" << std::endl;
-  std::cout << "| Skipped " << skipped << " keys that were too short." << std::endl;
+  std::cout << "| Skipped " << skipped__short_keys << " keys that were too short." << std::endl;
+  std::cout << "| Skipped " << skipped__short_games << " games that were too short." << std::endl;
 }
 
