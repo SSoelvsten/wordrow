@@ -1,6 +1,6 @@
 import React, { useEffect, useRef, useState } from 'react';
 import './game.scss';
-import { GameInstance, GameLanguage } from '../game-instance';
+import { GameInstance, GameLanguage } from './game-instance';
 import InputBox from './input-box';
 import Word from './word';
 import shuffle from '../shuffle';
