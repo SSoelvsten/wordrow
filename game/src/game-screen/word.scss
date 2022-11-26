@@ -37,15 +37,16 @@
         margin-bottom: -1.7rem;
     }
 
-    @keyframes WordReveal {
-        /* flash animation when guessed */
-        from { background-color: $light-background; }
-        to { background-color: $light-good; }
-    }
-
     &.Guessed .Letter {
         background-color: $light-good;
-        animation-name: WordReveal;
+
+        @keyframes WordRevealLight {
+            /* flash animation when guessed */
+            from { background-color: $light-background; }
+            to { background-color: $light-good; }
+        }    
+
+        animation-name: WordRevealLight;
         animation-duration: 0.1s;
     }
 }
@@ -56,14 +57,15 @@
         border-color: $dark-text-color;
     }
 
-    @keyframes WordRevealDark {
-        /* flash animation when guessed */
-        from { background-color: $dark-background; }
-        to { background-color: $dark-good; }
-    }
-
     &.Guessed .Letter {
         background-color: $dark-good;
+
+        @keyframes WordRevealDark {
+            /* flash animation when guessed */
+            from { background-color: $dark-background; }
+            to { background-color: $dark-good; }
+        }
+
         animation-name: WordRevealDark;
         animation-duration: 0.2s;
     }

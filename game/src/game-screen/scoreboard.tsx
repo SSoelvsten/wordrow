@@ -39,12 +39,18 @@ const ScoreBoard = ({ endTime, language, round, score, onTimeout }: ScoreBoardPr
     }, []);
 
     useEffect(() => {
-        if (endTime - currTime < 0) onTimeout();
+        const timeLeft = endTime - currTime;
+        if (timeLeft < 0) onTimeout();
     }, [currTime, endTime, onTimeout]);
+
+    const timeLeft = endTime - currTime;
+    const timeAlarm: boolean = 0 < timeLeft && timeLeft < 10 * 1000;
 
     return (
         <div className="ScoreBoard">
-            {formatTimeleft()} <b>| {round} |</b> {Math.round(score).toLocaleString(language, {minimumIntegerDigits: 7 })}
+            <div className={`Time ${timeAlarm ? "Alarm" : ""}`}>{formatTimeleft()}</div>
+            <div className="RoundNumber">| {round} |</div>
+            <div className="Score">{Math.round(score).toLocaleString(language, {minimumIntegerDigits: 7 })}</div>
         </div>
     );
 }

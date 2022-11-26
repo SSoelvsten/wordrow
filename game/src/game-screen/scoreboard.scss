@@ -9,11 +9,39 @@
 
     color: $light-text-color;
 
-    b {
-        font-size: 1.6rem;
+    div { 
+        display: inline-block; 
+
+        &.Time.Alarm {
+            @keyframes timeAlarmLight {
+                from { color: $light-text-color; }
+                to { color: $light-bad; }
+            } 
+
+            animation-name: timeAlarmLight;
+            animation-duration: 0.4s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+
+        &.RoundNumber {
+            margin: 0 0.5rem;
+            font-size: 1.6rem;
+        }
+
+        &.Score { }
     }
 }
 
 .DarkMode .ScoreBoard {
     color: $dark-text-color;
+
+    div.Time.Alarm {
+        @keyframes timeAlarmDark {
+            from { color: $dark-text-color; }
+            to { color: $dark-bad; }
+        } 
+
+        animation-name: timeAlarmDark;
+    }
 }
