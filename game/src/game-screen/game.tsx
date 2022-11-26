@@ -217,9 +217,10 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
                             .map((word_length, i) => (<div className="Anagrams-column" key={i}>
                                 {anagrams.map((w,i) => [w,i] as [string,number])
                                          .filter(([w,_]) => w.length === word_length)
-                                         .map(([w,i]) => <Word word={w}  key={i}
+                                         .map(([w,i]) => <Word key={i}
+                                                               language={language} word={w}
                                                                guessed={guessed[i]} show={gameEnd}
-                                                               url={`https://www.ordnet.dk/ddo/ordbog?query=${w}`}/>)}
+                                                               />)}
                             </div>))
                     }
                 </div>

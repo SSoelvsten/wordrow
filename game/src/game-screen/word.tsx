@@ -1,17 +1,27 @@
 import React from 'react';
+import { GameLanguage } from './game-instance';
 import './word.scss';
 
 export interface WordProps {
     guessed: boolean;
+    language: GameLanguage;
     show: boolean;
-    url: string;
     word: string;
 }
 
-export const Word = ({ guessed, show, url, word } : WordProps) => {
+const word_url = (language: GameLanguage, word: string) => {
+    switch (language) {
+    case GameLanguage.DK:
+        return `https://www.ordnet.dk/ddo/ordbog?query=${word}`;
+    default:
+        throw new Error(`Unknown Langauge: ${language}`);
+    }
+}
+
+export const Word = ({ language, guessed, show, word } : WordProps) => {
     const getDefinition = () => {
         if(!guessed && !show) return;
-        window.open(url, "_blank");
+        window.open(word_url(language, word), "_blank");
     }
     return (
         <div className={"Word" + (guessed ? " Guessed" : "") + (show ? " Show" : "")} onClick={getDefinition}>
