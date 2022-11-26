@@ -14,12 +14,12 @@ export const shuffle = (arr: any[], i: number, j: number) => {
   if (j <= i) return;
 
   // case: a single letter is left, i.e. cannot shuffle.
-  if (i + 1 == j) {
+  if (i + 1 === j) {
     return;
   }
 
   // case: two letters left. It feels better to just swap them.
-  if (i + 2 == j) {
+  if (i + 2 === j) {
     swap(arr, i, i+1);
     return;
   }

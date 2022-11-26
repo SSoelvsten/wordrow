@@ -22,7 +22,7 @@ const App = () => {
     }
   );
 
-  const [gameLanguage, setGameLanguage] = useState<GameLanguage>(GameLanguage.DK)
+  const [gameLanguage] = useState<GameLanguage>(GameLanguage.DK)
 
   const updateLocalStorage = () => {
     localStorage.setItem(LS_KEYS.DarkMode, `${darkMode}`);
