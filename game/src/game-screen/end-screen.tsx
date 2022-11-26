@@ -1,5 +1,5 @@
 import React from 'react';
-import { GameLanguage } from '../game-instance';
+import { GameLanguage } from './game-instance';
 import './end-screen.scss';
 
 interface EndScreenProps {

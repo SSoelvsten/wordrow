@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { GameLanguage } from "../game-instance";
+import { GameLanguage } from "./game-instance";
 import './scoreboard.scss';
 
 export interface ScoreBoardProps {
