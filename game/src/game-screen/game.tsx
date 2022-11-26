@@ -29,13 +29,13 @@ const charShuffle = (chars: CharIdx[]) => {
             if (ia === null && ib === null)
                 return 0;
             if (ia === null || ib === null)
-                 return ia === null ? -1 : 1;
+                 return ia === null ? 1 : -1;
             else return 0;
         }
     );
-    const firstNonNull = charsCopy.findIndex(([_,i]) => i !== null);
+    const firstNonNull = charsCopy.findIndex(([_,i]) => i === null);
     shuffle(charsCopy, firstNonNull, charsCopy.length);
-    return charsCopy.reverse();
+    return charsCopy;
 }
 
 const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNextGame }: GameProps) => {
