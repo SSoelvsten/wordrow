@@ -9,7 +9,10 @@
     min-width: $input-font-size;
     width: $input-font-size;
     height: $input-font-size;
-    line-height: $input-font-size;
+    @supports ( -moz-appearance:none ){
+        line-height: $firefox--line-height-factor * $input-font-size;
+    }
+    line-height: $line-height-factor * $input-font-size;
     margin:$input-gap;
     padding: $input-gap;
     text-align: center;
