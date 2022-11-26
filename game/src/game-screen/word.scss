@@ -1,8 +1,9 @@
 @import '../common.scss';
 
 .Word {
+    flex: 0;
     display: flex;
-    margin: 1rem;
+    margin: 0.3rem 1rem;
 
     &.Guessed, &.Show {
         cursor: help;
@@ -20,7 +21,7 @@
             line-height: $firefox--line-height-factor * $letter-font-size;
         }
         line-height: $line-height-factor * $letter-font-size;
-        margin: $letter-gap;
+        margin: 0 $letter-gap;
         padding: $letter-gap;
         text-align: center;
         text-transform: capitalize;
@@ -32,9 +33,6 @@
         border-style: solid;
         border-width: 1px;
         border-radius: 10%;
-
-        /* HACK: make spacing between individual words smaller */
-        margin-bottom: -1.7rem;
     }
 
     &.Guessed .Letter {

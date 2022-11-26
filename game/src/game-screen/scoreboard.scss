@@ -2,10 +2,12 @@
 
 .ScoreBoard {
     width: 100%;
+    flex: 0;
+    
     text-align: center;
     font-size: 1.2rem;
     margin-top: 0.2rem;
-    margin-bottom: -0.5rem;
+    margin-bottom: 0rem;
 
     color: $light-text-color;
 

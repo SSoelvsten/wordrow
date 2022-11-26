@@ -40,7 +40,7 @@ const charShuffle = (chars: CharIdx[]) => {
 
 const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNextGame }: GameProps) => {
     // ------------------------------------------------------------------------
-    // GAME STATE
+    // GAME SETTINGS
     const scoreWord = (w : string) => Math.round(Math.pow(w.length-2,2)*100);
     const timeWord = (w : string) => scoreWord(w) * 10 + 2000;
 
@@ -188,17 +188,44 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
             return;
         } else { // !gameEnd
             switch (e.key) {
-                case " ":         actionShuffle(); break;
-                case "Backspace": (e.ctrlKey || e.altKey) ? actionClear() : actionDelete();  break;
-                case "Escape":    actionClear();   break;
-                case "Enter":     actionSubmit();  break;
-                default:          actionType(e.key)
+            case " ":         actionShuffle(); break;
+            case "Backspace": (e.ctrlKey || e.altKey) ? actionClear() : actionDelete();  break;
+            case "Escape":    actionClear();   break;
+            case "Enter":     actionSubmit();  break;
+            default:          actionType(e.key)
             }
         }
     }
 
     // ------------------------------------------------------------------------
     // VISUAL
+
+    const wordLengths: number[] = Array(max_word_length - min_word_length + 1).fill(0).map((_,i) => i + min_word_length);
+    let wordColumns: [string, number][][] = wordLengths.map((word_length, i) => 
+        anagrams.map((w,i) => [w,i] as [string,number]).filter(([w,_]) => w.length === word_length)
+    );
+
+    // TODO: Respond to changes to the window size:
+    //   https://www.pluralsight.com/guides/re-render-react-component-on-window-resize
+    //   https://www.tutsmake.com/react-get-window-height-width/
+    const totalHeight = window.innerHeight;
+    const scoreboardHeight = 37;
+    const inputHeight = 2 * 90;
+
+    const remainingHeight = totalHeight - scoreboardHeight - inputHeight;
+
+    const wordHeight = 38;
+    const maxWords = remainingHeight / wordHeight
+
+    if (wordColumns.some((c) => c.length > maxWords)) {
+        wordColumns = [anagrams.map((w,i) => [w,i] as [string,number])]
+    }
+    const singleColumn : boolean = wordColumns.length === 1;
+
+    const wordWidth = 32 * max_word_length;
+    const maxColumns = Math.floor(window.innerWidth / wordWidth) - 1;
+    const averageColumnHeight : number = Math.ceil(anagrams.length / maxColumns) + 1;
+    console.log(averageColumnHeight, singleColumn);
 
     // https://stackabuse.com/how-to-set-focus-on-element-after-rendering-with-react/
     const divRef = useRef<any>(null);
@@ -209,22 +236,16 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
             <div className='ScoreBoard'>
                 <ScoreBoard endTime={endTime} language={language} score={accScore + currScore} round={round} onTimeout={onTimeout} />
             </div>
-            <div className="Anagrams">
-                <div className="Anagrams-columns">
-                    {
-                        Array(max_word_length - min_word_length + 1).fill(0)
-                            .map((_,i) => i + min_word_length)
-                            .map((word_length, i) => (<div className="Anagrams-column" key={i}>
-                                {anagrams.map((w,i) => [w,i] as [string,number])
-                                         .filter(([w,_]) => w.length === word_length)
-                                         .map(([w,i]) => <Word key={i}
-                                                               language={language} word={w}
-                                                               guessed={guessed[i]} show={gameEnd}
-                                                               />)}
-                            </div>))
-                    }
-                </div>
-            </div>
+            { <div className="Anagrams">
+                { wordColumns.map((c,i) => (
+                    c.map(([w,j], ci) => {
+                        const row = singleColumn ? Math.floor(j % averageColumnHeight)+1 : ci+1;
+                        const col = singleColumn ? Math.floor(j / averageColumnHeight)+1 : i+1;
+                        console.log(w,j, "row", row, "col", col )
+                        return <Word key={j} language={language} word={w} guessed={guessed[j]} show={gameEnd} row={row} col={col}  />
+                    })
+                )) }
+              </div> }
             {!gameEnd &&
                 <>
                     <div className="Row">
