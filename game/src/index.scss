@@ -1,17 +1,4 @@
-@font-face {
-  font-family: 'CMU Typewriter Text';
-  src: local('CMU Typewriter Text'), url(./fonts/cmuntt.ttf) format('truetype');
-}
-
-@font-face {
-  font-family: 'CMU Typewriter Text (Bold)';
-  src: local('CMU Typewriter Text (Bold)'), url(./fonts/cmuntb.ttf) format('truetype');
-}
-
-@mixin fullscreen {
-  height: 100%;
-  width: 100%;
-}
+@import 'common.scss';
 
 html {
   height: 100%;

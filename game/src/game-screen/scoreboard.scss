@@ -1,3 +1,5 @@
+@import '../common.scss';
+
 .ScoreBoard {
     width: 100%;
     text-align: center;
@@ -5,7 +7,13 @@
     margin-top: 0.2rem;
     margin-bottom: -0.5rem;
 
+    color: $light-text-color;
+
     b {
         font-size: 1.6rem;
     }
+}
+
+.DarkMode .ScoreBoard {
+    color: $dark-text-color;
 }

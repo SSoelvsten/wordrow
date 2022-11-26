@@ -1,8 +1,12 @@
+@import '../common.scss';
+
 .EndScreen {
     text-align: center;
 
     margin-top: 1rem;
     margin-bottom: 3rem;
+
+    color: $light-text-color;
 
     .Score {
         font-size: 3rem;
@@ -13,8 +17,20 @@
     }
 
     .Continue {
-        &.hide {
-            color: white;
+        b {
+            margin-left: 0.3rem;
+            margin-left: 0.3rem;
         }
+        &.hide {
+            color: $light-background;
+        }
+    }
+}
+
+.DarkMode .EndScreen {
+    color: $dark-text-color;
+
+    .Continue.hide {
+        color: $dark-background;
     }
 }
