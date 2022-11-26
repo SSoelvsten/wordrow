@@ -1,12 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { GameIndex, GameInstance, GameLanguage } from './game-instance';
 import Game, { GameReport } from './game';
+import './game-session.scss';
 
 const JSONHeader = { headers : {  'Content-Type': 'application/json', 'Accept': 'application/json' } };
 
-const GameSession = () => {
-  const gameLanguage: GameLanguage = GameLanguage.DK;
+export interface GameSessionProps {
+  gameLanguage: GameLanguage;
+}
 
+const GameSession = ({ gameLanguage } : GameSessionProps) => {
   const [accScore, setAccScore] = useState<number>(0);
   const [round, setRound] = useState<number>(1);
   const [gameInstance, setGameInstance] = useState<GameInstance | undefined>(undefined);
@@ -38,7 +41,7 @@ const GameSession = () => {
   return (
       <>
       { gameInstance &&
-        <div className="GameSession fullscreen">
+        <div className="GameSession">
           <Game instance={gameInstance}
                 language={gameLanguage}
                 accScore={accScore}

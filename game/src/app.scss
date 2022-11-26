@@ -1,0 +1,5 @@
+@import 'index.scss';
+
+.App {
+    @include fullscreen();
+}

@@ -1,5 +1,8 @@
+@import '../index.scss';
+
 .Game {
-    height: 100%;
+    @include fullscreen();
+
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
