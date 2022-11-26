@@ -1,4 +1,7 @@
 import React, { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import * as faRegular from '@fortawesome/free-regular-svg-icons'
+import * as faSolid from '@fortawesome/free-solid-svg-icons'
 import { GameLanguage } from './game-screen/game-instance';
 import GameSession from './game-screen/game-session';
 import './app.scss';
@@ -18,6 +21,10 @@ const App = () => {
   return (
       <div className={`App ${darkMode ? "DarkMode" : ""}`}>
         <GameSession gameLanguage={gameLanguage} />
+
+        <button className="ToggleDarkMode" onClick={() => setDarkMode(!darkMode)}>
+          <FontAwesomeIcon icon={darkMode ? faSolid.faMoon : faRegular.faMoon} />
+        </button>
       </div>
   );
 }
