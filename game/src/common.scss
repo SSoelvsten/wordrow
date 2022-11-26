@@ -9,11 +9,15 @@
     src: local('CMU Typewriter Text (Bold)'), url(./fonts/cmuntb.ttf) format('truetype');
 }
 
-/* --------    COMMON USAGE MIXINS    -------- */
+/* --------        COMMON USAGE       -------- */
 @mixin fullscreen {
     height: 100%;
     width: 100%;
 }
+
+
+$line-height-factor: 1.25;
+$firefox--line-height-factor: 1.00;
   
 /* --------     LIGHT MODE COLOURS    -------- */
   

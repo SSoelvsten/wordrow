@@ -16,7 +16,10 @@
         min-width: $letter-font-size;
         width: $letter-font-size;
         height: $letter-font-size;
-        line-height: $letter-font-size;
+        @supports ( -moz-appearance:none ){
+            line-height: $firefox--line-height-factor * $letter-font-size;
+        }
+        line-height: $line-height-factor * $letter-font-size;
         margin: $letter-gap;
         padding: $letter-gap;
         text-align: center;
