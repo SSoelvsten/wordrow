@@ -1,0 +1,30 @@
+/* --------         FONT TYPE         -------- */
+@font-face {
+    font-family: 'CMU Typewriter Text';
+    src: local('CMU Typewriter Text'), url(./fonts/cmuntt.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'CMU Typewriter Text (Bold)';
+    src: local('CMU Typewriter Text (Bold)'), url(./fonts/cmuntb.ttf) format('truetype');
+}
+
+/* --------    COMMON USAGE MIXINS    -------- */
+@mixin fullscreen {
+    height: 100%;
+    width: 100%;
+}
+  
+/* --------     LIGHT MODE COLOURS    -------- */
+  
+$light-background: #f0f0f0;
+$light-text-color:  #111111;
+$light-good: #9acd32; 
+$light-input: #d3d3d3;
+
+/* --------     DARK MODE COLOURS     -------- */
+
+$dark-background: #222222;
+$dark-text-color:  #e0e0e0;
+$dark-good: #466900; 
+$dark-input: #414141;

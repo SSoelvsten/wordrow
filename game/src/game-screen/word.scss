@@ -1,9 +1,6 @@
-.Word {
-    $letter-font-size: 1rem;
-    $letter-gap: 0.3rem;
-    $missing-color: white;
-    $guessed-color: yellowgreen;
+@import '../common.scss';
 
+.Word {
     display: flex;
     margin: 1rem;
 
@@ -12,6 +9,9 @@
     }
 
     .Letter {
+        $letter-font-size: 1rem;
+        $letter-gap: 0.3rem;
+
         font-size: $letter-font-size;
         min-width: $letter-font-size;
         width: $letter-font-size;
@@ -22,8 +22,10 @@
         text-align: center;
         text-transform: capitalize;
 
+        color: $light-text-color;
+
         /* Nice border */
-        border: black;
+        border-color: $light-text-color;
         border-style: solid;
         border-width: 1px;
         border-radius: 10%;
@@ -34,13 +36,32 @@
 
     @keyframes WordReveal {
         /* flash animation when guessed */
-        from { background-color: $guessed-color; }
-        to { background-color: $missing-color; }
+        from { background-color: $light-background; }
+        to { background-color: $light-good; }
     }
 
     &.Guessed .Letter {
-        background-color: $guessed-color;
+        background-color: $light-good;
         animation-name: WordReveal;
         animation-duration: 0.1s;
+    }
+}
+
+.DarkMode .Word {
+    .Letter {
+        color: $dark-text-color;
+        border-color: $dark-text-color;
+    }
+
+    @keyframes WordRevealDark {
+        /* flash animation when guessed */
+        from { background-color: $dark-background; }
+        to { background-color: $dark-good; }
+    }
+
+    &.Guessed .Letter {
+        background-color: $dark-good;
+        animation-name: WordRevealDark;
+        animation-duration: 0.2s;
     }
 }

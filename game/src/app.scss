@@ -1,5 +1,11 @@
-@import 'index.scss';
+@import 'common.scss';
 
 .App {
     @include fullscreen();
+
+    background-color: $light-background;
+}
+
+.App.DarkMode {
+    background-color: $dark-background;
 }

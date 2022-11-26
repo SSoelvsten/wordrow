@@ -1,7 +1,8 @@
+@import '../common.scss';
+
 .InputBox {
     $input-font-size: 2rem;
     $input-gap: 1rem;
-    $input-background-color: lightgray;
 
     flex: 0;
     font-size: $input-font-size;
@@ -14,6 +15,13 @@
     text-align: center;
     text-transform: capitalize;
 
-    background-color: $input-background-color;
+    color: $light-text-color;
+
+    background-color: $light-input;
     border-radius: 10%;
+}
+
+.DarkMode .InputBox {
+    color: $dark-text-color;
+    background-color: $dark-input;
 }
