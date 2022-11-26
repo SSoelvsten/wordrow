@@ -205,7 +205,7 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
     useEffect(() => { divRef.current.focus(); }, []);
 
     return (
-        <div className="Game fullscreen" tabIndex={0} onKeyDown={onKey} ref={divRef}>
+        <div className="Game" tabIndex={0} onKeyDown={onKey} ref={divRef}>
             <div className='ScoreBoard'>
                 <ScoreBoard endTime={endTime} language={language} score={accScore + currScore} round={round} onTimeout={onTimeout} />
             </div>

@@ -8,6 +8,11 @@
   src: local('CMU Typewriter Text (Bold)'), url(./fonts/cmuntb.ttf) format('truetype');
 }
 
+@mixin fullscreen {
+  height: 100%;
+  width: 100%;
+}
+
 html {
   height: 100%;
   width: 100%;
@@ -26,7 +31,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-#root, .fullscreen {
-  height: 100%;
-  width: 100%;
+#root {
+  @include fullscreen();
 }
