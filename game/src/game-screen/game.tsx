@@ -151,8 +151,13 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
     }
 
     const actionType = (char: string) => {
-        if (char.length !== 1) return; // <-- ignore non-char inputs
+        // Ignore non-char inputs
+        if (char.length !== 1) return;
 
+        // Allow the user to write upper case letters
+        char = char.toLocaleLowerCase();
+
+        // Find and update the requested letter (if any)
         if (chars.filter(([c,i]) => i === null).map(([c,i]) => c).includes(char)) {
             var hasSelected: boolean = false;
             setChars(chars.map(([c,i]) => {
