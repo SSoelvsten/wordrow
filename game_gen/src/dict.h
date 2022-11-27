@@ -53,7 +53,10 @@ private:
 
   public:
     aff_rule(t type, std::string deletion, std::string addition, std::string guard_regex)
-      : ty(type), del(deletion), add(addition), guard(".*"+guard_regex)
+      : ty(type)
+      , del(deletion)
+      , add(addition)
+      , guard(type == t::PREFIX ? (guard_regex+".*") : (".*"+guard_regex))
     { }
   };
 
@@ -73,9 +76,9 @@ private:
 private:
   char parse_identifier(const std::string& s)
   {
-    return (regex_match(s, std::regex("[A-Za-z]+")))
-      ? s.at(0)
-      : std::stoi(s);
+    return (regex_match(s, std::regex("[0-9]+")))
+      ? std::stoi(s)
+      : s.at(0);
   }
 
   std::vector<char> parse_rules(const std::string &s)
@@ -114,7 +117,7 @@ private:
       return false;
     }
 
-    std::string next_word = next_with_rules[0];
+    std::string next_word = trim(next_with_rules[0]);
 
     m_out_strings.clear();
 
@@ -124,10 +127,10 @@ private:
     } else {
       // Rules to apply! Do a depth-first exploration of all words reachable.
       std::vector<std::pair<std::string, std::vector<char>>> dfs_stack;
-      dfs_stack.push_back(std::make_pair(next_word, parse_rules(next_with_rules[1])));
+      dfs_stack.push_back(std::make_pair(next_word, parse_rules(trim(next_with_rules[1]))));
 
       while (!dfs_stack.empty()) {
-        next_word = dfs_stack.back().first;
+        next_word = trim(dfs_stack.back().first);
         std::vector<char> next_rules = dfs_stack.back().second;
         dfs_stack.pop_back();
 
@@ -148,17 +151,18 @@ private:
           for (const aff_rule &ar : (*aff_search).second) {
             if (!regex_match(next_word, ar.guard)) continue;
 
+
             const size_t start_idx = ar.ty == aff_rule::PREFIX ? ar.del.size() : 0u;
             const size_t sub_len = next_word.size() - ar.del.size();
 
-            assert(ar.ty != aff_rule::PREFIX); // <-- TODO: not implemented!
-
             std::stringstream ss;
-            ss << next_word.substr(start_idx, sub_len) << ar.add;
+            if (ar.ty == aff_rule::PREFIX) ss << ar.add;
+            ss << next_word.substr(start_idx, sub_len);
+            if (ar.ty == aff_rule::SUFFIX) ss << ar.add;
 
             const std::vector<std::string> rec_with_rules = split(ss.str(), '/');
             assert(rec_with_rules.size() > 0);
-            const std::string rec_word = rec_with_rules[0];
+            const std::string rec_word = trim(rec_with_rules[0]);
 
             if (rec_with_rules.size() == 1) {
               // No more rules to apply: add it to the output
@@ -196,7 +200,7 @@ private:
 
       const std::vector<std::string> line_args = split(aff_line, ' ');
       const aff_rule::t type = line_args[0] == "SFX" ? aff_rule::SUFFIX : aff_rule::PREFIX;
-      const char identifier = parse_identifier(line_args[1]);
+      const char rule_id = parse_identifier(line_args[1]);
       /*const char unknown_value = line_args[2][0];*/
       const size_t number_of_rules = std::stoul(line_args[3]);
 
@@ -205,22 +209,22 @@ private:
 
         if (!std::getline(aff_stream, aff_line)) {
           std::cerr << line_number
-                    << ": could not read as many .aff rules, as expected for '" << identifier << "'"
+                    << ": could not read as many .aff rules, as expected for '" << rule_id << "'"
                     << std::endl;
           exit(-1);
         }
 
         const std::vector<std::string> line_args = split(aff_line, ' ');
 
-        const std::string deletion = line_args[2] == "0" ? "" : line_args[2];
-        const std::string addition = line_args[3];
-        const std::string guard_regex = split(line_args[4], '\t')[0];
+        const std::string deletion = line_args[2] == "0" ? "" : (line_args[2]);
+        const std::string addition = trim(line_args[3]);
+        const std::string guard_regex = trim(line_args[4]);
 
         rule_set.push_back(aff_rule(type, deletion, addition, guard_regex));
       }
 
       if (rule_set.size() > 0)
-        m_rules[identifier] = rule_set;
+        m_rules[rule_id] = rule_set;
     }
   }
 
