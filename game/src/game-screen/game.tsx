@@ -226,16 +226,23 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
     const remainingHeight = totalHeight - scoreboardHeight - inputHeight;
 
     const wordHeight = 38;
-    const maxWords = remainingHeight / wordHeight
+    const maxColumnSize = remainingHeight / wordHeight
 
-    if (wordColumns.some((c) => c.length > maxWords)) {
+    if (wordColumns.some((c) => c.length > maxColumnSize)) {
         wordColumns = [anagrams.map((w,i) => [w,i] as [string,number])]
     }
     const singleColumn : boolean = wordColumns.length === 1;
 
     const wordWidth = 32 * max_word_length;
     const maxColumns = Math.floor(window.innerWidth / wordWidth);
-    const averageColumnHeight : number = Math.ceil(anagrams.length / maxColumns);
+
+    let actualColumns : number = 1;
+    let actualColumnSize : number = anagrams.length;
+    while (actualColumns < maxColumns) {
+        actualColumnSize = Math.ceil(anagrams.length / actualColumns);
+        if (actualColumnSize < maxColumnSize) break;
+        actualColumns += 1;
+    }
 
     // ------------------------------------------------------------------------
     // VISUAL
@@ -252,8 +259,8 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
             { <div className="Anagrams">
                 { wordColumns.map((c,i) => (
                     c.map(([w,j], ci) => {
-                        const row = singleColumn ? Math.floor(j % averageColumnHeight)+1 : ci+1;
-                        const col = singleColumn ? Math.floor(j / averageColumnHeight)+1 : i+1;
+                        const row = singleColumn ? Math.floor(j % actualColumnSize)+1 : ci+1;
+                        const col = singleColumn ? Math.floor(j / actualColumnSize)+1 : i+1;
                         return <Word key={j} language={language} word={w} guessed={guessed[j]} show={gameEnd} row={row} col={col}  />
                     })
                 )) }
