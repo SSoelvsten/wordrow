@@ -144,14 +144,15 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
                     if (match) guessedANewWord = v === false;
                     return v || anagrams[idx] === guess;
                 });
-                const hasGuessedAll: boolean = !guessed.find(v => !v);
 
                 setGuessed(newGuessed);
                 if (guessedANewWord) {
                     setLatestGuessed(guess);
                     setEndTime(endTime + timeWord(guess));
+
+                    const remainingWords = guessed.reduce((acc, v) => acc + (!v ? 1 : 0), 0);
+                    setGameEnd(remainingWords <= 1);
                 }
-                setGameEnd(!hasGuessedAll);
             }
             setChars(chars.map(([c,i]) => [c,null]));
         }
