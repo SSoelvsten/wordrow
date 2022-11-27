@@ -8,7 +8,7 @@
 
     @include charBox($input-font-size, $input-gap);
     margin: $input-gap;
-    text-transform: capitalize;
+    text-transform: uppercase;
 
     color: $light-text-color;
 

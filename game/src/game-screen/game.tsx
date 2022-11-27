@@ -6,6 +6,7 @@ import Word from './word';
 import shuffle from '../shuffle';
 import ScoreBoard from './scoreboard';
 import EndScreen from './end-screen';
+import Announcement from './announcement';
 
 export interface GameReport {
     qualified: boolean;
@@ -251,7 +252,14 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
     const divRef = useRef<any>(null);
     useEffect(() => { divRef.current.focus(); }, []);
 
+    let round_text : string;
+    switch (language) {
+    case GameLanguage.DK: round_text = "Runde"; break;
+    case GameLanguage.GB: round_text = "Round"; break;
+    }
+
     return (
+    <>
         <div className="Game" tabIndex={0} onKeyDown={onKey} ref={divRef}>
             <div className='ScoreBoard'>
                 <ScoreBoard endTime={endTime} language={language} score={accScore + currScore} round={round} onTimeout={onTimeout} />
@@ -284,6 +292,10 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
                 </div>
             }
         </div>
+        {!latestGuessed &&
+            <Announcement text={`${round_text} ${round}`}/>
+        }
+    </>
     );
 }
 

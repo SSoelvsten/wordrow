@@ -1,0 +1,53 @@
+@import '../common.scss';
+
+.Announcement {
+    position: absolute;
+
+    white-space: nowrap;
+    overflow: hidden;
+
+    left: 1rem;
+    top: 9.4rem;
+    width: calc(100% - 2rem);
+    height: 0;
+
+    background-color: $light-background;
+
+    text-align: center;
+    .Text {
+        position: relative;
+        @keyframes AnnouncementTextReveal {
+            0%   { left: -100% }
+            20%  { left: 0% }
+            80%  { left: 0% }
+            100% { left: 100%; }
+        }
+
+        left: -100%;
+        color: $light-text-color;
+        font-size: 5rem;
+        text-align: center;
+        text-transform: uppercase;
+
+        animation-name: AnnouncementTextReveal;
+        animation-duration: 1.5s;
+        animation-delay: 0.25s;
+    }
+
+    @keyframes AnnouncementReveal {
+        0%   { height: 0 }
+        10%  { height: 6.6rem; }
+        90%  { height: 6.6rem; }
+        100% { height: 0; }
+    }
+
+    animation-name: AnnouncementReveal;
+    animation-duration: 2s;
+}
+
+.DarkMode .Announcement {
+    background-color: $dark-background;
+    .Text {
+        color: $dark-text-color;
+    }
+}

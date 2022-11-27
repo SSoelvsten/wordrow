@@ -29,7 +29,7 @@
             @include charBox($letter-font-size, $letter-gap);
             margin: 0 $letter-gap;
 
-            text-transform: capitalize;
+            text-transform: uppercase;
 
             color: $light-text-color;
 
