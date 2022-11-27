@@ -5,12 +5,15 @@ import * as faSolid from '@fortawesome/free-solid-svg-icons'
 import { GameLanguage } from './game-screen/game-instance';
 import GameSession from './game-screen/game-session';
 import './app.scss';
+import Menu from './menu/menu';
 
 const LS_KEYS = {
   DarkMode: "DarkMode"
 }
 
 const App = () => {
+  // ------------------------------------------------------------------------
+  // USER SETTINGS
   const [darkMode, setDarkMode] = useState<boolean>(
     () => {
       // Consult local storage for state from previous page
@@ -22,17 +25,35 @@ const App = () => {
     }
   );
 
-  const [gameLanguage] = useState<GameLanguage>(GameLanguage.DK)
+  const [gameLanguage, setGameLanguage] = useState<GameLanguage | undefined>(undefined);
 
+  const [inGame, setInGame] = useState<boolean>(() => {
+    return gameLanguage !== undefined;
+  });
+
+  // ------------------------------------------------------------------------
+  // SAVE USER SETTINGS
   const updateLocalStorage = () => {
     localStorage.setItem(LS_KEYS.DarkMode, `${darkMode}`);
   }
 
   useEffect(updateLocalStorage, [darkMode]);
 
+  // ------------------------------------------------------------------------
+  // VISUAL
   return (
       <div className={`App ${darkMode ? "DarkMode" : ""}`}>
-        <GameSession gameLanguage={gameLanguage} />
+        { !inGame &&
+          <Menu language={gameLanguage} setLanguage={setGameLanguage} startGame={() => setInGame(true)} />
+        }
+        { inGame && gameLanguage &&
+          <>
+            <GameSession gameLanguage={gameLanguage} />
+            <button className="ReturnToMenu" onClick={() => setInGame(false)}>
+              <FontAwesomeIcon icon={darkMode ? faSolid.faCaretLeft : faSolid.faCaretLeft} />
+            </button>
+          </>
+        }
 
         <button className="ToggleDarkMode" onClick={() => setDarkMode(!darkMode)}>
           <FontAwesomeIcon icon={darkMode ? faSolid.faMoon : faRegular.faMoon} />

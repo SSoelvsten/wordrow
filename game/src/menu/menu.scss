@@ -1,0 +1,115 @@
+@import '../common.scss';
+
+.Menu {
+    @include fullscreen;
+
+    background-color: $light-background;
+    color: $light-text-color;
+
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    /* -------------------- Game Title -------------------- */
+    .GameTitle {
+        flex: 0;
+
+        margin-bottom: 5rem;
+        width: 100%;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+        /* Slightly Modified version of Word.Letter */
+        .Letter {
+            $letter-font-size: 3rem;
+            $letter-gap: 0.3rem;
+            @include charBox($letter-font-size, $letter-gap);
+            margin: 0 $letter-gap;
+
+            text-transform: capitalize;
+
+            color: $light-text-color;
+
+            border-color: $light-text-color;
+            border-style: solid;
+            border-width: 2px;
+            border-radius: 10%;
+        }
+    }
+
+    /* ----------------- Menu Section Title ----------------- */
+    .MenuSection {
+        width: 100%;
+        text-align: center;
+        font-size: 1.8rem;
+        margin: 0.5rem 0;
+
+        color: $light-text-color;
+    }
+
+    /* ----------------- Language Selection ----------------- */
+    .LanguageSelection {
+        flex: 0;
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+    /* ----------------- Game Type Selection ----------------- */
+    .GameTypeSelection {
+
+    }
+
+    /* ---------------------- Start Game --------------------- */
+    .StartGame {
+        margin-top: 3rem;
+        color: $light-text-color;
+        text-align: center;
+
+        b {
+            margin-left: 0.3rem;
+            margin-left: 0.3rem;
+        }
+
+        &:not(.hide) {
+            cursor: pointer;
+        }
+        &.hide {
+            color: $light-background;
+        }
+    }
+
+    /* ---------------------- Dummy --------------------- */
+    .Dummy {
+        flex: 1;
+    }
+}
+
+.DarkMode .Menu {
+    background-color: $dark-background;
+    color: $dark-text-color;
+
+    .GameTitle {
+        .Letter {
+            color: $dark-text-color;
+            border-color: $dark-text-color;
+        }
+    }
+
+    .MenuSection {
+        color: $dark-text-color;
+    }
+
+    .StartGame {
+        color: $dark-text-color;
+        &.hide {
+            color: $dark-background;
+        }
+    }
+}

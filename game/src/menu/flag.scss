@@ -1,0 +1,44 @@
+@import '../common.scss';
+
+.Flag {
+    flex: 0;
+    cursor: pointer;
+
+    $flag-scale: 0.025rem;
+    $flag-width: (320 * $flag-scale);
+    $flag-height: (160 * $flag-scale);
+
+    width: $flag-width;
+
+    img {
+        width: $flag-width;
+        max-width: $flag-width;
+        border-radius: 5%;
+        border: 1px;
+        border-color: $light-text-color;
+    }
+
+    .Index {
+        color: $light-text-color;
+
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.Flag:not(.Selected) {
+    img {
+        opacity: 0.5;
+        filter: grayscale(100%);
+    }
+}
+
+.DarkMode .Flag {
+    img {
+        border-color: $dark-text-color;
+    }
+
+    .Index {
+        color: $dark-text-color;
+    }
+}

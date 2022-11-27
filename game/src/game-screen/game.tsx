@@ -225,7 +225,6 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
     const wordWidth = 32 * max_word_length;
     const maxColumns = Math.floor(window.innerWidth / wordWidth);
     const averageColumnHeight : number = Math.ceil(anagrams.length / maxColumns);
-    console.log(averageColumnHeight, singleColumn);
 
     // https://stackabuse.com/how-to-set-focus-on-element-after-rendering-with-react/
     const divRef = useRef<any>(null);
@@ -241,7 +240,6 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
                     c.map(([w,j], ci) => {
                         const row = singleColumn ? Math.floor(j % averageColumnHeight)+1 : ci+1;
                         const col = singleColumn ? Math.floor(j / averageColumnHeight)+1 : i+1;
-                        console.log(w,j, "row", row, "col", col )
                         return <Word key={j} language={language} word={w} guessed={guessed[j]} show={gameEnd} row={row} col={col}  />
                     })
                 )) }

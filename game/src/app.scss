@@ -5,6 +5,7 @@
 
     background-color: $light-background;
 
+    /* Global buttons */
     button {
         border: none;
         cursor: pointer;
@@ -14,15 +15,25 @@
         z-index: 999;
     }
 
+    $button-gap: 0.4rem;
+    
+    .ReturnToMenu {
+        position: fixed;
+        top: $button-gap;
+        left: $button-gap;
+    }
+
     .ToggleDarkMode {
         position: fixed;
-        top: 0.4rem;
-        right: 0.4rem;
+        top: $button-gap;
+        right: $button-gap;
     }
 }
 
 .App.DarkMode {
     background-color: $dark-background;
+
+    /* Global buttons */
 
     button {
         background-color: $dark-background;
