@@ -67,7 +67,7 @@ const Menu = ({ language, setLanguage, startGame } : MenuProps) => {
 
             <div className="MenuSection"> {select_language} </div>
             <div className="LanguageSelection">
-                { GameLanguages.map((lang, idx) => <Flag language={GameLanguage.DK}
+                { GameLanguages.map((lang, idx) => <Flag language={lang}
                                                     index={idx+1} key={idx}
                                                     selected={lang === language}
                                                     onClick={() => actionLanguage(lang)} />) }

@@ -3,12 +3,15 @@ export enum GameLanguage {
     GB = "en-GB",
 }
 
-export const GameLanguages: GameLanguage[] = [GameLanguage.DK];
+export const GameLanguages: GameLanguage[] = [
+    GameLanguage.GB,
+    GameLanguage.DK
+];
 
 export const languageName = (l : GameLanguage) => {
     switch (l) {
+    case GameLanguage.GB: return "British";
     case GameLanguage.DK: return "Dansk";
-    case GameLanguage.GB: return "English";
     }
 }
 

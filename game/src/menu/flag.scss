@@ -4,6 +4,8 @@
     flex: 0;
     cursor: pointer;
 
+    margin: 1rem;
+
     $flag-scale: 0.025rem;
     $flag-width: (320 * $flag-scale);
     $flag-height: (160 * $flag-scale);
