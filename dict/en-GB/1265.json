@@ -1,15 +1,25 @@
 {
   "anagrams": [
-    "err",
+    "her",
+    "hie",
+    "hit",
+    "hoe",
+    "hot",
     "ire",
     "ore",
     "ret",
+    "rho",
     "roe",
     "rot",
     "rte",
+    "the",
     "tie",
     "toe",
     "tor",
+    "heir",
+    "hero",
+    "hire",
+    "hoer",
     "riot",
     "rite",
     "rote",
@@ -17,10 +27,10 @@
     "tire",
     "tiro",
     "tore",
-    "torr",
     "trio",
-    "retro",
-    "trier",
-    "rioter"
+    "other",
+    "their",
+    "throe",
+    "heriot"
   ]
 }
