@@ -5,7 +5,7 @@ import './word.scss';
 export interface WordProps {
     col: number;
     guessed: boolean;
-    language: GameLanguage;
+    language: GameLanguage | undefined;
     row: number;
     show: boolean;
     word: string;
@@ -16,13 +16,14 @@ const word_url = (language: GameLanguage, word: string) => {
     case GameLanguage.DK:
         return `https://www.ordnet.dk/ddo/ordbog?query=${word}`;
     default:
-        throw new Error(`Unknown Langauge: ${language}`);
+        throw new Error(`Unknown Language: ${language}`);
     }
 }
 
 export const Word = ({ col, language, guessed, row, show, word } : WordProps) => {
     const getDefinition = () => {
         if(!guessed && !show) return;
+        if (!language) return;
         window.open(word_url(language, word), "_blank");
     }
     return (

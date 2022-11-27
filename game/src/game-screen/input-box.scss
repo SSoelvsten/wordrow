@@ -1,21 +1,13 @@
 @import '../common.scss';
 
 .InputBox {
+    flex: 0;
+
     $input-font-size: 2rem;
     $input-gap: 1rem;
 
-    flex: 0;
-    font-size: $input-font-size;
-    min-width: $input-font-size;
-    width: $input-font-size;
-    height: $input-font-size;
-    @supports ( -moz-appearance:none ){
-        line-height: $firefox--line-height-factor * $input-font-size;
-    }
-    line-height: $line-height-factor * $input-font-size;
-    margin:$input-gap;
-    padding: $input-gap;
-    text-align: center;
+    @include charBox($input-font-size, $input-gap);
+    margin: $input-gap;
     text-transform: capitalize;
 
     color: $light-text-color;

@@ -20,9 +20,23 @@
     max-width: 100%;
 }
 
-
 $line-height-factor: 1.25;
 $firefox--line-height-factor: 1.00;
+
+@mixin charBox($font-size, $padding) {
+    font-size: $font-size;
+    min-width: $font-size;
+    width: $font-size;
+    height: $font-size;
+    @supports ( -moz-appearance:none ){
+        line-height: $firefox--line-height-factor * $font-size;
+    }
+    line-height: $line-height-factor * $font-size;
+
+    padding: $padding;
+
+    text-align: center;
+}
   
 /* --------     LIGHT MODE COLOURS    -------- */
   

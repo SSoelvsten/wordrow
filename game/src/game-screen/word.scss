@@ -12,18 +12,9 @@
     .Letter {
         $letter-font-size: 1rem;
         $letter-gap: 0.3rem;
-
-        font-size: $letter-font-size;
-        min-width: $letter-font-size;
-        width: $letter-font-size;
-        height: $letter-font-size;
-        @supports ( -moz-appearance:none ){
-            line-height: $firefox--line-height-factor * $letter-font-size;
-        }
-        line-height: $line-height-factor * $letter-font-size;
+        @include charBox($letter-font-size, $letter-gap);
         margin: 0 $letter-gap;
-        padding: $letter-gap;
-        text-align: center;
+
         text-transform: capitalize;
 
         color: $light-text-color;
