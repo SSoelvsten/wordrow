@@ -128,7 +128,7 @@ SFX 9 0 's [ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ]
 
 #Genitiv
 SFX 10 Y 4
-SFX 22 0 / .	+DONE
+SFX 10 0 / .	+DONE
 SFX 10 0 s [^sxz]	+GENITIV
 SFX 10 0 ' [sxz]	+GENITIV
 SFX 10 0 's [ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ]	+GENITIV
@@ -968,9 +968,8 @@ SFX 42 0 x/38 x	+KONSONANT_FORDOBLING
 SFX 42 0 z/38 z	+KONSONANT_FORDOBLING
 
 #x Substantiv, ubestemt
-SFX 43 Y 3
+SFX 43 Y 2
 SFX 43 0 s [^szx]	+GENITIV
-SFX 43 0 ' [szx]	+GENITIV
 SFX 43 0 es s	+GENITIV
 
 #Substantiv, torso, fælleskøn
@@ -1045,14 +1044,6 @@ SFX 48 0 z/46,2 z	+KONSONANT_FORDOBLING
 #Adjektiv, svagt bøjet, intetkøn, ikke efter -t eller aeouæø
 SFX 49 Y 1
 SFX 49 0 t [^taeouæø]	+BESTEMT_ENTAL
-
-#Apostrof, fælleskøn
-SFX 50 Y 1
-SFX 50 0 '/2,11,10,35 .
-
-#Apostrof, intetkøn
-SFX 51 Y 1
-SFX 51 0 '/4,11,10,35 .
 
 #Apostrof NeedAffix
 

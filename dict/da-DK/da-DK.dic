@@ -1799,7 +1799,6 @@ alesene
 alesenes
 åle/1,21,22,79,39
 aleatorisk/28,39
-alef/51
 ålefarm/5,2,10,39
 ålefisk/10,2,46,39
 ålegård/5,2,10,39
@@ -3138,7 +3137,6 @@ apsidernes
 aptere/1,21,22,79,39
 aptering/10,11,2,39
 apus
-apv/50
 aqua/10,39
 aquaporin/10,4,11,39
 aquatica
@@ -3695,7 +3693,6 @@ atonalitet/44,10,39
 atopi/44,10,39
 atopiker/5,2,10,39
 atopisk/28,39
-atp/
 atra
 atrazin/44,10,39
 atrazin/45,10,39
@@ -7563,7 +7560,6 @@ bosæt
 bosættelse/10,11,2,39
 bosætter/5,2,10,39
 bot/7,10,39
-bot/50
 botanik/58,10,39
 botaniker/5,2,10,39
 botanisere/1,21,22,79,39
@@ -11591,7 +11587,6 @@ docetaxel/10,39
 dock/10,11,2,39
 docks
 doctor/10,39,86
-docx/
 dodder/10,39
 dodekaeder/10,13,4,39
 dodekafoni/44,10,39
@@ -12880,7 +12875,6 @@ efferentia
 efferent/24,10,49,39
 efficient/24,10,49,39
 effusion/44,10,39
-efg/
 efod/44,10,39
 efor/10,11,2,39
 efraimit/7,10,39
@@ -13058,7 +13052,6 @@ egoistbil/10,11,2,39
 egoistisk/28,39
 egoman/10,11,2,39
 egotrippe/1,21,22,79,39
-egu/
 egypter/5,2,10,39
 egyptisk/28,39
 egyptolog/10,11,2,39
@@ -14291,7 +14284,6 @@ excitabel/10,49,77,39
 excitation/10,11,2,39
 excitere/1,21,22,79,39
 exe/1,21,22,79,39
-exe/
 exit
 exit/10,3,39
 exit/7,10,39
@@ -19181,7 +19173,7 @@ fripostig/10,39,24,23,49
 frirejse/10,11,2,39
 frirum/10,47,39
 frisag/10,39
-frisbee/50
+frisbee
 frise/10,11,2,39
 friser/5,2,10,39
 frisere/1,21,22,79,39
@@ -21709,7 +21701,6 @@ glødetråd/5,2,10,39
 glødhede/44,10,39
 glødning/10,11,2,39
 gløgg/10,2,46,39
-gmo/50
 gnalling/10,11,2,39
 gnaske/1,21,22,79,39
 gnav/10,46,4,39
@@ -28364,7 +28355,7 @@ ionkanal/10,11,2,39
 ionosfære/44,10,39
 ionpumpe/10,11,2,39
 iiota/10,4,11,39
-ipa/50
+ipa
 iq/75
 ir/58,10,39
 iraker/5,2,10,39
@@ -28626,7 +28617,6 @@ isatte
 isattes
 isæt
 isøkse/10,11,2,39
-it/
 italesat
 italesats
 italesatte
@@ -41253,7 +41243,6 @@ newyorksk/28,39
 nexus/10,2,46,39
 nexøbo/10,11,2,39
 nganasan/10,39
-ngo/50
 ni/10,11,2,39
 ni/10
 niacin/10,4,11,39
@@ -48975,7 +48964,6 @@ rallykører/5,2,10,39
 rålækker/41,49,10,39
 ram/42,10,49,59,39
 ram
-ram/
 rammen
 rammene
 rammens
@@ -60793,7 +60781,7 @@ teddybjørn/5,2,10,39
 tedeum/10,3,39
 tedrikker/5,2,10,39
 tedrikning/44,10,39
-tee/50
+tee
 tees
 teenager/4,10,5,39
 teenagesøn/7,10,39
@@ -61287,7 +61275,6 @@ tidoble/1,21,22,79,39
 tidobling/10,11,2,39
 tidrøvende/27,39
 tidrøver/5,2,10,39
-tids/
 tids
 tidsafsnit/10,47,39
 tidsaktuel/59,10,49,39
@@ -62710,8 +62697,6 @@ tragorum
 trailer/5,2,10,39
 trailløb/10,46,4,39
 train/45,10,39
-trainee/50
-trainees
 trakassere/1,21,22,79,39
 trakasseri/10,4,11,39
 trakea/10,39
@@ -66139,7 +66124,6 @@ umuliggør
 umulighed/10,11,2,39
 umulius/7,10,39
 umusikalsk/28,39
-umv/50
 umyndig/10,39,24,23,49
 umyndiggør
 umyndighed/44,10,39
@@ -66714,8 +66698,6 @@ urkomisk/28,39
 urkraft/44,10,39
 urkræfter/74,10,39
 urkæde/10,11,2,39
-url/76
-url/50
 urmager/5,2,10,39
 urmenneske/10,4,11,39
 urmoder/44,10,39
@@ -68123,14 +68105,13 @@ vestblok/10,19,39
 vestdansk/28,39
 vestelomme/10,11,2,39
 vesten/10,39
-vesten/
 vestende/10,11,2,39
 vestenfra
 vestenom
 vestenvind/5,2,10,39
 vester/54,9
 vesterland/4,10,5,39
-vesterud/
+vesterud
 vesterude
 vestfra
 vestfront/10,11,2,39
@@ -68149,8 +68130,8 @@ vestlig/10,39,24,23,49
 vestliggør
 vestom
 vestorm/5,2,10,39
-vestover/
-vestpå/
+vestover
+vestpå
 vestport/5,2,10,39
 vestre/24,10,49,39
 vestside/10,11,2,39
@@ -69530,7 +69511,6 @@ yamsknold/5,2,10,39
 yamsrod/44,10,39
 yamsrødder/74,10,39
 yang/10,39
-yankee/50
 yard/10,2,46,39
 yatzy/10,39
 yazidi/10,11,2,39
@@ -69698,7 +69678,7 @@ zinnier/74,10,39
 zionisme/44,10,39
 zionist/10,11,2,39
 zionistisk/28,39
-zip/
+zip
 zipfil/10,11,2,39
 zippe/1,21,22,79,39
 ziprasidon/45,10,39
