@@ -3,7 +3,7 @@
 .ScoreBoard {
     width: 100%;
     flex: 0;
-    
+
     text-align: center;
     font-size: 1.2rem;
     margin-top: 0.2rem;
@@ -11,14 +11,14 @@
 
     color: $light-text-color;
 
-    div { 
-        display: inline-block; 
+    div {
+        display: inline-block;
 
         &.Time.Alarm {
             @keyframes timeAlarmLight {
                 from { color: $light-text-color; }
                 to { color: $light-bad; }
-            } 
+            }
 
             animation-name: timeAlarmLight;
             animation-duration: 0.4s;
@@ -29,6 +29,16 @@
         &.RoundNumber {
             margin: 0 0.5rem;
             font-size: 1.6rem;
+
+            /* Font-awesome Icon */
+            svg {
+                margin: 0 0.5rem;
+
+                $flag-icon-size: 1.2rem;
+                font-size: $flag-icon-size;
+
+                color: $light-text-color;
+            }
         }
 
         &.Score { }
@@ -41,9 +51,15 @@
     div.Time.Alarm {
         @keyframes timeAlarmDark {
             from { color: $dark-text-color; }
-            to { color: $dark-bad; }
-        } 
+            to   { color: $dark-bad; }
+        }
 
         animation-name: timeAlarmDark;
+    }
+
+    div.RoundNumber {
+        svg {
+            color: $dark-text-color;
+        }
     }
 }

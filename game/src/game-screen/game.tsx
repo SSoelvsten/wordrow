@@ -262,7 +262,7 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
     <>
         <div className="Game" tabIndex={0} onKeyDown={onKey} ref={divRef}>
             <div className='ScoreBoard'>
-                <ScoreBoard endTime={endTime} language={language} score={accScore + currScore} round={round} onTimeout={onTimeout} />
+                <ScoreBoard endTime={endTime} language={language} qualified={qualified} score={accScore + currScore} round={round} onTimeout={onTimeout} />
             </div>
             { <div className="Anagrams">
                 { wordColumns.map((c,i) => (

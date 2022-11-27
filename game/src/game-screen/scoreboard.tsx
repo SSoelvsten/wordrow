@@ -1,16 +1,20 @@
 import React, { useEffect, useState } from "react";
 import { GameLanguage } from "./game-instance";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import * as faSolid from '@fortawesome/free-solid-svg-icons'
+import * as faRegular from '@fortawesome/free-regular-svg-icons'
 import './scoreboard.scss';
 
 export interface ScoreBoardProps {
     endTime: number;
     language: GameLanguage;
+    qualified: boolean;
     score: number;
     round: number;
     onTimeout: () => void;
 };
 
-const ScoreBoard = ({ endTime, language, round, score, onTimeout }: ScoreBoardProps) => {
+const ScoreBoard = ({ endTime, language, qualified, round, score, onTimeout }: ScoreBoardProps) => {
     const [currTime, setCurrTime] = useState(() => new Date().getTime());
 
     const formatTimeleft = () => {
@@ -49,7 +53,13 @@ const ScoreBoard = ({ endTime, language, round, score, onTimeout }: ScoreBoardPr
     return (
         <div className="ScoreBoard">
             <div className={`Time ${timeAlarm ? "Alarm" : ""}`}>{formatTimeleft()}</div>
-            <div className="RoundNumber">| {round} |</div>
+            <div className="RoundNumber">
+                |
+                    <FontAwesomeIcon icon={qualified ? faSolid.faFlag : faRegular.faFlag} flip={"horizontal"} />
+                    {round}
+                    <FontAwesomeIcon icon={qualified ? faSolid.faFlag : faRegular.faFlag} />
+                |
+            </div>
             <div className="Score">{Math.round(score).toLocaleString(language, {minimumIntegerDigits: 7 })}</div>
         </div>
     );
