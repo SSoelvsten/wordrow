@@ -223,8 +223,8 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
     const singleColumn : boolean = wordColumns.length === 1;
 
     const wordWidth = 32 * max_word_length;
-    const maxColumns = Math.floor(window.innerWidth / wordWidth) - 1;
-    const averageColumnHeight : number = Math.ceil(anagrams.length / maxColumns) + 1;
+    const maxColumns = Math.floor(window.innerWidth / wordWidth);
+    const averageColumnHeight : number = Math.ceil(anagrams.length / maxColumns);
     console.log(averageColumnHeight, singleColumn);
 
     // https://stackabuse.com/how-to-set-focus-on-element-after-rendering-with-react/
