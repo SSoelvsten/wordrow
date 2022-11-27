@@ -15,6 +15,8 @@ const word_url = (language: GameLanguage, word: string) => {
     switch (language) {
     case GameLanguage.DK:
         return `https://www.ordnet.dk/ddo/ordbog?query=${word}`;
+    case GameLanguage.GB:
+        return `https://www.merriam-webster.com/dictionary/${word}`;
     default:
         throw new Error(`Unknown Language: ${language}`);
     }
