@@ -110,6 +110,8 @@ int main(int argc, char* argv[]) {
       used_words += 1;
       used_chars += word_size(w);
 
+      //      std::cout << w << " " << word_size(w) << std::endl;
+
       const time_point insert__start_time = get_timestamp();
       a.insert(w);
       const time_point insert__end_time = get_timestamp();
