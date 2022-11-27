@@ -199,8 +199,12 @@ private:
       std::vector<aff_rule> rule_set;
 
       const std::vector<std::string> line_args = split(aff_line, ' ');
-      const aff_rule::t type = line_args[0] == "SFX" ? aff_rule::SUFFIX : aff_rule::PREFIX;
-      const char rule_id = parse_identifier(line_args[1]);
+
+      const std::string type_string = line_args[0];
+      const aff_rule::t type = type_string == "SFX" ? aff_rule::SUFFIX : aff_rule::PREFIX;
+
+      const std::string rule_string = line_args[1];
+      const char rule_id = parse_identifier(rule_string);
       /*const char unknown_value = line_args[2][0];*/
       const size_t number_of_rules = std::stoul(line_args[3]);
 
@@ -210,6 +214,12 @@ private:
         if (!std::getline(aff_stream, aff_line)) {
           std::cerr << line_number
                     << ": could not read as many .aff rules, as expected for '" << rule_id << "'"
+                    << std::endl;
+          exit(-1);
+        }
+        if (aff_line.find(type_string + " " + rule_string) == -1) {
+          std::cerr << line_number
+                    << ": is not an .aff rule for '" << rule_string << "'"
                     << std::endl;
           exit(-1);
         }
