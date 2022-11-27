@@ -16,6 +16,9 @@ build:
 	make $(MAKE_FLAGS) build/dict DICT=da-DK
 	mv out build/dict/da-DK
 
+	make $(MAKE_FLAGS) build/dict DICT=en-GB
+	mv out build/dict/en-GB
+
 # ---------------------------------------------------------------------------- #
 #     Build React application.
 # ---------------------------------------------------------------------------- #
