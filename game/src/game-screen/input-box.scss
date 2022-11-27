@@ -14,9 +14,39 @@
 
     background-color: $light-input;
     border-radius: 10%;
+    border-style: solid;
+    border-width: 0.2rem;
+    border-color: $light-background;
+}
+
+.HasGood .InputBox {
+    @keyframes InputSuccesLight {
+        /* flash animation when guessed */
+        0%   { border-color: $light-background; }
+        50%  { border-color: $light-good; }
+        100% { border-color: $light-background; }
+    }
+
+    animation-name: InputSuccess;
+    animation-delay: 0.02s;
+    animation-duration: 0.2s;
 }
 
 .DarkMode .InputBox {
     color: $dark-text-color;
     background-color: $dark-input;
+    border-color: $dark-background;
+}
+
+.DarkMode .HasGood .InputBox {
+    @keyframes InputSuccessDark {
+        /* flash animation when guessed */
+        0%   { border-color: $dark-background; }
+        50%  { border-color: $dark-good; }
+        100% { border-color: $dark-background; }
+    }
+
+    animation-name: InputSuccessDark;
+    animation-delay: 0.02s;
+    animation-duration: 0.2s;
 }

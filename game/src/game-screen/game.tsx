@@ -56,6 +56,9 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
     const [guessed, setGuessed] = useState<boolean[]>(
         () => Array(words).fill(false)
     );
+    const [latestGuessed, setLatestGuessed] = useState<string | null>(
+        () => null
+    );
     const [guessCache, setGuessCache] = useState<(string | null)[]>(
         () => Array(words).fill(null)
     );
@@ -143,7 +146,10 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
                 const hasGuessedAll: boolean = !guessed.find(v => !v);
 
                 setGuessed(newGuessed);
-                if (guessedANewWord) { setEndTime(endTime + timeWord(guess)); }
+                if (guessedANewWord) {
+                    setLatestGuessed(guess);
+                    setEndTime(endTime + timeWord(guess));
+                }
                 setGameEnd(!hasGuessedAll);
             }
             setChars(chars.map(([c,i]) => [c,null]));
@@ -203,7 +209,7 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
     }
 
     // ------------------------------------------------------------------------
-    // VISUAL
+    // ANAGRAMS LAYOUT
 
     const wordLengths: number[] = Array(max_word_length - min_word_length + 1).fill(0).map((_,i) => i + min_word_length);
     let wordColumns: [string, number][][] = wordLengths.map((word_length, i) => 
@@ -231,6 +237,9 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
     const maxColumns = Math.floor(window.innerWidth / wordWidth);
     const averageColumnHeight : number = Math.ceil(anagrams.length / maxColumns);
 
+    // ------------------------------------------------------------------------
+    // VISUAL
+
     // https://stackabuse.com/how-to-set-focus-on-element-after-rendering-with-react/
     const divRef = useRef<any>(null);
     useEffect(() => { divRef.current.focus(); }, []);
@@ -251,16 +260,16 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
               </div> }
             {!gameEnd &&
                 <>
-                    <div className="Row">
+                    <div className={`Row ${guessed.includes(true) ? 'HasGood' : ''}`} key={latestGuessed}>
                         {selected.map((c,idx) => (<InputBox content={c || " "} key={idx} />))}
                     </div>
-                    <div className="Row">
+                    <div className={`Row`}>
                         {chars.map(([c,i],idx) => (<InputBox content={i === null ? c : "_"} key={idx} />))}
                     </div>
                 </>
             }
             {gameEnd &&
-                <div className="Row">
+                <div className={`Row`}>
                     <EndScreen language={language}
                                qualified={qualified}
                                score={accScore + currScore}
