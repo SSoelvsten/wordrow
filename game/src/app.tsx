@@ -8,7 +8,8 @@ import './app.scss';
 import Menu from './menu/menu';
 
 const LS_KEYS = {
-  DarkMode: "DarkMode"
+  DarkMode: "DarkMode",
+  Language: "Language",
 }
 
 const App = () => {
@@ -25,7 +26,16 @@ const App = () => {
     }
   );
 
-  const [gameLanguage, setGameLanguage] = useState<GameLanguage | undefined>(undefined);
+  const [gameLanguage, setGameLanguage] = useState<GameLanguage | undefined>(
+    () => {
+      // Consult local storage for state from previous page
+      const ls_res = localStorage.getItem(LS_KEYS.Language);
+      if (ls_res) { return ls_res as GameLanguage; }
+
+      // Otherwise, just leave it unchecked
+      return undefined;
+    }
+  );
 
   const [inGame, setInGame] = useState<boolean>(() => {
     return gameLanguage !== undefined;
@@ -35,9 +45,12 @@ const App = () => {
   // SAVE USER SETTINGS
   const updateLocalStorage = () => {
     localStorage.setItem(LS_KEYS.DarkMode, `${darkMode}`);
+    if (gameLanguage !== undefined) {
+      localStorage.setItem(LS_KEYS.Language, gameLanguage);
+    }
   }
 
-  useEffect(updateLocalStorage, [darkMode]);
+  useEffect(updateLocalStorage, [darkMode, gameLanguage]);
 
   // ------------------------------------------------------------------------
   // VISUAL
