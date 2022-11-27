@@ -17,6 +17,23 @@
         grid-auto-columns: min-content;
         grid-auto-rows: min-content;
         justify-content: center;
+
+        /* Scroll Bar (Firefox) */
+        scrollbar-color: $light-text-color $light-input;
+        scrollbar-width: thin;
+
+        /* Scroll Bar (Others) */
+        &::-webkit-scrollbar {
+            width: 0.2rem;
+        }
+        &::-webkit-scrollbar-track {
+            background: $light-input;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $light-input;
+            border-radius: 0.1rem;
+            border: solid $light-text-color;
+        }
     }
 
     .Row {
@@ -25,5 +42,21 @@
         display: flex;
         flex-direction: row;
         justify-content: center;
+    }
+}
+
+.DarkMode .Game {
+    .Anagrams {
+        /* Scroll Bar (Firefox) */
+        scrollbar-color: $dark-text-color $dark-input;
+
+        /* Scroll Bar (Others) */
+        &::-webkit-scrollbar-track {
+            background: $dark-input;
+        }
+        &::-webkit-scrollbar-thumb {
+            background-color: $dark-input;
+            border: solid $dark-text-color;
+        }
     }
 }
