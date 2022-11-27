@@ -77,7 +77,7 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
         () => new Date().getTime() + startTime
     );
 
-    const currScore: number  = anagrams.filter((w,i) => guessed[i]).reduce((acc,w) => acc+scoreWord(w), 0);
+    const currScore: number  = (!guessed.includes(false) ? 2 : 1) * anagrams.filter((w,i) => guessed[i]).reduce((acc,w) => acc+scoreWord(w), 0);
     const qualified: boolean = !!guessed.find((v,idx) => v && anagrams[idx].length === max_word_length);
 
     // Derive selected word and its true length (i.e. the last index that is non-null)
