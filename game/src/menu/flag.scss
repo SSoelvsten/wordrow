@@ -18,6 +18,8 @@
         border-radius: 5%;
         border: 1px;
         border-color: $light-text-color;
+        opacity: 0.5;
+        filter: grayscale(100%);
     }
 
     .Index {
@@ -28,10 +30,17 @@
     }
 }
 
-.Flag:not(.Selected) {
+.Flag.Selected {
     img {
-        opacity: 0.5;
-        filter: grayscale(100%);
+        opacity: 1;
+        filter: grayscale(0%);
+    }
+}
+
+.Flag:hover:not(.Selected) {
+    img {
+        opacity: 0.8;
+        filter: grayscale(80%);
     }
 }
 
