@@ -60,6 +60,8 @@ const Menu = ({ difficulty, setDifficulty, language, setLanguage, startGame } : 
     let select_difficulty: ReactElement = <></>;
 
     switch (language) {
+    case undefined:
+        break;
     case Language.DK:
         start_text        = <><b> Klik her </b> eller <b> tryk enter </b> for at starte.</>
         select_language   = <>Sprog</>;
