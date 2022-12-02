@@ -14,7 +14,9 @@
     .GameTitle {
         flex: 0;
 
-        margin-bottom: 5rem;
+        cursor: default;
+
+        margin-bottom: 4rem;
         width: 100%;
 
         display: flex;
@@ -37,8 +39,10 @@
     .MenuSection {
         width: 100%;
         text-align: center;
-        font-size: 1.8rem;
-        margin: 0.5rem 0;
+        font-size: 2.5rem;
+        margin: 1rem 0;
+
+        cursor: default;
 
         color: $light-text-color;
     }
@@ -56,12 +60,18 @@
 
     /* ----------------- Game Type Selection ----------------- */
     .GameTypeSelection {
+        flex: 0;
 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+
+        justify-content: center;
     }
 
     /* ---------------------- Start Game --------------------- */
     .StartGame {
-        margin-top: 3rem;
+        margin-top: 4rem;
         color: $light-text-color;
         text-align: center;
 

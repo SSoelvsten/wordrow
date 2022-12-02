@@ -3,14 +3,16 @@ import { GameIndex, GameInstance } from './game-instance';
 import { Language } from '../language';
 import Game, { GameReport } from './game';
 import './game-session.scss';
+import { Difficulty } from '../difficulty';
 
 const JSONHeader = { headers : {  'Content-Type': 'application/json', 'Accept': 'application/json' } };
 
 export interface GameSessionProps {
+  difficulty: Difficulty;
   language: Language;
 }
 
-const GameSession = ({ language } : GameSessionProps) => {
+const GameSession = ({ difficulty, language } : GameSessionProps) => {
   const [accScore, setAccScore] = useState<number>(0);
   const [round, setRound] = useState<number>(1);
   const [gameInstance, setGameInstance] = useState<GameInstance | undefined>(undefined);
@@ -44,6 +46,7 @@ const GameSession = ({ language } : GameSessionProps) => {
       { gameInstance &&
         <div className="GameSession">
           <Game instance={gameInstance}
+                difficulty={difficulty}
                 language={language}
                 accScore={accScore}
                 round={round}

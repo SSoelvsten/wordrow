@@ -1,21 +1,29 @@
 import React, { ReactElement, useEffect, useRef } from 'react';
+import { Difficulties, Difficulty, DifficultyName } from '../difficulty';
 import { Language, languages } from '../language';
 import Flag from './flag';
 import './menu.scss';
+import NamedSelect from './named-select';
 
 export interface MenuProps {
+    difficulty: Difficulty | undefined;
+    setDifficulty: (d: Difficulty) => void;
     language: Language | undefined;
     setLanguage: (l: Language) => void;
     startGame: () => void;
 }
 
-const Menu = ({ language, setLanguage, startGame } : MenuProps) => {
-    const mayBegin = language !== undefined;
+const Menu = ({ difficulty, setDifficulty, language, setLanguage, startGame } : MenuProps) => {
+    const mayBegin = language !== undefined && difficulty !== undefined;
 
     // ------------------------------------------------------------------------
     // MENU LOGIC
     const actionLanguage = (l: Language) => {
         setLanguage(l);
+    }
+
+    const actionDifficulty = (d: Difficulty) => {
+        setDifficulty(d);
     }
 
     const actionStartGame = () => {
@@ -26,10 +34,19 @@ const Menu = ({ language, setLanguage, startGame } : MenuProps) => {
     // KEY LISTENER
     const onKey = (e: React.KeyboardEvent) => {
         switch (e.key) {
-        case " ":         actionStartGame(); break;
+        case " ":         {
+            const nextDifficulty = difficulty
+                ? (Difficulties.indexOf(difficulty) + 1) % Difficulties.length
+                : 0;
+            actionDifficulty(Difficulties[nextDifficulty]);
+            break;
+        }
         case "Backspace": break;
         case "Escape":    break;
-        case "Enter":     break;
+        case "Enter": {
+            actionStartGame(); 
+            break;
+        }
         default:
             if (parseInt(e.key)) actionLanguage(languages[parseInt(e.key)-1]);
             break;
@@ -40,15 +57,18 @@ const Menu = ({ language, setLanguage, startGame } : MenuProps) => {
     // TRANSLATIONS
     let start_text: ReactElement = <></>;
     let select_language: ReactElement = <></>;
+    let select_difficulty: ReactElement = <></>;
 
     switch (language) {
     case Language.DK:
-        start_text      = <><b> Klik her </b> eller <b> tryk mellemrum </b> for at starte.</>
-        select_language = <>Sprog</>;
+        start_text        = <><b> Klik her </b> eller <b> tryk enter </b> for at starte.</>
+        select_language   = <>Sprog</>;
+        select_difficulty = <>Spiltype</>
         break;
     case Language.GB:
-        start_text      =  <><b> Click here </b> or <b> press space </b> to start.</>
+        start_text      =  <><b> Click here </b> or <b> press enter </b> to start.</>
         select_language = <>Language</>;
+        select_difficulty = <>Game Mode</>;
         break;
     default:
         throw new Error(`Unknown Language: ${language}`);
@@ -75,8 +95,12 @@ const Menu = ({ language, setLanguage, startGame } : MenuProps) => {
                                                      selected={lang === language}
                                                      onClick={() => actionLanguage(lang)} />) }
             </div>
+            <div className="MenuSection"> {select_difficulty} </div>
             <div className="GameTypeSelection">
-                {/* TODO */}
+                {Difficulties.map((d,i) => <NamedSelect text={DifficultyName(d,language)}
+                                                        selected={d === difficulty}
+                                                        onClick={() => actionDifficulty(d)}
+                                                        key={i}/>)}
             </div>
             <div className={`StartGame ${mayBegin ? "" : "hide"}`} onClick={actionStartGame}>
                {start_text}

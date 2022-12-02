@@ -1,6 +1,6 @@
 import React from 'react';
 import { Language, languageName } from '../language';
-import "./flag.scss";
+import './flag.scss';
 
 export interface FlagProps {
     index: number;

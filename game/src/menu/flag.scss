@@ -13,6 +13,7 @@
     width: $flag-width;
 
     img {
+        opacity: $opacity-selected;
         width: $flag-width;
         max-width: $flag-width;
         border-radius: 5%;
@@ -21,6 +22,7 @@
     }
 
     .Index {
+        opacity: $opacity-selected;
         color: $light-text-color;
 
         margin: auto;
@@ -30,13 +32,20 @@
 
 .Flag:not(.Selected) {
     img {
-        opacity: 0.5;
+        opacity: $opacity-unselected;
         filter: grayscale(100%);
     }
-
-    &:hover img {
-        opacity: 0.8;
-        filter: grayscale(40%);
+    .Index {
+        opacity: $opacity-unselected;
+    }
+    &:hover {
+        img {
+            opacity: $opacity-hover;
+            filter: grayscale(40%);
+        }
+        .Index {
+            opacity: $opacity-hover;
+        }    
     }
 }
 
@@ -44,7 +53,6 @@
     img {
         border-color: $dark-text-color;
     }
-
     .Index {
         color: $dark-text-color;
     }
