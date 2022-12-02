@@ -7,6 +7,7 @@ import './scoreboard.scss';
 
 export interface ScoreBoardProps {
     endTime: number;
+    gameEnd: boolean;
     language: Language;
     qualified: boolean;
     score: number;
@@ -14,7 +15,7 @@ export interface ScoreBoardProps {
     onTimeout: () => void;
 };
 
-const ScoreBoard = ({ endTime, language, qualified, round, score, onTimeout }: ScoreBoardProps) => {
+const ScoreBoard = ({ endTime, gameEnd, language, qualified, round, score, onTimeout }: ScoreBoardProps) => {
     const isTimed: boolean = endTime !== Infinity && !isNaN(endTime);
 
     // ------------------------------------------------------------------------
@@ -41,21 +42,21 @@ const ScoreBoard = ({ endTime, language, qualified, round, score, onTimeout }: S
 
     // TODO: stop timer update when 'won'.
     useEffect(() => {
-        if (!isTimed) return;
+        if (!isTimed || gameEnd) return;
 
         const timerId = setInterval(() => {
             const tick = new Date().getTime();
             setCurrTime(tick);
         }, 50);
         return () => clearInterval(timerId);
-    }, [isTimed]);
+    }, [isTimed, gameEnd]);
 
     useEffect(() => {
-        if (!isTimed) return;
+        if (!isTimed || gameEnd) return;
 
         const timeLeft = endTime - currTime;
         if (timeLeft < 0) onTimeout();
-    }, [isTimed, currTime, endTime, onTimeout]);
+    }, [isTimed, gameEnd, currTime, endTime, onTimeout]);
 
     const timeLeft = endTime - currTime;
     const timeAlarm: boolean = 0 < timeLeft && timeLeft < 10 * 1000;

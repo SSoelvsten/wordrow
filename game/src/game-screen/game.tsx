@@ -273,6 +273,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     <>
         <div className="Game" tabIndex={0} onKeyDown={onKey} ref={divRef}>
             <ScoreBoard endTime={endTime}
+                        gameEnd={gameEnd}
                         language={language}
                         qualified={qualified}
                         score={accScore + currScore}
