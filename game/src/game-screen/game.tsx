@@ -8,6 +8,7 @@ import shuffle from '../shuffle';
 import ScoreBoard from './scoreboard';
 import EndScreen from './end-screen';
 import Announcement from './announcement';
+import { Difficulty, DifficultyLogic, GetDifficultyLogic } from '../difficulty';
 
 export interface GameReport {
     qualified: boolean;
@@ -16,6 +17,7 @@ export interface GameReport {
 
 export interface GameProps {
     instance: GameInstance;
+    difficulty: Difficulty;
     language: Language;
     accScore: number;
     round: number;
@@ -40,17 +42,22 @@ const charShuffle = (chars: CharIdx[]) => {
     return charsCopy;
 }
 
-const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNextGame }: GameProps) => {
-    // ------------------------------------------------------------------------
-    // GAME SETTINGS
-    const scoreWord = (w : string) => Math.round(Math.pow(w.length-2,2)*100);
-    const timeWord = (w : string) => scoreWord(w) * 10 + 2000;
-
-    // ------------------------------------------------------------------------
-    // GAME STATE
+const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, onRequestNextGame }: GameProps) => {
     const words: number = anagrams.length;
     const min_word_length: number = anagrams[0].length;
     const max_word_length: number = anagrams[words-1].length;
+
+    // ------------------------------------------------------------------------
+    // GAME SCORING
+    const scoreWord = (w : string) => Math.round(Math.pow(w.length-2,2)*100);
+
+    // ------------------------------------------------------------------------
+    // GAME TIME
+    const numberOfChars : number = anagrams.reduce((acc,w) => acc+w.length, 0);
+    const timerSetting : DifficultyLogic = GetDifficultyLogic(difficulty, numberOfChars);
+
+    // ------------------------------------------------------------------------
+    // GAME STATE
 
     const [chars, setChars] = useState<CharIdx[]>(
         () => charShuffle(anagrams[words-1].split('').map((c) => [c, null]))
@@ -71,11 +78,8 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
         () => false
     );
 
-    const startTime: number = Math.max(anagrams.reduce((acc, w) => acc + timeWord(w), 0) / 2,
-                                       30*1000);
-
     const [endTime, setEndTime] = useState<number>(
-        () => new Date().getTime() + startTime
+        () => new Date().getTime() + timerSetting.initialTime
     );
 
     const currScore: number  = (!guessed.includes(false) ? 2 : 1) * anagrams.filter((w,i) => guessed[i]).reduce((acc,w) => acc+scoreWord(w), 0);
@@ -149,7 +153,7 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
                 setGuessed(newGuessed);
                 if (guessedANewWord) {
                     setLatestGuessed(guess);
-                    setEndTime(endTime + timeWord(guess));
+                    setEndTime(endTime + timerSetting.addTime(guess.length));
 
                     const remainingWords = guessed.reduce((acc, v) => acc + (!v ? 1 : 0), 0);
                     setGameEnd(remainingWords <= 1);
@@ -196,7 +200,7 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
         if (gameEnd) {
             if (!activatePressToContinue) return;
 
-            if (e.key === " ") {
+            if (e.key === "Enter") {
                 onRequestNextGame({ qualified, score: currScore });
             }
             return;

@@ -1,0 +1,35 @@
+@import "../common.scss";
+
+.NamedSelect {
+    color: $light-text-color;
+
+    width: max-content;
+    min-width: 15rem;
+    cursor: pointer;
+
+    font-size: 1.5rem;
+    font-weight: 400;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+
+    &.Selected {
+        opacity: $opacity-selected;
+        font-size: 2rem;
+        font-weight: 600;
+    }
+    &:not(.Selected) {
+        opacity: $opacity-unselected;
+        &:hover {
+            opacity: $opacity-hover;
+        }
+    }
+}
+
+.DarkMode .NamedSelect {
+    color: $dark-text-color;
+}
+

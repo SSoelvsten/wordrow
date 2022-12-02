@@ -20,12 +20,12 @@ const EndScreen = ({ language, qualified, score, showContinue }: EndScreenProps)
     case Language.DK:
         success_text  = <>Tillykke! Du er kvalificeret til den næste runde.</>;
         failed_text   = <>Desværre! Find et ord, der bruger alle bogstaver, for at kvalificere til den næste runde.</>;
-        continue_text = <>Tryk <b>mellemrum</b> for at fortsætte.</>
+        continue_text = <>Tryk <b>enter</b> for at fortsætte.</>
         break;
     case Language.GB:
         success_text  = <>Congratulations! You qualify for the next round.</>;
         failed_text   = <>Sorry! Find a word that uses all letters to qualify for the next round.</>;
-        continue_text = <>Press <b>space</b> to continue.</>;
+        continue_text = <>Press <b>enter</b> to continue.</>;
         break;
     default:
         throw new Error(`Unknown Language: ${language}`);

@@ -15,6 +15,11 @@ export interface ScoreBoardProps {
 };
 
 const ScoreBoard = ({ endTime, language, qualified, round, score, onTimeout }: ScoreBoardProps) => {
+    const isTimed: boolean = endTime !== Infinity && !isNaN(endTime);
+
+    // ------------------------------------------------------------------------
+    // Clock Ticking and Formatting
+
     const [currTime, setCurrTime] = useState(() => new Date().getTime());
 
     const formatTimeleft = () => {
@@ -34,27 +39,37 @@ const ScoreBoard = ({ endTime, language, qualified, round, score, onTimeout }: S
         }`;
     };
 
+    // TODO: stop timer update when 'won'.
     useEffect(() => {
+        if (!isTimed) return;
+
         const timerId = setInterval(() => {
             const tick = new Date().getTime();
             setCurrTime(tick);
         }, 50);
         return () => clearInterval(timerId);
-    }, []);
+    }, [isTimed]);
 
     useEffect(() => {
+        if (!isTimed) return;
+
         const timeLeft = endTime - currTime;
         if (timeLeft < 0) onTimeout();
-    }, [currTime, endTime, onTimeout]);
+    }, [isTimed, currTime, endTime, onTimeout]);
 
     const timeLeft = endTime - currTime;
     const timeAlarm: boolean = 0 < timeLeft && timeLeft < 10 * 1000;
 
+    // ------------------------------------------------------------------------
+    // VISUAL
+
     return (
         <div className="ScoreBoard">
-            <div className={`Time ${timeAlarm ? "Alarm" : ""}`}>{formatTimeleft()}</div>
+            { isTimed && 
+                <div className={`Time ${timeAlarm ? "Alarm" : ""}`}>{formatTimeleft()}</div>
+            }
             <div className="RoundNumber">
-                |
+                { isTimed && <>|</>}
                     <FontAwesomeIcon icon={qualified ? faSolid.faFlag : faRegular.faFlag} flip={"horizontal"} />
                     {round}
                     <FontAwesomeIcon icon={qualified ? faSolid.faFlag : faRegular.faFlag} />
