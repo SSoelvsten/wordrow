@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { ReactElement } from 'react';
 import './announcement.scss';
 
 interface AnnouncementProps {
     key?: string | number
-    text: string
+    content: ReactElement
 }
 
-const Announcement = ({ key, text }: AnnouncementProps) => (
+const Announcement = ({ key, content }: AnnouncementProps) => (
     <div className="Announcement" key={key}>
-        <div className="Text">{text}</div>
+        <div className="Content">{content}</div>
     </div>
 );
 

@@ -18,7 +18,7 @@
     background-color: $light-background;
 
     text-align: center;
-    .Text {
+    .Content {
         position: relative;
         @keyframes AnnouncementTextReveal {
             0%   { left: -100% }
@@ -51,7 +51,7 @@
 
 .DarkMode .Announcement {
     background-color: $dark-background;
-    .Text {
+    .Content {
         color: $dark-text-color;
     }
 }

@@ -1,21 +1,21 @@
 import React from 'react';
-import { GameLanguage } from './game-instance';
+import { Language } from '../language';
 import './word.scss';
 
 export interface WordProps {
     col: number;
     guessed: boolean;
-    language: GameLanguage | undefined;
+    language: Language | undefined;
     row: number;
     show: boolean;
     word: string;
 }
 
-const word_url = (language: GameLanguage, word: string) => {
+const word_url = (language: Language, word: string) => {
     switch (language) {
-    case GameLanguage.DK:
+    case Language.DK:
         return `https://www.ordnet.dk/ddo/ordbog?query=${word}`;
-    case GameLanguage.GB:
+    case Language.GB:
         return `https://www.merriam-webster.com/dictionary/${word}`;
     default:
         throw new Error(`Unknown Language: ${language}`);

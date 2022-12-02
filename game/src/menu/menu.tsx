@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from 'react';
-import { GameLanguage, GameLanguages } from '../game-screen/game-instance';
+import React, { ReactElement, useEffect, useRef } from 'react';
+import { Language, languages } from '../language';
 import Flag from './flag';
 import './menu.scss';
 
 export interface MenuProps {
-    language: GameLanguage | undefined;
-    setLanguage: (l: GameLanguage) => void;
+    language: Language | undefined;
+    setLanguage: (l: Language) => void;
     startGame: () => void;
 }
 
@@ -14,7 +14,7 @@ const Menu = ({ language, setLanguage, startGame } : MenuProps) => {
 
     // ------------------------------------------------------------------------
     // MENU LOGIC
-    const actionLanguage = (l: GameLanguage) => {
+    const actionLanguage = (l: Language) => {
         setLanguage(l);
     }
 
@@ -31,28 +31,31 @@ const Menu = ({ language, setLanguage, startGame } : MenuProps) => {
         case "Escape":    break;
         case "Enter":     break;
         default:
-            if (parseInt(e.key)) actionLanguage(GameLanguages[parseInt(e.key)-1]);
+            if (parseInt(e.key)) actionLanguage(languages[parseInt(e.key)-1]);
             break;
         }
     }
 
     // ------------------------------------------------------------------------
-    // VISUAL
-    let start_text: string[] = ["", "", "", ""];
-    let select_language: string = "Language";
+    // TRANSLATIONS
+    let start_text: ReactElement = <></>;
+    let select_language: ReactElement = <></>;
 
     switch (language) {
-    case GameLanguage.DK: {
-        start_text      = ["Klik her", "eller", "tryk mellemrum", "for at starte."]
-        select_language = "Sprog";
+    case Language.DK:
+        start_text      = <><b> Klik her </b> eller <b> tryk mellemrum </b> for at starte.</>
+        select_language = <>Sprog</>;
         break;
-    }
-    case GameLanguage.GB: {
-        start_text      =  ["Click here", "or","press space", "to start."]
-        select_language = "Language";
+    case Language.GB:
+        start_text      =  <><b> Click here </b> or <b> press space </b> to start.</>
+        select_language = <>Language</>;
         break;
+    default:
+        throw new Error(`Unknown Language: ${language}`);
     }
-    }
+
+    // ------------------------------------------------------------------------
+    // VISUAL
 
     // https://stackabuse.com/how-to-set-focus-on-element-after-rendering-with-react/
     const divRef = useRef<any>(null);
@@ -67,16 +70,16 @@ const Menu = ({ language, setLanguage, startGame } : MenuProps) => {
 
             <div className="MenuSection"> {select_language} </div>
             <div className="LanguageSelection">
-                { GameLanguages.map((lang, idx) => <Flag language={lang}
-                                                    index={idx+1} key={idx}
-                                                    selected={lang === language}
-                                                    onClick={() => actionLanguage(lang)} />) }
+                { languages.map((lang, idx) => <Flag language={lang}
+                                                     index={idx+1} key={idx}
+                                                     selected={lang === language}
+                                                     onClick={() => actionLanguage(lang)} />) }
             </div>
             <div className="GameTypeSelection">
                 {/* TODO */}
             </div>
             <div className={`StartGame ${mayBegin ? "" : "hide"}`} onClick={actionStartGame}>
-                <b> {start_text[0]} </b> {start_text[1]} <b> {start_text[2]} </b> {start_text[3]}
+               {start_text}
             </div>
             <div className="Dummy" />
         </div>

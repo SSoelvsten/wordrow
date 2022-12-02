@@ -1,35 +1,36 @@
 import React, { useEffect, useState } from 'react';
-import { GameIndex, GameInstance, GameLanguage } from './game-instance';
+import { GameIndex, GameInstance } from './game-instance';
+import { Language } from '../language';
 import Game, { GameReport } from './game';
 import './game-session.scss';
 
 const JSONHeader = { headers : {  'Content-Type': 'application/json', 'Accept': 'application/json' } };
 
 export interface GameSessionProps {
-  gameLanguage: GameLanguage;
+  language: Language;
 }
 
-const GameSession = ({ gameLanguage } : GameSessionProps) => {
+const GameSession = ({ language } : GameSessionProps) => {
   const [accScore, setAccScore] = useState<number>(0);
   const [round, setRound] = useState<number>(1);
   const [gameInstance, setGameInstance] = useState<GameInstance | undefined>(undefined);
 
   const getGame = () => {
     // Fetch from the index file for the desired language
-    fetch(`dict/${gameLanguage}/index.json`, JSONHeader)
+    fetch(`dict/${language}/index.json`, JSONHeader)
     // Convert response as a GameIndex object
     .then((resp: Response)     => resp.json())
     // Randomly choose an index
     .then((data: GameIndex)    => Math.round(Math.random() * (data.instances-1)))
     // Fetch specific game based on language and index
-    .then((gameIdx: number)    => fetch(`dict/${gameLanguage}/${gameIdx}.json`, JSONHeader))
+    .then((gameIdx: number)    => fetch(`dict/${language}/${gameIdx}.json`, JSONHeader))
     // Convert response to GameInstance object
     .then((resp: Response)     => resp.json())
     // Set gameInstance
     .then((data: GameInstance) => setGameInstance(data));
   }
 
-  useEffect(getGame, [gameLanguage]);
+  useEffect(getGame, [language]);
 
   const getNextGame = (previousGame: GameReport) => {
     setGameInstance(undefined);
@@ -43,7 +44,7 @@ const GameSession = ({ gameLanguage } : GameSessionProps) => {
       { gameInstance &&
         <div className="GameSession">
           <Game instance={gameInstance}
-                language={gameLanguage}
+                language={language}
                 accScore={accScore}
                 round={round}
                 onRequestNextGame={getNextGame} />
