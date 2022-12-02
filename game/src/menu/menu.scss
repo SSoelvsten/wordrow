@@ -26,17 +26,10 @@
         .Letter {
             $letter-font-size: 3rem;
             $letter-gap: 0.3rem;
-            @include charBox($letter-font-size, $letter-gap);
-            margin: 0 $letter-gap;
-
-            text-transform: uppercase;
+            @include borderedCharBox($letter-font-size, $letter-gap);
 
             color: $light-text-color;
-
             border-color: $light-text-color;
-            border-style: solid;
-            border-width: 2px;
-            border-radius: 10%;
         }
     }
 

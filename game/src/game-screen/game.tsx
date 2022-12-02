@@ -262,9 +262,14 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
     return (
     <>
         <div className="Game" tabIndex={0} onKeyDown={onKey} ref={divRef}>
-            <div className='ScoreBoard'>
-                <ScoreBoard endTime={endTime} language={language} qualified={qualified} score={accScore + currScore} round={round} onTimeout={onTimeout} />
-            </div>
+            <ScoreBoard endTime={endTime}
+                        language={language}
+                        qualified={qualified}
+                        score={accScore + currScore}
+                        round={round}
+                        onTimeout={onTimeout}
+                    />
+
             { <div className="Anagrams">
                 { wordColumns.map((c,i) => (
                     c.map(([w,j], ci) => {
@@ -274,6 +279,10 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
                     })
                 )) }
               </div> }
+            {!latestGuessed &&
+                <Announcement text={`${round_text} ${round}`}/>
+            }
+
             {!gameEnd &&
                 <>
                     <div className={`Row ${guessed.includes(true) ? 'HasGood' : ''}`} key={latestGuessed}>
@@ -293,9 +302,6 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
                 </div>
             }
         </div>
-        {!latestGuessed &&
-            <Announcement text={`${round_text} ${round}`}/>
-        }
     </>
     );
 }
