@@ -6,9 +6,9 @@ import './menu.scss';
 import NamedSelect from './named-select';
 
 export interface MenuProps {
-    difficulty: Difficulty | undefined;
+    difficulty: Difficulty ;
     setDifficulty: (d: Difficulty) => void;
-    language: Language | undefined;
+    language: Language;
     setLanguage: (l: Language) => void;
     startGame: () => void;
 }
@@ -60,16 +60,14 @@ const Menu = ({ difficulty, setDifficulty, language, setLanguage, startGame } : 
     let select_difficulty: ReactElement = <></>;
 
     switch (language) {
-    case undefined:
-        break;
     case Language.DK:
         start_text        = <><b> Klik her </b> eller <b> tryk enter </b> for at starte.</>
         select_language   = <>Sprog</>;
         select_difficulty = <>Spiltype</>
         break;
     case Language.GB:
-        start_text      =  <><b> Click here </b> or <b> press enter </b> to start.</>
-        select_language = <>Language</>;
+        start_text        = <><b> Click here </b> or <b> press enter </b> to start.</>
+        select_language   = <>Language</>;
         select_difficulty = <>Game Mode</>;
         break;
     default:
@@ -93,10 +91,11 @@ const Menu = ({ difficulty, setDifficulty, language, setLanguage, startGame } : 
             <div className="MenuSection"> {select_language} </div>
             <div className="LanguageSelection">
                 { languages.map((lang, idx) => <Flag language={lang}
-                                                     index={idx+1} key={idx}
-                                                     selected={lang === language}
-                                                     onClick={() => actionLanguage(lang)} />) }
+                                                    index={idx+1} key={idx}
+                                                    selected={lang === language}
+                                                    onClick={() => actionLanguage(lang)} />) }
             </div>
+
             <div className="MenuSection"> {select_difficulty} </div>
             <div className="GameTypeSelection">
                 {Difficulties.map((d,i) => <NamedSelect text={DifficultyName(d,language)}
@@ -104,7 +103,7 @@ const Menu = ({ difficulty, setDifficulty, language, setLanguage, startGame } : 
                                                         onClick={() => actionDifficulty(d)}
                                                         key={i}/>)}
             </div>
-            <div className={`StartGame ${mayBegin ? "" : "hide"}`} onClick={actionStartGame}>
+            <div className="StartGame" onClick={actionStartGame}>
                {start_text}
             </div>
             <div className="Dummy" />

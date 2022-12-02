@@ -45,7 +45,9 @@ export const GetDifficultyLogic = (d: Difficulty, numberOfChars: number) : Diffi
     }
 }
 
-export const DifficultyName = (d: Difficulty, l: Language) => {
+export const DifficultyName = (d: Difficulty, l: Language | undefined) : string => {
+    if (!l) return DifficultyName(d, Language.GB);
+
     switch(l) {
     case Language.DK:
         switch (d) {

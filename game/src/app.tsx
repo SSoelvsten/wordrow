@@ -9,9 +9,10 @@ import './app.scss';
 import Menu from './menu/menu';
 
 const LS_KEYS = {
-  DarkMode: "DarkMode",
+  DarkMode:   "DarkMode",
   Difficulty: "Difficulty",
-  Language: "Language",
+  Language:   "Language",
+  HasPlayed:  "HasPlayed",
 }
 
 const App = () => {
@@ -28,30 +29,32 @@ const App = () => {
     }
   );
 
-  const [language, setLanguage] = useState<Language | undefined>(
+  const [language, setLanguage] = useState<Language>(
     () => {
       // Consult local storage for state from previous page
       const ls_res = localStorage.getItem(LS_KEYS.Language);
       if (ls_res) { return ls_res as Language; }
 
       // Otherwise, just leave it unchecked
-      return undefined;
+      return Language.GB;
     }
   );
   
-  const [difficulty, setDifficulty] = useState<Difficulty | undefined>(
+  const [difficulty, setDifficulty] = useState<Difficulty>(
     () => {
       // Consult local storage for state from previous page
       const ls_res = localStorage.getItem(LS_KEYS.Difficulty);
       if (ls_res) { return ls_res as Difficulty; }
 
       // Otherwise, just leave it unchecked
-      return undefined;
+      return Difficulty.UNLIMITED_TIME;
     }
   );
 
   const [inGame, setInGame] = useState<boolean>(() => {
-    return language !== undefined && difficulty !== undefined;
+    // Go directly into a game, if settings have already been set
+    const ls_res = localStorage.getItem(LS_KEYS.HasPlayed);
+    return ls_res !== null;
   });
 
   // ------------------------------------------------------------------------
@@ -67,6 +70,10 @@ const App = () => {
   }
 
   useEffect(updateLocalStorage, [darkMode, language, difficulty]);
+
+  useEffect(() => {
+    if (inGame) { localStorage.setItem(LS_KEYS.HasPlayed, "true"); }
+  }, [inGame]);
 
   // ------------------------------------------------------------------------
   // VISUAL

@@ -75,16 +75,11 @@
         color: $light-text-color;
         text-align: center;
 
+        cursor: pointer;
+
         b {
             margin-left: 0.3rem;
             margin-left: 0.3rem;
-        }
-
-        &:not(.hide) {
-            cursor: pointer;
-        }
-        &.hide {
-            color: $light-background;
         }
     }
 
