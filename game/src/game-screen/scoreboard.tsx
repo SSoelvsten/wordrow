@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { GameLanguage } from "./game-instance";
+import { Language } from "../language";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as faSolid from '@fortawesome/free-solid-svg-icons'
 import * as faRegular from '@fortawesome/free-regular-svg-icons'
@@ -7,7 +7,7 @@ import './scoreboard.scss';
 
 export interface ScoreBoardProps {
     endTime: number;
-    language: GameLanguage;
+    language: Language;
     qualified: boolean;
     score: number;
     round: number;

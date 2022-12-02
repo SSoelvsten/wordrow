@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import * as faRegular from '@fortawesome/free-regular-svg-icons'
 import * as faSolid from '@fortawesome/free-solid-svg-icons'
-import { GameLanguage } from './game-screen/game-instance';
+import { Language } from './language';
 import GameSession from './game-screen/game-session';
 import './app.scss';
 import Menu from './menu/menu';
@@ -26,11 +26,11 @@ const App = () => {
     }
   );
 
-  const [gameLanguage, setGameLanguage] = useState<GameLanguage | undefined>(
+  const [language, setLanguage] = useState<Language | undefined>(
     () => {
       // Consult local storage for state from previous page
       const ls_res = localStorage.getItem(LS_KEYS.Language);
-      if (ls_res) { return ls_res as GameLanguage; }
+      if (ls_res) { return ls_res as Language; }
 
       // Otherwise, just leave it unchecked
       return undefined;
@@ -38,30 +38,30 @@ const App = () => {
   );
 
   const [inGame, setInGame] = useState<boolean>(() => {
-    return gameLanguage !== undefined;
+    return language !== undefined;
   });
 
   // ------------------------------------------------------------------------
   // SAVE USER SETTINGS
   const updateLocalStorage = () => {
     localStorage.setItem(LS_KEYS.DarkMode, `${darkMode}`);
-    if (gameLanguage !== undefined) {
-      localStorage.setItem(LS_KEYS.Language, gameLanguage);
+    if (language !== undefined) {
+      localStorage.setItem(LS_KEYS.Language, language);
     }
   }
 
-  useEffect(updateLocalStorage, [darkMode, gameLanguage]);
+  useEffect(updateLocalStorage, [darkMode, language]);
 
   // ------------------------------------------------------------------------
   // VISUAL
   return (
       <div className={`App ${darkMode ? "DarkMode" : ""}`}>
         { !inGame &&
-          <Menu language={gameLanguage} setLanguage={setGameLanguage} startGame={() => setInGame(true)} />
+          <Menu language={language} setLanguage={setLanguage} startGame={() => setInGame(true)} />
         }
-        { inGame && gameLanguage &&
+        { inGame && language &&
           <>
-            <GameSession gameLanguage={gameLanguage} />
+            <GameSession language={language} />
             <button className="ReturnToMenu" onClick={() => setInGame(false)}>
               <FontAwesomeIcon icon={darkMode ? faSolid.faCaretLeft : faSolid.faCaretLeft} />
             </button>

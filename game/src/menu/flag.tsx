@@ -1,10 +1,10 @@
 import React from 'react';
-import { GameLanguage, languageName } from '../game-screen/game-instance';
+import { Language, languageName } from '../language';
 import "./flag.scss";
 
 export interface FlagProps {
     index: number;
-    language: GameLanguage;
+    language: Language;
     selected: boolean;
     onClick: () => void;
 }

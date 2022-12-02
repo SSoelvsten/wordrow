@@ -1,6 +1,7 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { ReactElement, useEffect, useRef, useState } from 'react';
 import './game.scss';
-import { GameInstance, GameLanguage } from './game-instance';
+import { GameInstance } from './game-instance';
+import { Language } from '../language';
 import InputBox from './input-box';
 import Word from './word';
 import shuffle from '../shuffle';
@@ -15,7 +16,7 @@ export interface GameReport {
 
 export interface GameProps {
     instance: GameInstance;
-    language: GameLanguage;
+    language: Language;
     accScore: number;
     round: number;
     onRequestNextGame: (report: GameReport) => void;
@@ -247,17 +248,22 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
     }
 
     // ------------------------------------------------------------------------
+    // TRANSLATIONS
+
+    let round_text : ReactElement = <></>;
+    switch (language) {
+    case Language.DK: round_text = <>Runde {round}</>; break;
+    case Language.GB: round_text = <>Round {round}</>; break;
+    default:
+        throw new Error(`Unknown Language: ${language}`);
+    }
+
+    // ------------------------------------------------------------------------
     // VISUAL
 
     // https://stackabuse.com/how-to-set-focus-on-element-after-rendering-with-react/
     const divRef = useRef<any>(null);
     useEffect(() => { divRef.current.focus(); }, []);
-
-    let round_text : string;
-    switch (language) {
-    case GameLanguage.DK: round_text = "Runde"; break;
-    case GameLanguage.GB: round_text = "Round"; break;
-    }
 
     return (
     <>
@@ -280,7 +286,7 @@ const Game = ({ instance: { anagrams }, language, accScore, round, onRequestNext
                 )) }
               </div> }
             {!latestGuessed &&
-                <Announcement text={`${round_text} ${round}`}/>
+                <Announcement content={round_text}/>
             }
 
             {!gameEnd &&

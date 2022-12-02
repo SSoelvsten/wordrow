@@ -1,32 +1,38 @@
-import React from 'react';
-import { GameLanguage } from './game-instance';
+import React, { ReactElement } from 'react';
+import { Language } from '../language';
 import './end-screen.scss';
 
 interface EndScreenProps {
-    language: GameLanguage;
+    language: Language;
     qualified: boolean;
     showContinue: boolean;
     score: number;
 }
 
 const EndScreen = ({ language, qualified, score, showContinue }: EndScreenProps) => {
-    let success_text, failed_text: string;
-    let continue_texts: string[];
+    // ------------------------------------------------------------------------
+    // TRANSLATIONS
+
+    let success_text, failed_text: ReactElement;
+    let continue_text: ReactElement;
 
     switch (language) {
-    case GameLanguage.DK: {
-        success_text  = "Tillykke! Du er kvalificeret til den næste runde.";
-        failed_text   = "Desværre! Find et ord, der bruger alle bogstaver, for at kvalificere til den næste runde.";
-        continue_texts = ["Tryk", "mellemrum", "for at fortsætte."]
+    case Language.DK:
+        success_text  = <>Tillykke! Du er kvalificeret til den næste runde.</>;
+        failed_text   = <>Desværre! Find et ord, der bruger alle bogstaver, for at kvalificere til den næste runde.</>;
+        continue_text = <>Tryk <b>mellemrum</b> for at fortsætte.</>
         break;
-    }
-    case GameLanguage.GB: {
-        success_text  = "Congratulations! You qualify for the next round.";
-        failed_text   = "Sorry! Find a word that uses all letters to qualify for the next round.";
-        continue_texts = ["Press", "space", "to continue."];
+    case Language.GB:
+        success_text  = <>Congratulations! You qualify for the next round.</>;
+        failed_text   = <>Sorry! Find a word that uses all letters to qualify for the next round.</>;
+        continue_text = <>Press <b>space</b> to continue.</>;
         break;
+    default:
+        throw new Error(`Unknown Language: ${language}`);
     }
-    }
+
+    // ------------------------------------------------------------------------
+    // VISUAL
 
     return (
         <div className="EndScreen">
@@ -35,7 +41,7 @@ const EndScreen = ({ language, qualified, score, showContinue }: EndScreenProps)
             <div className="Score">{Math.round(score).toLocaleString()}</div>
 
             <div className={"Continue " + (showContinue ? "show" : "hide")}>
-                {continue_texts[0]} <b>{continue_texts[1]}</b> {continue_texts[2]}
+                {continue_text}
             </div>
         </div>
     );
