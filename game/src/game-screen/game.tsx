@@ -1,14 +1,16 @@
 import React, { ReactElement, useEffect, useRef, useState } from 'react';
-import './game.scss';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import * as faSolid from '@fortawesome/free-solid-svg-icons'
 import { GameInstance } from './game-instance';
 import { Language } from '../language';
+import { Difficulty, DifficultyLogic, GetDifficultyLogic } from '../difficulty';
 import InputBox from './input-box';
 import Word from './word';
 import shuffle from '../shuffle';
 import ScoreBoard from './scoreboard';
 import EndScreen from './end-screen';
 import Announcement from './announcement';
-import { Difficulty, DifficultyLogic, GetDifficultyLogic } from '../difficulty';
+import './game.scss';
 
 export interface GameReport {
     qualified: boolean;
@@ -302,6 +304,10 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
                     <div className={`Row`}>
                         {chars.map(([c,i],idx) => (<InputBox content={i === null ? c : "_"} key={idx} />))}
                     </div>
+                    { qualified &&
+                        <button className="EndRound" onClick={() => setGameEnd(true)}>
+                            <FontAwesomeIcon icon={faSolid.faForwardFast} />
+                        </button> }
                 </>
             }
             {gameEnd &&
