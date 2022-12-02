@@ -6,15 +6,15 @@
     $input-font-size: 2rem;
     $input-gap: 1rem;
 
-    @include charBox($input-font-size, $input-gap);
-    margin: $input-gap;
-    text-transform: uppercase;
+    @include borderedCharBox($input-font-size, $input-gap);
 
     color: $light-text-color;
-
     background-color: $light-input;
-    border-radius: 10%;
-    border-style: solid;
+
+    margin-bottom: $input-gap;
+    margin-top: $input-gap;
+
+    /* Overwrite values in 'borderedCharBox' for blink on successful guess. */
     border-width: 0.2rem;
     border-color: $light-background;
 }

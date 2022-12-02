@@ -12,18 +12,10 @@
     .Letter {
         $letter-font-size: 1rem;
         $letter-gap: 0.3rem;
-        @include charBox($letter-font-size, $letter-gap);
-        margin: 0 $letter-gap;
-
-        text-transform: uppercase;
+        @include borderedCharBox($letter-font-size, $letter-gap);
 
         color: $light-text-color;
-
-        /* Nice border */
         border-color: $light-text-color;
-        border-style: solid;
-        border-width: 1px;
-        border-radius: 10%;
     }
 
     &.Guessed .Letter {
