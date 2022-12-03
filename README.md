@@ -1,7 +1,7 @@
 # Wordrow
 
 Wordrow is a reimplementation of the classic internet puzzle game [Text
-Twist](texttwist.info) as a static webpage with a modern and sleek design.
+Twist](https://texttwist.info) as a static webpage with a modern and sleek design.
 
 <div align="center">
   <img src="/example.jpg"
