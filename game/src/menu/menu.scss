@@ -17,6 +17,10 @@
         cursor: default;
 
         margin-bottom: 4rem;
+        @media screen and (max-width: $medium-screen-width) {
+            margin-bottom: 2rem;
+        }
+
         width: 100%;
 
         display: flex;
@@ -30,6 +34,18 @@
             $letter-gap: 0.3rem;
             @include borderedCharBox($letter-font-size, $letter-gap);
 
+            $letter-medium-factor: 0.7;
+            @media screen and (max-width: $medium-screen-width) {
+                @include borderedCharBox($letter-medium-factor*$letter-font-size,
+                                         $letter-medium-factor*$letter-gap);
+            }
+
+            $letter-small-factor: 0.5;
+            @media screen and (max-width: $small-screen-width) {
+                @include borderedCharBox($letter-small-factor*$letter-font-size,
+                                         $letter-small-factor*$letter-gap);
+            }
+
             color: $light-text-color;
             border-color: $light-text-color;
         }
@@ -41,6 +57,11 @@
         text-align: center;
         font-size: 2.5rem;
         margin: 1rem 0;
+
+        @media screen and (max-width: $medium-screen-width) {
+            font-size: 1.5rem;
+            margin: 0.5rem 0;
+        }
 
         cursor: default;
 
@@ -66,6 +87,11 @@
         flex-direction: row;
         flex-wrap: nowrap;
 
+        @media screen and (max-width: $small-screen-width) {
+            flex-direction: column;
+            margin: auto;
+        }
+
         justify-content: center;
     }
 
@@ -86,6 +112,7 @@
     /* ---------------------- Dummy --------------------- */
     .Dummy {
         flex: 1;
+        min-height: 2rem;
     }
 }
 

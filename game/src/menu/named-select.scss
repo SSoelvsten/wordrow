@@ -5,10 +5,17 @@
 
     width: max-content;
     min-width: 15rem;
+    @media screen and (max-width: $medium-screen-width) {
+        min-width: 12rem;
+    }
     cursor: pointer;
 
     font-size: 1.5rem;
     font-weight: 400;
+
+    @media screen and (max-width: $medium-screen-width) {
+        font-size: 1rem;
+    }
 
     display: flex;
     flex-direction: row;
@@ -20,6 +27,10 @@
         opacity: $opacity-selected;
         font-size: 2rem;
         font-weight: 600;
+
+        @media screen and (max-width: $medium-screen-width) {
+            font-size: 1.5rem;
+        }
     }
     &:not(.Selected) {
         opacity: $opacity-unselected;
