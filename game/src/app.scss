@@ -15,6 +15,10 @@
         .Button {
             border: none;
             font-size: 1.2rem;
+            @media screen and (max-width: $small-screen-width) {
+                font-size: 1rem;
+            }
+
             background-color: $light-background;
             color: $light-text-color;
             z-index: 999;

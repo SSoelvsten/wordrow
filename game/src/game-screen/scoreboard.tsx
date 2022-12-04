@@ -66,15 +66,15 @@ const ScoreBoard = ({ endTime, gameEnd, language, qualified, round, score, onTim
 
     return (
         <div className="ScoreBoard">
-            { isTimed && 
+            { isTimed &&
                 <div className={`Time ${timeAlarm ? "Alarm" : ""}`}>{formatTimeleft()}</div>
             }
             <div className="RoundNumber">
-                { isTimed && <>|</>}
+                { isTimed && <div className="Bar">|</div>}
                     <FontAwesomeIcon icon={qualified ? faSolid.faFlag : faRegular.faFlag} flip={"horizontal"} />
                     {round}
                     <FontAwesomeIcon icon={qualified ? faSolid.faFlag : faRegular.faFlag} />
-                |
+                <div className="Bar">|</div>
             </div>
             <div className="Score">{Math.round(score).toLocaleString(language, {minimumIntegerDigits: 7 })}</div>
         </div>

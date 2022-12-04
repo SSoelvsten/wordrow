@@ -1,22 +1,40 @@
 @import '../common.scss';
 
 .ScoreBoard {
-    width: 100%;
+    $scoreboard-font-size: 1.2rem;
+    $scoreboard-font-size-large: 1.6rem;
+    $scoreboard-small-factor: 0.8;
+
+    $top-buttons-width: 4rem;
+
+    padding-left: $top-buttons-width;
+    padding-right: $top-buttons-width;
+
+    width: calc(100% - 2*$top-buttons-width);
     flex: 0;
 
     cursor: default;
 
     text-align: center;
-    font-size: 1.2rem;
-    margin-top: 0.2rem;
-    margin-bottom: 0rem;
+    font-size: $scoreboard-font-size;
+    @media screen and (max-width: $small-screen-width) {
+        font-size: $scoreboard-small-factor*$scoreboard-font-size;
+    }
 
-    min-height: 2.5rem;
+    margin-top: 0.2rem;
+
+    min-height: $scoreboard-font-size-large + 0.9rem;
+    @media screen and (max-width: $small-screen-width) {
+        min-height: $scoreboard-small-factor*(2*$scoreboard-font-size + $scoreboard-font-size-large) + 1.5rem;
+    }
 
     color: $light-text-color;
 
     div {
         display: inline-block;
+        @media screen and (max-width: $tiny-screen-width) {
+            display: block;
+        }
 
         &.Time.Alarm {
             @keyframes timeAlarmLight {
@@ -32,16 +50,28 @@
 
         &.RoundNumber {
             margin: 0 0.5rem;
-            font-size: 1.6rem;
+            font-size: $scoreboard-font-size-large;
+            @media screen and (max-width: $small-screen-width) {
+                font-size: $scoreboard-small-factor*$scoreboard-font-size-large;
+            }
 
             /* Font-awesome Icon */
             svg {
                 margin: 0 0.5rem;
 
-                $flag-icon-size: 1.2rem;
+                $flag-icon-size: $scoreboard-font-size;
                 font-size: $flag-icon-size;
+                @media screen and (max-width: $small-screen-width) {
+                    font-size: $scoreboard-small-factor*$flag-icon-size;
+                }
 
                 color: $light-text-color;
+            }
+
+            .Bar {
+                @media screen and (max-width: $tiny-screen-width) {
+                    display: none;
+                }
             }
         }
 

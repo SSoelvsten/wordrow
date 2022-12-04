@@ -221,35 +221,39 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     // ANAGRAMS LAYOUT
 
     const wordLengths: number[] = Array(max_word_length - min_word_length + 1).fill(0).map((_,i) => i + min_word_length);
-    let wordColumns: [string, number][][] = wordLengths.map((word_length, i) => 
+    let wordColumns: [string, number][][] = wordLengths.map((word_length, i) =>
         anagrams.map((w,i) => [w,i] as [string,number]).filter(([w,_]) => w.length === word_length)
     );
 
     // TODO: Respond to changes to the window size:
     //   https://www.pluralsight.com/guides/re-render-react-component-on-window-resize
     //   https://www.tutsmake.com/react-get-window-height-width/
+    const totalWidth = window.innerWidth;
+    const isMedium: boolean = totalWidth < 700;
+    const isSmall: boolean = totalWidth < 450;
+
     const totalHeight = window.innerHeight;
-    const scoreboardHeight = 37;
-    const inputHeight = 2 * 90;
+    const scoreboardHeight = ( isSmall ? 0.8 : 1) * 37;
+    const inputHeight = ( isSmall ? 0.5 : isMedium ? 0.8 : 1) * 2 * 90;
 
     const remainingHeight = totalHeight - scoreboardHeight - inputHeight;
 
-    const wordHeight = 38;
-    const maxColumnSize = remainingHeight / wordHeight
+    const wordHeight = ( isSmall ? 0.6 : isMedium ? 0.8 : 1) * 38;
+    const maxInColumn = remainingHeight / wordHeight
 
-    if (wordColumns.some((c) => c.length > maxColumnSize)) {
+    const wordWidth = ( isSmall ? 0.5 : isMedium ? 0.8 : 1) * 32 * max_word_length;
+    const maxColumns = Math.floor(totalWidth / wordWidth);
+
+    if (wordColumns.some((c) => c.length > maxInColumn) || wordColumns.length > maxColumns) {
         wordColumns = [anagrams.map((w,i) => [w,i] as [string,number])]
     }
     const singleColumn : boolean = wordColumns.length === 1;
-
-    const wordWidth = 32 * max_word_length;
-    const maxColumns = Math.floor(window.innerWidth / wordWidth);
 
     let actualColumns : number = 1;
     let actualColumnSize : number = anagrams.length;
     while (actualColumns < maxColumns) {
         actualColumnSize = Math.ceil(anagrams.length / actualColumns);
-        if (actualColumnSize < maxColumnSize) break;
+        if (actualColumnSize < maxInColumn) break;
         actualColumns += 1;
     }
 

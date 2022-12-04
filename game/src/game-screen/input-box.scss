@@ -8,13 +8,29 @@
     $input-font-size: 2rem;
     $input-gap: 1rem;
 
+    $input-medium-factor: 0.8;
+    $input-small-factor: 0.5;
+
     @include borderedCharBox($input-font-size, $input-gap);
+    @media screen and (max-width: $medium-screen-width) {
+        @include borderedCharBox($input-medium-factor*$input-font-size,
+                                 $input-medium-factor*$input-gap);
+    }
+    @media screen and (max-width: $small-screen-width) {
+        @include borderedCharBox($input-small-factor*$input-font-size,
+                                 $input-small-factor*$input-gap);
+    }
 
     color: $light-text-color;
     background-color: $light-input;
 
+    /* Overwrite values in 'borderedCharBox' for vertical gap */
     margin-bottom: $input-gap;
     margin-top: $input-gap;
+    @media screen and (max-width: $medium-screen-width) {
+        margin-bottom: $input-medium-factor*$input-gap;
+        margin-top: $input-medium-factor*$input-gap;
+    }
 
     /* Overwrite values in 'borderedCharBox' for blink on successful guess. */
     border-width: 0.2rem;
