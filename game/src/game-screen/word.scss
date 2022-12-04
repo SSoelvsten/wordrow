@@ -3,7 +3,10 @@
 .Word {
     flex: 0;
     display: flex;
-    margin: 0.3rem 1rem;
+    margin: 0 1rem;
+    @media screen and (max-width: $small-screen-width) {
+        margin: 0 0.5rem;
+    }
 
     &.Guessed, &.Show {
         cursor: help;
@@ -13,6 +16,21 @@
         $letter-font-size: 1rem;
         $letter-gap: 0.3rem;
         @include borderedCharBox($letter-font-size, $letter-gap);
+        margin-top: $letter-font-size;
+
+        $letter-medium-factor: 0.7;
+        @media screen and (max-width: $medium-screen-width) {
+            @include borderedCharBox($letter-medium-factor*$letter-font-size,
+                                     $letter-medium-factor*$letter-gap);
+            margin-top: $letter-medium-factor*$letter-font-size;
+        }
+
+        $letter-small-factor: 0.5;
+        @media screen and (max-width: $small-screen-width) {
+            @include borderedCharBox($letter-small-factor*$letter-font-size,
+                                     $letter-small-factor*$letter-gap);
+            margin-top: $letter-small-factor*$letter-font-size;
+        }
 
         color: $light-text-color;
         border-color: $light-text-color;
@@ -25,7 +43,7 @@
             /* flash animation when guessed */
             from { background-color: $light-background; }
             to { background-color: $light-good; }
-        }    
+        }
 
         animation-name: WordRevealLight;
         animation-duration: 0.1s;

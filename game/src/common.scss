@@ -20,6 +20,10 @@
     max-width: 100%;
 }
 
+$tiny-screen-width: 25rem;
+$small-screen-width: 32rem;
+$medium-screen-width: 50rem;
+
 $opacity-unselected: 0.5;
 $opacity-hover: 0.8;
 $opacity-selected: 1;
@@ -52,7 +56,7 @@ $firefox--line-height-factor: 1.00;
 }
 
 /* --------     LIGHT MODE COLOURS    -------- */
-  
+
 $light-background: #fafafa;
 $light-text-color:  #111111;
 $light-good: #9acd32; 
