@@ -16,6 +16,13 @@
         opacity: $opacity-selected;
         width: $flag-width;
         max-width: $flag-width;
+
+        $flag-medium-factor: 0.7;
+        @media screen and (max-width: $medium-screen-width) {
+            width: $flag-medium-factor*$flag-width;
+            max-width: $flag-medium-factor*$flag-width;
+        }
+
         border-radius: 5%;
         border: 0.02rem;
         border-color: $light-text-color;
@@ -27,6 +34,11 @@
 
         margin: auto;
         text-align: center;
+
+        font-size: 1rem;
+        @media screen and (max-width: $medium-screen-width) {
+            font-size: 0.7rem;
+        }
     }
 }
 
@@ -45,7 +57,7 @@
         }
         .Index {
             opacity: $opacity-hover;
-        }    
+        }
     }
 }
 

@@ -24,7 +24,7 @@
     margin-top: 0.2rem;
 
     min-height: $scoreboard-font-size-large + 0.9rem;
-    @media screen and (max-width: $small-screen-width) {
+    @media screen and (max-width: $tiny-screen-width) {
         min-height: $scoreboard-small-factor*(2*$scoreboard-font-size + $scoreboard-font-size-large) + 1.5rem;
     }
 
