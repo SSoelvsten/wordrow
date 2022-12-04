@@ -3,6 +3,8 @@
 .EndScreen {
     text-align: center;
 
+    cursor: default;
+
     margin-top: 1rem;
     margin-bottom: 3rem;
 
@@ -23,6 +25,9 @@
         }
         &.hide {
             color: $light-background;
+        }
+        &.show {
+            cursor: pointer;
         }
     }
 }

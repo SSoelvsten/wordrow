@@ -4,7 +4,7 @@ import * as faSolid from '@fortawesome/free-solid-svg-icons'
 import { GameInstance } from './game-instance';
 import { Language } from '../language';
 import { Difficulty, DifficultyLogic, GetDifficultyLogic } from '../difficulty';
-import InputBox from './input-box';
+import { InputButton, InputLetter } from './input';
 import Word from './word';
 import shuffle from '../shuffle';
 import ScoreBoard from './scoreboard';
@@ -114,8 +114,12 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
         setChars(charShuffle(chars));
     }
 
-    const actionDelete = (idx?: number) => {
-        setChars(chars.map(([c,i]) => i === selected_length-1 ? [c,null] : [c,i]));
+    const actionDelete = (idx: number = selected_length - 1) => {
+        if (idx < 0 || selected_length <= idx) return;
+
+        setChars(chars.map(([c,i]) => i === null || i === idx ? [c,null]
+                                    : i < idx                 ? [c,i]
+                                                              : [c,i-1]));
     }
 
     const actionClear = () => {
@@ -187,6 +191,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     }
 
     const actionNextGame = () => {
+        if (!activatePressToContinue) { return; }
         onRequestNextGame({ qualified, score: currScore });
     }
 
@@ -204,7 +209,6 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     // KEY LISTENER
     const onKey = (e: React.KeyboardEvent) => {
         if (gameEnd) {
-            if (!activatePressToContinue) { return; }
             if (e.key === "Enter") { actionNextGame(); }
         } else { // !gameEnd
             switch (e.key) {
@@ -303,10 +307,21 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
             {!gameEnd &&
                 <>
                     <div className={`Row ${guessed.includes(true) ? 'HasGood' : ''}`} key={latestGuessed}>
-                        {selected.map((c,idx) => (<InputBox content={c || " "} key={idx} />))}
+                        <InputButton icon={faSolid.faXmark} onClick={actionClear} />
+                        {selected.map((c,idx) => (
+                            <InputLetter content={c || ""}
+                                         key={idx}
+                                         onClick={() => actionDelete(idx)}
+                            />)
+                        )}
+                        <InputButton icon={faSolid.faCaretRight} onClick={actionSubmit} />
                     </div>
                     <div className={`Row`}>
-                        {chars.map(([c,i],idx) => (<InputBox content={i === null ? c : "_"} key={idx} />))}
+                        {chars.map(([c,i],idx) => (
+                            <InputLetter content={i === null ? c : "_"}
+                                         key={idx}
+                                         onClick={() => { if (i === null) actionType(c); } }
+                            />))}
                     </div>
                 </>
             }
@@ -315,19 +330,17 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
                     <EndScreen language={language}
                                qualified={qualified}
                                score={accScore + currScore}
-                               showContinue={activatePressToContinue} />
+                               showContinue={activatePressToContinue}
+                               onClickContinue={actionNextGame}
+                    />
                 </div>
             }
             {/* Add top-right game-specific buttons (see styling in '../app.scss') */}
             <div className="TopButtons Right">
                 <button className="Button"
-                        disabled={!qualified && !gameEnd}
+                        /*disabled={!qualified && !gameEnd}*/
                         onClick={() => {
-                            setGameEnd(true)
-                            if (gameEnd) {
-                                // If game already had ended
-                                actionNextGame();
-                            }
+                            onRequestNextGame({ qualified, score: currScore });
                         }}
                         >
                     <FontAwesomeIcon icon={faSolid.faForwardStep} />

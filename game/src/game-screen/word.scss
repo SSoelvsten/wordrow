@@ -8,10 +8,17 @@
         margin: 0 0.5rem;
     }
 
+    /* Cursor interaction */
     &.Guessed, &.Show {
         cursor: help;
     }
 
+    opacity: 90%;
+    &.Guessed:hover, &.Show:hover {
+        opacity: 100%;
+    }
+
+    /* Individual Letter styling */
     .Letter {
         $letter-font-size: 1rem;
         $letter-gap: 0.3rem;
@@ -33,7 +40,6 @@
         }
 
         color: $light-text-color;
-        border-color: $light-text-color;
     }
 
     &.Guessed .Letter {
@@ -53,7 +59,6 @@
 .DarkMode .Word {
     .Letter {
         color: $dark-text-color;
-        border-color: $dark-text-color;
     }
 
     &.Guessed .Letter {
