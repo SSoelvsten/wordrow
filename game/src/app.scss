@@ -5,32 +5,40 @@
 
     background-color: $light-background;
 
-    /* Global buttons */
-    button {
-        border: none;
-        cursor: pointer;
-        font-size: 1.2rem;
-        background-color: $light-background;
-        color: $light-text-color;
-        z-index: 999;
+    /* Fixed Buttons */
+    .TopButtons {
+        $button-gap: 0.4rem;
 
-        &:not(:hover) {
-            opacity: 80%;
+        position: fixed;
+        top: $button-gap;
+
+        .Button {
+            border: none;
+            font-size: 1.2rem;
+            background-color: $light-background;
+            color: $light-text-color;
+            z-index: 999;
+
+            &:not(:disabled) {
+                cursor: pointer;
+
+                &:not(:hover) {
+                    opacity: 80%;
+                }
+            }
+            &:disabled {
+                opacity: 20%;
+            }
+
+            margin-right: $button-gap;
         }
-    }
 
-    $button-gap: 0.4rem;
-    
-    .ReturnToMenu {
-        position: fixed;
-        top: $button-gap;
-        left: $button-gap;
-    }
-
-    .ToggleDarkMode {
-        position: fixed;
-        top: $button-gap;
-        right: $button-gap;
+        &.Left {
+            left: $button-gap;
+        }
+        &.Right {
+            right: $button-gap;
+        }
     }
 }
 
@@ -38,8 +46,7 @@
     background-color: $dark-background;
 
     /* Global buttons */
-
-    button {
+    .TopButtons .Button {
         background-color: $dark-background;
         color: $dark-text-color;
     }

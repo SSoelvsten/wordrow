@@ -39,7 +39,7 @@ const App = () => {
       return Language.GB;
     }
   );
-  
+
   const [difficulty, setDifficulty] = useState<Difficulty>(
     () => {
       // Consult local storage for state from previous page
@@ -85,17 +85,16 @@ const App = () => {
                 startGame={() => setInGame(true)} />
         }
         { inGame && language && difficulty &&
-          <>
-            <GameSession difficulty={difficulty} language={language} />
-            <button className="ReturnToMenu" onClick={() => setInGame(false)}>
+          <GameSession difficulty={difficulty} language={language} />
+        }
+        <div className="TopButtons Left">
+          <button className="Button" onClick={() => setInGame(false)} disabled={!inGame}>
               <FontAwesomeIcon icon={darkMode ? faSolid.faCaretLeft : faSolid.faCaretLeft} />
             </button>
-          </>
-        }
-
-        <button className="ToggleDarkMode" onClick={() => setDarkMode(!darkMode)}>
-          <FontAwesomeIcon icon={darkMode ? faSolid.faMoon : faRegular.faMoon} />
-        </button>
+          <button className="Button" onClick={() => setDarkMode(!darkMode)}>
+            <FontAwesomeIcon icon={darkMode ? faSolid.faMoon : faRegular.faMoon} />
+          </button>
+        </div>
       </div>
   );
 }
