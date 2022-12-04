@@ -186,6 +186,10 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
         }
     }
 
+    const actionNextGame = () => {
+        onRequestNextGame({ qualified, score: currScore });
+    }
+
     const onTimeout = () => {
         setGameEnd(true);
     }
@@ -200,12 +204,8 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     // KEY LISTENER
     const onKey = (e: React.KeyboardEvent) => {
         if (gameEnd) {
-            if (!activatePressToContinue) return;
-
-            if (e.key === "Enter") {
-                onRequestNextGame({ qualified, score: currScore });
-            }
-            return;
+            if (!activatePressToContinue) { return; }
+            if (e.key === "Enter") { actionNextGame(); }
         } else { // !gameEnd
             switch (e.key) {
             case " ":         actionShuffle(); break;
@@ -304,10 +304,6 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
                     <div className={`Row`}>
                         {chars.map(([c,i],idx) => (<InputBox content={i === null ? c : "_"} key={idx} />))}
                     </div>
-                    { qualified &&
-                        <button className="EndRound" onClick={() => setGameEnd(true)}>
-                            <FontAwesomeIcon icon={faSolid.faForwardFast} />
-                        </button> }
                 </>
             }
             {gameEnd &&
@@ -318,6 +314,21 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
                                showContinue={activatePressToContinue} />
                 </div>
             }
+            {/* Add top-right game-specific buttons (see styling in '../app.scss') */}
+            <div className="TopButtons Right">
+                <button className="Button"
+                        disabled={!qualified && !gameEnd}
+                        onClick={() => {
+                            setGameEnd(true)
+                            if (gameEnd) {
+                                // If game already had ended
+                                actionNextGame();
+                            }
+                        }}
+                        >
+                    <FontAwesomeIcon icon={faSolid.faForwardStep} />
+                </button>
+            </div>
         </div>
     </>
     );

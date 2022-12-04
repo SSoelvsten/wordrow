@@ -44,29 +44,6 @@
         flex-wrap: nowrap;
         justify-content: center;
     }
-
-    button.EndRound {
-        border: solid;
-        border-width: 0.2rem;
-        border-radius: 10%;
-
-        font-size: 1.5rem;
-        padding: 0.2rem 0.5rem 0.3rem 0.5rem;
-
-        position: fixed;
-        right: 5.2rem;
-        bottom: 5.2rem;
-
-        @keyframes EndRoundReveal {
-            /* flash animation when guessed */
-            0%   { opacity: 0%; }
-            75%  { opacity: 100%; }
-            100%  { opacity: 80%; }
-        }
-
-        animation-name: EndRoundReveal;
-        animation-duration: 0.2s;
-    }
 }
 
 .DarkMode .Game {
