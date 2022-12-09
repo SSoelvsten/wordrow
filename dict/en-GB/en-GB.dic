@@ -1207,7 +1207,6 @@ ampulla
 ampullae
 amputate/D,S,G,n
 amputee/S
-amu
 amuck
 amulet/S
 amuse/R,S,k,L,V,h,D,G
@@ -1820,7 +1819,6 @@ arousal/S
 arouse/S,D,G
 arpeggio/S
 arquebus/S
-arr/S
 arrack/S
 arraign/L,G,D,S
 arrange/L,R,S,D,G,B
@@ -2076,7 +2074,6 @@ athwart
 atilt
 atlantes
 atlas/S
-atm
 atmophile/S
 atoll/S
 atom/Q,s,-,9,8,q,S
@@ -3402,7 +3399,6 @@ biofacies
 biofilm/S
 biofilter/S
 biofuel/S
-biog/S
 biogas
 biogenic
 biograph/S,W,Z,R,w,1
@@ -4481,7 +4477,7 @@ bullocky/S
 bullpen/S
 bullring/S
 bullseye/S
-bullshit/R,S,D,G,!
+bullshit/R,S,D,G
 bullshot/S
 bully/D,G,T,S
 bullyboy/S
@@ -5943,7 +5939,6 @@ cinnabar/S
 cinnamic
 cinnamon/S
 cipher/d,S
-cir
 circa
 circadian
 circle/G,D,S,r
@@ -7496,9 +7491,9 @@ cuneate
 cuneiform/S
 cunjevoi/S
 cunning/T,Y,P
-cunny/S,!
-cunt/S,G,!
-cunty/T,!
+cunny/S
+cunt/S,G
+cunty/T
 cup/D,6,G,S
 cupbearer/S
 cupboard/S
@@ -7804,8 +7799,6 @@ daffy/T,P
 daft/Y,T,P
 dagga
 dagger/d,S
-dago/S,!
-dagoes/!
 dahlia/S
 daily/S,P
 daimio/S
@@ -8208,7 +8201,6 @@ deft/P,T,Y
 defunct
 defuse
 defy/R,S,k,D,G
-deg/S
 degas/J,D,G
 degauss/S,G,D
 degrade/h,k,i
@@ -8236,7 +8228,6 @@ dejected/P
 dejection/S
 deke/S,G,D
 dekko/S
-del
 delate/S,G,D,n
 delator/S
 delay/D
@@ -8405,7 +8396,6 @@ depurate/D,N
 depurator/S
 depute/S,n,Q,8,G,D,Z
 deputy/S
-der
 derail/L
 derange/L
 derby/S
@@ -8606,7 +8596,6 @@ dialogist/S
 dialogue/S,G,D,R
 dialyse/D,G,S,W
 dialysis
-diam/S
 diameter/S,w,1,W
 diamine/S
 diamond/S,D,G
@@ -8825,7 +8814,7 @@ dipluran/S
 dipolar
 dipole/S
 dippy/T
-dipshit/S,!
+dipshit/S
 dipstick/S
 dipteran/S
 dipterous
@@ -10173,7 +10162,6 @@ enamel/G,R,D,J,S
 enamour/D,G,S
 enanthema/S
 enanthic
-enc
 encage/S,G,D
 encamp/D,L,S,G
 encase/G,D,L,S
@@ -10411,6 +10399,7 @@ enzyme/W,S
 enzymic
 eohippus
 eolith/S,W
+eon/S
 eonian
 eonothem/S
 eosin/S
@@ -10545,7 +10534,6 @@ eradicate/V,S,D,G,n
 eras/7,g
 erase/N,D,R,L,S,G
 erasure/S
-erat
 erathem
 erbium/S
 erbocene
@@ -10570,7 +10558,6 @@ ergotism
 erigeron/S
 eristic/S
 erk/S
-erm
 ermine/S,D
 erne/S
 erode/V,D,u,G,x,S,b
@@ -12760,13 +12747,13 @@ fubsy
 fuchsia/S
 fuchsin/S
 fuchsine/S
-fuck/D,R,S,G,J,B,!
-fuckery/S,!
-fuckhead/S,D,!
-fuckload/S,!
-fuckship/!
-fuckwad/S,!
-fuckwit/S,!
+fuck/D,R,S,G,J,B
+fuckery/S
+fuckhead/S,D
+fuckload/S
+fuckship
+fuckwad/S
+fuckwit/S
 fucose/S
 fuddle/G,D,S
 fudge/S,D,G
@@ -15453,7 +15440,7 @@ horsehair/S
 horselike
 horseplay
 horseshed
-horseshit/!
+horseshit
 horseshoe/G,D,S
 horsetail/S
 horsewhip/G,D,S
@@ -16702,7 +16689,6 @@ isatin
 ischaemia/W
 ischia/O
 ischium
-ise
 ish
 isinglass/S
 island/R,S
@@ -17677,6 +17663,7 @@ laicity/S
 laicize/D,G,S
 laid/A,a,c,f
 lain/f,c
+laid
 lair/G,D,S
 lairage/S
 laird/S
@@ -18128,8 +18115,6 @@ lepton/S,W
 leptonium/S
 leptotene/S
 lesbian/S
-lesbigay/S
-lesbo/S
 lesion/G,D,S
 less
 lessee/S
@@ -18185,9 +18170,6 @@ lexicon/S
 lexigram/S
 lexis
 ley/S
-lez/!
-lezzes/!
-lezzie/S,!
 liability/S,A
 liable
 liaise/D,S,G
@@ -18853,7 +18835,7 @@ lunch/S,D,G,R
 luncheon/S
 lunchpack
 lunchtime/S
-lune/N
+lune/N,S
 lunette/S
 lung/D,G,S,6,p,R
 lunge/S
@@ -18973,6 +18955,7 @@ madam/S
 madame/S
 madcap/S
 madden/d,k,S
+made
 made/A,U
 madeleine/S
 madhouse/S
@@ -19020,7 +19003,6 @@ magnon/S
 magnum/S
 magpie/S
 magus
-mah
 maharaja/S
 maharajah/S
 maharanee/S
@@ -19366,7 +19348,6 @@ marvel/G,D,S
 marzipan/S
 mas/r,G,W,D
 masala/S
-masc/S
 mascara/D,G,S
 mascle/S
 mascon/S
@@ -19511,7 +19492,6 @@ mazzard/S
 mbar
 mdse
 me/3,s
-mea
 mead/S
 meadow/S,p
 meadowy
@@ -19938,7 +19918,6 @@ miasmatic/Y
 miasmic/Y
 miaul/D,G,S
 miaulings
-mic/S
 mica/S
 micaceous
 mice
@@ -20230,7 +20209,6 @@ misbelief/S
 misbrand/G,S
 misbuild/S,G
 misbuilt
-misc/b
 miscall/G
 miscarry/D,S
 miscast/G
@@ -21263,7 +21241,6 @@ native/P,S
 nativism/S
 nativist/S,W
 nativity/S
-natl
 natter/d,S
 natty/P,Y,T
 naturae
@@ -21564,7 +21541,6 @@ nigericin/S
 nigerite/S
 niggard/Y,S
 niggardly/P
-nigger/S,!
 niggle/R,G,k,J,D,S,Z
 nigh
 night/p,S,R
@@ -22188,7 +22164,6 @@ odontoid
 odorous/Y,P
 odour/S,p
 odourful
-odt
 odyssey/S
 oecidium
 oedema/S,W
@@ -22286,7 +22261,6 @@ olefin/S,W
 olefine/S
 oleic
 oleograph/S
-oles
 olfaction/S
 olfactive
 olfactory/S
@@ -25063,8 +25037,6 @@ ponytail/S
 poo/S
 pooch/S
 poodle/S
-poof/S
-poofter/S,!
 pooh/S,D,G
 pooja/S
 pooka/S
@@ -25612,7 +25584,6 @@ priori
 priority/Q,8,q,-,s,9,S
 priorship/S
 priory/S
-pris
 prise/F,S,A,G,D
 prism/S,O
 prismatic/Y
@@ -27900,6 +27871,7 @@ rockwork/S
 rocky/T
 rococo
 rod/S,G,D,p
+rode
 rode/c,F
 rodent/S
 rodeo/S
@@ -28054,7 +28026,6 @@ rowlock/S
 royal/3,S,Y
 royalism/S
 royalty/S
-rte
 rub/S,R,G,D
 rubati
 rubato/S
@@ -29373,7 +29344,7 @@ sharpener/S
 sharpish
 sharpness
 sharpy/S
-shat/!
+shat
 shatter/k,S,d
 shave/D,G,S,R,J
 shaven/U
@@ -29491,18 +29462,18 @@ shirty/T,P
 shish
 shisha/S
 shishito/S
-shit/p,D,Z,G,S,R,!
-shitbag/S,!
-shite/S,!
-shitehawk/S,!
-shitface/S,D,!
-shithead/S,!
-shithole/S,!
-shithouse/S,!
-shitload/S,!
-shitstorm/S,!
-shitty/T,!
-shitwork/!
+shit/p,D,Z,G,S,R
+shitbag/S
+shite/S
+shitehawk/S
+shitface/S,D
+shithead/S
+shithole/S
+shithouse/S
+shitload/S
+shitstorm/S
+shitty/T
+shitwork
 shiur
 shiurim
 shiva/S
@@ -30376,7 +30347,7 @@ software
 softwood/S
 softy/S
 soggy/T,Y,P
-soi
+soi/S
 soil/G,D,S
 soiree/S
 sojourn/R,D,G,S
@@ -30766,12 +30737,10 @@ spherule/S
 sphincter/S
 sphingid/S
 sphinx/S
-spic/S
 spica/S
 spicate
 spice/D,G,S,Z
 spicebush/S
-spick/S
 spicule/S
 spicy/T,Y,P
 spider/Z,S
@@ -32555,11 +32524,11 @@ tarantism
 tarantula/S
 tarball/S
 tarboosh/S
-tarbrush/S,!
 tardive
 tardy/T,Y,P
 tardyon/S
 tare/S
+targe
 target/d,S,G,D,p
 tariff/G,D,S
 tarlatan
@@ -33178,7 +33147,6 @@ tieback/S
 tied/U,A
 tier/D
 ties/A,U
-tif/S
 tiff/S
 tiffin/S
 tiger/S
@@ -33654,7 +33622,6 @@ tramway/S
 trance/S
 tranche/S
 trank/S,D
-tranny/S,!
 tranquil/Y
 trans
 transact/x
@@ -35021,7 +34988,6 @@ upbeat/S
 upbraid/D,S,G
 upbuild/S,G
 upbuilt
-upcase/S,D
 upcast/S
 upcoast
 upcoming
@@ -35855,8 +35821,8 @@ wand/S
 wander/J,S,d,r
 wane/S
 wangle/G,D,S
-wank/S,G,D,r,!
-wanky/T,!
+wank/S,G,D,r
+wanky/T
 wanna
 wannabe/S
 wannabee/S
@@ -36266,10 +36232,6 @@ whoopee/S
 whoopsie/S
 whoosh/G,D,S
 whop/R,S,G,D
-whore/S,D,G,!
-whoredom/!
-whoreson/S
-whorish/Y
 whorl/S,D
 whose
 whosever
@@ -36463,7 +36425,6 @@ wobbly/T
 wodge/S
 woe/j,S,6
 woebegone
-wog/S
 woggle/S
 wok/S
 woke
