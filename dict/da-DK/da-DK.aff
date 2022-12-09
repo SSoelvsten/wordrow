@@ -651,7 +651,7 @@ SFX 38 0 eres .
 
 #Sammensætning, ord sidst i sammensætning
 SFX 39 Y 1
-SFX 39 0 /35,34 .
+SFX 39 0 / .
 
 #Adjektiv, dobbeltkonsonant (mm), -st
 SFX 40 Y 5
@@ -2069,6 +2069,3 @@ SFX 85 us er us
 SFX 85 us ers us
 SFX 85 us erne us
 SFX 85 us ernes us
-
-#Foreslå ikke
-NOSUGGEST 86

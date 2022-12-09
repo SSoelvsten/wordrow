@@ -777,7 +777,7 @@ afkøling/10,11,2,39
 afkørsel/64,65,10,39
 aflad/44,10,39
 aflade/1,21,22,79,39
-afladelse/10,39,86
+afladelse/10,39
 afladning/10,11,2,39
 afladsbrev/4,10,5,39
 aflagt/24,10,49,39
@@ -797,7 +797,7 @@ aflejre/1,21,22,79,39
 aflejring/10,11,2,39
 aflevere/1,21,22,79,39
 aflevering/10,11,2,39
-aflide/86
+aflide
 aflider
 aflides
 afled
@@ -1002,7 +1002,7 @@ afsejling/10,11,2,39
 afsende/20,21,22,79,39
 afsendelse/10,11,2,39
 afsender/5,2,10,39
-afsi/1,21,22,79,39,86
+afsi/1,21,22,79,39
 afsides/39
 afsides
 afsige
@@ -1354,7 +1354,6 @@ aftjekke/1,21,22,79,39
 aftjekning/10,11,2,39
 aftjene/20,21,22,79,39
 aftjening/10,11,2,39
-aftne/1,21,22,79,39,86
 aftning/44,10,39
 aftopning/10,11,2,39
 aftoppe/1,21,22,79,39
@@ -3008,7 +3007,6 @@ anulus/10,39
 anuli
 anulorum
 anus/10,39
-ani
 anorum
 anvende/20,21,22,79,39
 anvendelig/10,39,24,23,49
@@ -7228,7 +7226,7 @@ bolsje/10,4,11,39
 bolsjevik/7,10,39
 bolsmand/44,10,39
 bolsmænd/74,10,39
-bolsted/10,4,11,39,86
+bolsted/10,4,11,39
 bolster/10,15,13,39
 bolt/5,2,10,39
 bolte/1,21,22,79,39
@@ -7631,7 +7629,7 @@ bragesnak/58,10,39
 bragt/24,10,49,39
 brahman/10,11,2,39
 brahmansk/28,39
-brahmin/10,11,2,39,86
+brahmin/10,11,2,39
 braille/10,39
 brainstorm/5,2,10,39
 braisere/1,21,22,79,39
@@ -11586,7 +11584,6 @@ docere/1,21,22,79,39
 docetaxel/10,39
 dock/10,11,2,39
 docks
-doctor/10,39,86
 dodder/10,39
 dodekaeder/10,13,4,39
 dodekafoni/44,10,39
@@ -12572,9 +12569,8 @@ dækstol/5,2,10,39
 dækstøj/44,10,39
 dæktryk/10,47,39
 dækvinge/10,11,2,39
-dæleme/86
+dæleme
 dælen/10,39
-dælme/86
 dæmme/1,21,22,79,39
 dæmning/10,11,2,39
 dæmon/10,11,2,39
@@ -13997,7 +13993,6 @@ erodering/10,11,2,39
 erogen/10,38,49,24,39
 eros/10,39
 erosion/10,11,2,39
-erot/10,11,2,39
 erotik/58,10,39
 erotiker/5,2,10,39
 erotisere/1,21,22,79,39
@@ -14574,9 +14569,9 @@ fanatisme/44,10,39
 fanbrev/4,10,5,39
 fancy/39
 fandango/10,11,2,39
-fandeme/86
-fanden/10,39
-fandens/39
+fanden/10
+fandens
+fandeme
 fane/10,11,2,39
 faneblad/4,10,5,39
 fanebærer/5,2,10,39
@@ -14612,7 +14607,6 @@ fangstnet/10,47,39
 fangtråd/5,2,10,39
 fanklub/7,10,39
 fankultur/10,11,2,39
-fanme/86
 fannik/7,10,39
 fanskare/10,11,2,39
 fantasere/1,21,22,79,39
@@ -15858,9 +15852,9 @@ fiskevogn/5,2,10,39
 fiskeyngel/65,10,39
 fiskeøje/10,4,11,39
 fiskeørn/5,2,10,39
-fisse/10,11,2,39,86
-fissekarl/5,2,10,39,86
-fisselette/10,11,2,39,86
+fisse/10,11,2,39
+fissekarl/5,2,10,39
+fisselette/10,11,2,39
 fissil/10,38,49,24,39
 fission/10,11,2,39
 fissur/10,11,2,39
@@ -19444,9 +19438,6 @@ ftalat/10,4,11,39
 ftalat/10,11,2,39
 fuchsia/10,11,2,39
 fuchsier/74,10,39
-fucke/1,21,22,79,39,86
-fuckfinger/14,10,13,39,86
-fucking/39,86
 fuelolie/10,11,2,39
 fuga/10,11,2,39
 fugax
@@ -21166,7 +21157,6 @@ geoteknisk/28,39
 geotermi/44,10,39
 geotermisk/28,39
 gepard/10,11,2,39
-gera/10,39
 geråde/1,21,22,79,39
 geranie/10,11,2,39
 geranium
@@ -31198,7 +31188,7 @@ knejpe/10,11,2,39
 knejse/20,21,22,79,39
 knejse/1,21,22,79,39
 knejsen/10,39
-kneppe/1,21,22,79,39,86
+kneppe/1,21,22,79,39
 knevre/1,21,22,79,39
 knibe/10,11,2,39
 knibe
@@ -31502,7 +31492,7 @@ kokkefag/10,46,4,39
 kokkehue/10,11,2,39
 kokkekniv/5,2,10,39
 kokkepige/10,11,2,39
-kokker/74,10,39,86
+kokker/74,10,39
 kokkerere/1,21,22,79,39
 kokkolit/7,10,39
 kokleare/10,11,2,39
@@ -32346,7 +32336,7 @@ kradsetræ/10,4,11,39
 kradsning/10,11,2,39
 kraft/44,10,39
 kraftben/10,46,4,39
-kraftedeme/86
+kraftedeme
 kraftesløs/10,38,49,24,39
 kraftfelt/10,4,11,39
 kraftfoder/45,10,39
@@ -33196,8 +33186,8 @@ kusine/10,11,2,39
 kusk/5,2,10,39
 kuske/1,21,22,79,39
 kuskeslag/10,46,4,39
-kusse/10,11,2,39,86
-kussetyv/5,2,10,39,86
+kusse/10,11,2,39
+kussetyv/5,2,10,39
 kustode/10,11,2,39
 kustos/44,10,39
 kutan/24,10,49,39
@@ -33219,8 +33209,6 @@ kuwaiter/5,2,10,39
 kuwaitisk/28,39
 kvabbe/10,11,2,39
 kvabset/10,26,39
-kvabso/44,10,39,86
-kvabsøer/74,10,39,86
 kvabtorsk/10,11,2,39
 kvad/10,46,4,39
 kvader/5,2,10,39
@@ -36377,9 +36365,7 @@ løjets
 løjede
 løjedes
 lyv
-læ/39
 læ/45,10,39
-læ/1,21,22,79,39
 læbe/10,11,2,39
 læbeblomst/10,11,2,39
 læbelyd/5,2,10,39
@@ -38384,6 +38370,7 @@ mesterværk/10,4,11,39
 mestiz/10,11,2,39
 mestre/1,21,22,79,39
 mestring/44,10,39
+meta
 metabolisk/28,39
 metabolit/10,3,39
 metacarp/10,11,2,39
@@ -40129,11 +40116,9 @@ møggreb/5,2,10,39
 møghund/5,2,10,39
 møgkedelig/24,10,49,39
 møgsag/10,11,2,39
-møgso/44,10,39,86
 møgspand/5,2,10,39
 møgspreder/5,2,10,39
 møgsvin/10,46,4,39
-møgsøer/74,10,39,86
 møgunge/10,11,2,39
 møje/44,10,39
 møjsom/40,49,10,39,59
@@ -41045,11 +41030,6 @@ neg/10,46,4,39
 negation/10,11,2,39
 negativ/24,10,49,39
 negativ/10,4,11,39
-neger/14,10,13,39
-negere
-negeres
-negerne
-negernes
 negerbolle/10,11,2,39
 negere/1,21,22,79,39
 negering/10,11,2,39
@@ -41364,8 +41344,6 @@ nevet
 nevets
 neven
 nevens
-nevne
-nevnes
 niv
 nivea
 niveau/10,4,11,39
@@ -42434,7 +42412,6 @@ okulerkniv/5,2,10,39
 okulær/24,10,49,39
 ol/10,2,46,39
 olanzapin/45,10,39
-old/10,39
 oldboy/10,39
 oldboys
 oldboyses
@@ -44232,7 +44209,6 @@ ornitologi/44,10,39
 ornitose/44,10,39
 orogenese/10,11,2,39
 oropharynx/10,39
-ort/10,11,2,39
 ortodeoksi/44,10,39
 ortodoks/10,38,49,24,39
 ortodoksi/44,10,39
@@ -44252,9 +44228,6 @@ ossa
 ossium
 os/10,39
 oris
-ora
-orum
-orium
 os/44,10,39
 oscillator/10,11,2,39
 oscillere/1,21,22,79,39
@@ -46663,7 +46636,6 @@ pirring/10,11,2,39
 piruet/7,10,39
 piruette/10,11,2,39
 piruettere/1,21,22,79,39
-pis/10,57,39,86
 pisang/10,11,2,39
 pisgul/24,10,49,39
 pisiformis
@@ -46682,7 +46654,6 @@ piskeris/10,46,4,39
 piskesmæld/10,46,4,39
 piskesnert/10,11,2,39
 piskning/10,11,2,39
-pisse/1,21,22,79,39,86
 pissedyr/24,10,49,39
 pissefuld/24,10,49,39
 pissegod/10,38,49,24,39
@@ -51943,7 +51914,7 @@ satirisere/1,21,22,79,39
 satirisk/28,39
 sativa
 sativus
-satme/86
+satme
 satori/10,39
 satrap/7,10,39
 satrapi/10,4,11,39
@@ -53077,7 +53048,7 @@ sjov/10,39
 sjove/1,21,22,79,39
 sjover/5,2,10,39
 sjuft/10,11,2,39
-sjunge/1,21,22,79,39,86
+sjunge/1,21,22,79,39
 sjus/10,47,39
 sjus/7,10,39
 sjusk/45,10,39
@@ -55244,11 +55215,9 @@ småtrist/24,10,49,39
 småtryk/10,47,39
 småtskåren/12,49,10,39
 småtskåret/10,26,39
-smatso/44,10,39,86
-smatsøer/74,10,39,86
 smatte/1,21,22,79,39
-småtteri/10,4,11,39
 smattet/10,26,39
+småtteri/10,4,11,39
 småture/74,10,39
 småunge/10,11,2,39
 småvildt/45,10,39
@@ -63064,7 +63033,6 @@ trivi/10,11,2,39
 trivial/10,38,49,24,39
 triviel/42,10,49,59,39
 trivsel/65,10,39
-ttro/44,10,39
 tro/24,10,49,39
 tro/1,21,22,79,39
 trods
@@ -66268,7 +66236,7 @@ underskrev
 underskriv
 underskru/45,10,39
 underskud/10,47,39
-underskudt/24,10,49,39,86
+underskudt/24,10,49,39
 underskøn/42,10,49,59,39
 underskørt/10,4,11,39
 underslæb/10,46,4,39
@@ -66970,7 +66938,7 @@ uvan/10,38,49,24,39
 uvane/10,11,2,39
 uvanlig/24,10,49,39
 uvant/24,10,49,39
-uvarieret/10,26,39,86
+uvarieret/10,26,39
 uvarslet/10,26,39
 uvasket/10,26,39
 uvea/10,39
