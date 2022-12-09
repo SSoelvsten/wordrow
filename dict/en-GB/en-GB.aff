@@ -514,8 +514,7 @@ SFX T 0 est [aeio][aeiou][bcdfgklmnprstvz]
 SFX T 0 est [^aeiou][bcdfgklmnprstvz]
 SFX T 0 est [^ebcdfgklmnprstvyz]
 
-SFX R Y 49
-SFX R 0 / .
+SFX R Y 48
 SFX R 0 r e
 SFX R 0 rs e
 SFX R 0 ber [^aeio][aeiou]b
@@ -998,8 +997,7 @@ SFX L y iments [^aeiou]y
 SFX L 0 ments [aeiou]y
 SFX L 0 ments [^my]
 
-SFX Z Y 31
-SFX Z 0 / .
+SFX Z Y 30
 SFX Z ic y dic
 SFX Z e y [^aeiouy]e
 SFX Z 0 y [aeiouy]e
@@ -1191,8 +1189,7 @@ SFX W 0 ic [^aeilmrsy]
 SFX W 0 ic [hmv]er
 SFX W 0 c [dghlmnsz]i
 
-SFX w Y 10
-SFX w 0 / .
+SFX w Y 9
 SFX w e ical e
 SFX w er rical er
 SFX w 0 ical [^e]r
@@ -1203,8 +1200,7 @@ SFX w a ical [^m]a
 SFX w y ical y
 SFX w 0 ical [^aemry]
 
-SFX 1 Y 11
-SFX 1 0 / .
+SFX 1 Y 10
 SFX 1 e ically e
 SFX 1 er rically er
 SFX 1 0 ically [^e]r
