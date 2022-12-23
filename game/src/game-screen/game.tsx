@@ -338,12 +338,15 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
             {/* Add top-right game-specific buttons (see styling in '../app.scss') */}
             <div className="TopButtons Right">
                 <button className="Button"
-                        /*disabled={!qualified && !gameEnd}*/
                         onClick={() => {
-                            onRequestNextGame({ qualified, score: currScore });
+                            if (gameEnd) {
+                                onRequestNextGame({ qualified, score: currScore });
+                            } else {
+                                setGameEnd(true);
+                            }
                         }}
                         >
-                    <FontAwesomeIcon icon={faSolid.faForwardStep} />
+                    <FontAwesomeIcon icon={gameEnd ? faSolid.faForwardStep : faSolid.faForward} />
                 </button>
             </div>
         </div>
