@@ -44,11 +44,14 @@ const Menu = ({ difficulty, setDifficulty, language, setLanguage, startGame } : 
         case "Backspace": break;
         case "Escape":    break;
         case "Enter": {
-            actionStartGame(); 
+            actionStartGame();
             break;
         }
         default:
-            if (parseInt(e.key)) actionLanguage(languages[parseInt(e.key)-1]);
+            const idx : number = parseInt(e.key);
+            if (idx && 0 < idx && idx <= languages.length) {
+                actionLanguage(languages[idx-1]);
+            }
             break;
         }
     }
