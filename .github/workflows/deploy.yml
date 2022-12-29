@@ -25,13 +25,15 @@ jobs:
     # Git repo set up
     - name: Checkout commit
       uses: actions/checkout@v2
+      with:
+        submodules: 'recursive'
 
     # Make
     - name: Make build
       working-directory: ${{github.workspace}}
       run: make
 
-    # Deploy on GitHub Pages if pushed to main
+    # Deploy on GitHub Pages
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@4.1.4
       with:
