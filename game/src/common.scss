@@ -36,6 +36,11 @@ $firefox--line-height-factor: 1.00;
     min-width: $font-size;
     width: $font-size;
     height: $font-size;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
     @supports ( -moz-appearance:none ){
         line-height: $firefox--line-height-factor * $font-size;
     }

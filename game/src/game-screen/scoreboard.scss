@@ -1,6 +1,8 @@
 @import '../common.scss';
 
 .ScoreBoard {
+
+
     $scoreboard-font-size: 1.2rem;
     $scoreboard-font-size-large: 1.6rem;
     $scoreboard-small-factor: 0.8;
@@ -31,6 +33,7 @@
     color: $light-text-color;
 
     div {
+        
         display: inline-block;
         @media screen and (max-width: $tiny-screen-width) {
             display: block;
@@ -77,6 +80,13 @@
 
         &.Score { }
     }
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
 }
 
 .DarkMode .ScoreBoard {
