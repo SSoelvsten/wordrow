@@ -31,6 +31,14 @@ $opacity-selected: 1;
 $line-height-factor: 1.25;
 $firefox--line-height-factor: 1.00;
 
+@mixin not-selectable(){
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
 @mixin charBox($font-size, $padding) {
     font-size: $font-size;
     min-width: $font-size;
@@ -72,10 +80,3 @@ $dark-good: #466900;
 $dark-bad: #d87777;
 $dark-input: #414141;
 
-@mixin not-selectable(){
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
