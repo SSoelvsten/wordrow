@@ -1,7 +1,6 @@
 @import '../common.scss';
 
 .ScoreBoard {
-
     @include not-selectable();
     $scoreboard-font-size: 1.2rem;
     $scoreboard-font-size-large: 1.6rem;
@@ -31,7 +30,6 @@
     }
 
     color: $light-text-color;
-
     div {
         
         display: inline-block;
