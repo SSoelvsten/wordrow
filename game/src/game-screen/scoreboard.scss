@@ -31,7 +31,6 @@
 
     color: $light-text-color;
     div {
-        
         display: inline-block;
         @media screen and (max-width: $tiny-screen-width) {
             display: block;
