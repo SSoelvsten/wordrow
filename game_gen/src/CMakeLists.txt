@@ -1,2 +1,4 @@
-add_executable (main main.cpp)
-target_link_libraries(main anatree)
+add_executable (anagrams anagrams.cpp)
+target_link_libraries(anagrams anatree)
+
+add_executable (hunspell_exploder hunspell_exploder.cpp)

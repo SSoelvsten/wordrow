@@ -36,7 +36,7 @@ build/game_gen:
                               -D CMAKE_C_FLAGS=$(O2_FLAGS) \
                               -D CMAKE_CXX_FLAGS=$(O2_FLAGS) \
                         ..
-	cd game_gen/build/ && make $(MAKE_FLAGS) main
+	cd game_gen/build/ && make $(MAKE_FLAGS) anagrams
 
 # ---------------------------------------------------------------------------- #
 #     Build .json files for the games for the given language.
@@ -48,7 +48,7 @@ build/dict:
 	mkdir -p out/
 	rm -f ./out/*.json
 
-	./game_gen/build/src/main $(MIN) $(MAX) ./dict/$(DICT)/$(DICT).dic ./dict/$(DICT)/$(DICT).aff
+	./game_gen/build/src/anagrams $(MIN) $(MAX) ./dict/$(DICT)/$(DICT).txt
 
 # ---------------------------------------------------------------------------- #
 #     Remove all build files.
