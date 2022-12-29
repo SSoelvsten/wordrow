@@ -36,11 +36,7 @@ $firefox--line-height-factor: 1.00;
     min-width: $font-size;
     width: $font-size;
     height: $font-size;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    @include not-selectable();
     @supports ( -moz-appearance:none ){
         line-height: $firefox--line-height-factor * $font-size;
     }
@@ -75,3 +71,12 @@ $dark-text-color:  #e0e0e0;
 $dark-good: #466900; 
 $dark-bad: #d87777;
 $dark-input: #414141;
+
+
+@mixin not-selectable(){
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

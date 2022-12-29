@@ -2,7 +2,7 @@
 
 .ScoreBoard {
 
-
+    @include not-selectable();
     $scoreboard-font-size: 1.2rem;
     $scoreboard-font-size-large: 1.6rem;
     $scoreboard-small-factor: 0.8;
@@ -80,13 +80,6 @@
 
         &.Score { }
     }
-
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-
 }
 
 .DarkMode .ScoreBoard {
@@ -97,7 +90,6 @@
             from { color: $dark-text-color; }
             to   { color: $dark-bad; }
         }
-
         animation-name: timeAlarmDark;
     }
 
