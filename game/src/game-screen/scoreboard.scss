@@ -1,6 +1,7 @@
 @import '../common.scss';
 
 .ScoreBoard {
+    @include not-selectable();
     $scoreboard-font-size: 1.2rem;
     $scoreboard-font-size-large: 1.6rem;
     $scoreboard-small-factor: 0.8;
@@ -29,7 +30,6 @@
     }
 
     color: $light-text-color;
-
     div {
         display: inline-block;
         @media screen and (max-width: $tiny-screen-width) {
@@ -87,7 +87,6 @@
             from { color: $dark-text-color; }
             to   { color: $dark-bad; }
         }
-
         animation-name: timeAlarmDark;
     }
 
