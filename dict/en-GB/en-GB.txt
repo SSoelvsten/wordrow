@@ -42507,7 +42507,6 @@ horrifying
 horrifyingly
 horror
 horrors
-hors
 horse
 horseback
 horsebacks
@@ -42558,7 +42557,6 @@ hortatory
 hortensia
 hortensias
 hortus
-hos
 hosanna
 hosannaed
 hosannah
@@ -90999,7 +90997,6 @@ torturous
 torulosis
 torus
 toruses
-tos
 tosh
 toss
 tossed
