@@ -36,7 +36,7 @@ const App = () => {
       if (ls_res) { return ls_res as Language; }
 
       // Otherwise, just leave it unchecked
-      return Language.GB;
+      return Language.EN;
     }
   );
 

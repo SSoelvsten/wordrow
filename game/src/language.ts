@@ -1,16 +1,16 @@
 export enum Language {
     DK = "da-DK",
-    GB = "en-GB",
+    EN = "en-US",
 }
 
 export const languages: Language[] = [
-    Language.GB,
+    Language.EN,
     Language.DK
 ];
 
 export const languageName = (l : Language) => {
     switch (l) {
-    case Language.GB: return "British";
+    case Language.EN: return "English";
     case Language.DK: return "Dansk";
     }
 }

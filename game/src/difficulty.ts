@@ -46,7 +46,7 @@ export const GetDifficultyLogic = (d: Difficulty, numberOfChars: number) : Diffi
 }
 
 export const DifficultyName = (d: Difficulty, l: Language | undefined) : string => {
-    if (!l) return DifficultyName(d, Language.GB);
+    if (!l) return DifficultyName(d, Language.EN);
 
     switch(l) {
     case Language.DK:
@@ -56,7 +56,7 @@ export const DifficultyName = (d: Difficulty, l: Language | undefined) : string 
         case Difficulty.TIME_SPRINT:    return "Tidsspurt";
         }
         break;
-    case Language.GB:
+    case Language.EN:
         switch (d) {
         case Difficulty.UNLIMITED_TIME: return "Unlimited Time";
         case Difficulty.TIMED:          return "Timed";
