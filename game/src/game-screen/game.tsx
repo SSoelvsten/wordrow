@@ -267,7 +267,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     let round_text : ReactElement = <></>;
     switch (language) {
     case Language.DK: round_text = <>Runde {round}</>; break;
-    case Language.GB: round_text = <>Round {round}</>; break;
+    case Language.EN: round_text = <>Round {round}</>; break;
     default:
         throw new Error(`Unknown Language: ${language}`);
     }
