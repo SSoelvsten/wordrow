@@ -1,0 +1,57 @@
+{
+  "anagrams": [
+    "ab",
+    "ae",
+    "an",
+    "as",
+    "ba",
+    "be",
+    "ea",
+    "en",
+    "es",
+    "na",
+    "ne",
+    "abs",
+    "ane",
+    "ans",
+    "bae",
+    "ban",
+    "bas",
+    "ben",
+    "bes",
+    "ean",
+    "eas",
+    "ens",
+    "nab",
+    "nae",
+    "nas",
+    "neb",
+    "sab",
+    "sae",
+    "san",
+    "sea",
+    "sen",
+    "anes",
+    "baes",
+    "bane",
+    "bans",
+    "base",
+    "bean",
+    "bens",
+    "eans",
+    "nabe",
+    "nabs",
+    "naes",
+    "nebs",
+    "sabe",
+    "sane",
+    "sean",
+    "sena",
+    "snab",
+    "sneb",
+    "banes",
+    "basen",
+    "beans",
+    "nabes"
+  ]
+}
