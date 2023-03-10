@@ -1,43 +1,55 @@
 {
   "anagrams": [
-    "as",
-    "ay",
-    "ha",
-    "ho",
-    "oh",
-    "os",
-    "oy",
-    "so",
-    "ya",
-    "yo",
-    "ahs",
-    "ash",
-    "ays",
-    "hao",
-    "has",
-    "hay",
-    "hoa",
-    "hos",
-    "hoy",
-    "ohs",
-    "oys",
-    "say",
-    "sho",
-    "shy",
-    "soh",
-    "soy",
-    "yah",
-    "yas",
-    "ahoy",
-    "ashy",
-    "haos",
-    "hays",
-    "hoas",
-    "hoya",
-    "hoys",
-    "shay",
-    "soya",
-    "yahs",
-    "hoyas"
+    "mop",
+    "mos",
+    "mou",
+    "mus",
+    "oms",
+    "ops",
+    "oup",
+    "ous",
+    "pom",
+    "pos",
+    "pus",
+    "som",
+    "sop",
+    "sos",
+    "sou",
+    "sum",
+    "sup",
+    "sus",
+    "ump",
+    "ums",
+    "upo",
+    "ups",
+    "mops",
+    "moss",
+    "moup",
+    "mous",
+    "muso",
+    "muss",
+    "opus",
+    "oups",
+    "poms",
+    "poss",
+    "puss",
+    "soms",
+    "sops",
+    "soum",
+    "soup",
+    "sous",
+    "sumo",
+    "sump",
+    "sums",
+    "sups",
+    "umps",
+    "mopus",
+    "moups",
+    "musos",
+    "soums",
+    "soups",
+    "sumos",
+    "sumps",
+    "possum"
   ]
 }

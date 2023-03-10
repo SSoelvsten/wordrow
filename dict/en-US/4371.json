@@ -1,30 +1,69 @@
 {
   "anagrams": [
-    "or",
-    "os",
-    "ou",
-    "oy",
-    "so",
-    "ur",
-    "us",
-    "yo",
-    "yu",
-    "ors",
-    "our",
-    "ous",
-    "oys",
-    "ryu",
-    "sou",
-    "soy",
-    "sur",
-    "you",
-    "yus",
-    "ours",
-    "rosy",
-    "ryus",
-    "sour",
-    "your",
-    "yous",
-    "yours"
+    "age",
+    "ags",
+    "are",
+    "ars",
+    "ear",
+    "eas",
+    "era",
+    "erg",
+    "err",
+    "ers",
+    "gae",
+    "gar",
+    "gas",
+    "ger",
+    "rag",
+    "ras",
+    "reg",
+    "res",
+    "sae",
+    "sag",
+    "sar",
+    "sea",
+    "seg",
+    "ser",
+    "ager",
+    "ages",
+    "areg",
+    "ares",
+    "arse",
+    "ears",
+    "eras",
+    "ergs",
+    "errs",
+    "gaes",
+    "gare",
+    "gars",
+    "gear",
+    "gers",
+    "rage",
+    "rags",
+    "rare",
+    "rase",
+    "rear",
+    "regs",
+    "sage",
+    "sear",
+    "sera",
+    "serr",
+    "agers",
+    "gares",
+    "garre",
+    "gears",
+    "rager",
+    "rages",
+    "rares",
+    "raser",
+    "rears",
+    "regar",
+    "sager",
+    "sarge",
+    "segar",
+    "serra",
+    "garres",
+    "ragers",
+    "regars"
   ]
 }

@@ -1,37 +1,80 @@
 {
   "anagrams": [
-    "ad",
-    "ag",
-    "an",
-    "da",
-    "do",
-    "go",
-    "na",
-    "no",
-    "od",
-    "on",
-    "ado",
-    "ago",
-    "and",
-    "dag",
-    "dan",
-    "dog",
-    "don",
-    "gad",
-    "gan",
-    "goa",
-    "god",
-    "gon",
-    "nag",
-    "nod",
-    "nog",
-    "oda",
-    "agon",
-    "dang",
-    "dona",
-    "dong",
-    "goad",
-    "donga",
-    "gonad"
+    "amp",
+    "apo",
+    "asp",
+    "cam",
+    "cap",
+    "cop",
+    "cos",
+    "mac",
+    "map",
+    "mas",
+    "moa",
+    "moc",
+    "mop",
+    "mos",
+    "oca",
+    "oma",
+    "oms",
+    "opa",
+    "ops",
+    "pac",
+    "pam",
+    "pas",
+    "poa",
+    "pom",
+    "pos",
+    "sac",
+    "sam",
+    "sap",
+    "sma",
+    "soc",
+    "som",
+    "sop",
+    "spa",
+    "amps",
+    "apos",
+    "apso",
+    "camo",
+    "camp",
+    "cams",
+    "capo",
+    "caps",
+    "coma",
+    "comp",
+    "coms",
+    "cops",
+    "macs",
+    "maps",
+    "moas",
+    "mocs",
+    "mops",
+    "ocas",
+    "omas",
+    "opas",
+    "paco",
+    "pacs",
+    "pams",
+    "poas",
+    "poms",
+    "samp",
+    "scam",
+    "scop",
+    "soap",
+    "soca",
+    "soma",
+    "spam",
+    "camos",
+    "campo",
+    "camps",
+    "capos",
+    "comas",
+    "comps",
+    "pacos",
+    "scamp",
+    "scopa",
+    "campos",
+    "compas"
   ]
 }

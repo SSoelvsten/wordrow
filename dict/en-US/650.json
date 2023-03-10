@@ -1,38 +1,74 @@
 {
   "anagrams": [
-    "ae",
-    "an",
-    "ea",
-    "en",
-    "na",
-    "ne",
-    "pa",
-    "pe",
-    "ace",
-    "ane",
-    "ape",
-    "can",
-    "cap",
-    "cep",
-    "ean",
-    "nae",
-    "nap",
-    "nep",
-    "pac",
-    "pan",
-    "pea",
-    "pec",
-    "pen",
-    "acne",
-    "ance",
-    "cane",
-    "cape",
-    "nape",
-    "neap",
-    "pace",
-    "pane",
-    "pean",
-    "pance",
-    "pecan"
+    "ace",
+    "arc",
+    "are",
+    "ars",
+    "ass",
+    "car",
+    "ear",
+    "eas",
+    "era",
+    "ers",
+    "ess",
+    "ras",
+    "rec",
+    "res",
+    "sac",
+    "sae",
+    "sar",
+    "sea",
+    "sec",
+    "ser",
+    "acer",
+    "aces",
+    "acre",
+    "aesc",
+    "arcs",
+    "ares",
+    "arse",
+    "care",
+    "cars",
+    "case",
+    "ceas",
+    "cess",
+    "ears",
+    "eras",
+    "race",
+    "rase",
+    "recs",
+    "sacs",
+    "sars",
+    "scar",
+    "sear",
+    "seas",
+    "secs",
+    "sera",
+    "sers",
+    "acers",
+    "acres",
+    "arses",
+    "cares",
+    "carse",
+    "cases",
+    "crass",
+    "cress",
+    "escar",
+    "races",
+    "rases",
+    "rasse",
+    "saser",
+    "scare",
+    "scars",
+    "scrae",
+    "sears",
+    "serac",
+    "caress",
+    "carses",
+    "crases",
+    "escars",
+    "scares",
+    "scraes",
+    "seracs"
   ]
 }

@@ -1,55 +1,85 @@
 {
   "anagrams": [
-    "en",
-    "es",
-    "ew",
-    "ne",
-    "no",
-    "oe",
-    "on",
-    "os",
-    "ow",
-    "so",
-    "we",
-    "wo",
-    "ens",
-    "eon",
-    "new",
-    "nos",
-    "now",
-    "oes",
-    "one",
-    "ons",
-    "ose",
-    "owe",
-    "own",
-    "sen",
-    "sew",
-    "son",
-    "sow",
-    "wen",
-    "woe",
-    "won",
-    "wos",
-    "enow",
-    "eons",
-    "news",
-    "noes",
-    "nose",
-    "nows",
-    "ones",
-    "owes",
-    "owns",
-    "owse",
-    "sewn",
-    "snow",
-    "sone",
-    "sown",
-    "wens",
-    "woes",
-    "wons",
-    "enows",
-    "owsen",
-    "sowne"
+    "alp",
+    "als",
+    "apo",
+    "asp",
+    "cal",
+    "cap",
+    "col",
+    "cop",
+    "cos",
+    "lac",
+    "lap",
+    "las",
+    "lop",
+    "los",
+    "oca",
+    "opa",
+    "ops",
+    "pac",
+    "pal",
+    "pas",
+    "poa",
+    "pol",
+    "pos",
+    "sac",
+    "sal",
+    "sap",
+    "soc",
+    "sol",
+    "sop",
+    "spa",
+    "alco",
+    "alps",
+    "also",
+    "apos",
+    "apso",
+    "calo",
+    "calp",
+    "cals",
+    "capo",
+    "caps",
+    "clap",
+    "clop",
+    "coal",
+    "cola",
+    "cols",
+    "cops",
+    "lacs",
+    "laps",
+    "loca",
+    "lops",
+    "ocas",
+    "opal",
+    "opas",
+    "paco",
+    "pacs",
+    "pals",
+    "poas",
+    "pols",
+    "salp",
+    "scop",
+    "slap",
+    "slop",
+    "soap",
+    "soca",
+    "sola",
+    "alcos",
+    "calos",
+    "calps",
+    "capos",
+    "claps",
+    "clasp",
+    "clops",
+    "coals",
+    "colas",
+    "copal",
+    "opals",
+    "pacos",
+    "salop",
+    "scalp",
+    "scopa",
+    "copals"
   ]
 }

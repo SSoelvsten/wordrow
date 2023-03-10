@@ -1,40 +1,78 @@
 {
   "anagrams": [
-    "ae",
-    "al",
-    "as",
-    "ea",
-    "el",
-    "es",
-    "la",
-    "ale",
-    "als",
-    "ass",
-    "eas",
-    "els",
-    "ess",
-    "las",
-    "lea",
-    "les",
-    "sae",
-    "sal",
-    "sea",
-    "sel",
-    "ales",
-    "lase",
-    "lass",
-    "leas",
-    "less",
-    "sale",
-    "sals",
-    "seal",
-    "seas",
-    "sels",
-    "slae",
-    "lases",
-    "sales",
-    "salse",
-    "seals",
-    "slaes"
+    "cis",
+    "cru",
+    "cue",
+    "cur",
+    "ecu",
+    "ers",
+    "ice",
+    "ire",
+    "rec",
+    "rei",
+    "res",
+    "ruc",
+    "rue",
+    "sec",
+    "sei",
+    "ser",
+    "sic",
+    "sir",
+    "sri",
+    "sue",
+    "sui",
+    "sur",
+    "ure",
+    "use",
+    "cire",
+    "cris",
+    "crue",
+    "crus",
+    "cues",
+    "cure",
+    "curs",
+    "ecru",
+    "ecus",
+    "eric",
+    "icer",
+    "ices",
+    "ires",
+    "iure",
+    "recs",
+    "reis",
+    "rice",
+    "rise",
+    "rucs",
+    "rues",
+    "ruse",
+    "scur",
+    "seir",
+    "sice",
+    "sire",
+    "suer",
+    "sure",
+    "ures",
+    "uric",
+    "user",
+    "cires",
+    "cries",
+    "crise",
+    "crues",
+    "cruse",
+    "cures",
+    "curie",
+    "curse",
+    "cursi",
+    "ecrus",
+    "erics",
+    "icers",
+    "rices",
+    "seric",
+    "sieur",
+    "sucre",
+    "ureic",
+    "cruise",
+    "crusie",
+    "curies"
   ]
 }

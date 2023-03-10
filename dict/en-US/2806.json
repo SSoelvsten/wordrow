@@ -1,31 +1,50 @@
 {
   "anagrams": [
-    "ae",
-    "al",
-    "ea",
-    "el",
-    "la",
-    "pa",
-    "pe",
-    "ale",
-    "all",
-    "alp",
-    "ape",
-    "ell",
-    "lap",
-    "lea",
-    "lep",
-    "pal",
-    "pea",
-    "pel",
-    "leal",
-    "leap",
-    "pale",
-    "pall",
-    "peal",
-    "pela",
-    "pell",
-    "plea",
-    "lapel"
+    "ach",
+    "ahs",
+    "arc",
+    "ark",
+    "ars",
+    "ash",
+    "ask",
+    "car",
+    "cha",
+    "has",
+    "kas",
+    "rah",
+    "ras",
+    "sac",
+    "sar",
+    "ska",
+    "arch",
+    "arcs",
+    "arks",
+    "cark",
+    "cars",
+    "cash",
+    "cask",
+    "char",
+    "chas",
+    "hack",
+    "hark",
+    "hask",
+    "ksar",
+    "rach",
+    "rack",
+    "rahs",
+    "rash",
+    "sack",
+    "sark",
+    "scar",
+    "carks",
+    "chark",
+    "chars",
+    "crash",
+    "hacks",
+    "harks",
+    "racks",
+    "shack",
+    "shark",
+    "charks"
   ]
 }

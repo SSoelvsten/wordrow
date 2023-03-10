@@ -1,44 +1,64 @@
 {
   "anagrams": [
-    "de",
-    "do",
-    "ed",
-    "es",
-    "od",
-    "oe",
-    "os",
-    "so",
-    "cod",
-    "cos",
-    "doc",
-    "doe",
-    "dos",
-    "dso",
-    "eco",
-    "eds",
-    "ode",
-    "ods",
-    "oes",
-    "ose",
-    "sec",
-    "sed",
-    "soc",
-    "sod",
-    "code",
-    "cods",
-    "coed",
-    "cose",
-    "deco",
-    "docs",
-    "does",
-    "dose",
-    "ecod",
-    "ecos",
-    "odes",
-    "seco",
-    "codes",
-    "coeds",
-    "cosed",
-    "decos"
+    "aas",
+    "aga",
+    "age",
+    "ags",
+    "ate",
+    "ats",
+    "eas",
+    "eat",
+    "est",
+    "eta",
+    "gae",
+    "gas",
+    "gat",
+    "get",
+    "sae",
+    "sag",
+    "sat",
+    "sea",
+    "seg",
+    "set",
+    "tae",
+    "tag",
+    "tas",
+    "tea",
+    "teg",
+    "tes",
+    "agas",
+    "ages",
+    "asea",
+    "ates",
+    "east",
+    "eats",
+    "etas",
+    "gaes",
+    "gast",
+    "gate",
+    "gats",
+    "geat",
+    "gest",
+    "geta",
+    "gets",
+    "saag",
+    "saga",
+    "sage",
+    "sate",
+    "seat",
+    "seta",
+    "stag",
+    "taes",
+    "tags",
+    "tase",
+    "teas",
+    "tegs",
+    "agast",
+    "agate",
+    "gates",
+    "geats",
+    "getas",
+    "stage",
+    "agates"
   ]
 }

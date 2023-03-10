@@ -1,43 +1,91 @@
 {
   "anagrams": [
-    "an",
-    "ar",
-    "as",
-    "at",
-    "na",
-    "ta",
-    "ans",
-    "ant",
-    "ars",
-    "art",
-    "ats",
-    "nas",
-    "nat",
-    "ran",
-    "ras",
-    "rat",
-    "san",
-    "sar",
-    "sat",
-    "tan",
-    "tar",
-    "tas",
-    "ants",
-    "arts",
-    "nats",
-    "rant",
-    "rast",
-    "rats",
-    "sant",
-    "snar",
-    "star",
-    "tans",
-    "tarn",
-    "tars",
-    "tsar",
-    "rants",
-    "starn",
-    "tarns",
-    "trans"
+    "ace",
+    "ane",
+    "ans",
+    "ape",
+    "asp",
+    "can",
+    "cap",
+    "cep",
+    "ean",
+    "eas",
+    "ens",
+    "nae",
+    "nap",
+    "nas",
+    "nep",
+    "pac",
+    "pan",
+    "pas",
+    "pea",
+    "pec",
+    "pen",
+    "pes",
+    "sac",
+    "sae",
+    "san",
+    "sap",
+    "sea",
+    "sec",
+    "sen",
+    "spa",
+    "aces",
+    "acne",
+    "aesc",
+    "ance",
+    "anes",
+    "apes",
+    "apse",
+    "cane",
+    "cans",
+    "cape",
+    "caps",
+    "case",
+    "ceas",
+    "cens",
+    "ceps",
+    "eans",
+    "naes",
+    "nape",
+    "naps",
+    "neap",
+    "neps",
+    "pace",
+    "pacs",
+    "pane",
+    "pans",
+    "pase",
+    "pean",
+    "peas",
+    "pecs",
+    "pens",
+    "sane",
+    "scan",
+    "sean",
+    "sena",
+    "snap",
+    "spae",
+    "span",
+    "spec",
+    "acnes",
+    "aspen",
+    "canes",
+    "capes",
+    "napes",
+    "neaps",
+    "paces",
+    "pance",
+    "panes",
+    "peans",
+    "pecan",
+    "scape",
+    "scena",
+    "sneap",
+    "space",
+    "spane",
+    "spean",
+    "pances",
+    "pecans"
   ]
 }

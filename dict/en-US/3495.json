@@ -1,33 +1,67 @@
 {
   "anagrams": [
-    "an",
-    "as",
-    "ay",
-    "na",
-    "ny",
-    "ya",
-    "ans",
-    "any",
-    "ays",
-    "can",
-    "cay",
-    "nas",
-    "nay",
-    "nys",
-    "sac",
-    "san",
-    "say",
-    "sny",
-    "syn",
-    "yas",
-    "cans",
-    "cany",
-    "cays",
-    "cyan",
-    "nays",
-    "nyas",
-    "scan",
-    "sync",
-    "cyans"
+    "ens",
+    "est",
+    "ins",
+    "its",
+    "net",
+    "nie",
+    "nis",
+    "nit",
+    "sei",
+    "sen",
+    "set",
+    "sin",
+    "sit",
+    "ten",
+    "tes",
+    "tet",
+    "tie",
+    "tin",
+    "tis",
+    "tit",
+    "ents",
+    "nest",
+    "nets",
+    "nett",
+    "nies",
+    "nite",
+    "nits",
+    "sent",
+    "sett",
+    "sien",
+    "sine",
+    "site",
+    "snit",
+    "sten",
+    "stet",
+    "stie",
+    "tein",
+    "tens",
+    "tent",
+    "test",
+    "tets",
+    "ties",
+    "tine",
+    "tins",
+    "tint",
+    "tite",
+    "tits",
+    "ettin",
+    "inset",
+    "neist",
+    "netts",
+    "nites",
+    "senti",
+    "sient",
+    "stein",
+    "stent",
+    "stint",
+    "teins",
+    "tents",
+    "tines",
+    "tints",
+    "ettins",
+    "sitten"
   ]
 }

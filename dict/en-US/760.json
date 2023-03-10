@@ -1,25 +1,55 @@
 {
   "anagrams": [
-    "lo",
-    "op",
-    "os",
-    "po",
-    "so",
-    "lop",
-    "los",
-    "ops",
-    "pol",
-    "pos",
-    "sol",
-    "sop",
-    "sos",
-    "lops",
-    "loss",
-    "pols",
-    "poss",
-    "slop",
-    "sols",
-    "sops",
-    "slops"
+    "ace",
+    "ado",
+    "ame",
+    "cad",
+    "cam",
+    "cod",
+    "dae",
+    "dam",
+    "doc",
+    "doe",
+    "dom",
+    "eco",
+    "emo",
+    "mac",
+    "mad",
+    "mae",
+    "med",
+    "moa",
+    "moc",
+    "mod",
+    "moe",
+    "oca",
+    "oda",
+    "ode",
+    "oma",
+    "aced",
+    "acme",
+    "cade",
+    "came",
+    "camo",
+    "coda",
+    "code",
+    "coed",
+    "coma",
+    "come",
+    "dace",
+    "dame",
+    "deco",
+    "demo",
+    "dome",
+    "ecad",
+    "ecod",
+    "mace",
+    "made",
+    "mead",
+    "mode",
+    "odea",
+    "cameo",
+    "comae",
+    "maced",
+    "comade"
   ]
 }

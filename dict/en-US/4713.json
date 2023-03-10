@@ -1,42 +1,39 @@
 {
   "anagrams": [
-    "ag",
-    "as",
-    "go",
-    "op",
-    "os",
-    "pa",
-    "po",
-    "so",
-    "ago",
-    "ags",
-    "apo",
-    "asp",
-    "gap",
-    "gas",
-    "goa",
-    "gos",
-    "opa",
-    "ops",
-    "pas",
-    "poa",
-    "pos",
-    "sag",
-    "sap",
-    "sog",
-    "sop",
-    "spa",
-    "apos",
-    "apso",
-    "gapo",
-    "gaps",
-    "gasp",
-    "goas",
-    "opas",
-    "poas",
-    "sago",
-    "soap",
-    "spag",
-    "gapos"
+    "bed",
+    "bes",
+    "bud",
+    "bus",
+    "deb",
+    "dub",
+    "due",
+    "eds",
+    "ess",
+    "sed",
+    "sub",
+    "sud",
+    "sue",
+    "sus",
+    "uds",
+    "use",
+    "beds",
+    "bedu",
+    "buds",
+    "buss",
+    "debs",
+    "deus",
+    "dubs",
+    "dues",
+    "subs",
+    "suds",
+    "sued",
+    "sues",
+    "used",
+    "uses",
+    "bused",
+    "buses",
+    "debus",
+    "sused",
+    "bussed"
   ]
 }

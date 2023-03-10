@@ -1,46 +1,89 @@
 {
   "anagrams": [
-    "ae",
-    "an",
-    "as",
-    "ea",
-    "en",
-    "es",
-    "na",
-    "ne",
-    "ace",
-    "ane",
-    "ans",
-    "can",
-    "ean",
-    "eas",
-    "ens",
-    "nae",
-    "nas",
-    "sac",
-    "sae",
-    "san",
-    "sea",
-    "sec",
-    "sen",
-    "aces",
-    "acne",
-    "aesc",
-    "ance",
-    "anes",
-    "cane",
-    "cans",
-    "case",
-    "ceas",
-    "cens",
-    "eans",
-    "naes",
-    "sane",
-    "scan",
-    "sean",
-    "sena",
-    "acnes",
-    "canes",
-    "scena"
+    "ame",
+    "ane",
+    "ans",
+    "ean",
+    "eas",
+    "een",
+    "eme",
+    "ems",
+    "ene",
+    "ens",
+    "mae",
+    "man",
+    "mas",
+    "mee",
+    "men",
+    "mes",
+    "mna",
+    "nae",
+    "nam",
+    "nas",
+    "nee",
+    "sae",
+    "sam",
+    "san",
+    "sea",
+    "see",
+    "sen",
+    "sma",
+    "amen",
+    "ames",
+    "anes",
+    "eans",
+    "ease",
+    "emes",
+    "enes",
+    "esne",
+    "maes",
+    "mane",
+    "mans",
+    "mase",
+    "mean",
+    "mees",
+    "mene",
+    "mesa",
+    "mese",
+    "mnas",
+    "naes",
+    "name",
+    "nams",
+    "neem",
+    "nema",
+    "same",
+    "sane",
+    "seam",
+    "sean",
+    "seem",
+    "seen",
+    "seme",
+    "sena",
+    "sene",
+    "smee",
+    "snee",
+    "amene",
+    "amens",
+    "enema",
+    "manes",
+    "manse",
+    "meane",
+    "means",
+    "mease",
+    "menes",
+    "mensa",
+    "mense",
+    "mesne",
+    "names",
+    "neems",
+    "nemas",
+    "samen",
+    "seame",
+    "semen",
+    "enemas",
+    "enseam",
+    "meanes",
+    "mensae",
+    "seamen"
   ]
 }

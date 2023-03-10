@@ -1,32 +1,85 @@
 {
   "anagrams": [
-    "es",
-    "pe",
-    "up",
-    "us",
-    "cep",
-    "cue",
-    "cup",
-    "ecu",
-    "pec",
-    "pes",
-    "pus",
-    "sec",
-    "sue",
-    "sup",
-    "ups",
-    "use",
-    "ceps",
-    "cues",
-    "cups",
-    "cusp",
-    "ecus",
-    "pecs",
-    "puce",
-    "scup",
-    "spec",
-    "spue",
-    "supe",
-    "puces"
+    "bed",
+    "bel",
+    "bes",
+    "bod",
+    "bos",
+    "deb",
+    "del",
+    "dob",
+    "doe",
+    "dol",
+    "dos",
+    "dso",
+    "eds",
+    "eld",
+    "els",
+    "led",
+    "les",
+    "lob",
+    "lod",
+    "los",
+    "obe",
+    "obs",
+    "ode",
+    "ods",
+    "oes",
+    "old",
+    "ole",
+    "ose",
+    "sed",
+    "sel",
+    "sob",
+    "sod",
+    "sol",
+    "beds",
+    "bels",
+    "bled",
+    "bode",
+    "bods",
+    "bold",
+    "bole",
+    "debs",
+    "delo",
+    "dels",
+    "dobe",
+    "dobs",
+    "does",
+    "dole",
+    "dols",
+    "dose",
+    "elds",
+    "lobe",
+    "lobs",
+    "lode",
+    "lods",
+    "lose",
+    "obes",
+    "odes",
+    "olde",
+    "olds",
+    "oles",
+    "seld",
+    "sleb",
+    "sled",
+    "slob",
+    "sloe",
+    "sold",
+    "sole",
+    "bodes",
+    "bodle",
+    "bolds",
+    "boles",
+    "delos",
+    "dobes",
+    "doles",
+    "lobed",
+    "lobes",
+    "lodes",
+    "losed",
+    "solde",
+    "soled",
+    "bodles"
   ]
 }

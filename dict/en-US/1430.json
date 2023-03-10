@@ -1,50 +1,61 @@
 {
   "anagrams": [
-    "er",
-    "es",
-    "oe",
-    "or",
-    "os",
-    "ou",
-    "re",
-    "so",
-    "ur",
-    "us",
-    "ers",
-    "oes",
-    "ore",
-    "ors",
-    "ose",
-    "our",
-    "ous",
-    "reo",
-    "res",
-    "roe",
-    "rue",
-    "ser",
-    "sou",
-    "sue",
-    "sur",
-    "ure",
-    "use",
-    "eros",
-    "euro",
-    "ores",
-    "ours",
-    "reos",
-    "roes",
-    "rose",
-    "roue",
-    "rues",
-    "ruse",
-    "sore",
-    "sour",
-    "suer",
-    "sure",
-    "ures",
-    "user",
-    "euros",
-    "roues",
-    "rouse"
+    "cep",
+    "cid",
+    "dei",
+    "dep",
+    "die",
+    "dip",
+    "ice",
+    "ide",
+    "ire",
+    "pec",
+    "ped",
+    "per",
+    "pic",
+    "pie",
+    "pir",
+    "pre",
+    "rec",
+    "red",
+    "rei",
+    "rep",
+    "rid",
+    "rip",
+    "cedi",
+    "cide",
+    "cire",
+    "cred",
+    "crip",
+    "dice",
+    "dire",
+    "drip",
+    "epic",
+    "eric",
+    "iced",
+    "icer",
+    "ired",
+    "pedi",
+    "perc",
+    "peri",
+    "pice",
+    "pied",
+    "pier",
+    "rice",
+    "ride",
+    "ripe",
+    "cider",
+    "cried",
+    "cripe",
+    "dicer",
+    "drice",
+    "price",
+    "pride",
+    "pried",
+    "redip",
+    "riced",
+    "riped",
+    "percid",
+    "priced"
   ]
 }

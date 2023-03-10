@@ -1,35 +1,81 @@
 {
   "anagrams": [
-    "do",
-    "lo",
-    "od",
-    "oo",
-    "os",
-    "so",
-    "dol",
-    "doo",
-    "dos",
-    "dso",
-    "lod",
-    "loo",
-    "los",
-    "ods",
-    "old",
-    "oos",
-    "sod",
-    "sol",
-    "dols",
-    "dool",
-    "doos",
-    "lods",
-    "loos",
-    "odso",
-    "olds",
-    "sold",
-    "solo",
-    "sool",
-    "dolos",
-    "dools",
-    "soldo"
+    "ace",
+    "act",
+    "ame",
+    "arc",
+    "are",
+    "arm",
+    "art",
+    "ate",
+    "cam",
+    "car",
+    "cat",
+    "ear",
+    "eat",
+    "era",
+    "erm",
+    "eta",
+    "mac",
+    "mae",
+    "mar",
+    "mat",
+    "met",
+    "ram",
+    "rat",
+    "rec",
+    "rem",
+    "ret",
+    "tae",
+    "tam",
+    "tar",
+    "tea",
+    "tec",
+    "acer",
+    "acme",
+    "acre",
+    "aret",
+    "came",
+    "care",
+    "cart",
+    "cate",
+    "cert",
+    "cram",
+    "crem",
+    "mace",
+    "marc",
+    "mare",
+    "mart",
+    "mate",
+    "meat",
+    "merc",
+    "meta",
+    "race",
+    "rate",
+    "ream",
+    "tace",
+    "tame",
+    "tare",
+    "team",
+    "tear",
+    "term",
+    "tram",
+    "trem",
+    "armet",
+    "caret",
+    "carte",
+    "cater",
+    "crame",
+    "crate",
+    "cream",
+    "macer",
+    "mater",
+    "ramet",
+    "react",
+    "recta",
+    "tamer",
+    "trace",
+    "trema",
+    "mercat"
   ]
 }

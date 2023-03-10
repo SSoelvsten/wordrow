@@ -1,35 +1,63 @@
 {
   "anagrams": [
-    "ab",
-    "am",
-    "ba",
-    "bo",
-    "ha",
-    "ho",
-    "ma",
-    "mo",
-    "ob",
-    "oh",
-    "om",
-    "bam",
-    "bao",
-    "boa",
-    "boh",
-    "ham",
-    "hao",
-    "hoa",
-    "hob",
-    "hom",
-    "mho",
-    "moa",
-    "mob",
-    "oba",
-    "ohm",
-    "oma",
-    "ambo",
-    "boma",
-    "homa",
-    "abmho",
-    "abohm"
+    "ame",
+    "ane",
+    "bae",
+    "bam",
+    "ban",
+    "bao",
+    "ben",
+    "boa",
+    "bon",
+    "ean",
+    "emo",
+    "eon",
+    "mae",
+    "man",
+    "men",
+    "mna",
+    "moa",
+    "mob",
+    "moe",
+    "mon",
+    "nab",
+    "nae",
+    "nam",
+    "neb",
+    "nob",
+    "nom",
+    "oba",
+    "obe",
+    "oma",
+    "one",
+    "aeon",
+    "ambo",
+    "amen",
+    "bane",
+    "beam",
+    "bean",
+    "bema",
+    "boma",
+    "bona",
+    "bone",
+    "ebon",
+    "eoan",
+    "mabe",
+    "mane",
+    "mano",
+    "mean",
+    "meno",
+    "moan",
+    "mobe",
+    "mona",
+    "nabe",
+    "name",
+    "nema",
+    "noma",
+    "nome",
+    "omen",
+    "beano",
+    "maneb",
+    "bemoan"
   ]
 }

@@ -1,35 +1,87 @@
 {
   "anagrams": [
-    "ai",
-    "as",
-    "at",
-    "is",
-    "it",
-    "si",
-    "ta",
-    "ti",
-    "ais",
-    "ait",
-    "ats",
-    "att",
-    "ita",
-    "its",
-    "sai",
-    "sat",
-    "sit",
-    "tai",
-    "tas",
-    "tat",
-    "tis",
-    "tit",
-    "aits",
-    "itas",
-    "sati",
-    "stat",
-    "tais",
-    "tait",
-    "tats",
-    "tits",
-    "taits"
+    "act",
+    "ats",
+    "cam",
+    "cat",
+    "cos",
+    "cot",
+    "mac",
+    "mas",
+    "mat",
+    "moa",
+    "moc",
+    "mos",
+    "mot",
+    "oat",
+    "oca",
+    "oma",
+    "oms",
+    "sac",
+    "sam",
+    "sat",
+    "sma",
+    "soc",
+    "som",
+    "sot",
+    "tam",
+    "tao",
+    "tas",
+    "toc",
+    "tom",
+    "acts",
+    "atoc",
+    "atom",
+    "camo",
+    "cams",
+    "cast",
+    "cats",
+    "coat",
+    "coma",
+    "coms",
+    "cost",
+    "cots",
+    "macs",
+    "mast",
+    "mats",
+    "moas",
+    "moat",
+    "mocs",
+    "most",
+    "mots",
+    "oast",
+    "oats",
+    "ocas",
+    "octa",
+    "omas",
+    "scam",
+    "scat",
+    "scot",
+    "soca",
+    "soma",
+    "stoa",
+    "taco",
+    "tams",
+    "taos",
+    "tocs",
+    "toms",
+    "tosa",
+    "ascot",
+    "atmos",
+    "atocs",
+    "atoms",
+    "camos",
+    "coast",
+    "coats",
+    "comas",
+    "costa",
+    "moats",
+    "octas",
+    "stoma",
+    "tacos",
+    "comsat",
+    "mascot",
+    "satcom",
+    "scamto"
   ]
 }

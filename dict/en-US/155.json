@@ -1,32 +1,106 @@
 {
   "anagrams": [
-    "en",
-    "es",
-    "et",
-    "ne",
-    "te",
-    "ens",
-    "est",
-    "net",
-    "sen",
-    "set",
-    "ten",
-    "tes",
-    "tet",
-    "ents",
-    "nest",
-    "nets",
-    "nett",
-    "sent",
-    "sett",
-    "sten",
-    "stet",
-    "tens",
-    "tent",
-    "test",
-    "tets",
-    "netts",
-    "stent",
-    "tents"
+    "ale",
+    "als",
+    "alt",
+    "ass",
+    "ate",
+    "ats",
+    "eas",
+    "eat",
+    "els",
+    "elt",
+    "ess",
+    "est",
+    "eta",
+    "las",
+    "lat",
+    "lea",
+    "les",
+    "let",
+    "sae",
+    "sal",
+    "sat",
+    "sea",
+    "sel",
+    "set",
+    "tae",
+    "tas",
+    "tea",
+    "tel",
+    "tes",
+    "ales",
+    "alts",
+    "ates",
+    "east",
+    "eats",
+    "elts",
+    "ests",
+    "etas",
+    "lase",
+    "lass",
+    "last",
+    "late",
+    "lats",
+    "leas",
+    "leat",
+    "less",
+    "lest",
+    "lets",
+    "sale",
+    "sals",
+    "salt",
+    "sate",
+    "seal",
+    "seas",
+    "seat",
+    "sels",
+    "seta",
+    "sets",
+    "slae",
+    "slat",
+    "tael",
+    "taes",
+    "tale",
+    "tase",
+    "tass",
+    "teal",
+    "teas",
+    "tela",
+    "tels",
+    "asset",
+    "easts",
+    "lases",
+    "lasts",
+    "least",
+    "leats",
+    "lests",
+    "sales",
+    "salet",
+    "salse",
+    "salts",
+    "sates",
+    "seals",
+    "seats",
+    "setal",
+    "slaes",
+    "slate",
+    "slats",
+    "stale",
+    "steal",
+    "stela",
+    "taels",
+    "tales",
+    "tases",
+    "tasse",
+    "teals",
+    "tesla",
+    "leasts",
+    "salets",
+    "slates",
+    "stales",
+    "steals",
+    "tassel",
+    "teslas"
   ]
 }

@@ -1,45 +1,56 @@
 {
   "anagrams": [
-    "ab",
-    "ae",
-    "at",
-    "ba",
-    "be",
-    "ea",
-    "eh",
-    "et",
-    "ha",
-    "he",
-    "ta",
-    "te",
-    "ate",
-    "bae",
-    "bat",
-    "bet",
-    "eat",
-    "eta",
-    "eth",
-    "hae",
-    "hat",
-    "het",
-    "tab",
-    "tae",
-    "tea",
-    "the",
-    "abet",
-    "baht",
-    "bate",
-    "bath",
-    "beat",
-    "beta",
-    "beth",
-    "bhat",
-    "eath",
-    "haet",
-    "hate",
-    "heat",
-    "thae",
-    "bathe",
-    "beath"
+    "cis",
+    "cop",
+    "cor",
+    "cos",
+    "ios",
+    "iso",
+    "ois",
+    "ops",
+    "orc",
+    "ors",
+    "pic",
+    "pir",
+    "pis",
+    "poi",
+    "pos",
+    "pro",
+    "psi",
+    "rip",
+    "roc",
+    "sic",
+    "sip",
+    "sir",
+    "soc",
+    "sop",
+    "sri",
+    "coir",
+    "cops",
+    "cors",
+    "crip",
+    "cris",
+    "crop",
+    "orcs",
+    "pics",
+    "pirs",
+    "piso",
+    "pois",
+    "pros",
+    "rips",
+    "risp",
+    "rocs",
+    "scop",
+    "sori",
+    "coirs",
+    "corps",
+    "crios",
+    "crips",
+    "crisp",
+    "crops",
+    "pisco",
+    "scrip",
+    "siroc",
+    "psoric"
   ]
 }

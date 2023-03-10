@@ -1,40 +1,115 @@
 {
   "anagrams": [
-    "ad",
-    "an",
-    "as",
-    "da",
-    "na",
-    "ads",
-    "and",
-    "ans",
-    "awn",
-    "dan",
-    "das",
-    "daw",
-    "nas",
-    "naw",
-    "sad",
-    "san",
-    "saw",
-    "wad",
-    "wan",
-    "was",
-    "ands",
-    "awns",
-    "dans",
-    "dawn",
-    "daws",
-    "nads",
-    "sand",
-    "sawn",
-    "snaw",
-    "swad",
-    "swan",
-    "wads",
-    "wand",
-    "wans",
-    "dawns",
-    "wands"
+    "abs",
+    "ads",
+    "arb",
+    "ard",
+    "are",
+    "ars",
+    "bad",
+    "bae",
+    "bar",
+    "bas",
+    "bed",
+    "bes",
+    "bra",
+    "dab",
+    "dae",
+    "das",
+    "deb",
+    "ear",
+    "eas",
+    "eds",
+    "era",
+    "ers",
+    "rad",
+    "ras",
+    "reb",
+    "red",
+    "res",
+    "sab",
+    "sad",
+    "sae",
+    "sar",
+    "sea",
+    "sed",
+    "ser",
+    "abed",
+    "aber",
+    "arbs",
+    "ards",
+    "ared",
+    "ares",
+    "arse",
+    "bade",
+    "bads",
+    "baes",
+    "bard",
+    "bare",
+    "bars",
+    "base",
+    "bead",
+    "bear",
+    "beds",
+    "brad",
+    "brae",
+    "bras",
+    "bred",
+    "dabs",
+    "daes",
+    "darb",
+    "dare",
+    "dear",
+    "debs",
+    "drab",
+    "eard",
+    "ears",
+    "eras",
+    "rade",
+    "rads",
+    "rase",
+    "read",
+    "rebs",
+    "reds",
+    "sabe",
+    "sade",
+    "sard",
+    "sear",
+    "sera",
+    "abers",
+    "ardeb",
+    "arsed",
+    "barde",
+    "bards",
+    "bared",
+    "bares",
+    "based",
+    "baser",
+    "beads",
+    "beard",
+    "bears",
+    "brads",
+    "braes",
+    "bread",
+    "breds",
+    "darbs",
+    "dares",
+    "dears",
+    "debar",
+    "drabs",
+    "eards",
+    "rased",
+    "reads",
+    "sabed",
+    "saber",
+    "sabre",
+    "sared",
+    "ardebs",
+    "bardes",
+    "beards",
+    "breads",
+    "debars",
+    "sabred",
+    "serdab"
   ]
 }

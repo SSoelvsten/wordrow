@@ -1,29 +1,89 @@
 {
   "anagrams": [
-    "em",
-    "es",
-    "is",
-    "me",
-    "mi",
-    "si",
-    "ems",
-    "ess",
-    "ism",
-    "mes",
-    "mis",
-    "sei",
-    "sim",
-    "sis",
-    "isms",
-    "mess",
-    "mise",
-    "miss",
-    "seis",
-    "semi",
-    "sies",
-    "sims",
-    "mises",
-    "seism",
-    "semis"
+    "ace",
+    "act",
+    "ake",
+    "ask",
+    "ate",
+    "ats",
+    "cat",
+    "eas",
+    "eat",
+    "est",
+    "eta",
+    "kae",
+    "kas",
+    "kat",
+    "kea",
+    "ket",
+    "sac",
+    "sae",
+    "sat",
+    "sea",
+    "sec",
+    "set",
+    "ska",
+    "tae",
+    "tak",
+    "tas",
+    "tea",
+    "tec",
+    "tes",
+    "aces",
+    "acts",
+    "aesc",
+    "akes",
+    "ates",
+    "cake",
+    "case",
+    "cask",
+    "cast",
+    "cate",
+    "cats",
+    "ceas",
+    "east",
+    "eats",
+    "etas",
+    "kaes",
+    "kats",
+    "keas",
+    "kest",
+    "keta",
+    "kets",
+    "sack",
+    "sake",
+    "sate",
+    "scat",
+    "seat",
+    "sect",
+    "sekt",
+    "seta",
+    "skat",
+    "sket",
+    "tace",
+    "tack",
+    "taes",
+    "take",
+    "taks",
+    "tase",
+    "task",
+    "teak",
+    "teas",
+    "tecs",
+    "cakes",
+    "caste",
+    "cates",
+    "cesta",
+    "ketas",
+    "sceat",
+    "skate",
+    "stack",
+    "stake",
+    "steak",
+    "taces",
+    "tacks",
+    "takes",
+    "teaks",
+    "casket"
   ]
 }

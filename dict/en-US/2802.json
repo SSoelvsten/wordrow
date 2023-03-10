@@ -1,29 +1,49 @@
 {
   "anagrams": [
-    "ab",
-    "al",
-    "ar",
-    "ba",
-    "la",
-    "ur",
-    "alb",
-    "alu",
-    "arb",
-    "bal",
-    "bar",
-    "bra",
-    "bru",
-    "bur",
-    "lab",
-    "lar",
-    "lur",
-    "rub",
-    "urb",
-    "balu",
-    "baur",
-    "blur",
-    "bura",
-    "burl",
-    "lubra"
+    "eel",
+    "elm",
+    "els",
+    "eme",
+    "ems",
+    "gee",
+    "gel",
+    "gem",
+    "lee",
+    "leg",
+    "les",
+    "mee",
+    "meg",
+    "mel",
+    "mes",
+    "see",
+    "seg",
+    "sel",
+    "eels",
+    "elms",
+    "else",
+    "emes",
+    "gees",
+    "gels",
+    "gems",
+    "glee",
+    "lees",
+    "legs",
+    "leme",
+    "mees",
+    "megs",
+    "mels",
+    "mese",
+    "seel",
+    "seem",
+    "sele",
+    "seme",
+    "slee",
+    "smee",
+    "gemel",
+    "glees",
+    "leges",
+    "lemes",
+    "mesel",
+    "gemels"
   ]
 }

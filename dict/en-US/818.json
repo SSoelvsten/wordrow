@@ -1,36 +1,25 @@
 {
   "anagrams": [
-    "is",
-    "it",
-    "li",
-    "pi",
-    "si",
-    "ti",
-    "its",
-    "lip",
-    "lis",
-    "lit",
-    "pis",
-    "pit",
-    "psi",
-    "sip",
-    "sit",
-    "til",
-    "tip",
-    "tis",
-    "lips",
-    "lisp",
-    "list",
-    "lits",
-    "pits",
-    "silt",
-    "slip",
-    "slit",
-    "spit",
-    "tils",
-    "tips",
-    "slipt",
-    "spilt",
-    "split"
+    "add",
+    "ave",
+    "dad",
+    "dae",
+    "dee",
+    "dev",
+    "eve",
+    "vae",
+    "vee",
+    "dead",
+    "deed",
+    "deev",
+    "deva",
+    "eave",
+    "vade",
+    "deave",
+    "eaved",
+    "evade",
+    "vaded",
+    "deaved",
+    "evaded"
   ]
 }

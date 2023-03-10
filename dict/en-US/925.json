@@ -1,34 +1,103 @@
 {
   "anagrams": [
-    "er",
-    "pe",
-    "pi",
-    "re",
-    "cep",
-    "ice",
-    "ire",
-    "pec",
-    "per",
-    "pic",
-    "pie",
-    "pir",
-    "pre",
-    "rec",
-    "rei",
-    "rep",
-    "rip",
-    "cire",
-    "crip",
-    "epic",
-    "eric",
-    "icer",
-    "perc",
-    "peri",
-    "pice",
-    "pier",
-    "rice",
-    "ripe",
-    "cripe",
-    "price"
+    "ads",
+    "ard",
+    "are",
+    "ars",
+    "aue",
+    "dae",
+    "das",
+    "due",
+    "ear",
+    "eas",
+    "eau",
+    "eds",
+    "era",
+    "ers",
+    "rad",
+    "ras",
+    "red",
+    "res",
+    "rud",
+    "rue",
+    "sad",
+    "sae",
+    "sar",
+    "sau",
+    "sea",
+    "sed",
+    "ser",
+    "sud",
+    "sue",
+    "sur",
+    "uds",
+    "urd",
+    "ure",
+    "use",
+    "ards",
+    "ared",
+    "ares",
+    "arse",
+    "daes",
+    "dare",
+    "daur",
+    "dear",
+    "deus",
+    "duar",
+    "dues",
+    "dura",
+    "dure",
+    "eard",
+    "ears",
+    "eaus",
+    "eras",
+    "rade",
+    "rads",
+    "rase",
+    "read",
+    "reds",
+    "rude",
+    "ruds",
+    "rued",
+    "rues",
+    "rusa",
+    "ruse",
+    "sade",
+    "sard",
+    "sear",
+    "sera",
+    "sued",
+    "suer",
+    "sura",
+    "surd",
+    "sure",
+    "urde",
+    "urds",
+    "urea",
+    "ures",
+    "ursa",
+    "used",
+    "user",
+    "arsed",
+    "aures",
+    "dares",
+    "daurs",
+    "dears",
+    "druse",
+    "duars",
+    "duras",
+    "dures",
+    "eards",
+    "rased",
+    "reads",
+    "rudas",
+    "rudes",
+    "rueda",
+    "sared",
+    "sured",
+    "urase",
+    "ureas",
+    "ursae",
+    "ruedas"
   ]
 }

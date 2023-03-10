@@ -1,51 +1,29 @@
 {
   "anagrams": [
-    "ae",
-    "am",
-    "as",
-    "ea",
-    "em",
-    "es",
-    "ma",
-    "me",
-    "mu",
-    "um",
-    "us",
-    "ame",
-    "amu",
-    "aue",
-    "eas",
-    "eau",
-    "ems",
-    "emu",
-    "mae",
-    "mas",
-    "mes",
-    "meu",
-    "mus",
-    "sae",
-    "sam",
-    "sau",
-    "sea",
-    "sma",
-    "sue",
-    "sum",
-    "ume",
-    "ums",
-    "use",
-    "ames",
-    "amus",
-    "eaus",
-    "emus",
-    "maes",
-    "mase",
-    "masu",
-    "mesa",
-    "meus",
-    "muse",
-    "same",
-    "seam",
-    "umes",
-    "amuse"
+    "deg",
+    "dey",
+    "dry",
+    "dye",
+    "egg",
+    "erg",
+    "ged",
+    "ger",
+    "gey",
+    "red",
+    "reg",
+    "rye",
+    "yer",
+    "dreg",
+    "drey",
+    "dyer",
+    "edgy",
+    "eggy",
+    "grey",
+    "gyre",
+    "yegg",
+    "yerd",
+    "gryde",
+    "gyred",
+    "dreggy"
   ]
 }

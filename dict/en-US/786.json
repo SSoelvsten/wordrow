@@ -1,37 +1,77 @@
 {
   "anagrams": [
-    "ad",
-    "am",
-    "ar",
-    "da",
-    "ma",
-    "mu",
-    "um",
-    "ur",
-    "amu",
-    "ard",
-    "arm",
-    "dam",
-    "dum",
-    "mad",
-    "mar",
-    "mud",
-    "rad",
-    "ram",
-    "rud",
-    "rum",
-    "urd",
-    "arum",
-    "daur",
-    "dram",
-    "drum",
-    "duar",
-    "duma",
-    "dura",
-    "mard",
-    "maud",
-    "mura",
-    "umra",
-    "mudra"
+    "ace",
+    "aim",
+    "ais",
+    "ame",
+    "ami",
+    "cam",
+    "cis",
+    "eas",
+    "ems",
+    "ice",
+    "ism",
+    "mac",
+    "mae",
+    "mas",
+    "mes",
+    "mic",
+    "mis",
+    "sac",
+    "sae",
+    "sai",
+    "sam",
+    "sea",
+    "sec",
+    "sei",
+    "sic",
+    "sim",
+    "sma",
+    "aces",
+    "acme",
+    "aesc",
+    "aims",
+    "ames",
+    "amie",
+    "amis",
+    "asci",
+    "came",
+    "cami",
+    "cams",
+    "case",
+    "ceas",
+    "emic",
+    "ices",
+    "mace",
+    "macs",
+    "maes",
+    "mase",
+    "mesa",
+    "mica",
+    "mice",
+    "mics",
+    "mise",
+    "saic",
+    "saim",
+    "same",
+    "scam",
+    "seam",
+    "semi",
+    "sice",
+    "sima",
+    "acmes",
+    "amice",
+    "amies",
+    "cames",
+    "camis",
+    "emacs",
+    "emics",
+    "maces",
+    "maise",
+    "mesic",
+    "micas",
+    "saice",
+    "amices",
+    "camise"
   ]
 }

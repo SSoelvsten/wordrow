@@ -1,33 +1,104 @@
 {
   "anagrams": [
-    "em",
-    "et",
-    "go",
-    "me",
-    "mo",
-    "oe",
-    "om",
-    "te",
-    "to",
-    "ego",
-    "emo",
-    "gem",
-    "geo",
-    "get",
-    "goe",
-    "got",
-    "meg",
-    "met",
-    "moe",
-    "mog",
-    "mot",
-    "teg",
-    "toe",
-    "tog",
-    "tom",
-    "mote",
-    "toge",
-    "tome",
-    "gemot"
+    "ace",
+    "air",
+    "ais",
+    "arc",
+    "are",
+    "ars",
+    "car",
+    "cis",
+    "ear",
+    "eas",
+    "era",
+    "ers",
+    "ice",
+    "ire",
+    "rai",
+    "ras",
+    "rec",
+    "rei",
+    "res",
+    "ria",
+    "sac",
+    "sae",
+    "sai",
+    "sar",
+    "sea",
+    "sec",
+    "sei",
+    "ser",
+    "sic",
+    "sir",
+    "sri",
+    "acer",
+    "aces",
+    "acre",
+    "aesc",
+    "airs",
+    "arcs",
+    "ares",
+    "aris",
+    "arse",
+    "asci",
+    "care",
+    "cars",
+    "case",
+    "ceas",
+    "cire",
+    "cria",
+    "cris",
+    "ears",
+    "eras",
+    "eric",
+    "icer",
+    "ices",
+    "ires",
+    "race",
+    "rais",
+    "rase",
+    "recs",
+    "reis",
+    "rias",
+    "rice",
+    "rise",
+    "saic",
+    "sair",
+    "sari",
+    "scar",
+    "sear",
+    "seir",
+    "sera",
+    "sice",
+    "sire",
+    "acers",
+    "acres",
+    "aesir",
+    "areic",
+    "arise",
+    "cares",
+    "carse",
+    "ceria",
+    "cires",
+    "crias",
+    "cries",
+    "crise",
+    "erica",
+    "erics",
+    "escar",
+    "icers",
+    "races",
+    "raise",
+    "reais",
+    "rices",
+    "saice",
+    "scare",
+    "scrae",
+    "serac",
+    "serai",
+    "seric",
+    "caries",
+    "cerias",
+    "ericas"
   ]
 }

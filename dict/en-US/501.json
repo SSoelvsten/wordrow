@@ -1,37 +1,60 @@
 {
   "anagrams": [
-    "gi",
-    "go",
-    "in",
-    "io",
-    "no",
-    "oi",
-    "on",
-    "or",
-    "gin",
-    "gio",
-    "gon",
-    "gor",
-    "ing",
-    "ion",
-    "nog",
-    "nor",
-    "org",
-    "rig",
-    "rin",
-    "girn",
-    "giro",
-    "gori",
-    "grin",
-    "ingo",
-    "inro",
-    "iron",
-    "noir",
-    "nori",
-    "ring",
-    "roin",
-    "rong",
-    "giron",
-    "groin"
+    "ace",
+    "ape",
+    "asp",
+    "ass",
+    "cap",
+    "cep",
+    "eas",
+    "ess",
+    "pac",
+    "pas",
+    "pea",
+    "pec",
+    "pes",
+    "sac",
+    "sae",
+    "sap",
+    "sea",
+    "sec",
+    "spa",
+    "aces",
+    "aesc",
+    "apes",
+    "apse",
+    "asps",
+    "cape",
+    "caps",
+    "case",
+    "ceas",
+    "ceps",
+    "cess",
+    "pace",
+    "pacs",
+    "pase",
+    "pass",
+    "peas",
+    "pecs",
+    "sacs",
+    "saps",
+    "seas",
+    "secs",
+    "seps",
+    "spae",
+    "spas",
+    "spec",
+    "apses",
+    "capes",
+    "cases",
+    "paces",
+    "pases",
+    "passe",
+    "scape",
+    "space",
+    "spaes",
+    "specs",
+    "scapes",
+    "spaces"
   ]
 }

@@ -1,44 +1,36 @@
 {
   "anagrams": [
-    "en",
-    "es",
-    "gi",
-    "in",
-    "is",
-    "ne",
-    "si",
-    "eng",
-    "ens",
-    "gen",
-    "gie",
-    "gin",
-    "gis",
-    "ing",
-    "ins",
-    "neg",
-    "nie",
-    "nis",
-    "seg",
-    "sei",
-    "sen",
-    "sig",
-    "sin",
-    "egis",
-    "engs",
-    "gens",
-    "gien",
-    "gies",
-    "gins",
-    "ings",
-    "negs",
-    "nies",
-    "sien",
-    "sign",
-    "sine",
-    "sing",
-    "snig",
-    "segni",
-    "sengi",
-    "singe"
+    "arm",
+    "azo",
+    "ham",
+    "hao",
+    "hoa",
+    "hom",
+    "mar",
+    "mho",
+    "moa",
+    "mor",
+    "moz",
+    "oar",
+    "ohm",
+    "oma",
+    "ora",
+    "rah",
+    "ram",
+    "rho",
+    "rom",
+    "zho",
+    "zoa",
+    "harm",
+    "haro",
+    "hoar",
+    "homa",
+    "hora",
+    "mohr",
+    "mora",
+    "roam",
+    "roma",
+    "omrah",
+    "mahzor"
   ]
 }

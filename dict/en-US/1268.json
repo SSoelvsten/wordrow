@@ -1,48 +1,88 @@
 {
   "anagrams": [
-    "ae",
-    "ar",
-    "ay",
-    "ea",
-    "er",
-    "ew",
-    "re",
-    "we",
-    "ya",
-    "ye",
-    "are",
-    "ary",
-    "awe",
-    "aye",
-    "ear",
-    "era",
-    "raw",
-    "ray",
-    "rew",
-    "rya",
-    "rye",
-    "wae",
-    "war",
-    "way",
-    "wey",
-    "wry",
-    "wye",
-    "yae",
-    "yar",
-    "yaw",
-    "yea",
-    "yer",
-    "yew",
-    "aery",
-    "arew",
-    "awry",
-    "ayre",
-    "eyra",
-    "ware",
-    "wary",
-    "wear",
-    "yare",
-    "year",
-    "weary"
+    "els",
+    "ens",
+    "eon",
+    "ern",
+    "ers",
+    "les",
+    "lor",
+    "los",
+    "nor",
+    "nos",
+    "oes",
+    "ole",
+    "one",
+    "ons",
+    "ore",
+    "ors",
+    "ose",
+    "ren",
+    "reo",
+    "res",
+    "roe",
+    "sel",
+    "sen",
+    "ser",
+    "sol",
+    "son",
+    "enol",
+    "eons",
+    "eorl",
+    "erns",
+    "eros",
+    "leno",
+    "lens",
+    "lone",
+    "lore",
+    "lorn",
+    "lose",
+    "noel",
+    "noes",
+    "nole",
+    "nose",
+    "oles",
+    "oner",
+    "ones",
+    "ores",
+    "orle",
+    "reno",
+    "rens",
+    "reos",
+    "roes",
+    "role",
+    "rone",
+    "rose",
+    "sloe",
+    "sole",
+    "sone",
+    "sore",
+    "sorn",
+    "enols",
+    "enrol",
+    "eorls",
+    "lenos",
+    "loner",
+    "lores",
+    "losen",
+    "loser",
+    "nerol",
+    "noels",
+    "noles",
+    "noser",
+    "oners",
+    "orles",
+    "renos",
+    "roles",
+    "rones",
+    "senor",
+    "seron",
+    "snore",
+    "soler",
+    "sorel",
+    "enrols",
+    "loners",
+    "nerols",
+    "norsel"
   ]
 }

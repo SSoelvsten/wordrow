@@ -1,33 +1,85 @@
 {
   "anagrams": [
-    "al",
-    "am",
-    "la",
-    "lo",
-    "ma",
-    "mo",
-    "mu",
-    "om",
-    "ou",
-    "um",
-    "alu",
-    "amu",
-    "lam",
-    "lou",
-    "lum",
-    "mal",
-    "moa",
-    "mol",
-    "mou",
-    "olm",
-    "oma",
-    "alum",
-    "loam",
-    "loma",
-    "luma",
-    "maul",
-    "mola",
-    "ouma",
-    "louma"
+    "ahs",
+    "ash",
+    "ass",
+    "ate",
+    "ats",
+    "eas",
+    "eat",
+    "ehs",
+    "ess",
+    "est",
+    "eta",
+    "eth",
+    "hae",
+    "has",
+    "hat",
+    "hes",
+    "het",
+    "sae",
+    "sat",
+    "sea",
+    "set",
+    "she",
+    "tae",
+    "tas",
+    "tea",
+    "tes",
+    "the",
+    "ates",
+    "east",
+    "eath",
+    "eats",
+    "ests",
+    "etas",
+    "eths",
+    "haes",
+    "haet",
+    "hass",
+    "hast",
+    "hate",
+    "hats",
+    "heat",
+    "hest",
+    "hets",
+    "sash",
+    "sate",
+    "seas",
+    "seat",
+    "sesh",
+    "seta",
+    "sets",
+    "shat",
+    "shea",
+    "shes",
+    "shet",
+    "taes",
+    "tase",
+    "tash",
+    "tass",
+    "teas",
+    "thae",
+    "ashes",
+    "ashet",
+    "asset",
+    "easts",
+    "haets",
+    "haste",
+    "hates",
+    "heast",
+    "heats",
+    "hests",
+    "sates",
+    "seats",
+    "sheas",
+    "shets",
+    "stash",
+    "tases",
+    "tasse",
+    "ashets",
+    "hastes",
+    "heasts",
+    "tashes"
   ]
 }

@@ -1,56 +1,97 @@
 {
   "anagrams": [
-    "di",
-    "do",
-    "id",
-    "io",
-    "is",
-    "li",
-    "lo",
-    "od",
-    "oi",
-    "os",
-    "si",
-    "so",
-    "dis",
-    "dol",
-    "dos",
-    "dso",
-    "ids",
-    "ios",
-    "iso",
-    "lid",
-    "lis",
-    "lod",
-    "los",
-    "ods",
-    "oil",
-    "ois",
-    "old",
-    "sod",
-    "sol",
-    "diol",
-    "dols",
-    "idol",
-    "lido",
-    "lids",
-    "lods",
-    "loid",
-    "oils",
-    "olds",
-    "olid",
-    "sild",
-    "silo",
-    "slid",
-    "soil",
-    "sold",
-    "soli",
-    "diols",
-    "idols",
-    "lidos",
-    "loids",
-    "sloid",
-    "soldi",
-    "solid"
+    "age",
+    "ags",
+    "ais",
+    "ait",
+    "ate",
+    "ats",
+    "eas",
+    "eat",
+    "est",
+    "eta",
+    "gae",
+    "gas",
+    "gat",
+    "get",
+    "gie",
+    "gis",
+    "git",
+    "ita",
+    "its",
+    "sae",
+    "sag",
+    "sai",
+    "sat",
+    "sea",
+    "seg",
+    "sei",
+    "set",
+    "sig",
+    "sit",
+    "tae",
+    "tag",
+    "tai",
+    "tas",
+    "tea",
+    "teg",
+    "tes",
+    "tie",
+    "tig",
+    "tis",
+    "ages",
+    "aits",
+    "ates",
+    "east",
+    "eats",
+    "egis",
+    "etas",
+    "gaes",
+    "gait",
+    "gast",
+    "gate",
+    "gats",
+    "geat",
+    "geit",
+    "gest",
+    "geta",
+    "gets",
+    "gies",
+    "gist",
+    "gite",
+    "gits",
+    "itas",
+    "sage",
+    "sate",
+    "sati",
+    "seat",
+    "seta",
+    "site",
+    "stag",
+    "stie",
+    "taes",
+    "tags",
+    "taig",
+    "tais",
+    "tase",
+    "teas",
+    "tegs",
+    "ties",
+    "tige",
+    "tigs",
+    "aegis",
+    "agist",
+    "gaits",
+    "gates",
+    "geats",
+    "geist",
+    "geits",
+    "getas",
+    "gites",
+    "stage",
+    "staig",
+    "taigs",
+    "tiges",
+    "ageist"
   ]
 }

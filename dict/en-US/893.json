@@ -1,43 +1,58 @@
 {
   "anagrams": [
-    "en",
-    "er",
-    "et",
-    "in",
-    "it",
-    "ne",
-    "re",
-    "te",
-    "ti",
-    "ern",
-    "ire",
-    "net",
-    "nie",
-    "nit",
-    "rei",
-    "ren",
-    "ret",
-    "rin",
-    "rit",
-    "ten",
-    "tie",
-    "tin",
-    "nite",
-    "rein",
-    "rent",
-    "rine",
-    "rite",
-    "tein",
-    "tern",
-    "tier",
-    "tine",
-    "tire",
-    "trie",
-    "trin",
-    "inert",
-    "inter",
-    "niter",
-    "nitre",
-    "trine"
+    "ace",
+    "ach",
+    "arb",
+    "arc",
+    "are",
+    "bac",
+    "bae",
+    "bar",
+    "bra",
+    "cab",
+    "car",
+    "cha",
+    "che",
+    "ear",
+    "ech",
+    "era",
+    "hae",
+    "her",
+    "rah",
+    "reb",
+    "rec",
+    "reh",
+    "aber",
+    "acer",
+    "ache",
+    "acre",
+    "arch",
+    "bach",
+    "bare",
+    "bear",
+    "brae",
+    "carb",
+    "care",
+    "char",
+    "cher",
+    "crab",
+    "each",
+    "hare",
+    "hear",
+    "herb",
+    "race",
+    "rach",
+    "rhea",
+    "acerb",
+    "beach",
+    "brace",
+    "brach",
+    "caber",
+    "cabre",
+    "chare",
+    "rache",
+    "reach",
+    "rehab",
+    "breach"
   ]
 }

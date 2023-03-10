@@ -1,36 +1,62 @@
 {
   "anagrams": [
-    "io",
-    "is",
-    "mi",
-    "mo",
-    "oi",
-    "om",
-    "os",
-    "si",
-    "so",
-    "cis",
-    "cos",
-    "ios",
-    "ism",
-    "iso",
-    "mic",
-    "mis",
-    "moc",
-    "moi",
-    "mos",
-    "ois",
-    "oms",
-    "sic",
-    "sim",
-    "soc",
-    "som",
-    "coms",
-    "mico",
-    "mics",
-    "miso",
-    "mocs",
-    "micos",
-    "osmic"
+    "alp",
+    "amp",
+    "apo",
+    "cal",
+    "cam",
+    "cap",
+    "col",
+    "cop",
+    "lac",
+    "lam",
+    "lap",
+    "lop",
+    "mac",
+    "mal",
+    "map",
+    "moa",
+    "moc",
+    "mol",
+    "mop",
+    "oca",
+    "olm",
+    "oma",
+    "opa",
+    "pac",
+    "pal",
+    "pam",
+    "poa",
+    "pol",
+    "pom",
+    "alco",
+    "calm",
+    "calo",
+    "calp",
+    "camo",
+    "camp",
+    "capo",
+    "clam",
+    "clap",
+    "clop",
+    "coal",
+    "cola",
+    "coma",
+    "comp",
+    "lamp",
+    "loam",
+    "loca",
+    "loma",
+    "mola",
+    "opal",
+    "paco",
+    "palm",
+    "campo",
+    "clamp",
+    "cloam",
+    "clomp",
+    "comal",
+    "copal",
+    "copalm"
   ]
 }

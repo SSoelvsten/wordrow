@@ -1,55 +1,72 @@
 {
   "anagrams": [
-    "ad",
-    "ai",
-    "as",
-    "at",
-    "da",
-    "di",
-    "id",
-    "is",
-    "it",
-    "si",
-    "ta",
-    "ti",
-    "ads",
-    "aid",
-    "ais",
-    "ait",
-    "ats",
-    "das",
-    "dis",
-    "dit",
-    "ids",
-    "ita",
-    "its",
-    "sad",
-    "sai",
-    "sat",
-    "sit",
-    "tad",
-    "tai",
-    "tas",
-    "tid",
-    "tis",
-    "adit",
-    "aids",
-    "aits",
-    "dais",
-    "disa",
-    "dita",
-    "dits",
-    "itas",
-    "sadi",
-    "said",
-    "sati",
-    "sida",
-    "tads",
-    "tais",
-    "tids",
-    "adits",
-    "ditas",
-    "staid",
-    "tsadi"
+    "act",
+    "arc",
+    "arm",
+    "art",
+    "cam",
+    "car",
+    "cat",
+    "cor",
+    "cot",
+    "mac",
+    "mar",
+    "mat",
+    "moa",
+    "moc",
+    "mor",
+    "mot",
+    "oar",
+    "oat",
+    "oca",
+    "oma",
+    "ora",
+    "orc",
+    "ort",
+    "ram",
+    "rat",
+    "roc",
+    "rom",
+    "rot",
+    "tam",
+    "tao",
+    "tar",
+    "toc",
+    "tom",
+    "tor",
+    "acro",
+    "arco",
+    "atoc",
+    "atom",
+    "camo",
+    "cart",
+    "coat",
+    "coma",
+    "corm",
+    "cram",
+    "marc",
+    "mart",
+    "moat",
+    "mora",
+    "mort",
+    "octa",
+    "orca",
+    "rato",
+    "roam",
+    "roma",
+    "rota",
+    "taco",
+    "taro",
+    "tora",
+    "torc",
+    "tram",
+    "actor",
+    "amort",
+    "carom",
+    "coram",
+    "macro",
+    "morat",
+    "taroc",
+    "comart"
   ]
 }

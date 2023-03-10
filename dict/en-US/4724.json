@@ -1,34 +1,66 @@
 {
   "anagrams": [
-    "de",
-    "di",
-    "do",
-    "ed",
-    "id",
-    "io",
-    "od",
-    "oe",
-    "oi",
-    "dei",
-    "dev",
-    "die",
-    "div",
-    "doe",
-    "evo",
-    "ide",
-    "ode",
-    "vid",
-    "vie",
-    "voe",
-    "devi",
-    "devo",
-    "dive",
-    "divo",
-    "dove",
-    "vide",
-    "vied",
-    "void",
-    "dovie",
-    "video"
+    "bed",
+    "bes",
+    "bod",
+    "bos",
+    "bud",
+    "bus",
+    "deb",
+    "dob",
+    "doe",
+    "dos",
+    "dso",
+    "dub",
+    "due",
+    "duo",
+    "eds",
+    "obe",
+    "obs",
+    "ode",
+    "ods",
+    "oes",
+    "ose",
+    "oud",
+    "ous",
+    "sed",
+    "sob",
+    "sod",
+    "sou",
+    "sub",
+    "sud",
+    "sue",
+    "udo",
+    "uds",
+    "use",
+    "beds",
+    "bedu",
+    "bode",
+    "bods",
+    "budo",
+    "buds",
+    "debs",
+    "deus",
+    "dobe",
+    "dobs",
+    "does",
+    "dose",
+    "dubs",
+    "dues",
+    "duos",
+    "obes",
+    "odes",
+    "ouds",
+    "sued",
+    "udos",
+    "used",
+    "bodes",
+    "bouse",
+    "budos",
+    "bused",
+    "debus",
+    "dobes",
+    "douse",
+    "boused"
   ]
 }

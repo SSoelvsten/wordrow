@@ -1,38 +1,62 @@
 {
   "anagrams": [
-    "ag",
-    "an",
-    "as",
-    "na",
-    "pa",
-    "ags",
-    "ans",
-    "asp",
-    "gan",
-    "gap",
-    "gas",
-    "nag",
-    "nap",
-    "nas",
-    "pan",
-    "pas",
-    "sag",
-    "san",
-    "sap",
-    "spa",
-    "gans",
-    "gaps",
-    "gasp",
-    "nags",
-    "naps",
-    "pang",
-    "pans",
-    "sang",
-    "snag",
-    "snap",
-    "spag",
-    "span",
-    "pangs",
-    "spang"
+    "elt",
+    "erg",
+    "gel",
+    "ger",
+    "get",
+    "gie",
+    "git",
+    "ire",
+    "leg",
+    "lei",
+    "let",
+    "lie",
+    "lig",
+    "lit",
+    "reg",
+    "rei",
+    "ret",
+    "rig",
+    "rit",
+    "teg",
+    "tel",
+    "tie",
+    "tig",
+    "til",
+    "geit",
+    "gelt",
+    "gert",
+    "gilt",
+    "girl",
+    "girt",
+    "gite",
+    "glei",
+    "glit",
+    "grit",
+    "leir",
+    "lier",
+    "lire",
+    "lite",
+    "riel",
+    "rile",
+    "rite",
+    "teil",
+    "tier",
+    "tige",
+    "tile",
+    "tire",
+    "tirl",
+    "trie",
+    "trig",
+    "gilet",
+    "legit",
+    "liger",
+    "liter",
+    "litre",
+    "relit",
+    "tiger",
+    "tiler",
+    "regilt"
   ]
 }

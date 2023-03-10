@@ -1,37 +1,62 @@
 {
   "anagrams": [
-    "de",
-    "di",
-    "ed",
-    "er",
-    "id",
-    "re",
-    "cid",
-    "dei",
-    "die",
-    "ice",
-    "ide",
-    "ire",
-    "rec",
-    "red",
-    "rei",
-    "rid",
-    "cedi",
-    "cide",
-    "cire",
-    "cred",
-    "dice",
-    "dire",
-    "eric",
-    "iced",
-    "icer",
-    "ired",
-    "rice",
-    "ride",
-    "cider",
-    "cried",
-    "dicer",
-    "drice",
-    "riced"
+    "act",
+    "aft",
+    "arc",
+    "arf",
+    "ars",
+    "art",
+    "ats",
+    "caf",
+    "car",
+    "cat",
+    "far",
+    "fas",
+    "fat",
+    "fra",
+    "ras",
+    "rat",
+    "sac",
+    "sar",
+    "sat",
+    "tar",
+    "tas",
+    "acts",
+    "arcs",
+    "arfs",
+    "arts",
+    "cafs",
+    "cars",
+    "cart",
+    "cast",
+    "cats",
+    "fact",
+    "fars",
+    "fart",
+    "fast",
+    "fats",
+    "fras",
+    "frat",
+    "raft",
+    "rast",
+    "rats",
+    "saft",
+    "scar",
+    "scat",
+    "star",
+    "tars",
+    "tsar",
+    "carts",
+    "craft",
+    "facts",
+    "farts",
+    "fract",
+    "frats",
+    "rafts",
+    "scarf",
+    "scart",
+    "scrat",
+    "crafts",
+    "fracts"
   ]
 }

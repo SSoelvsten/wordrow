@@ -1,44 +1,91 @@
 {
   "anagrams": [
-    "ar",
-    "as",
-    "at",
-    "ha",
-    "ta",
-    "ahs",
-    "ars",
-    "art",
-    "ash",
-    "ats",
-    "has",
-    "hat",
-    "rah",
-    "ras",
-    "rat",
-    "sar",
-    "sat",
-    "tar",
-    "tas",
-    "arts",
-    "hart",
-    "hast",
-    "hats",
-    "rahs",
-    "rash",
-    "rast",
-    "rath",
-    "rats",
-    "shat",
-    "star",
-    "tahr",
-    "tars",
-    "tash",
-    "thar",
-    "tsar",
-    "harts",
-    "raths",
-    "tahrs",
-    "thars",
-    "trash"
+    "dep",
+    "due",
+    "dup",
+    "eds",
+    "ers",
+    "ped",
+    "per",
+    "pes",
+    "pre",
+    "pud",
+    "pur",
+    "pus",
+    "red",
+    "rep",
+    "res",
+    "rud",
+    "rue",
+    "sed",
+    "ser",
+    "sud",
+    "sue",
+    "sup",
+    "sur",
+    "uds",
+    "ups",
+    "urd",
+    "ure",
+    "urp",
+    "use",
+    "deps",
+    "deus",
+    "dues",
+    "dupe",
+    "dups",
+    "dure",
+    "peds",
+    "puds",
+    "puer",
+    "pure",
+    "purs",
+    "reds",
+    "reps",
+    "rude",
+    "ruds",
+    "rued",
+    "rues",
+    "ruse",
+    "sped",
+    "spud",
+    "spue",
+    "spur",
+    "sued",
+    "suer",
+    "supe",
+    "surd",
+    "sure",
+    "urde",
+    "urds",
+    "ures",
+    "urps",
+    "used",
+    "user",
+    "drupe",
+    "druse",
+    "duper",
+    "dupes",
+    "dures",
+    "perdu",
+    "prude",
+    "pseud",
+    "puers",
+    "pured",
+    "pures",
+    "purse",
+    "rudes",
+    "spred",
+    "sprue",
+    "spued",
+    "spuer",
+    "super",
+    "sured",
+    "urped",
+    "drupes",
+    "dupers",
+    "perdus",
+    "prudes",
+    "pursed"
   ]
 }

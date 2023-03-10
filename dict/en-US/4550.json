@@ -1,52 +1,67 @@
 {
   "anagrams": [
-    "de",
-    "do",
-    "ed",
-    "es",
-    "od",
-    "oe",
-    "op",
-    "os",
-    "pe",
-    "po",
-    "so",
-    "dep",
-    "doe",
-    "dop",
-    "dos",
-    "dso",
-    "eds",
-    "ode",
-    "ods",
-    "oes",
-    "ope",
-    "ops",
-    "ose",
-    "ped",
-    "pes",
-    "pod",
-    "pos",
-    "sed",
-    "sod",
-    "sop",
-    "deps",
-    "does",
-    "dope",
-    "dops",
-    "dose",
-    "epos",
-    "odes",
-    "oped",
-    "opes",
-    "peds",
-    "peso",
-    "pods",
-    "pose",
-    "sped",
-    "spod",
-    "dopes",
-    "posed",
-    "spode"
+    "ago",
+    "art",
+    "gar",
+    "gat",
+    "gau",
+    "goa",
+    "gor",
+    "got",
+    "gur",
+    "gut",
+    "oar",
+    "oat",
+    "ora",
+    "org",
+    "ort",
+    "our",
+    "out",
+    "rag",
+    "rat",
+    "rot",
+    "rug",
+    "rut",
+    "tag",
+    "tao",
+    "tar",
+    "tau",
+    "tog",
+    "tor",
+    "tug",
+    "uta",
+    "agro",
+    "auto",
+    "gart",
+    "gaur",
+    "goat",
+    "gora",
+    "gout",
+    "grat",
+    "grot",
+    "guar",
+    "outa",
+    "ragu",
+    "rato",
+    "ratu",
+    "rota",
+    "rout",
+    "ruga",
+    "taro",
+    "toga",
+    "tora",
+    "tour",
+    "trog",
+    "trou",
+    "trug",
+    "urao",
+    "argot",
+    "gator",
+    "goura",
+    "groat",
+    "grout",
+    "trugo",
+    "tugra",
+    "ragout"
   ]
 }

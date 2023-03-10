@@ -1,63 +1,36 @@
 {
   "anagrams": [
-    "ae",
-    "an",
-    "as",
-    "ay",
-    "ea",
-    "en",
-    "es",
-    "na",
-    "ne",
-    "ny",
-    "ya",
-    "ye",
-    "ane",
-    "ans",
-    "any",
-    "aye",
-    "ays",
-    "ean",
-    "eas",
-    "ens",
-    "nae",
-    "nas",
-    "nay",
-    "nye",
-    "nys",
-    "sae",
-    "san",
-    "say",
-    "sea",
-    "sen",
-    "sey",
-    "sny",
-    "sye",
-    "syn",
-    "yae",
-    "yas",
-    "yea",
-    "yen",
-    "yes",
-    "anes",
-    "ayes",
-    "eans",
-    "easy",
-    "eyas",
-    "naes",
-    "nays",
-    "nyas",
-    "nyes",
-    "sane",
-    "sean",
-    "sena",
-    "snye",
-    "syen",
-    "syne",
-    "yean",
-    "yeas",
-    "yens",
-    "sayne",
-    "yeans"
+    "cor",
+    "eco",
+    "emo",
+    "erm",
+    "err",
+    "moc",
+    "moe",
+    "mor",
+    "orc",
+    "ore",
+    "rec",
+    "rem",
+    "reo",
+    "roc",
+    "roe",
+    "rom",
+    "cero",
+    "come",
+    "core",
+    "corm",
+    "crem",
+    "merc",
+    "moer",
+    "more",
+    "omer",
+    "rore",
+    "comer",
+    "corer",
+    "crome",
+    "crore",
+    "ormer",
+    "cremor"
   ]
 }

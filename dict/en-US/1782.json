@@ -1,40 +1,96 @@
 {
   "anagrams": [
-    "el",
-    "en",
-    "er",
-    "lo",
-    "ne",
-    "no",
-    "oe",
-    "on",
-    "or",
-    "re",
-    "eon",
-    "ern",
-    "lor",
-    "nor",
-    "ole",
-    "one",
-    "ore",
-    "ren",
-    "reo",
-    "roe",
-    "enol",
-    "eorl",
-    "leno",
-    "lone",
-    "lore",
-    "lorn",
-    "noel",
-    "nole",
-    "oner",
-    "orle",
-    "reno",
-    "role",
-    "rone",
-    "enrol",
-    "loner",
-    "nerol"
+    "ake",
+    "ask",
+    "ate",
+    "ats",
+    "eas",
+    "eat",
+    "est",
+    "eta",
+    "kae",
+    "kas",
+    "kat",
+    "kea",
+    "ket",
+    "koa",
+    "kos",
+    "oak",
+    "oat",
+    "oes",
+    "oka",
+    "oke",
+    "ose",
+    "sae",
+    "sat",
+    "sea",
+    "set",
+    "ska",
+    "sot",
+    "tae",
+    "tak",
+    "tao",
+    "tas",
+    "tea",
+    "tes",
+    "toe",
+    "akes",
+    "ates",
+    "atok",
+    "east",
+    "eats",
+    "etas",
+    "kaes",
+    "kats",
+    "keas",
+    "kest",
+    "keta",
+    "keto",
+    "kets",
+    "koas",
+    "oaks",
+    "oast",
+    "oats",
+    "okas",
+    "okes",
+    "okta",
+    "sake",
+    "sate",
+    "seat",
+    "sekt",
+    "seta",
+    "skat",
+    "skeo",
+    "sket",
+    "soak",
+    "soke",
+    "stoa",
+    "taes",
+    "take",
+    "taks",
+    "taos",
+    "tase",
+    "task",
+    "teak",
+    "teas",
+    "toea",
+    "toes",
+    "toke",
+    "tosa",
+    "tose",
+    "atoke",
+    "atoks",
+    "ketas",
+    "oktas",
+    "skate",
+    "stake",
+    "steak",
+    "stoae",
+    "stoke",
+    "takes",
+    "teaks",
+    "toeas",
+    "tokes",
+    "atokes"
   ]
 }

@@ -1,39 +1,60 @@
 {
   "anagrams": [
-    "ab",
-    "ai",
-    "al",
-    "ar",
-    "ba",
-    "bi",
-    "la",
-    "li",
-    "ail",
-    "air",
-    "alb",
-    "arb",
-    "bal",
-    "bar",
-    "bra",
-    "lab",
-    "lar",
-    "lib",
-    "rai",
-    "ria",
-    "rib",
-    "abri",
-    "aril",
-    "bail",
-    "birl",
-    "lair",
-    "lari",
-    "liar",
-    "lira",
-    "rabi",
-    "rail",
-    "rial",
-    "riba",
-    "brail",
-    "libra"
+    "ado",
+    "ads",
+    "als",
+    "ass",
+    "dal",
+    "das",
+    "dol",
+    "dos",
+    "dso",
+    "lad",
+    "las",
+    "lod",
+    "los",
+    "oda",
+    "ods",
+    "old",
+    "sad",
+    "sal",
+    "sod",
+    "sol",
+    "sos",
+    "ados",
+    "alod",
+    "also",
+    "dals",
+    "dols",
+    "dosa",
+    "doss",
+    "dsos",
+    "lads",
+    "lass",
+    "load",
+    "lods",
+    "loss",
+    "odal",
+    "odas",
+    "olds",
+    "ossa",
+    "sado",
+    "sads",
+    "sals",
+    "soda",
+    "sods",
+    "sola",
+    "sold",
+    "sols",
+    "alods",
+    "dosas",
+    "lasso",
+    "loads",
+    "odals",
+    "sados",
+    "sodas",
+    "solas",
+    "solds",
+    "dossal"
   ]
 }

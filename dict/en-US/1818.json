@@ -1,34 +1,27 @@
 {
   "anagrams": [
-    "gi",
-    "hi",
-    "is",
-    "it",
-    "si",
-    "ti",
-    "ghi",
-    "gis",
-    "git",
-    "his",
-    "hit",
-    "ish",
-    "its",
-    "sig",
-    "sit",
-    "tig",
-    "tis",
-    "ghis",
-    "gist",
-    "gits",
-    "hist",
-    "hits",
-    "shit",
-    "sigh",
-    "sith",
-    "thig",
-    "this",
-    "tigs",
-    "sight",
-    "thigs"
+    "aas",
+    "aba",
+    "abs",
+    "ass",
+    "aua",
+    "baa",
+    "bas",
+    "bus",
+    "sab",
+    "sau",
+    "sub",
+    "sus",
+    "abas",
+    "auas",
+    "baas",
+    "bass",
+    "buss",
+    "sabs",
+    "suba",
+    "subs",
+    "sauba",
+    "subas",
+    "saubas"
   ]
 }

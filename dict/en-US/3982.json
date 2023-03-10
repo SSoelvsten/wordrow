@@ -1,28 +1,34 @@
 {
   "anagrams": [
-    "de",
-    "di",
-    "ed",
-    "es",
-    "id",
-    "is",
-    "si",
-    "dei",
-    "did",
-    "die",
-    "dis",
-    "eds",
-    "ide",
-    "ids",
-    "sed",
-    "sei",
-    "deid",
-    "desi",
-    "died",
-    "dies",
-    "ides",
-    "side",
-    "deids",
-    "sided"
+    "ace",
+    "ale",
+    "cad",
+    "cal",
+    "cel",
+    "dae",
+    "dal",
+    "del",
+    "eld",
+    "lac",
+    "lad",
+    "lea",
+    "led",
+    "aced",
+    "alec",
+    "cade",
+    "ceca",
+    "clad",
+    "dace",
+    "dale",
+    "deal",
+    "ecad",
+    "lace",
+    "lade",
+    "lead",
+    "cecal",
+    "clade",
+    "decal",
+    "laced",
+    "calced"
   ]
 }

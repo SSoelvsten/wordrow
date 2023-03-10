@@ -1,64 +1,33 @@
 {
   "anagrams": [
-    "ae",
-    "ag",
-    "as",
-    "at",
-    "ea",
-    "es",
-    "et",
-    "ta",
-    "te",
-    "age",
-    "ags",
-    "ate",
-    "ats",
-    "eas",
-    "eat",
-    "est",
-    "eta",
-    "gae",
-    "gas",
-    "gat",
-    "get",
-    "sae",
-    "sag",
-    "sat",
-    "sea",
-    "seg",
-    "set",
-    "tae",
-    "tag",
-    "tas",
-    "tea",
-    "teg",
-    "tes",
-    "ages",
-    "ates",
-    "east",
-    "eats",
-    "etas",
-    "gaes",
-    "gast",
-    "gate",
-    "gats",
-    "geat",
-    "gest",
-    "geta",
-    "gets",
-    "sage",
-    "sate",
-    "seat",
-    "seta",
-    "stag",
-    "taes",
-    "tags",
-    "tase",
-    "teas",
-    "tegs",
-    "gates",
-    "geats",
-    "getas",
-    "stage"
+    "act",
+    "amu",
+    "cad",
+    "cam",
+    "cat",
+    "cud",
+    "cum",
+    "cut",
+    "dam",
+    "dum",
+    "mac",
+    "mad",
+    "mat",
+    "mud",
+    "mut",
+    "tad",
+    "tam",
+    "tau",
+    "tum",
+    "uta",
+    "caum",
+    "daut",
+    "duct",
+    "duma",
+    "maud",
+    "maut",
+    "datum",
+    "ducat",
+    "mudcat"
   ]
 }

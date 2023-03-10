@@ -1,46 +1,68 @@
 {
   "anagrams": [
-    "ab",
-    "ar",
-    "ba",
-    "bo",
-    "ka",
-    "ko",
-    "ob",
-    "ok",
-    "or",
-    "arb",
-    "ark",
-    "bao",
-    "bar",
-    "boa",
-    "bok",
-    "bor",
-    "bra",
-    "bro",
-    "kab",
-    "koa",
-    "kob",
-    "kor",
-    "oak",
-    "oar",
-    "oba",
-    "oka",
-    "ora",
-    "orb",
-    "rob",
-    "rok",
-    "bark",
-    "boak",
-    "boar",
-    "bora",
-    "bork",
-    "brak",
-    "karo",
-    "kbar",
-    "kora",
-    "krab",
-    "okra",
-    "borak"
+    "ace",
+    "ail",
+    "aim",
+    "ale",
+    "ame",
+    "ami",
+    "cal",
+    "cam",
+    "cel",
+    "elm",
+    "ice",
+    "lac",
+    "lam",
+    "lea",
+    "lei",
+    "lie",
+    "mac",
+    "mae",
+    "mal",
+    "mel",
+    "mic",
+    "mil",
+    "acme",
+    "alec",
+    "alme",
+    "amie",
+    "calm",
+    "came",
+    "cami",
+    "ceil",
+    "ciel",
+    "clam",
+    "clem",
+    "emic",
+    "ilea",
+    "lace",
+    "laic",
+    "lame",
+    "leam",
+    "lice",
+    "lima",
+    "lime",
+    "mace",
+    "mail",
+    "male",
+    "mali",
+    "meal",
+    "mela",
+    "mica",
+    "mice",
+    "mile",
+    "amice",
+    "camel",
+    "claim",
+    "clame",
+    "clime",
+    "email",
+    "ileac",
+    "macle",
+    "maile",
+    "malic",
+    "melic",
+    "maleic",
+    "malice"
   ]
 }

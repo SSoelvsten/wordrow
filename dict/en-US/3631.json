@@ -1,29 +1,50 @@
 {
   "anagrams": [
-    "ab",
-    "al",
-    "ba",
-    "bo",
-    "la",
-    "lo",
-    "ob",
-    "oo",
-    "alb",
-    "bal",
-    "bao",
-    "boa",
-    "boo",
-    "lab",
-    "lob",
-    "loo",
-    "oba",
-    "obo",
-    "aloo",
-    "bola",
-    "bolo",
-    "bool",
-    "lobo",
-    "obol",
-    "baloo"
+    "cig",
+    "cog",
+    "con",
+    "cor",
+    "gin",
+    "gio",
+    "gon",
+    "gor",
+    "ing",
+    "ion",
+    "nog",
+    "nor",
+    "orc",
+    "org",
+    "rig",
+    "rin",
+    "roc",
+    "cion",
+    "coin",
+    "coir",
+    "coni",
+    "corn",
+    "crog",
+    "cron",
+    "girn",
+    "giro",
+    "gori",
+    "grin",
+    "icon",
+    "ingo",
+    "inro",
+    "iron",
+    "noir",
+    "nori",
+    "ring",
+    "roin",
+    "rong",
+    "coign",
+    "corgi",
+    "corni",
+    "giron",
+    "groin",
+    "incog",
+    "orcin",
+    "orgic",
+    "coring"
   ]
 }

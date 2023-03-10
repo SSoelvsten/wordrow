@@ -1,49 +1,89 @@
 {
   "anagrams": [
-    "ae",
-    "at",
-    "ea",
-    "eh",
-    "et",
-    "ha",
-    "he",
-    "ta",
-    "te",
-    "ace",
-    "ach",
-    "act",
-    "ate",
-    "cat",
-    "cha",
-    "che",
-    "eat",
-    "ech",
-    "eta",
-    "eth",
-    "hae",
-    "hat",
-    "het",
-    "tae",
-    "tea",
-    "tec",
-    "the",
-    "ache",
-    "cate",
-    "chat",
-    "each",
-    "eath",
-    "echt",
-    "etch",
-    "haet",
-    "hate",
-    "heat",
-    "tace",
-    "tach",
-    "tech",
-    "thae",
-    "cheat",
-    "tache",
-    "teach",
-    "theca"
+    "con",
+    "cor",
+    "cos",
+    "eco",
+    "ens",
+    "eon",
+    "ern",
+    "ers",
+    "nor",
+    "nos",
+    "oes",
+    "one",
+    "ons",
+    "orc",
+    "ore",
+    "ors",
+    "ose",
+    "rec",
+    "ren",
+    "reo",
+    "res",
+    "roc",
+    "roe",
+    "sec",
+    "sen",
+    "ser",
+    "soc",
+    "son",
+    "cens",
+    "cero",
+    "cone",
+    "cons",
+    "core",
+    "corn",
+    "cors",
+    "cose",
+    "cron",
+    "ecos",
+    "eons",
+    "erns",
+    "eros",
+    "noes",
+    "nose",
+    "once",
+    "oner",
+    "ones",
+    "orcs",
+    "ores",
+    "recs",
+    "reno",
+    "rens",
+    "reos",
+    "rocs",
+    "roes",
+    "rone",
+    "rose",
+    "seco",
+    "sone",
+    "sore",
+    "sorn",
+    "ceros",
+    "cones",
+    "cores",
+    "corns",
+    "corse",
+    "crone",
+    "crons",
+    "noser",
+    "oncer",
+    "onces",
+    "oners",
+    "recon",
+    "renos",
+    "rones",
+    "scone",
+    "score",
+    "scorn",
+    "senor",
+    "seron",
+    "snore",
+    "sonce",
+    "censor",
+    "crones",
+    "oncers",
+    "recons"
   ]
 }

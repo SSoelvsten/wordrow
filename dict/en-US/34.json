@@ -1,40 +1,141 @@
 {
   "anagrams": [
-    "al",
-    "at",
-    "la",
-    "lo",
-    "ta",
-    "to",
-    "act",
-    "alt",
-    "cal",
-    "cat",
-    "col",
-    "cot",
-    "lac",
-    "lat",
-    "lot",
-    "oat",
-    "oca",
-    "tao",
-    "toc",
-    "alco",
-    "alto",
-    "atoc",
-    "calo",
-    "clat",
-    "clot",
-    "coal",
-    "coat",
-    "cola",
-    "colt",
-    "loca",
-    "lota",
-    "octa",
-    "taco",
-    "talc",
-    "tola",
-    "octal"
+    "ace",
+    "act",
+    "arc",
+    "are",
+    "ars",
+    "art",
+    "ate",
+    "ats",
+    "car",
+    "cat",
+    "ear",
+    "eas",
+    "eat",
+    "era",
+    "ers",
+    "est",
+    "eta",
+    "ras",
+    "rat",
+    "rec",
+    "res",
+    "ret",
+    "sac",
+    "sae",
+    "sar",
+    "sat",
+    "sea",
+    "sec",
+    "ser",
+    "set",
+    "tae",
+    "tar",
+    "tas",
+    "tea",
+    "tec",
+    "tes",
+    "acer",
+    "aces",
+    "acre",
+    "acts",
+    "aesc",
+    "arcs",
+    "ares",
+    "aret",
+    "arse",
+    "arts",
+    "ates",
+    "care",
+    "cars",
+    "cart",
+    "case",
+    "cast",
+    "cate",
+    "cats",
+    "ceas",
+    "cert",
+    "ears",
+    "east",
+    "eats",
+    "eras",
+    "erst",
+    "etas",
+    "race",
+    "rase",
+    "rast",
+    "rate",
+    "rats",
+    "recs",
+    "rest",
+    "rets",
+    "sate",
+    "scar",
+    "scat",
+    "sear",
+    "seat",
+    "sect",
+    "sera",
+    "seta",
+    "star",
+    "tace",
+    "taes",
+    "tare",
+    "tars",
+    "tase",
+    "tear",
+    "teas",
+    "tecs",
+    "tres",
+    "tsar",
+    "acers",
+    "acres",
+    "arets",
+    "aster",
+    "cares",
+    "caret",
+    "carse",
+    "carte",
+    "carts",
+    "caste",
+    "cater",
+    "cates",
+    "certs",
+    "cesta",
+    "crate",
+    "crest",
+    "earst",
+    "escar",
+    "races",
+    "rates",
+    "react",
+    "reast",
+    "recta",
+    "resat",
+    "scare",
+    "scart",
+    "sceat",
+    "scrae",
+    "scrat",
+    "serac",
+    "stare",
+    "stear",
+    "strae",
+    "taces",
+    "tares",
+    "taser",
+    "tears",
+    "teras",
+    "trace",
+    "carets",
+    "cartes",
+    "caster",
+    "caters",
+    "crates",
+    "cresta",
+    "reacts",
+    "recast",
+    "traces"
   ]
 }

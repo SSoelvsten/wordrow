@@ -1,54 +1,46 @@
 {
   "anagrams": [
-    "ai",
-    "am",
-    "as",
-    "is",
-    "ma",
-    "mi",
-    "pa",
-    "pi",
-    "si",
-    "aim",
-    "ais",
-    "ami",
-    "amp",
-    "asp",
-    "imp",
-    "ism",
-    "map",
-    "mas",
-    "mis",
-    "pam",
-    "pas",
-    "pia",
-    "pis",
-    "psi",
-    "sai",
-    "sam",
-    "sap",
-    "sim",
-    "sip",
-    "sma",
-    "spa",
-    "aims",
-    "amis",
-    "amps",
-    "imps",
-    "maps",
-    "mips",
-    "pais",
-    "pams",
-    "pias",
-    "pima",
-    "saim",
-    "samp",
-    "sima",
-    "simp",
-    "spam",
-    "spim",
-    "apism",
-    "pimas",
-    "sampi"
+    "ego",
+    "erf",
+    "erg",
+    "feg",
+    "fer",
+    "foe",
+    "fog",
+    "foo",
+    "for",
+    "fro",
+    "geo",
+    "ger",
+    "goe",
+    "goo",
+    "gor",
+    "oof",
+    "oor",
+    "ore",
+    "orf",
+    "org",
+    "ref",
+    "reg",
+    "reo",
+    "roe",
+    "roo",
+    "ergo",
+    "fore",
+    "froe",
+    "frog",
+    "goer",
+    "goof",
+    "goor",
+    "gore",
+    "ogre",
+    "orfe",
+    "rego",
+    "roof",
+    "forge",
+    "forgo",
+    "gofer",
+    "groof",
+    "forego"
   ]
 }

@@ -1,48 +1,31 @@
 {
   "anagrams": [
-    "er",
-    "et",
-    "ew",
-    "oe",
-    "or",
-    "ow",
-    "re",
-    "te",
-    "to",
-    "we",
-    "wo",
-    "ewt",
-    "ore",
-    "ort",
-    "owe",
-    "owt",
-    "reo",
-    "ret",
-    "rew",
-    "roe",
-    "rot",
-    "row",
-    "tew",
-    "toe",
-    "tor",
-    "tow",
-    "two",
-    "wet",
-    "woe",
-    "wot",
-    "ower",
-    "owre",
-    "rote",
-    "rowt",
-    "tore",
-    "trew",
-    "trow",
-    "wero",
-    "wert",
-    "wore",
-    "wort",
-    "tower",
-    "twoer",
-    "wrote"
+    "act",
+    "ant",
+    "can",
+    "cat",
+    "con",
+    "cot",
+    "nat",
+    "not",
+    "oat",
+    "oca",
+    "tan",
+    "tao",
+    "toc",
+    "ton",
+    "atoc",
+    "cant",
+    "coat",
+    "coca",
+    "nota",
+    "octa",
+    "taco",
+    "acton",
+    "canto",
+    "coact",
+    "cotan",
+    "octan",
+    "catcon"
   ]
 }

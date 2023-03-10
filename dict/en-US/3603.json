@@ -1,50 +1,30 @@
 {
   "anagrams": [
-    "ad",
-    "ae",
-    "as",
-    "da",
-    "de",
-    "ea",
-    "ed",
-    "es",
-    "pa",
-    "pe",
-    "ads",
-    "ape",
-    "asp",
-    "dae",
-    "dap",
-    "das",
-    "dep",
-    "eas",
-    "eds",
-    "pad",
-    "pas",
-    "pea",
-    "ped",
-    "pes",
-    "sad",
-    "sae",
-    "sap",
-    "sea",
-    "sed",
-    "spa",
-    "aped",
-    "apes",
-    "apse",
-    "daes",
-    "daps",
-    "deps",
-    "pads",
-    "pase",
-    "peas",
-    "peds",
-    "sade",
-    "spae",
-    "sped",
-    "sepad",
-    "spade",
-    "spaed"
+    "ems",
+    "est",
+    "mem",
+    "mes",
+    "met",
+    "set",
+    "sey",
+    "sty",
+    "sye",
+    "tes",
+    "tye",
+    "yes",
+    "yet",
+    "emmy",
+    "emys",
+    "mems",
+    "mets",
+    "stem",
+    "stey",
+    "stye",
+    "tems",
+    "tyes",
+    "yest",
+    "emmys",
+    "styme",
+    "stemmy"
   ]
 }

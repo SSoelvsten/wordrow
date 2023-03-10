@@ -1,25 +1,35 @@
 {
   "anagrams": [
-    "lo",
-    "oo",
-    "os",
-    "so",
-    "col",
-    "coo",
-    "cos",
-    "loo",
-    "los",
-    "oos",
-    "soc",
-    "sol",
-    "cols",
-    "cool",
-    "coos",
-    "loco",
-    "loos",
-    "solo",
-    "sool",
-    "cools",
-    "locos"
+    "ape",
+    "ave",
+    "dae",
+    "dap",
+    "dee",
+    "dep",
+    "dev",
+    "eve",
+    "pad",
+    "pav",
+    "pea",
+    "ped",
+    "pee",
+    "vae",
+    "vee",
+    "aped",
+    "deep",
+    "deev",
+    "deva",
+    "eave",
+    "pave",
+    "peed",
+    "vade",
+    "vape",
+    "veep",
+    "deave",
+    "eaved",
+    "evade",
+    "paved",
+    "vaped",
+    "paveed"
   ]
 }

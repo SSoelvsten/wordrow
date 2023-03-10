@@ -1,38 +1,61 @@
 {
   "anagrams": [
-    "gi",
-    "go",
-    "io",
-    "it",
-    "oi",
-    "or",
-    "ti",
-    "to",
-    "gio",
-    "git",
-    "gor",
-    "got",
-    "org",
-    "ort",
-    "rig",
-    "rit",
-    "rot",
-    "tig",
-    "tog",
-    "tor",
-    "giro",
-    "girt",
-    "gori",
-    "grit",
-    "grot",
-    "riot",
-    "roti",
-    "tiro",
-    "tori",
-    "trig",
-    "trio",
-    "trog",
-    "griot",
-    "trigo"
+    "ads",
+    "aft",
+    "ard",
+    "arf",
+    "ars",
+    "art",
+    "ats",
+    "das",
+    "fad",
+    "far",
+    "fas",
+    "fat",
+    "fra",
+    "rad",
+    "ras",
+    "rat",
+    "sad",
+    "sar",
+    "sat",
+    "tad",
+    "tar",
+    "tas",
+    "ards",
+    "arfs",
+    "arts",
+    "daft",
+    "dart",
+    "drat",
+    "fads",
+    "fard",
+    "fars",
+    "fart",
+    "fast",
+    "fats",
+    "fras",
+    "frat",
+    "rads",
+    "raft",
+    "rast",
+    "rats",
+    "saft",
+    "sard",
+    "star",
+    "tads",
+    "tars",
+    "trad",
+    "tsar",
+    "darts",
+    "draft",
+    "drats",
+    "fards",
+    "farts",
+    "frats",
+    "rafts",
+    "strad",
+    "trads",
+    "drafts"
   ]
 }

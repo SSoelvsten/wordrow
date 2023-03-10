@@ -1,28 +1,33 @@
 {
   "anagrams": [
-    "ae",
-    "ea",
-    "ef",
-    "eh",
-    "fa",
-    "fe",
-    "ha",
-    "he",
-    "ace",
-    "ach",
-    "caf",
-    "cha",
-    "che",
-    "ech",
-    "fae",
-    "fah",
-    "feh",
-    "hae",
-    "ache",
-    "cafe",
-    "chef",
-    "each",
-    "face",
-    "chafe"
+    "bee",
+    "bel",
+    "bes",
+    "bez",
+    "eel",
+    "els",
+    "lee",
+    "les",
+    "see",
+    "sel",
+    "sez",
+    "zee",
+    "zel",
+    "bees",
+    "bels",
+    "blee",
+    "eels",
+    "else",
+    "lees",
+    "seel",
+    "sele",
+    "sleb",
+    "slee",
+    "zees",
+    "zels",
+    "bezel",
+    "bezes",
+    "blees",
+    "bezels"
   ]
 }

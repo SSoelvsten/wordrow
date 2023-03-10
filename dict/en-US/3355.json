@@ -1,52 +1,81 @@
 {
   "anagrams": [
-    "ad",
-    "ae",
-    "am",
-    "ar",
-    "da",
-    "de",
-    "ea",
-    "ed",
-    "em",
-    "er",
-    "ma",
-    "me",
-    "re",
-    "ame",
-    "ard",
-    "are",
-    "arm",
-    "dae",
-    "dam",
-    "ear",
-    "era",
-    "erm",
-    "mad",
-    "mae",
-    "mar",
-    "med",
-    "rad",
-    "ram",
-    "red",
-    "rem",
-    "ared",
-    "dame",
-    "dare",
-    "dear",
-    "derm",
-    "dram",
-    "eard",
-    "made",
-    "mard",
-    "mare",
-    "mead",
-    "rade",
-    "read",
-    "ream",
-    "armed",
-    "derma",
-    "dream",
-    "madre"
+    "ach",
+    "ahs",
+    "ash",
+    "cam",
+    "cha",
+    "cos",
+    "ham",
+    "hao",
+    "has",
+    "hoa",
+    "hoc",
+    "hom",
+    "hos",
+    "mac",
+    "mas",
+    "mho",
+    "moa",
+    "moc",
+    "mos",
+    "oca",
+    "och",
+    "ohm",
+    "ohs",
+    "oma",
+    "oms",
+    "sac",
+    "sam",
+    "sho",
+    "sma",
+    "soc",
+    "soh",
+    "som",
+    "camo",
+    "cams",
+    "cash",
+    "cham",
+    "chao",
+    "chas",
+    "coma",
+    "coms",
+    "cosh",
+    "hams",
+    "haos",
+    "hoas",
+    "homa",
+    "homs",
+    "mach",
+    "macs",
+    "mash",
+    "mhos",
+    "moas",
+    "moch",
+    "mocs",
+    "mosh",
+    "ocas",
+    "ohms",
+    "omas",
+    "scam",
+    "sham",
+    "shmo",
+    "soca",
+    "soma",
+    "camos",
+    "chams",
+    "chaos",
+    "chasm",
+    "comas",
+    "homas",
+    "macho",
+    "machs",
+    "mocha",
+    "mochs",
+    "oshac",
+    "schmo",
+    "camsho",
+    "machos",
+    "mochas"
   ]
 }

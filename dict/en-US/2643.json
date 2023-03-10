@@ -1,36 +1,45 @@
 {
   "anagrams": [
-    "ae",
-    "am",
-    "ar",
-    "ea",
-    "ee",
-    "em",
-    "er",
-    "ma",
-    "me",
-    "re",
-    "ame",
-    "are",
-    "arm",
-    "ear",
-    "eme",
-    "era",
-    "ere",
-    "erm",
-    "mae",
-    "mar",
-    "mee",
-    "ram",
-    "ree",
-    "rem",
-    "mare",
-    "meer",
-    "mere",
-    "ream",
-    "ameer",
-    "meare",
-    "ramee",
-    "reame"
+    "ghi",
+    "gis",
+    "git",
+    "his",
+    "hit",
+    "ish",
+    "its",
+    "khi",
+    "kis",
+    "kit",
+    "sig",
+    "sik",
+    "sit",
+    "ski",
+    "tig",
+    "tik",
+    "tis",
+    "ghis",
+    "gist",
+    "gits",
+    "hist",
+    "hits",
+    "khis",
+    "kish",
+    "kist",
+    "kith",
+    "kits",
+    "shit",
+    "sigh",
+    "sith",
+    "skit",
+    "thig",
+    "this",
+    "tigs",
+    "tiks",
+    "kight",
+    "kiths",
+    "shtik",
+    "sight",
+    "thigs",
+    "kights"
   ]
 }

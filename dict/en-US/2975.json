@@ -1,25 +1,35 @@
 {
   "anagrams": [
-    "ad",
-    "ae",
-    "da",
-    "de",
-    "ea",
-    "ed",
-    "ace",
-    "ave",
-    "cad",
-    "dae",
-    "dev",
-    "vac",
-    "vae",
-    "aced",
-    "cade",
-    "cave",
-    "dace",
-    "deva",
-    "ecad",
-    "vade",
-    "caved"
+    "gor",
+    "gos",
+    "log",
+    "lor",
+    "los",
+    "low",
+    "org",
+    "ors",
+    "owl",
+    "row",
+    "sog",
+    "sol",
+    "sow",
+    "wos",
+    "glow",
+    "gors",
+    "gowl",
+    "grow",
+    "logs",
+    "lows",
+    "orgs",
+    "owls",
+    "rows",
+    "slog",
+    "slow",
+    "sowl",
+    "glows",
+    "gowls",
+    "growl",
+    "grows",
+    "growls"
   ]
 }

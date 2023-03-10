@@ -1,40 +1,61 @@
 {
   "anagrams": [
-    "ab",
-    "ae",
-    "ar",
-    "ba",
-    "be",
-    "ea",
-    "er",
-    "re",
-    "ace",
-    "arb",
-    "arc",
-    "are",
-    "bac",
-    "bae",
-    "bar",
-    "bra",
-    "cab",
-    "car",
-    "ear",
-    "era",
-    "reb",
-    "rec",
-    "aber",
-    "acer",
-    "acre",
-    "bare",
-    "bear",
-    "brae",
-    "carb",
-    "care",
-    "crab",
-    "race",
-    "acerb",
-    "brace",
-    "caber",
-    "cabre"
+    "ace",
+    "ale",
+    "ame",
+    "ane",
+    "cal",
+    "cam",
+    "can",
+    "cel",
+    "ean",
+    "elm",
+    "lac",
+    "lam",
+    "lea",
+    "mac",
+    "mae",
+    "mal",
+    "man",
+    "mel",
+    "men",
+    "mna",
+    "nae",
+    "nam",
+    "acme",
+    "acne",
+    "alec",
+    "alme",
+    "amen",
+    "ance",
+    "calm",
+    "came",
+    "cane",
+    "clam",
+    "clan",
+    "clem",
+    "elan",
+    "lace",
+    "lame",
+    "lane",
+    "leam",
+    "lean",
+    "mace",
+    "male",
+    "mane",
+    "meal",
+    "mean",
+    "mela",
+    "name",
+    "neal",
+    "nema",
+    "ancle",
+    "camel",
+    "clame",
+    "clean",
+    "lance",
+    "leman",
+    "macle",
+    "encalm"
   ]
 }

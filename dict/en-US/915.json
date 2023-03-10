@@ -1,31 +1,29 @@
 {
   "anagrams": [
-    "ho",
-    "no",
-    "oh",
-    "on",
-    "oo",
-    "op",
-    "po",
-    "hon",
-    "hoo",
-    "hop",
-    "noh",
-    "noo",
-    "oho",
-    "ono",
-    "ooh",
-    "oon",
-    "oop",
-    "pho",
-    "poh",
-    "poo",
-    "hoon",
-    "hoop",
-    "noop",
-    "phon",
-    "pooh",
-    "poon",
-    "phono"
+    "ace",
+    "add",
+    "aue",
+    "cad",
+    "cud",
+    "cue",
+    "dad",
+    "dae",
+    "dud",
+    "due",
+    "eau",
+    "ecu",
+    "aced",
+    "cade",
+    "cued",
+    "dace",
+    "daud",
+    "dead",
+    "duad",
+    "duce",
+    "dude",
+    "dued",
+    "ecad",
+    "decad",
+    "adduce"
   ]
 }

@@ -1,33 +1,67 @@
 {
   "anagrams": [
-    "ag",
-    "al",
-    "an",
-    "as",
-    "la",
-    "na",
-    "ags",
-    "als",
-    "ans",
-    "gal",
-    "gan",
-    "gas",
-    "lag",
-    "las",
-    "nag",
-    "nas",
-    "sag",
-    "sal",
-    "san",
-    "gals",
-    "gans",
-    "lags",
-    "lang",
-    "nags",
-    "sang",
-    "slag",
-    "snag",
-    "glans",
-    "slang"
+    "ate",
+    "awe",
+    "aye",
+    "eat",
+    "eta",
+    "eth",
+    "ewt",
+    "hae",
+    "hat",
+    "haw",
+    "hay",
+    "het",
+    "hew",
+    "hey",
+    "hye",
+    "tae",
+    "taw",
+    "tay",
+    "tea",
+    "tew",
+    "the",
+    "thy",
+    "twa",
+    "tye",
+    "wae",
+    "wat",
+    "way",
+    "wet",
+    "wey",
+    "wha",
+    "why",
+    "wye",
+    "yae",
+    "yah",
+    "yaw",
+    "yea",
+    "yeh",
+    "yet",
+    "yew",
+    "eath",
+    "haet",
+    "hate",
+    "heat",
+    "hyte",
+    "thae",
+    "thaw",
+    "thew",
+    "they",
+    "twae",
+    "tway",
+    "wate",
+    "weta",
+    "whae",
+    "what",
+    "whet",
+    "whey",
+    "wyte",
+    "yate",
+    "yeah",
+    "thawy",
+    "thewy",
+    "wheat",
+    "wheaty"
   ]
 }

@@ -1,50 +1,31 @@
 {
   "anagrams": [
-    "ae",
-    "al",
-    "as",
-    "ea",
-    "el",
-    "es",
-    "ka",
-    "la",
-    "ake",
-    "ale",
-    "als",
-    "ask",
-    "eas",
-    "elk",
-    "els",
-    "kae",
-    "kas",
-    "kea",
-    "las",
-    "lea",
-    "lek",
-    "les",
-    "sae",
-    "sal",
-    "sea",
-    "sel",
-    "ska",
-    "akes",
-    "ales",
-    "elks",
-    "kaes",
-    "kale",
-    "keas",
-    "lake",
-    "lase",
-    "leak",
-    "leas",
-    "leks",
-    "sake",
-    "sale",
-    "seal",
-    "slae",
-    "kales",
-    "lakes",
-    "leaks",
-    "slake"
+    "col",
+    "coo",
+    "cor",
+    "cru",
+    "cur",
+    "loo",
+    "lor",
+    "lou",
+    "lur",
+    "oor",
+    "orc",
+    "our",
+    "roc",
+    "roo",
+    "ruc",
+    "clou",
+    "cool",
+    "cour",
+    "curl",
+    "loco",
+    "loor",
+    "lour",
+    "roul",
+    "clour",
+    "color",
+    "crool",
+    "colour"
   ]
 }

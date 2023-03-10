@@ -1,38 +1,80 @@
 {
   "anagrams": [
-    "gu",
-    "nu",
-    "ug",
-    "un",
-    "us",
-    "ut",
-    "gnu",
-    "gun",
-    "gus",
-    "gut",
-    "nug",
-    "nus",
-    "nut",
-    "sug",
-    "sun",
-    "tug",
-    "tun",
-    "ugs",
-    "uns",
-    "uts",
-    "gnus",
-    "guns",
-    "gust",
-    "guts",
-    "nugs",
-    "nuts",
-    "snug",
-    "stun",
-    "sung",
-    "tugs",
-    "tung",
-    "tuns",
-    "stung",
-    "tungs"
+    "ace",
+    "ane",
+    "arc",
+    "are",
+    "can",
+    "car",
+    "con",
+    "cor",
+    "ean",
+    "ear",
+    "eco",
+    "eon",
+    "era",
+    "ern",
+    "nae",
+    "nor",
+    "oar",
+    "oca",
+    "one",
+    "ora",
+    "orc",
+    "ore",
+    "ran",
+    "rec",
+    "ren",
+    "reo",
+    "roc",
+    "roe",
+    "acer",
+    "acne",
+    "acre",
+    "acro",
+    "aeon",
+    "aero",
+    "ance",
+    "arco",
+    "cane",
+    "care",
+    "carn",
+    "cero",
+    "cone",
+    "core",
+    "corn",
+    "cran",
+    "cron",
+    "earn",
+    "eoan",
+    "narc",
+    "nare",
+    "near",
+    "once",
+    "oner",
+    "orca",
+    "race",
+    "rean",
+    "reno",
+    "roan",
+    "rone",
+    "acorn",
+    "caner",
+    "canoe",
+    "caron",
+    "crane",
+    "crena",
+    "crone",
+    "nacre",
+    "narco",
+    "ocean",
+    "ocrea",
+    "oncer",
+    "racon",
+    "rance",
+    "recon",
+    "canoer",
+    "cornea",
+    "earcon"
   ]
 }

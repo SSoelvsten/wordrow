@@ -1,43 +1,37 @@
 {
   "anagrams": [
-    "ar",
-    "at",
-    "ka",
-    "ko",
-    "ok",
-    "or",
-    "ta",
-    "to",
-    "ark",
-    "art",
-    "kat",
-    "koa",
-    "kor",
-    "oak",
-    "oar",
-    "oat",
-    "oka",
-    "ora",
-    "ort",
-    "rat",
-    "rok",
-    "rot",
-    "tak",
-    "tao",
-    "tar",
-    "tor",
-    "atok",
-    "karo",
-    "kart",
-    "kora",
-    "okra",
-    "okta",
-    "rato",
-    "rota",
-    "taro",
-    "tora",
-    "korat",
-    "tarok",
-    "troak"
+    "all",
+    "alt",
+    "hao",
+    "hat",
+    "hoa",
+    "hot",
+    "lah",
+    "lat",
+    "lot",
+    "oat",
+    "tao",
+    "tho",
+    "alto",
+    "hall",
+    "halo",
+    "halt",
+    "holt",
+    "lath",
+    "lota",
+    "loth",
+    "oath",
+    "olla",
+    "tall",
+    "tola",
+    "toll",
+    "allot",
+    "altho",
+    "atoll",
+    "hallo",
+    "holla",
+    "loath",
+    "lotah",
+    "hallot"
   ]
 }

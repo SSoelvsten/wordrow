@@ -1,40 +1,97 @@
 {
   "anagrams": [
-    "op",
-    "or",
-    "os",
-    "po",
-    "so",
-    "to",
-    "ops",
-    "opt",
-    "ors",
-    "ort",
-    "pos",
-    "pot",
-    "pro",
-    "rot",
-    "sop",
-    "sot",
-    "top",
-    "tor",
-    "opts",
-    "orts",
-    "port",
-    "post",
-    "pots",
-    "pros",
-    "rost",
-    "rots",
-    "sort",
-    "spot",
-    "stop",
-    "tops",
-    "tors",
-    "trop",
-    "ports",
-    "prost",
-    "sport",
-    "strop"
+    "ads",
+    "age",
+    "ags",
+    "ale",
+    "als",
+    "dae",
+    "dag",
+    "dal",
+    "das",
+    "deg",
+    "del",
+    "eas",
+    "eds",
+    "eld",
+    "els",
+    "gad",
+    "gae",
+    "gal",
+    "gas",
+    "ged",
+    "gel",
+    "lad",
+    "lag",
+    "las",
+    "lea",
+    "led",
+    "leg",
+    "les",
+    "sad",
+    "sae",
+    "sag",
+    "sal",
+    "sea",
+    "sed",
+    "seg",
+    "sel",
+    "aged",
+    "ages",
+    "ales",
+    "daes",
+    "dags",
+    "dale",
+    "dals",
+    "deal",
+    "degs",
+    "dels",
+    "egad",
+    "egal",
+    "elds",
+    "gade",
+    "gads",
+    "gaed",
+    "gaes",
+    "gale",
+    "gals",
+    "geal",
+    "geds",
+    "geld",
+    "gels",
+    "glad",
+    "gled",
+    "lade",
+    "lads",
+    "lags",
+    "lase",
+    "lead",
+    "leas",
+    "legs",
+    "sade",
+    "sage",
+    "sale",
+    "seal",
+    "seld",
+    "slae",
+    "slag",
+    "sled",
+    "dales",
+    "deals",
+    "degas",
+    "egads",
+    "gades",
+    "galed",
+    "gales",
+    "geals",
+    "gelds",
+    "glade",
+    "glads",
+    "gleds",
+    "lades",
+    "lased",
+    "leads",
+    "slade",
+    "glades"
   ]
 }

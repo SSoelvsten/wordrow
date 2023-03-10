@@ -1,29 +1,71 @@
 {
   "anagrams": [
-    "in",
-    "io",
-    "mi",
-    "mo",
-    "mu",
-    "no",
-    "nu",
-    "oi",
-    "om",
-    "on",
-    "ou",
-    "um",
-    "un",
-    "ion",
-    "moi",
-    "mon",
-    "mou",
-    "mun",
-    "nim",
-    "nom",
-    "uni",
-    "mino",
-    "muni",
-    "muon",
-    "onium"
+    "ace",
+    "ale",
+    "alf",
+    "als",
+    "caf",
+    "cal",
+    "cel",
+    "eas",
+    "efs",
+    "elf",
+    "els",
+    "fae",
+    "fas",
+    "fes",
+    "lac",
+    "las",
+    "lea",
+    "les",
+    "sac",
+    "sae",
+    "sal",
+    "sea",
+    "sec",
+    "sel",
+    "aces",
+    "aesc",
+    "alec",
+    "alef",
+    "ales",
+    "alfs",
+    "cafe",
+    "cafs",
+    "calf",
+    "cals",
+    "case",
+    "ceas",
+    "cels",
+    "clef",
+    "elfs",
+    "face",
+    "feal",
+    "flea",
+    "lace",
+    "lacs",
+    "lase",
+    "leaf",
+    "leas",
+    "safe",
+    "sale",
+    "seal",
+    "self",
+    "slae",
+    "alecs",
+    "alefs",
+    "cafes",
+    "calfs",
+    "claes",
+    "clefs",
+    "faces",
+    "false",
+    "feals",
+    "fecal",
+    "fleas",
+    "laces",
+    "leafs",
+    "scale",
+    "falces"
   ]
 }

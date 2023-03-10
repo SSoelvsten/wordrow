@@ -1,45 +1,36 @@
 {
   "anagrams": [
-    "ae",
-    "al",
-    "as",
-    "ea",
-    "ee",
-    "el",
-    "es",
-    "la",
-    "ale",
-    "als",
-    "eas",
-    "eel",
-    "els",
-    "las",
-    "lea",
-    "lee",
-    "les",
-    "sae",
-    "sal",
-    "sea",
-    "see",
-    "sel",
-    "alee",
-    "ales",
-    "eale",
-    "ease",
-    "eels",
-    "else",
-    "lase",
-    "leas",
-    "lees",
-    "sale",
-    "seal",
-    "seel",
-    "sele",
-    "slae",
-    "slee",
-    "eales",
-    "easel",
-    "easle",
-    "lease"
+    "ins",
+    "ion",
+    "ios",
+    "iso",
+    "nis",
+    "nos",
+    "nus",
+    "ois",
+    "ons",
+    "ous",
+    "qin",
+    "qis",
+    "sin",
+    "son",
+    "sou",
+    "sui",
+    "sun",
+    "suq",
+    "uni",
+    "uns",
+    "ions",
+    "nous",
+    "onus",
+    "qins",
+    "quin",
+    "suni",
+    "unis",
+    "quino",
+    "quins",
+    "quoin",
+    "quinos",
+    "quoins"
   ]
 }

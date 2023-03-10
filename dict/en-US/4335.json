@@ -1,46 +1,33 @@
 {
   "anagrams": [
-    "ae",
-    "as",
-    "at",
-    "ea",
-    "es",
-    "et",
-    "ta",
-    "te",
-    "za",
-    "ze",
-    "ate",
-    "ats",
-    "eas",
-    "eat",
-    "est",
-    "eta",
-    "sae",
-    "sat",
-    "saz",
-    "sea",
-    "set",
-    "sez",
-    "tae",
-    "tas",
-    "tea",
-    "tes",
-    "zas",
-    "zea",
-    "ates",
-    "east",
-    "eats",
-    "etas",
-    "sate",
-    "seat",
-    "seta",
-    "taes",
-    "tase",
-    "teas",
-    "zeas",
-    "zest",
-    "zeta",
-    "zetas"
+    "ell",
+    "erg",
+    "gel",
+    "ger",
+    "gue",
+    "gul",
+    "gur",
+    "leg",
+    "leu",
+    "lug",
+    "lur",
+    "reg",
+    "rue",
+    "rug",
+    "ule",
+    "ure",
+    "glue",
+    "grue",
+    "gule",
+    "gull",
+    "gurl",
+    "luge",
+    "lure",
+    "rule",
+    "urge",
+    "gluer",
+    "gruel",
+    "luger",
+    "guller"
   ]
 }

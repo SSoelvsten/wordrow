@@ -1,40 +1,59 @@
 {
   "anagrams": [
-    "el",
-    "en",
-    "go",
-    "lo",
-    "ne",
-    "no",
-    "oe",
-    "on",
-    "ego",
-    "eng",
-    "eon",
-    "gel",
-    "gen",
-    "geo",
-    "goe",
-    "gon",
-    "leg",
-    "log",
-    "neg",
-    "nog",
-    "ole",
-    "one",
-    "enol",
-    "glen",
-    "goel",
-    "gole",
-    "gone",
-    "leng",
-    "leno",
-    "loge",
-    "lone",
-    "long",
-    "noel",
-    "nole",
-    "ogle",
-    "longe"
+    "aby",
+    "alb",
+    "ale",
+    "awe",
+    "awl",
+    "aye",
+    "bae",
+    "bal",
+    "bay",
+    "bel",
+    "bey",
+    "bye",
+    "lab",
+    "law",
+    "lay",
+    "lea",
+    "lew",
+    "ley",
+    "lye",
+    "wab",
+    "wae",
+    "way",
+    "web",
+    "wey",
+    "wye",
+    "yae",
+    "yaw",
+    "yea",
+    "yew",
+    "able",
+    "ably",
+    "abye",
+    "albe",
+    "alew",
+    "bael",
+    "bale",
+    "bawl",
+    "baye",
+    "beal",
+    "blae",
+    "blaw",
+    "blay",
+    "blew",
+    "bley",
+    "wale",
+    "waly",
+    "weal",
+    "wyle",
+    "yale",
+    "yawl",
+    "bayle",
+    "belay",
+    "bylaw",
+    "bawley",
+    "byelaw"
   ]
 }

@@ -1,41 +1,76 @@
 {
   "anagrams": [
-    "en",
-    "et",
-    "ne",
-    "no",
-    "oe",
-    "on",
-    "op",
-    "pe",
-    "po",
-    "te",
-    "to",
-    "eon",
-    "nep",
-    "net",
-    "not",
-    "one",
-    "ope",
-    "opt",
-    "pen",
-    "pet",
-    "pot",
-    "ten",
-    "toe",
-    "ton",
-    "top",
-    "nope",
-    "note",
-    "open",
-    "pent",
-    "peon",
-    "poet",
-    "pone",
-    "pont",
-    "pote",
-    "tone",
-    "tope",
-    "netop"
+    "ace",
+    "age",
+    "arc",
+    "ard",
+    "are",
+    "cad",
+    "cag",
+    "car",
+    "dae",
+    "dag",
+    "deg",
+    "ear",
+    "era",
+    "erg",
+    "gad",
+    "gae",
+    "gar",
+    "ged",
+    "ger",
+    "rad",
+    "rag",
+    "rec",
+    "red",
+    "reg",
+    "aced",
+    "acer",
+    "acre",
+    "aged",
+    "ager",
+    "ared",
+    "areg",
+    "cade",
+    "cage",
+    "card",
+    "care",
+    "crag",
+    "cred",
+    "dace",
+    "dare",
+    "darg",
+    "dear",
+    "drac",
+    "drag",
+    "dreg",
+    "eard",
+    "ecad",
+    "egad",
+    "gade",
+    "gaed",
+    "gare",
+    "gear",
+    "grad",
+    "race",
+    "rade",
+    "rage",
+    "read",
+    "acred",
+    "arced",
+    "cadge",
+    "cadre",
+    "caged",
+    "cager",
+    "cared",
+    "cedar",
+    "grace",
+    "grade",
+    "raced",
+    "radge",
+    "ragde",
+    "raged",
+    "cadger",
+    "graced"
   ]
 }

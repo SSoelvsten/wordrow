@@ -1,44 +1,77 @@
 {
   "anagrams": [
-    "ad",
-    "ae",
-    "ag",
-    "at",
-    "da",
-    "de",
-    "ea",
-    "ed",
-    "et",
-    "ta",
-    "te",
-    "age",
-    "ate",
-    "dae",
-    "dag",
-    "deg",
-    "eat",
-    "eta",
-    "gad",
-    "gae",
-    "gat",
-    "ged",
-    "get",
-    "tad",
-    "tae",
-    "tag",
-    "tea",
-    "ted",
-    "teg",
-    "aged",
-    "date",
-    "egad",
-    "gade",
-    "gaed",
-    "gate",
-    "geat",
-    "geta",
-    "taed",
-    "tead",
-    "gated"
+    "dei",
+    "die",
+    "dis",
+    "dit",
+    "due",
+    "dui",
+    "eds",
+    "est",
+    "ide",
+    "ids",
+    "its",
+    "sed",
+    "sei",
+    "set",
+    "sit",
+    "sud",
+    "sue",
+    "sui",
+    "ted",
+    "tes",
+    "tid",
+    "tie",
+    "tis",
+    "tui",
+    "uds",
+    "use",
+    "ute",
+    "uts",
+    "desi",
+    "deus",
+    "dies",
+    "diet",
+    "dite",
+    "dits",
+    "dues",
+    "duet",
+    "duit",
+    "dust",
+    "edit",
+    "etui",
+    "ides",
+    "side",
+    "site",
+    "sted",
+    "stie",
+    "stud",
+    "sued",
+    "suet",
+    "suid",
+    "suit",
+    "teds",
+    "tide",
+    "tids",
+    "tied",
+    "ties",
+    "tuis",
+    "used",
+    "utes",
+    "utis",
+    "deist",
+    "diets",
+    "dites",
+    "duets",
+    "duits",
+    "edits",
+    "etuis",
+    "sited",
+    "stied",
+    "stude",
+    "suite",
+    "tides",
+    "duties",
+    "suited"
   ]
 }

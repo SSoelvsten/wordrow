@@ -1,65 +1,89 @@
 {
   "anagrams": [
-    "ae",
-    "al",
-    "ar",
-    "as",
-    "ea",
-    "el",
-    "er",
-    "es",
-    "la",
-    "re",
-    "ale",
-    "als",
-    "are",
-    "ars",
-    "ear",
-    "eas",
-    "els",
-    "era",
-    "ers",
-    "lar",
-    "las",
-    "lea",
-    "les",
-    "ras",
-    "res",
-    "sae",
-    "sal",
-    "sar",
-    "sea",
-    "sel",
-    "ser",
-    "ales",
-    "ares",
-    "arle",
-    "arse",
-    "earl",
-    "ears",
-    "eras",
-    "laer",
-    "lare",
-    "lars",
-    "lase",
-    "lear",
-    "leas",
-    "rale",
-    "rase",
-    "real",
-    "sale",
-    "seal",
-    "sear",
-    "sera",
-    "slae",
-    "arles",
-    "earls",
-    "laers",
-    "lares",
-    "laser",
-    "lears",
-    "rales",
-    "reals",
-    "seral"
+    "ale",
+    "alf",
+    "als",
+    "ame",
+    "eas",
+    "efs",
+    "elf",
+    "elm",
+    "els",
+    "ems",
+    "fae",
+    "fas",
+    "fem",
+    "fes",
+    "lam",
+    "las",
+    "lea",
+    "les",
+    "mae",
+    "mal",
+    "mas",
+    "mel",
+    "mes",
+    "sae",
+    "sal",
+    "sam",
+    "sea",
+    "sel",
+    "sma",
+    "alef",
+    "ales",
+    "alfs",
+    "alme",
+    "alms",
+    "ames",
+    "elfs",
+    "elms",
+    "fame",
+    "feal",
+    "fems",
+    "flam",
+    "flea",
+    "lame",
+    "lams",
+    "lase",
+    "leaf",
+    "leam",
+    "leas",
+    "maes",
+    "male",
+    "mals",
+    "mase",
+    "meal",
+    "mela",
+    "mels",
+    "mesa",
+    "safe",
+    "sale",
+    "same",
+    "seal",
+    "seam",
+    "self",
+    "slae",
+    "slam",
+    "alefs",
+    "almes",
+    "false",
+    "fames",
+    "feals",
+    "femal",
+    "flame",
+    "flams",
+    "fleam",
+    "fleas",
+    "lames",
+    "leafs",
+    "leams",
+    "males",
+    "meals",
+    "melas",
+    "mesal",
+    "samel",
+    "femals",
+    "flames",
+    "fleams"
   ]
 }

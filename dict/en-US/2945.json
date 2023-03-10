@@ -1,38 +1,47 @@
 {
   "anagrams": [
-    "ad",
-    "ar",
-    "da",
-    "do",
-    "od",
-    "or",
-    "ado",
-    "arc",
-    "ard",
-    "cad",
-    "car",
-    "cod",
-    "cor",
-    "doc",
-    "dor",
-    "oar",
-    "oca",
-    "oda",
-    "ora",
-    "orc",
-    "ord",
-    "rad",
-    "roc",
-    "rod",
-    "acro",
-    "arco",
-    "card",
-    "coda",
-    "cord",
-    "drac",
-    "orad",
-    "orca",
-    "road",
-    "draco"
+    "cod",
+    "cor",
+    "doc",
+    "doe",
+    "dor",
+    "eco",
+    "err",
+    "ode",
+    "orc",
+    "ord",
+    "ore",
+    "rec",
+    "red",
+    "reo",
+    "roc",
+    "rod",
+    "roe",
+    "cero",
+    "code",
+    "coed",
+    "cord",
+    "core",
+    "cred",
+    "deco",
+    "dero",
+    "doer",
+    "dore",
+    "dorr",
+    "ecod",
+    "redo",
+    "rode",
+    "roed",
+    "rore",
+    "coder",
+    "cored",
+    "corer",
+    "credo",
+    "crore",
+    "decor",
+    "derro",
+    "order",
+    "corder",
+    "record"
   ]
 }

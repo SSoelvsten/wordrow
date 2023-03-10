@@ -1,38 +1,111 @@
 {
   "anagrams": [
-    "es",
-    "et",
-    "is",
-    "it",
-    "si",
-    "te",
-    "ti",
-    "us",
-    "ut",
-    "est",
-    "its",
-    "sei",
-    "set",
-    "sit",
-    "sue",
-    "sui",
-    "tes",
-    "tie",
-    "tis",
-    "tui",
-    "use",
-    "ute",
-    "uts",
-    "etui",
-    "site",
-    "stie",
-    "suet",
-    "suit",
-    "ties",
-    "tuis",
-    "utes",
-    "utis",
-    "etuis",
-    "suite"
+    "els",
+    "elt",
+    "ens",
+    "est",
+    "ins",
+    "its",
+    "lei",
+    "les",
+    "let",
+    "lie",
+    "lin",
+    "lis",
+    "lit",
+    "net",
+    "nie",
+    "nil",
+    "nis",
+    "nit",
+    "sei",
+    "sel",
+    "sen",
+    "set",
+    "sin",
+    "sit",
+    "tel",
+    "ten",
+    "tes",
+    "tie",
+    "til",
+    "tin",
+    "tis",
+    "elts",
+    "ents",
+    "isle",
+    "leis",
+    "lens",
+    "lent",
+    "lest",
+    "lets",
+    "lien",
+    "lies",
+    "line",
+    "lins",
+    "lint",
+    "list",
+    "lite",
+    "lits",
+    "nest",
+    "nets",
+    "nies",
+    "nils",
+    "nite",
+    "nits",
+    "seil",
+    "sent",
+    "sien",
+    "sile",
+    "silt",
+    "sine",
+    "site",
+    "slit",
+    "snit",
+    "sten",
+    "stie",
+    "teil",
+    "tein",
+    "tels",
+    "tens",
+    "ties",
+    "tile",
+    "tils",
+    "tine",
+    "tins",
+    "elint",
+    "elsin",
+    "enlit",
+    "inlet",
+    "inset",
+    "intel",
+    "islet",
+    "istle",
+    "lenis",
+    "lenti",
+    "liens",
+    "lines",
+    "lints",
+    "lites",
+    "neist",
+    "nelis",
+    "nites",
+    "senti",
+    "sient",
+    "silen",
+    "steil",
+    "stein",
+    "stile",
+    "teils",
+    "teins",
+    "tiles",
+    "tines",
+    "elints",
+    "enlist",
+    "inlets",
+    "intels",
+    "listen",
+    "silent",
+    "tinsel"
   ]
 }

@@ -1,35 +1,101 @@
 {
   "anagrams": [
-    "ae",
-    "as",
-    "ea",
-    "es",
-    "us",
-    "aue",
-    "ave",
-    "eas",
-    "eau",
-    "sae",
-    "sau",
-    "sav",
-    "sea",
-    "sev",
-    "sue",
-    "use",
-    "uva",
-    "vae",
-    "vas",
-    "vau",
-    "aves",
-    "eaus",
-    "save",
-    "uvae",
-    "uvas",
-    "uvea",
-    "vaes",
-    "vase",
-    "vaus",
-    "suave",
-    "uveas"
+    "cod",
+    "cor",
+    "cos",
+    "doc",
+    "doe",
+    "dor",
+    "dos",
+    "dso",
+    "eco",
+    "eds",
+    "ers",
+    "ode",
+    "ods",
+    "oes",
+    "orc",
+    "ord",
+    "ore",
+    "ors",
+    "ose",
+    "rec",
+    "red",
+    "reo",
+    "res",
+    "roc",
+    "rod",
+    "roe",
+    "sec",
+    "sed",
+    "ser",
+    "soc",
+    "sod",
+    "cero",
+    "code",
+    "cods",
+    "coed",
+    "cord",
+    "core",
+    "cors",
+    "cose",
+    "cred",
+    "deco",
+    "dero",
+    "docs",
+    "doer",
+    "does",
+    "dore",
+    "dors",
+    "dose",
+    "ecod",
+    "ecos",
+    "eros",
+    "odes",
+    "orcs",
+    "ords",
+    "ores",
+    "recs",
+    "redo",
+    "reds",
+    "reos",
+    "rocs",
+    "rode",
+    "rods",
+    "roed",
+    "roes",
+    "rose",
+    "seco",
+    "sord",
+    "sore",
+    "ceros",
+    "coder",
+    "codes",
+    "coeds",
+    "cords",
+    "cored",
+    "cores",
+    "corse",
+    "cosed",
+    "credo",
+    "creds",
+    "decor",
+    "decos",
+    "deros",
+    "doers",
+    "dores",
+    "dorse",
+    "doser",
+    "redos",
+    "resod",
+    "rodes",
+    "rosed",
+    "score",
+    "scrod",
+    "sored",
+    "coders",
+    "credos",
+    "decors",
+    "scored"
   ]
 }

@@ -1,41 +1,77 @@
 {
   "anagrams": [
-    "ai",
-    "as",
-    "at",
-    "is",
-    "it",
-    "si",
-    "ta",
-    "ti",
-    "ais",
-    "ait",
-    "ats",
-    "ita",
-    "its",
-    "sai",
-    "sat",
-    "sav",
-    "sit",
-    "tai",
-    "tas",
-    "tav",
-    "tis",
-    "vas",
-    "vat",
-    "via",
-    "vis",
-    "aits",
-    "itas",
-    "sati",
-    "tais",
-    "tavs",
-    "vast",
-    "vats",
-    "vias",
-    "visa",
-    "vita",
-    "vista",
-    "vitas"
+    "deg",
+    "doe",
+    "dog",
+    "dor",
+    "due",
+    "dug",
+    "duo",
+    "ego",
+    "erg",
+    "ged",
+    "geo",
+    "ger",
+    "god",
+    "goe",
+    "gor",
+    "gue",
+    "gur",
+    "ode",
+    "ord",
+    "ore",
+    "org",
+    "oud",
+    "our",
+    "red",
+    "reg",
+    "reo",
+    "rod",
+    "roe",
+    "rud",
+    "rue",
+    "rug",
+    "udo",
+    "urd",
+    "ure",
+    "degu",
+    "dero",
+    "doer",
+    "doge",
+    "dore",
+    "dour",
+    "dreg",
+    "drug",
+    "dure",
+    "duro",
+    "ergo",
+    "euro",
+    "goer",
+    "gore",
+    "grue",
+    "gude",
+    "ogre",
+    "redo",
+    "rego",
+    "rode",
+    "roed",
+    "roue",
+    "rude",
+    "rued",
+    "urde",
+    "urge",
+    "erugo",
+    "gored",
+    "gourd",
+    "grued",
+    "orgue",
+    "rogue",
+    "rouge",
+    "uredo",
+    "urged",
+    "drogue",
+    "gourde",
+    "rogued",
+    "rouged"
   ]
 }

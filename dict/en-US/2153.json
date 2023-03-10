@@ -1,35 +1,64 @@
 {
   "anagrams": [
-    "be",
-    "bo",
-    "es",
-    "ob",
-    "oe",
-    "op",
-    "os",
-    "pe",
-    "po",
-    "so",
-    "bes",
-    "bop",
-    "bos",
-    "obe",
-    "obs",
-    "oes",
-    "ope",
-    "ops",
-    "ose",
-    "pes",
-    "pos",
-    "sob",
-    "sop",
-    "boep",
-    "bops",
-    "epos",
-    "obes",
-    "opes",
-    "peso",
-    "pose",
-    "boeps"
+    "aft",
+    "ahi",
+    "ahs",
+    "ais",
+    "ait",
+    "ash",
+    "ats",
+    "fah",
+    "fas",
+    "fat",
+    "fit",
+    "has",
+    "hat",
+    "his",
+    "hit",
+    "ifs",
+    "ish",
+    "ita",
+    "its",
+    "sai",
+    "sat",
+    "sif",
+    "sit",
+    "tai",
+    "tas",
+    "tis",
+    "ahis",
+    "aits",
+    "fahs",
+    "fash",
+    "fast",
+    "fats",
+    "fiat",
+    "fish",
+    "fist",
+    "fits",
+    "haft",
+    "hast",
+    "hats",
+    "hist",
+    "hits",
+    "itas",
+    "saft",
+    "sati",
+    "shat",
+    "shit",
+    "sift",
+    "sith",
+    "tais",
+    "tash",
+    "this",
+    "faith",
+    "fasti",
+    "fiats",
+    "hafts",
+    "saith",
+    "shaft",
+    "shift",
+    "taish",
+    "faiths"
   ]
 }

@@ -1,25 +1,75 @@
 {
   "anagrams": [
-    "ab",
-    "ar",
-    "ba",
-    "ha",
-    "ach",
-    "arb",
-    "arc",
-    "bac",
-    "bar",
-    "bra",
-    "cab",
-    "car",
-    "cha",
-    "rah",
-    "arch",
-    "bach",
-    "carb",
-    "char",
-    "crab",
-    "rach",
-    "brach"
+    "ess",
+    "est",
+    "oes",
+    "ope",
+    "ops",
+    "opt",
+    "ose",
+    "pes",
+    "pet",
+    "pos",
+    "pot",
+    "set",
+    "sop",
+    "sos",
+    "sot",
+    "tes",
+    "toe",
+    "top",
+    "epos",
+    "ests",
+    "opes",
+    "opts",
+    "oses",
+    "peso",
+    "pest",
+    "pets",
+    "poet",
+    "pose",
+    "poss",
+    "post",
+    "pote",
+    "pots",
+    "seps",
+    "sept",
+    "sets",
+    "sops",
+    "sots",
+    "spet",
+    "spot",
+    "step",
+    "stop",
+    "toes",
+    "tope",
+    "tops",
+    "tose",
+    "toss",
+    "estop",
+    "pesos",
+    "pesto",
+    "pests",
+    "poets",
+    "poses",
+    "posse",
+    "posts",
+    "potes",
+    "septs",
+    "speos",
+    "spets",
+    "spots",
+    "steps",
+    "stoep",
+    "stope",
+    "stops",
+    "topes",
+    "toses",
+    "estops",
+    "pestos",
+    "posset",
+    "ptoses",
+    "stoeps",
+    "stopes"
   ]
 }

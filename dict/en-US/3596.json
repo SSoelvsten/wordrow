@@ -1,49 +1,108 @@
 {
   "anagrams": [
-    "ab",
-    "ar",
-    "at",
-    "ba",
-    "bo",
-    "ob",
-    "or",
-    "ta",
-    "to",
-    "arb",
-    "art",
-    "bao",
-    "bar",
-    "bat",
-    "boa",
-    "bor",
-    "bot",
-    "bra",
-    "bro",
-    "oar",
-    "oat",
-    "oba",
-    "ora",
-    "orb",
-    "ort",
-    "rat",
-    "rob",
-    "rot",
-    "tab",
-    "tao",
-    "tar",
-    "tor",
-    "boar",
-    "boat",
-    "bora",
-    "bort",
-    "bota",
-    "brat",
-    "rato",
-    "rota",
-    "taro",
-    "tora",
-    "abort",
-    "boart",
-    "tabor"
+    "abs",
+    "alb",
+    "ale",
+    "als",
+    "ame",
+    "bae",
+    "bal",
+    "bam",
+    "bas",
+    "bel",
+    "bes",
+    "eas",
+    "elm",
+    "els",
+    "ems",
+    "lab",
+    "lam",
+    "las",
+    "lea",
+    "les",
+    "mae",
+    "mal",
+    "mas",
+    "mel",
+    "mes",
+    "sab",
+    "sae",
+    "sal",
+    "sam",
+    "sea",
+    "sel",
+    "sma",
+    "able",
+    "albe",
+    "albs",
+    "ales",
+    "alme",
+    "alms",
+    "ames",
+    "bael",
+    "baes",
+    "bale",
+    "balm",
+    "bals",
+    "bams",
+    "base",
+    "beal",
+    "beam",
+    "bels",
+    "bema",
+    "blae",
+    "blam",
+    "elms",
+    "labs",
+    "lamb",
+    "lame",
+    "lams",
+    "lase",
+    "leam",
+    "leas",
+    "mabe",
+    "maes",
+    "male",
+    "mals",
+    "mase",
+    "meal",
+    "mela",
+    "mels",
+    "mesa",
+    "sabe",
+    "sale",
+    "same",
+    "seal",
+    "seam",
+    "slab",
+    "slae",
+    "slam",
+    "sleb",
+    "ables",
+    "almes",
+    "amble",
+    "baels",
+    "bales",
+    "balms",
+    "beals",
+    "beams",
+    "bemas",
+    "blaes",
+    "blame",
+    "blams",
+    "blase",
+    "lambs",
+    "lames",
+    "leams",
+    "mabes",
+    "males",
+    "meals",
+    "melas",
+    "melba",
+    "mesal",
+    "sable",
+    "samel",
+    "ambles",
+    "blames"
   ]
 }

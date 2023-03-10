@@ -1,28 +1,44 @@
 {
   "anagrams": [
-    "de",
-    "di",
-    "ed",
-    "eh",
-    "he",
-    "hi",
-    "id",
-    "ki",
-    "dei",
-    "die",
-    "edh",
-    "eik",
-    "hid",
-    "hie",
-    "ide",
-    "ked",
-    "khi",
-    "kid",
-    "dike",
-    "heid",
-    "hide",
-    "hied",
-    "hike",
-    "hiked"
+    "abb",
+    "abs",
+    "bac",
+    "bao",
+    "bas",
+    "boa",
+    "bob",
+    "bos",
+    "cab",
+    "cob",
+    "cos",
+    "oba",
+    "obs",
+    "oca",
+    "sab",
+    "sac",
+    "sob",
+    "soc",
+    "abbs",
+    "bacs",
+    "baos",
+    "boab",
+    "boas",
+    "boba",
+    "bobs",
+    "cabs",
+    "cobb",
+    "cobs",
+    "obas",
+    "ocas",
+    "scab",
+    "soba",
+    "soca",
+    "boabs",
+    "bobac",
+    "bobas",
+    "cabob",
+    "cobbs",
+    "bobacs",
+    "cabobs"
   ]
 }

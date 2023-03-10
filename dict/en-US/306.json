@@ -1,35 +1,46 @@
 {
   "anagrams": [
-    "ae",
-    "ai",
-    "ar",
-    "ea",
-    "er",
-    "re",
-    "ace",
-    "air",
-    "arc",
-    "are",
-    "car",
-    "ear",
-    "era",
-    "ice",
-    "ire",
-    "rai",
-    "rec",
-    "rei",
-    "ria",
-    "acer",
-    "acre",
-    "care",
-    "cire",
-    "cria",
-    "eric",
-    "icer",
-    "race",
-    "rice",
-    "areic",
-    "ceria",
-    "erica"
+    "ace",
+    "ais",
+    "caf",
+    "cis",
+    "eas",
+    "efs",
+    "fae",
+    "fas",
+    "fes",
+    "fie",
+    "ice",
+    "ifs",
+    "sac",
+    "sae",
+    "sai",
+    "sea",
+    "sec",
+    "sei",
+    "sic",
+    "sif",
+    "aces",
+    "aesc",
+    "asci",
+    "cafe",
+    "cafs",
+    "case",
+    "ceas",
+    "face",
+    "feis",
+    "fice",
+    "fisc",
+    "ices",
+    "safe",
+    "saic",
+    "seif",
+    "sice",
+    "cafes",
+    "faces",
+    "fasci",
+    "fices",
+    "saice",
+    "facies"
   ]
 }

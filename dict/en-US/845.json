@@ -1,36 +1,120 @@
 {
   "anagrams": [
-    "ho",
-    "mo",
-    "oh",
-    "om",
-    "or",
-    "os",
-    "so",
-    "hom",
-    "hos",
-    "mho",
-    "mor",
-    "mos",
-    "ohm",
-    "ohs",
-    "oms",
-    "ors",
-    "rho",
-    "rom",
-    "sho",
-    "soh",
-    "som",
-    "homs",
-    "hors",
-    "mhos",
-    "mohr",
-    "mors",
-    "mosh",
-    "ohms",
-    "rhos",
-    "roms",
-    "shmo",
-    "mohrs"
+    "age",
+    "ags",
+    "ane",
+    "ans",
+    "are",
+    "ars",
+    "ean",
+    "ear",
+    "eas",
+    "eng",
+    "ens",
+    "era",
+    "erg",
+    "ern",
+    "ers",
+    "gae",
+    "gan",
+    "gar",
+    "gas",
+    "gen",
+    "ger",
+    "nae",
+    "nag",
+    "nas",
+    "neg",
+    "rag",
+    "ran",
+    "ras",
+    "reg",
+    "ren",
+    "res",
+    "sae",
+    "sag",
+    "san",
+    "sar",
+    "sea",
+    "seg",
+    "sen",
+    "ser",
+    "agen",
+    "ager",
+    "ages",
+    "anes",
+    "areg",
+    "ares",
+    "arse",
+    "eans",
+    "earn",
+    "ears",
+    "engs",
+    "eras",
+    "ergs",
+    "erns",
+    "gaen",
+    "gaes",
+    "gane",
+    "gans",
+    "gare",
+    "gars",
+    "gean",
+    "gear",
+    "gena",
+    "gens",
+    "gers",
+    "gnar",
+    "gran",
+    "gren",
+    "naes",
+    "nags",
+    "nare",
+    "near",
+    "negs",
+    "rage",
+    "rags",
+    "rang",
+    "rase",
+    "rean",
+    "regs",
+    "rens",
+    "sage",
+    "sane",
+    "sang",
+    "sean",
+    "sear",
+    "sena",
+    "sera",
+    "snag",
+    "snar",
+    "agers",
+    "anger",
+    "earns",
+    "gares",
+    "geans",
+    "gears",
+    "genas",
+    "gnars",
+    "grans",
+    "grens",
+    "nares",
+    "nears",
+    "rages",
+    "range",
+    "rangs",
+    "reans",
+    "regna",
+    "renga",
+    "sager",
+    "saner",
+    "sarge",
+    "segar",
+    "snare",
+    "angers",
+    "ranges",
+    "rengas",
+    "sanger",
+    "serang"
   ]
 }

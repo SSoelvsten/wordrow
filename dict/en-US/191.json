@@ -1,52 +1,86 @@
 {
   "anagrams": [
-    "do",
-    "od",
-    "op",
-    "os",
-    "ou",
-    "po",
-    "so",
-    "up",
-    "us",
-    "dop",
-    "dos",
-    "dso",
-    "duo",
-    "dup",
-    "ods",
-    "ops",
-    "oud",
-    "oup",
-    "ous",
-    "pod",
-    "pos",
-    "pud",
-    "pus",
-    "sod",
-    "sop",
-    "sou",
-    "sud",
-    "sup",
-    "udo",
-    "uds",
-    "upo",
-    "ups",
-    "dops",
-    "doup",
-    "duos",
-    "dups",
-    "opus",
-    "ouds",
-    "oups",
-    "pods",
-    "puds",
-    "soup",
-    "spod",
-    "spud",
-    "udos",
-    "updo",
-    "doups",
-    "updos"
+    "ace",
+    "arc",
+    "are",
+    "ars",
+    "ave",
+    "car",
+    "ear",
+    "eas",
+    "era",
+    "ers",
+    "ras",
+    "rav",
+    "rec",
+    "res",
+    "rev",
+    "sac",
+    "sae",
+    "sar",
+    "sav",
+    "sea",
+    "sec",
+    "ser",
+    "sev",
+    "vac",
+    "vae",
+    "var",
+    "vas",
+    "acer",
+    "aces",
+    "acre",
+    "aesc",
+    "arcs",
+    "ares",
+    "arse",
+    "aver",
+    "aves",
+    "care",
+    "cars",
+    "case",
+    "cave",
+    "ceas",
+    "ears",
+    "eras",
+    "race",
+    "rase",
+    "rave",
+    "ravs",
+    "recs",
+    "revs",
+    "save",
+    "scar",
+    "sear",
+    "sera",
+    "vacs",
+    "vaes",
+    "vare",
+    "vars",
+    "vase",
+    "vera",
+    "vers",
+    "acers",
+    "acres",
+    "avers",
+    "cares",
+    "carse",
+    "carve",
+    "caver",
+    "caves",
+    "crave",
+    "escar",
+    "races",
+    "raves",
+    "saver",
+    "scare",
+    "scrae",
+    "serac",
+    "varec",
+    "vares",
+    "carves",
+    "cavers",
+    "craves",
+    "varecs"
   ]
 }

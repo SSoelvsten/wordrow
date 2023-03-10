@@ -1,26 +1,32 @@
 {
   "anagrams": [
-    "of",
-    "oo",
-    "op",
-    "or",
-    "po",
-    "foo",
-    "fop",
-    "for",
-    "fro",
-    "oof",
-    "oop",
-    "oor",
-    "orf",
-    "poo",
-    "pro",
-    "roo",
-    "poor",
-    "prof",
-    "proo",
-    "roof",
-    "roop",
-    "proof"
+    "fog",
+    "fon",
+    "gon",
+    "gos",
+    "log",
+    "los",
+    "nog",
+    "nos",
+    "ons",
+    "sog",
+    "sol",
+    "son",
+    "flog",
+    "fogs",
+    "fons",
+    "golf",
+    "gons",
+    "logs",
+    "long",
+    "nogs",
+    "slog",
+    "snog",
+    "song",
+    "flogs",
+    "flong",
+    "golfs",
+    "longs",
+    "flongs"
   ]
 }

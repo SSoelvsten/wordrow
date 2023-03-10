@@ -1,58 +1,80 @@
 {
   "anagrams": [
-    "ai",
-    "as",
-    "at",
-    "is",
-    "it",
-    "pa",
-    "pi",
-    "si",
-    "ta",
-    "ti",
-    "ais",
-    "ait",
-    "apt",
-    "asp",
-    "ats",
-    "ita",
-    "its",
-    "pas",
-    "pat",
-    "pia",
-    "pis",
-    "pit",
-    "psi",
-    "sai",
-    "sap",
-    "sat",
-    "sip",
-    "sit",
-    "spa",
-    "tai",
-    "tap",
-    "tas",
-    "tip",
-    "tis",
-    "aits",
-    "apts",
-    "itas",
-    "pais",
-    "past",
-    "pats",
-    "pias",
-    "pita",
-    "pits",
-    "sati",
-    "spat",
-    "spit",
-    "stap",
-    "tais",
-    "taps",
-    "tips",
-    "pitas",
-    "spait",
-    "stipa",
-    "tapis"
+    "cep",
+    "cru",
+    "cue",
+    "cup",
+    "cur",
+    "ecu",
+    "ers",
+    "pec",
+    "per",
+    "pes",
+    "pre",
+    "pur",
+    "pus",
+    "rec",
+    "rep",
+    "res",
+    "ruc",
+    "rue",
+    "sec",
+    "ser",
+    "sue",
+    "sup",
+    "sur",
+    "ups",
+    "ure",
+    "urp",
+    "use",
+    "ceps",
+    "crue",
+    "crus",
+    "cues",
+    "cups",
+    "cure",
+    "curs",
+    "cusp",
+    "ecru",
+    "ecus",
+    "pecs",
+    "perc",
+    "puce",
+    "puer",
+    "pure",
+    "purs",
+    "recs",
+    "reps",
+    "rucs",
+    "rues",
+    "ruse",
+    "scup",
+    "scur",
+    "spec",
+    "spue",
+    "spur",
+    "suer",
+    "supe",
+    "sure",
+    "ures",
+    "urps",
+    "user",
+    "creps",
+    "crues",
+    "cruse",
+    "cures",
+    "curse",
+    "ecrus",
+    "percs",
+    "pucer",
+    "puces",
+    "puers",
+    "pures",
+    "purse",
+    "sprue",
+    "spuer",
+    "sucre",
+    "super",
+    "spruce"
   ]
 }

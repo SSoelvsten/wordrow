@@ -1,42 +1,58 @@
 {
   "anagrams": [
-    "am",
-    "an",
-    "at",
-    "ma",
-    "mo",
-    "na",
-    "no",
-    "om",
-    "on",
-    "ta",
-    "to",
-    "ant",
-    "man",
-    "mat",
-    "mna",
-    "moa",
-    "mon",
-    "mot",
-    "nam",
-    "nat",
-    "nom",
-    "not",
-    "oat",
-    "oma",
-    "tam",
-    "tan",
-    "tao",
-    "tom",
-    "ton",
-    "atom",
-    "mano",
-    "moan",
-    "moat",
-    "mona",
-    "noma",
-    "nota",
-    "manto",
-    "toman"
+    "chi",
+    "cis",
+    "cos",
+    "hic",
+    "his",
+    "hoc",
+    "hoi",
+    "hos",
+    "ich",
+    "ick",
+    "ios",
+    "ish",
+    "iso",
+    "khi",
+    "kis",
+    "koi",
+    "kos",
+    "och",
+    "ohs",
+    "oik",
+    "ois",
+    "sho",
+    "sic",
+    "sik",
+    "ski",
+    "soc",
+    "soh",
+    "chik",
+    "chis",
+    "cosh",
+    "hick",
+    "hock",
+    "hoik",
+    "hois",
+    "hoki",
+    "ichs",
+    "icks",
+    "khis",
+    "kish",
+    "kois",
+    "oiks",
+    "sich",
+    "sick",
+    "skio",
+    "sock",
+    "chiks",
+    "hicks",
+    "hocks",
+    "hoick",
+    "hoiks",
+    "hokis",
+    "shock",
+    "sicko",
+    "hoicks"
   ]
 }

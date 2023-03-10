@@ -1,28 +1,36 @@
 {
   "anagrams": [
-    "ab",
-    "ad",
-    "an",
-    "ay",
-    "ba",
-    "by",
-    "da",
-    "na",
-    "ny",
-    "ya",
-    "aby",
-    "and",
-    "any",
-    "bad",
-    "ban",
-    "bay",
-    "dab",
-    "dan",
-    "day",
-    "nab",
-    "nay",
-    "yad",
-    "band",
-    "bandy"
+    "ans",
+    "ass",
+    "can",
+    "con",
+    "cos",
+    "nas",
+    "nos",
+    "oca",
+    "ons",
+    "sac",
+    "san",
+    "soc",
+    "son",
+    "sos",
+    "cans",
+    "cons",
+    "coss",
+    "naos",
+    "ocas",
+    "ossa",
+    "sacs",
+    "sans",
+    "scan",
+    "soca",
+    "socs",
+    "sons",
+    "ascon",
+    "canso",
+    "scans",
+    "socas",
+    "ascons",
+    "cansos"
   ]
 }

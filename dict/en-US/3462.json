@@ -1,37 +1,62 @@
 {
   "anagrams": [
-    "ab",
-    "ai",
-    "al",
-    "am",
-    "ba",
-    "bi",
-    "la",
-    "li",
-    "ma",
-    "mi",
-    "ail",
-    "aim",
-    "alb",
-    "ami",
-    "bal",
-    "bam",
-    "lab",
-    "lam",
-    "lib",
-    "mal",
-    "mib",
-    "mil",
-    "bail",
-    "balm",
-    "bima",
-    "blam",
-    "iamb",
-    "lamb",
-    "lima",
-    "limb",
-    "mail",
-    "mali",
-    "limba"
+    "ach",
+    "arb",
+    "arc",
+    "bac",
+    "bao",
+    "bar",
+    "boa",
+    "boh",
+    "bor",
+    "bra",
+    "bro",
+    "cab",
+    "car",
+    "cha",
+    "cob",
+    "cor",
+    "hao",
+    "hoa",
+    "hob",
+    "hoc",
+    "oar",
+    "oba",
+    "oca",
+    "och",
+    "ora",
+    "orb",
+    "orc",
+    "rah",
+    "rho",
+    "rob",
+    "roc",
+    "acro",
+    "arch",
+    "arco",
+    "bach",
+    "boar",
+    "bora",
+    "carb",
+    "chao",
+    "char",
+    "crab",
+    "haro",
+    "hoar",
+    "hora",
+    "orca",
+    "rach",
+    "roch",
+    "abhor",
+    "brach",
+    "broch",
+    "carbo",
+    "carob",
+    "coarb",
+    "cobra",
+    "cohab",
+    "orach",
+    "roach",
+    "broach"
   ]
 }

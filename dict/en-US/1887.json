@@ -1,34 +1,46 @@
 {
   "anagrams": [
-    "io",
-    "is",
-    "ki",
-    "ko",
-    "oi",
-    "ok",
-    "os",
-    "si",
-    "so",
-    "cis",
-    "cos",
-    "ick",
-    "ios",
-    "iso",
-    "kis",
-    "koi",
-    "kos",
-    "oik",
-    "ois",
-    "sic",
-    "sik",
-    "ski",
-    "soc",
-    "icks",
-    "kois",
-    "oiks",
-    "sick",
-    "skio",
-    "sock",
-    "sicko"
+    "arc",
+    "ars",
+    "asp",
+    "ass",
+    "cap",
+    "car",
+    "pac",
+    "par",
+    "pas",
+    "rap",
+    "ras",
+    "sac",
+    "sap",
+    "sar",
+    "spa",
+    "arcs",
+    "asps",
+    "caps",
+    "carp",
+    "cars",
+    "crap",
+    "pacs",
+    "pars",
+    "pass",
+    "raps",
+    "rasp",
+    "sacs",
+    "saps",
+    "sars",
+    "scar",
+    "spar",
+    "spas",
+    "carps",
+    "craps",
+    "crass",
+    "rasps",
+    "scarp",
+    "scars",
+    "scrap",
+    "spars",
+    "scarps",
+    "scraps"
   ]
 }

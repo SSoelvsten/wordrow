@@ -1,34 +1,65 @@
 {
   "anagrams": [
-    "in",
-    "io",
-    "it",
-    "mi",
-    "mo",
-    "no",
-    "oi",
-    "om",
-    "on",
-    "ti",
-    "to",
-    "ion",
-    "moi",
-    "mon",
-    "mot",
-    "nim",
-    "nit",
-    "nom",
-    "not",
-    "tin",
-    "tom",
-    "ton",
-    "into",
-    "mino",
-    "mint",
-    "moit",
-    "moti",
-    "oint",
-    "omit",
-    "timon"
+    "abs",
+    "ads",
+    "alb",
+    "als",
+    "alu",
+    "bad",
+    "bal",
+    "bas",
+    "bud",
+    "bus",
+    "dab",
+    "dal",
+    "das",
+    "dub",
+    "lab",
+    "lad",
+    "las",
+    "lud",
+    "sab",
+    "sad",
+    "sal",
+    "sau",
+    "sub",
+    "sud",
+    "uds",
+    "albs",
+    "alus",
+    "auld",
+    "bads",
+    "bald",
+    "bals",
+    "balu",
+    "baud",
+    "blad",
+    "blud",
+    "buds",
+    "dabs",
+    "dals",
+    "daub",
+    "dual",
+    "dubs",
+    "labs",
+    "lads",
+    "laud",
+    "luds",
+    "saul",
+    "slab",
+    "slub",
+    "suba",
+    "udal",
+    "balds",
+    "balus",
+    "bauds",
+    "blads",
+    "blaud",
+    "bluds",
+    "daubs",
+    "duals",
+    "lauds",
+    "udals",
+    "blauds"
   ]
 }

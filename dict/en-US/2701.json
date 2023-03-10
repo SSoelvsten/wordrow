@@ -1,29 +1,33 @@
 {
   "anagrams": [
-    "am",
-    "ar",
-    "ha",
-    "ma",
-    "ach",
-    "arc",
-    "arm",
-    "cam",
-    "car",
-    "cha",
-    "ham",
-    "mac",
-    "mar",
-    "rah",
-    "ram",
-    "arch",
-    "cham",
-    "char",
-    "cram",
-    "harm",
-    "mach",
-    "marc",
-    "rach",
-    "charm",
-    "march"
+    "eng",
+    "erg",
+    "ern",
+    "gen",
+    "ger",
+    "gnu",
+    "gue",
+    "gun",
+    "gur",
+    "neg",
+    "nug",
+    "nun",
+    "nur",
+    "reg",
+    "ren",
+    "rue",
+    "rug",
+    "run",
+    "ure",
+    "urn",
+    "genu",
+    "gren",
+    "grue",
+    "gurn",
+    "rune",
+    "rung",
+    "urge",
+    "enurn",
+    "gunner"
   ]
 }

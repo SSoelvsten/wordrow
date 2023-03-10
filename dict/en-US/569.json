@@ -1,32 +1,67 @@
 {
   "anagrams": [
-    "ad",
-    "ag",
-    "an",
-    "ar",
-    "da",
-    "na",
-    "and",
-    "ard",
-    "dag",
-    "dan",
-    "gad",
-    "gan",
-    "gar",
-    "nag",
-    "rad",
-    "rag",
-    "ran",
-    "dang",
-    "darg",
-    "darn",
-    "drag",
-    "gnar",
-    "grad",
-    "gran",
-    "nard",
-    "rand",
-    "rang",
-    "grand"
+    "ass",
+    "ate",
+    "ats",
+    "ave",
+    "eas",
+    "eat",
+    "ess",
+    "est",
+    "eta",
+    "sae",
+    "sat",
+    "sav",
+    "sea",
+    "set",
+    "sev",
+    "tae",
+    "tas",
+    "tav",
+    "tea",
+    "tes",
+    "vae",
+    "vas",
+    "vat",
+    "vet",
+    "ates",
+    "aves",
+    "east",
+    "eats",
+    "ests",
+    "etas",
+    "sate",
+    "save",
+    "savs",
+    "seas",
+    "seat",
+    "seta",
+    "sets",
+    "sevs",
+    "taes",
+    "tase",
+    "tass",
+    "tavs",
+    "teas",
+    "vaes",
+    "vase",
+    "vast",
+    "vats",
+    "vest",
+    "vets",
+    "asset",
+    "easts",
+    "sates",
+    "saves",
+    "seats",
+    "stave",
+    "tases",
+    "tasse",
+    "vases",
+    "vasts",
+    "vesta",
+    "vests",
+    "staves",
+    "vestas"
   ]
 }

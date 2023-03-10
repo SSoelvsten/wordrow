@@ -1,42 +1,33 @@
 {
   "anagrams": [
-    "ad",
-    "ae",
-    "da",
-    "de",
-    "do",
-    "ea",
-    "ed",
-    "od",
-    "oe",
-    "op",
-    "pa",
-    "pe",
-    "po",
-    "ado",
-    "ape",
-    "apo",
-    "dae",
-    "dap",
-    "dep",
-    "doe",
-    "dop",
-    "oda",
-    "ode",
-    "opa",
-    "ope",
-    "pad",
-    "pea",
-    "ped",
-    "poa",
-    "pod",
-    "aped",
-    "apod",
-    "dopa",
-    "dope",
-    "odea",
-    "oped",
-    "apode",
-    "paedo"
+    "all",
+    "als",
+    "alu",
+    "ans",
+    "las",
+    "lun",
+    "nas",
+    "nus",
+    "sal",
+    "san",
+    "sau",
+    "sun",
+    "uns",
+    "alls",
+    "alus",
+    "anus",
+    "luna",
+    "luns",
+    "null",
+    "sall",
+    "saul",
+    "ulan",
+    "ulna",
+    "lunas",
+    "nulla",
+    "nulls",
+    "ulans",
+    "ulnas",
+    "nullas"
   ]
 }

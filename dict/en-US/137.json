@@ -1,27 +1,90 @@
 {
   "anagrams": [
-    "ai",
-    "ar",
-    "io",
-    "oi",
-    "or",
-    "air",
-    "arc",
-    "car",
-    "cor",
-    "oar",
-    "oca",
-    "ora",
-    "orc",
-    "rai",
-    "ria",
-    "roc",
-    "acro",
-    "arco",
-    "ciao",
-    "coir",
-    "cria",
-    "orca",
-    "coria"
+    "age",
+    "ard",
+    "are",
+    "ary",
+    "aye",
+    "dae",
+    "dag",
+    "day",
+    "deg",
+    "dey",
+    "dry",
+    "dye",
+    "ear",
+    "era",
+    "erg",
+    "gad",
+    "gae",
+    "gar",
+    "gay",
+    "ged",
+    "ger",
+    "gey",
+    "rad",
+    "rag",
+    "ray",
+    "red",
+    "reg",
+    "rya",
+    "rye",
+    "yad",
+    "yae",
+    "yag",
+    "yar",
+    "yea",
+    "yer",
+    "adry",
+    "aery",
+    "aged",
+    "ager",
+    "ared",
+    "areg",
+    "ayre",
+    "dare",
+    "darg",
+    "dear",
+    "drag",
+    "dray",
+    "dreg",
+    "drey",
+    "dyer",
+    "eard",
+    "edgy",
+    "egad",
+    "eyra",
+    "gade",
+    "gaed",
+    "gare",
+    "gear",
+    "grad",
+    "gray",
+    "grey",
+    "gyre",
+    "rade",
+    "rage",
+    "read",
+    "yage",
+    "yard",
+    "yare",
+    "yead",
+    "year",
+    "yerd",
+    "aygre",
+    "deary",
+    "deray",
+    "gayer",
+    "grade",
+    "gryde",
+    "gyred",
+    "radge",
+    "ragde",
+    "raged",
+    "rayed",
+    "ready",
+    "yager",
+    "yeard",
+    "grayed"
   ]
 }

@@ -1,27 +1,53 @@
 {
   "anagrams": [
-    "ee",
-    "es",
-    "pe",
-    "ye",
-    "eye",
-    "pee",
-    "pes",
-    "pye",
-    "see",
-    "sey",
-    "spy",
-    "sye",
-    "yep",
-    "yes",
-    "espy",
-    "eyes",
-    "pees",
-    "pyes",
-    "seep",
-    "sype",
-    "yeps",
-    "peyse",
-    "seepy"
+    "arm",
+    "ars",
+    "ass",
+    "mar",
+    "mas",
+    "moa",
+    "mor",
+    "mos",
+    "oar",
+    "oma",
+    "oms",
+    "ora",
+    "ors",
+    "ram",
+    "ras",
+    "rom",
+    "sam",
+    "sar",
+    "sma",
+    "som",
+    "sos",
+    "arms",
+    "mars",
+    "mass",
+    "moas",
+    "mora",
+    "mors",
+    "moss",
+    "oars",
+    "omas",
+    "osar",
+    "ossa",
+    "rams",
+    "roam",
+    "roma",
+    "roms",
+    "sams",
+    "sars",
+    "soar",
+    "soma",
+    "soms",
+    "sora",
+    "moras",
+    "roams",
+    "saros",
+    "soars",
+    "somas",
+    "soras",
+    "morass"
   ]
 }

@@ -1,29 +1,32 @@
 {
   "anagrams": [
-    "ag",
-    "al",
-    "as",
-    "la",
-    "ags",
-    "als",
-    "cag",
-    "cal",
-    "gal",
-    "gas",
-    "lac",
-    "lag",
-    "las",
-    "sac",
-    "sag",
-    "sal",
-    "cags",
-    "cals",
-    "clag",
-    "gals",
-    "lacs",
-    "lags",
-    "scag",
-    "slag",
-    "clags"
+    "ace",
+    "ach",
+    "cad",
+    "cha",
+    "che",
+    "dae",
+    "dah",
+    "ech",
+    "edh",
+    "had",
+    "hae",
+    "aced",
+    "ache",
+    "ahed",
+    "cade",
+    "ceca",
+    "chad",
+    "dace",
+    "each",
+    "ecad",
+    "hade",
+    "haed",
+    "head",
+    "ached",
+    "cache",
+    "chace",
+    "cached",
+    "chaced"
   ]
 }

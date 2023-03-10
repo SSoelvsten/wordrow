@@ -1,52 +1,113 @@
 {
   "anagrams": [
-    "ae",
-    "ag",
-    "am",
-    "an",
-    "ea",
-    "em",
-    "en",
-    "ma",
-    "me",
-    "na",
-    "ne",
-    "age",
-    "ame",
-    "ane",
-    "ean",
-    "eng",
-    "gae",
-    "gam",
-    "gan",
-    "gem",
-    "gen",
-    "mae",
-    "mag",
-    "man",
-    "meg",
-    "men",
-    "mna",
-    "nae",
-    "nag",
-    "nam",
-    "neg",
-    "agen",
-    "amen",
-    "egma",
-    "gaen",
-    "game",
-    "gane",
-    "gean",
-    "gena",
-    "mage",
-    "mane",
-    "mang",
-    "mean",
-    "mega",
-    "meng",
-    "name",
-    "nema",
-    "mange"
+    "ace",
+    "ach",
+    "act",
+    "ahs",
+    "ash",
+    "ate",
+    "ats",
+    "cat",
+    "cha",
+    "che",
+    "eas",
+    "eat",
+    "ech",
+    "ehs",
+    "est",
+    "eta",
+    "eth",
+    "hae",
+    "has",
+    "hat",
+    "hes",
+    "het",
+    "sac",
+    "sae",
+    "sat",
+    "sea",
+    "sec",
+    "set",
+    "she",
+    "tae",
+    "tas",
+    "tea",
+    "tec",
+    "tes",
+    "the",
+    "aces",
+    "ache",
+    "acts",
+    "aesc",
+    "ates",
+    "case",
+    "cash",
+    "cast",
+    "cate",
+    "cats",
+    "ceas",
+    "chas",
+    "chat",
+    "each",
+    "east",
+    "eath",
+    "eats",
+    "echt",
+    "etas",
+    "etch",
+    "eths",
+    "haes",
+    "haet",
+    "hast",
+    "hate",
+    "hats",
+    "heat",
+    "hest",
+    "hets",
+    "sate",
+    "scat",
+    "seat",
+    "sech",
+    "sect",
+    "seta",
+    "shat",
+    "shea",
+    "shet",
+    "tace",
+    "tach",
+    "taes",
+    "tase",
+    "tash",
+    "teas",
+    "tech",
+    "tecs",
+    "thae",
+    "aches",
+    "ashet",
+    "caste",
+    "cates",
+    "cesta",
+    "chase",
+    "chats",
+    "cheat",
+    "chest",
+    "haets",
+    "haste",
+    "hates",
+    "heast",
+    "heats",
+    "scath",
+    "sceat",
+    "taces",
+    "tache",
+    "tachs",
+    "teach",
+    "techs",
+    "theca",
+    "chaste",
+    "cheats",
+    "sachet",
+    "scathe",
+    "taches"
   ]
 }

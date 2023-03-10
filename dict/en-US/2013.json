@@ -1,32 +1,67 @@
 {
   "anagrams": [
-    "ai",
-    "al",
-    "an",
-    "fa",
-    "if",
-    "in",
-    "la",
-    "li",
-    "na",
-    "ail",
-    "ain",
-    "alf",
-    "ani",
-    "fan",
-    "fil",
-    "fin",
-    "lin",
-    "nil",
-    "alif",
-    "anil",
-    "fail",
-    "fain",
-    "fila",
-    "flan",
-    "lain",
-    "naif",
-    "nail",
-    "final"
+    "abs",
+    "ans",
+    "arb",
+    "ark",
+    "ars",
+    "ask",
+    "ban",
+    "bar",
+    "bas",
+    "bra",
+    "kab",
+    "kas",
+    "nab",
+    "nas",
+    "ran",
+    "ras",
+    "sab",
+    "san",
+    "sar",
+    "ska",
+    "arbs",
+    "arks",
+    "bank",
+    "bans",
+    "bark",
+    "barn",
+    "bars",
+    "bask",
+    "brak",
+    "bran",
+    "bras",
+    "kabs",
+    "kans",
+    "karn",
+    "kbar",
+    "knar",
+    "krab",
+    "ksar",
+    "nabk",
+    "nabs",
+    "nark",
+    "rank",
+    "sank",
+    "sark",
+    "snab",
+    "snar",
+    "banks",
+    "barks",
+    "barns",
+    "braks",
+    "brank",
+    "brans",
+    "karns",
+    "kbars",
+    "knars",
+    "krabs",
+    "krans",
+    "nabks",
+    "narks",
+    "ranks",
+    "skran",
+    "snark",
+    "branks"
   ]
 }

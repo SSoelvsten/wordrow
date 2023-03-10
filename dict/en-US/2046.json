@@ -1,34 +1,63 @@
 {
   "anagrams": [
-    "ag",
-    "as",
-    "pa",
-    "ags",
-    "asp",
-    "gap",
-    "gas",
-    "gaw",
-    "pas",
-    "paw",
-    "sag",
-    "sap",
-    "saw",
-    "spa",
-    "wag",
-    "wap",
-    "was",
-    "gaps",
-    "gasp",
-    "gawp",
-    "gaws",
-    "paws",
-    "spag",
-    "spaw",
-    "swag",
-    "swap",
-    "wags",
-    "waps",
-    "wasp",
-    "gawps"
+    "cis",
+    "cit",
+    "cos",
+    "cot",
+    "ios",
+    "ism",
+    "iso",
+    "its",
+    "mic",
+    "mis",
+    "moc",
+    "moi",
+    "mos",
+    "mot",
+    "ois",
+    "oms",
+    "sic",
+    "sim",
+    "sit",
+    "soc",
+    "som",
+    "sot",
+    "tic",
+    "tis",
+    "toc",
+    "tom",
+    "cist",
+    "cito",
+    "cits",
+    "coit",
+    "coms",
+    "cost",
+    "cots",
+    "mico",
+    "mics",
+    "miso",
+    "mist",
+    "mocs",
+    "moit",
+    "most",
+    "moti",
+    "mots",
+    "omit",
+    "otic",
+    "scot",
+    "smit",
+    "stim",
+    "tics",
+    "tocs",
+    "toms",
+    "coits",
+    "micos",
+    "moist",
+    "moits",
+    "motis",
+    "omits",
+    "osmic",
+    "stoic",
+    "sitcom"
   ]
 }
