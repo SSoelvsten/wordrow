@@ -251,9 +251,10 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     const scoreboardElement = document.getElementsByClassName("ScoreBoard").item(0);
     const scoreboardHeight = scoreboardElement ? scoreboardElement.clientHeight : 37;
 
-    const rowElement = document.getElementsByClassName("Row").item(0);
+    const rowElements = document.getElementsByClassName("Row");
+    const rowElement = rowElements.item(0);
     const rowHeight = rowElement ? rowElement.clientHeight : 90;
-    const inputHeight = 2 * rowHeight;
+    const inputHeight = rowElements.length * rowHeight;
 
     const anagramsElement = document.getElementsByClassName("Anagrams").item(0);
     const anagramsHeight = anagramsElement
