@@ -294,12 +294,14 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     // https://stackabuse.com/how-to-set-focus-on-element-after-rendering-with-react/
     const divRef = useRef<any>(null);
     useEffect(() => {
-        // Change the state of this component to redraw and recompute the layout.
-        setIsDrawn(true);
+        if (!isDrawn) {
+            // Change the state of this component to redraw and recompute the layout.
+            setIsDrawn(true);
 
-        // Focus on the div to listen to key presses.
-        divRef.current.focus();
-    }, []);
+            // Focus on the div to listen to key presses.
+            divRef.current.focus();
+        }
+    }, [isDrawn]);
 
     return (
     <>
