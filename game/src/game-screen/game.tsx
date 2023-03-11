@@ -73,15 +73,17 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     const [guessCache, setGuessCache] = useState<(string | null)[]>(
         () => Array(words).fill(null)
     );
+    const [endTime, setEndTime] = useState<number>(
+        () => new Date().getTime() + timerSetting.initialTime
+    );
     const [gameEnd, setGameEnd] = useState<boolean>(
         () => false
     );
     const [activatePressToContinue, setActivatePressToContinue] = useState<boolean>(
         () => false
     );
-
-    const [endTime, setEndTime] = useState<number>(
-        () => new Date().getTime() + timerSetting.initialTime
+    const [isDrawn, setIsDrawn] = useState<boolean>(
+        () => false
     );
 
     const currScore: number  = (!guessed.includes(false) ? 2 : 1) * anagrams.filter((w,i) => guessed[i]).reduce((acc,w) => acc+scoreWord(w), 0);
@@ -232,23 +234,35 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     // TODO: Respond to changes to the window size:
     //   https://www.pluralsight.com/guides/re-render-react-component-on-window-resize
     //   https://www.tutsmake.com/react-get-window-height-width/
-    const totalWidth = window.innerWidth;
-    const isMedium: boolean = totalWidth < 700;
-    const isSmall: boolean = totalWidth < 450;
 
-    const totalHeight = window.innerHeight;
-    const scoreboardHeight = ( isSmall ? 0.8 : 1) * 37;
-    const inputHeight = ( isSmall ? 0.5 : isMedium ? 0.8 : 1) * 2 * 90;
+    // Retrieve the last elemen with class 'Letter' which is a single symbol for the guessed words.
+    // If 'null' then this is the first draw and we will just use the default 100% zoom values.
+    const LetterElement = document.getElementsByClassName("Letter").item(0);
+    const letterHeight = (LetterElement ? LetterElement.clientHeight : 2*5 + 16) + 1;
+    const letterWidth = letterHeight;
 
-    const remainingHeight = totalHeight - scoreboardHeight - inputHeight;
+    const wordElement = document.getElementsByClassName("Word").item(words-1);
+    const wordHeight = (wordElement ? wordElement.clientHeight : letterHeight + 16);
+    const wordWidth = wordElement
+        ? wordElement.clientWidth
+        : ((letterWidth + 5) * max_word_length);
 
-    const wordHeight = ( isSmall ? 0.6 : isMedium ? 0.8 : 1) * 38;
-    const maxInColumn = remainingHeight / wordHeight
+    const scoreboardElement = document.getElementsByClassName("ScoreBoard").item(0);
+    const scoreboardHeight = scoreboardElement ? scoreboardElement.clientHeight : 37;
 
-    const wordWidth = ( isSmall ? 0.5 : isMedium ? 0.8 : 1) * 32 * max_word_length;
-    const maxColumns = Math.floor(totalWidth / wordWidth);
+    const rowElement = document.getElementsByClassName("Row").item(0);
+    const rowHeight = rowElement ? rowElement.clientHeight : 90;
+    const inputHeight = 2 * rowHeight;
 
-    if (wordColumns.some((c) => c.length > maxInColumn) || wordColumns.length > maxColumns) {
+    const anagramsElement = document.getElementsByClassName("Anagrams").item(0);
+    const anagramsHeight = anagramsElement
+     ? anagramsElement.clientHeight
+     : window.innerHeight - scoreboardHeight - inputHeight;
+
+    const maxColumns = Math.floor(window.innerWidth / wordWidth);
+    const maxInColumn = anagramsHeight / wordHeight;
+
+    if (wordColumns.length > maxColumns || wordColumns.some((c) => c.length > maxInColumn)) {
         wordColumns = [anagrams.map((w,i) => [w,i] as [string,number])]
     }
     const singleColumn : boolean = wordColumns.length === 1;
@@ -275,9 +289,16 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     // ------------------------------------------------------------------------
     // VISUAL
 
+    // Run logic after the first draw is finished.
     // https://stackabuse.com/how-to-set-focus-on-element-after-rendering-with-react/
     const divRef = useRef<any>(null);
-    useEffect(() => { divRef.current.focus(); }, []);
+    useEffect(() => {
+        // Change the state of this component to redraw and recompute the layout.
+        setIsDrawn(true);
+
+        // Focus on the div to listen to key presses.
+        divRef.current.focus();
+    }, []);
 
     return (
     <>
