@@ -48,6 +48,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     const words: number = anagrams.length;
     const min_word_length: number = anagrams[0].length;
     const max_word_length: number = anagrams[words-1].length;
+    //const average_word_length = anagrams.reduce((acc, x) => acc + x.length, 0) / words;
 
     // ------------------------------------------------------------------------
     // GAME SCORING
@@ -262,7 +263,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     const maxColumns = Math.floor(window.innerWidth / wordWidth);
     const maxInColumn = anagramsHeight / wordHeight;
 
-    if (wordColumns.length > maxColumns || wordColumns.some((c) => c.length > maxInColumn)) {
+    if (maxColumns <= wordColumns.length || wordColumns.some((c) => maxInColumn <= c.length)) {
         wordColumns = [anagrams.map((w,i) => [w,i] as [string,number])]
     }
     const singleColumn : boolean = wordColumns.length === 1;
