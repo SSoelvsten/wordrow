@@ -6,12 +6,12 @@
     white-space: nowrap;
     overflow: hidden;
 
-    left: 0.3rem;
-    top: 9.4rem;
-    width: calc(100% - 0.6rem);
+    left: 4.8px;
+    top: 150px;
+    width: calc(100% - 9.6px);
 
     $height-hidden: 0;
-    $height-full: 7rem;
+    $height-full: 112px;
 
     height: $height-hidden;
 
@@ -29,7 +29,7 @@
 
         left: -100%;
         color: $light-text-color;
-        font-size: 5rem;
+        font-size: 80px;
         text-align: center;
         text-transform: uppercase;
 

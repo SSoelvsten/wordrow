@@ -16,9 +16,9 @@
 
         cursor: default;
 
-        margin-bottom: 4rem;
+        margin-bottom: 64px;
         @media screen and (max-width: $medium-screen-width) {
-            margin-bottom: 2rem;
+            margin-bottom: 32px;
         }
 
         width: 100%;
@@ -30,8 +30,8 @@
 
         /* Slightly Modified version of Word.Letter */
         .Letter {
-            $letter-font-size: 3rem;
-            $letter-gap: 0.3rem;
+            $letter-font-size: 48px;
+            $letter-gap: 4.8px;
             @include borderedCharBox($letter-font-size, $letter-gap);
 
             $letter-medium-factor: 0.7;
@@ -54,12 +54,12 @@
     .MenuSection {
         width: 100%;
         text-align: center;
-        font-size: 2.5rem;
-        margin: 1rem 0;
+        font-size: 40px;
+        margin: 16px 0;
 
         @media screen and (max-width: $medium-screen-width) {
-            font-size: 1.5rem;
-            margin: 0.5rem 0;
+            font-size: 24px;
+            margin: 24px 0;
         }
 
         cursor: default;
@@ -96,22 +96,22 @@
 
     /* ---------------------- Start Game --------------------- */
     .StartGame {
-        margin-top: 4rem;
+        margin-top: 64px;
         color: $light-text-color;
         text-align: center;
 
         cursor: pointer;
 
         b {
-            margin-left: 0.3rem;
-            margin-left: 0.3rem;
+            margin-left: 4.8px;
+            margin-left: 4.8px;
         }
     }
 
     /* ---------------------- Dummy --------------------- */
     .Dummy {
         flex: 1;
-        min-height: 2rem;
+        min-height: 32px;
     }
 }
 

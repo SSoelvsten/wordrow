@@ -4,9 +4,9 @@
     flex: 0;
     cursor: pointer;
 
-    margin: 1rem;
+    margin: 16px;
 
-    $flag-scale: 0.025rem;
+    $flag-scale: 0.4px;
     $flag-width: (320 * $flag-scale);
     $flag-height: (160 * $flag-scale);
 
@@ -24,7 +24,7 @@
         }
 
         border-radius: 5%;
-        border: 0.02rem;
+        border: 0.32px;
         border-color: $light-text-color;
     }
 
@@ -35,9 +35,9 @@
         margin: auto;
         text-align: center;
 
-        font-size: 1rem;
+        font-size: 16px;
         @media screen and (max-width: $medium-screen-width) {
-            font-size: 0.7rem;
+            font-size: 11.2px;
         }
     }
 }
