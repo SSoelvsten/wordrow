@@ -251,15 +251,13 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     const scoreboardElement = document.getElementsByClassName("ScoreBoard").item(0);
     const scoreboardHeight = scoreboardElement ? scoreboardElement.clientHeight : 37;
 
-    const rowElements = document.getElementsByClassName("Row");
-    const rowElement = rowElements.item(0);
-    const rowHeight = rowElement ? rowElement.clientHeight : 90;
-    const inputHeight = rowElements.length * rowHeight;
+    const bottomElement = document.getElementsByClassName("Bottom").item(0);
+    const bottomHeight = bottomElement ? bottomElement.clientHeight : 190;
 
     const anagramsElement = document.getElementsByClassName("Anagrams").item(0);
     const anagramsHeight = anagramsElement
      ? anagramsElement.clientHeight
-     : window.innerHeight - scoreboardHeight - inputHeight;
+     : window.innerHeight - scoreboardHeight - bottomHeight;
 
     const maxColumns = Math.floor(window.innerWidth / wordWidth);
     const maxInColumn = anagramsHeight / wordHeight;
@@ -306,7 +304,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
 
     return (
     <>
-        <div className="Game" tabIndex={0} onKeyDown={onKey} ref={divRef}>
+        <div className={`Game`} tabIndex={0} onKeyDown={onKey} ref={divRef}>
             <ScoreBoard endTime={endTime}
                         gameEnd={gameEnd}
                         language={language}
@@ -316,7 +314,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
                         onTimeout={onTimeout}
                     />
 
-            { <div className="Anagrams">
+            { <div className={`Anagrams`}>
                 { wordColumns.map((c,i) => (
                     c.map(([w,j], ci) => {
                         const row = singleColumn ? Math.floor(j % actualColumnSize)+1 : ci+1;
@@ -329,40 +327,43 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
                 <Announcement content={round_text}/>
             }
 
-            {!gameEnd &&
-                <>
-                    <div className={`Row ${guessed.includes(true) ? 'HasGood' : ''}`} key={latestGuessed}>
-                        <InputButton icon={faSolid.faXmark} onClick={actionClear} />
-                        {selected.map((c,idx) => (
-                            <InputLetter content={c || ""}
-                                         key={idx}
-                                         onClick={() => actionDelete(idx)}
-                            />)
-                        )}
-                        <InputButton icon={faSolid.faCaretRight} onClick={actionSubmit} />
-                    </div>
+            <div className={`Bottom`}>
+                {!gameEnd &&
+                    <>
+                        <div className={`Row ${guessed.includes(true) ? 'HasGood' : ''}`} key={latestGuessed}>
+                            <InputButton icon={faSolid.faXmark} onClick={actionClear} />
+                            {selected.map((c,idx) => (
+                                <InputLetter content={c || ""}
+                                            key={idx}
+                                            onClick={() => actionDelete(idx)}
+                                />)
+                            )}
+                            <InputButton icon={faSolid.faCaretRight} onClick={actionSubmit} />
+                        </div>
+                        <div className={`Row`}>
+                            {chars.map(([c,i],idx) => (
+                                <InputLetter content={i === null ? c : "_"}
+                                            key={idx}
+                                            onClick={() => { if (i === null) actionType(c); } }
+                                />))}
+                        </div>
+                    </>
+                }
+                {gameEnd &&
                     <div className={`Row`}>
-                        {chars.map(([c,i],idx) => (
-                            <InputLetter content={i === null ? c : "_"}
-                                         key={idx}
-                                         onClick={() => { if (i === null) actionType(c); } }
-                            />))}
+                        <EndScreen language={language}
+                                qualified={qualified}
+                                score={accScore + currScore}
+                                showContinue={activatePressToContinue}
+                                onClickContinue={actionNextGame}
+                        />
                     </div>
-                </>
-            }
-            {gameEnd &&
-                <div className={`Row`}>
-                    <EndScreen language={language}
-                               qualified={qualified}
-                               score={accScore + currScore}
-                               showContinue={activatePressToContinue}
-                               onClickContinue={actionNextGame}
-                    />
-                </div>
-            }
+                }
+            </div>
+
             {/* Add top-right game-specific buttons (see styling in '../app.scss') */}
-            <div className="TopButtons Right">
-                <button className="Button"
+            <div className={`TopButtons Right`}>
+                <button className={`Button`}
                         onClick={() => {
                             if (gameEnd) {
                                 onRequestNextGame({ qualified, score: currScore });

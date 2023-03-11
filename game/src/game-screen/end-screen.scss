@@ -10,9 +10,22 @@
 
     color: $light-text-color;
 
+    @media screen and (max-width: $small-screen-width) {
+        font-size: 10px;
+    }
+
+    padding: 0 20px;
+
     .Score {
         font-size: 48px;
         font-weight: 600;
+
+        @media screen and (max-width: $medium-screen-width) {
+            font-size: 24px;
+        }
+        @media screen and (max-width: $small-screen-width) {
+            font-size: 16px;
+        }
 
         margin-top: 3px;
         margin-bottom: 1px;

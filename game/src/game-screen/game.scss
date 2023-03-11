@@ -36,13 +36,25 @@
         }
     }
 
-    .Row {
-        flex: 0;
+    .Bottom {
         width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: center;
+        height: 180px;
+
+        @media screen and (max-width: $medium-screen-width) {
+            height: 130px;
+        }
+        @media screen and (max-width: $small-screen-width) {
+            height: 110px;
+        }
+
+        .Row {
+            flex: 0;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            justify-content: center;
+        }
     }
 }
 
