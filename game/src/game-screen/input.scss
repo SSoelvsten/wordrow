@@ -11,14 +11,6 @@ $input-small-factor: 0.4;
 
     color: $light-text-color;
 
-    /* Overwrite values in 'borderedCharBox' for vertical gap */
-    margin-bottom: $input-gap;
-    margin-top: $input-gap;
-    @media screen and (max-width: $medium-screen-width) {
-        margin-bottom: $input-medium-factor*$input-gap;
-        margin-top: $input-medium-factor*$input-gap;
-    }
-
     @include borderedCharBox($input-font-size, $input-gap);
     @media screen and (max-width: $medium-screen-width) {
         @include borderedCharBox($input-medium-factor*$input-font-size,
@@ -27,6 +19,14 @@ $input-small-factor: 0.4;
     @media screen and (max-width: $small-screen-width) {
         @include borderedCharBox($input-small-factor*$input-font-size,
                                  $input-small-factor*$input-gap);
+    }
+
+    /* Overwrite values in 'borderedCharBox' for vertical gap */
+    margin-bottom: $input-gap/2;
+    margin-top: $input-gap/2;
+    @media screen and (max-width: $medium-screen-width) {
+        margin-bottom: $input-medium-factor*$input-gap/2;
+        margin-top: $input-medium-factor*$input-gap/2;
     }
 
     /* Overwrite values in 'borderedCharBox' for blink on successful guess. */
