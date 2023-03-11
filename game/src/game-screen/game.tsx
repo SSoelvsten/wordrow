@@ -46,9 +46,9 @@ const charShuffle = (chars: CharIdx[]) => {
 
 const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, onRequestNextGame }: GameProps) => {
     const words: number = anagrams.length;
-    const min_word_length: number = anagrams[0].length;
-    const max_word_length: number = anagrams[words-1].length;
-    //const average_word_length = anagrams.reduce((acc, x) => acc + x.length, 0) / words;
+    const minWordLength: number = anagrams[0].length;
+    const maxWordLength: number = anagrams[words-1].length;
+    //const averageWordLength = anagrams.reduce((acc, x) => acc + x.length, 0) / words;
 
     // ------------------------------------------------------------------------
     // GAME SCORING
@@ -88,10 +88,10 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     );
 
     const currScore: number  = (!guessed.includes(false) ? 2 : 1) * anagrams.filter((w,i) => guessed[i]).reduce((acc,w) => acc+scoreWord(w), 0);
-    const qualified: boolean = !!guessed.find((v,idx) => v && anagrams[idx].length === max_word_length);
+    const qualified: boolean = !!guessed.find((v,idx) => v && anagrams[idx].length === maxWordLength);
 
     // Derive selected word and its true length (i.e. the last index that is non-null)
-    var selected_length: number = max_word_length;
+    var selected_length: number = maxWordLength;
     const selected: (string | null)[] = chars
         // Create a copy of the array
         .map(_ => _)
@@ -136,7 +136,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
         if (emptySelection) {
             let charsCopy: CharIdx[] = chars.map(_ => _);
             guessCache.forEach((s, si) => {
-                for (let idx = 0; s && idx < max_word_length; idx++) {
+                for (let idx = 0; s && idx < maxWordLength; idx++) {
                     const [c, i] = charsCopy[idx];
                     if(i === null && c === s) {
                         charsCopy[idx][1] = si;
@@ -227,7 +227,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     // ------------------------------------------------------------------------
     // ANAGRAMS LAYOUT
 
-    const wordLengths: number[] = Array(max_word_length - min_word_length + 1).fill(0).map((_,i) => i + min_word_length);
+    const wordLengths: number[] = Array(maxWordLength - minWordLength + 1).fill(0).map((_,i) => i + minWordLength);
     let wordColumns: [string, number][][] = wordLengths.map((word_length, i) =>
         anagrams.map((w,i) => [w,i] as [string,number]).filter(([w,_]) => w.length === word_length)
     );
@@ -246,7 +246,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     const wordHeight = (wordElement ? wordElement.clientHeight : letterHeight + 16);
     const wordWidth = wordElement
         ? wordElement.clientWidth
-        : ((letterWidth + 5) * max_word_length);
+        : ((letterWidth + 5) * maxWordLength);
 
     const scoreboardElement = document.getElementsByClassName("ScoreBoard").item(0);
     const scoreboardHeight = scoreboardElement ? scoreboardElement.clientHeight : 37;
