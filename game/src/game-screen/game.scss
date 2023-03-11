@@ -24,14 +24,14 @@
 
         /* Scroll Bar (Others) */
         &::-webkit-scrollbar {
-            width: 3.2px;
+            width: 3px;
         }
         &::-webkit-scrollbar-track {
             background: $light-input;
         }
         &::-webkit-scrollbar-thumb {
             background-color: $light-input;
-            border-radius: 1.6px;
+            border-radius: 1px;
             border: solid $light-text-color;
         }
     }
