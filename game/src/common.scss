@@ -20,9 +20,9 @@
     max-width: 100%;
 }
 
-$tiny-screen-width: 25rem;
-$small-screen-width: 32rem;
-$medium-screen-width: 50rem;
+$tiny-screen-width: 400px;
+$small-screen-width: 512px;
+$medium-screen-width: 800px;
 
 $opacity-unselected: 0.5;
 $opacity-hover: 0.8;
@@ -60,7 +60,7 @@ $firefox--line-height-factor: 1.00;
     @include charBox($font-size, $padding);
     margin: 0 $padding;
     border-style: solid;
-    border-width: 0.02rem;
+    border-width: 0.32px;
     border-radius: 10%;
 }
 
@@ -68,7 +68,7 @@ $firefox--line-height-factor: 1.00;
 
 $light-background: #fafafa;
 $light-text-color:  #111111;
-$light-good: #9acd32; 
+$light-good: #9acd32;
 $light-bad: #a80000;
 $light-input: #d3d3d3;
 
@@ -76,7 +76,6 @@ $light-input: #d3d3d3;
 
 $dark-background: #222222;
 $dark-text-color:  #e0e0e0;
-$dark-good: #466900; 
+$dark-good: #466900;
 $dark-bad: #d87777;
 $dark-input: #414141;
-

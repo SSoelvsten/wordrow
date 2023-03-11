@@ -5,23 +5,23 @@
 
     cursor: default;
 
-    margin-top: 1rem;
-    margin-bottom: 2rem;
+    margin-top: 16px;
+    margin-bottom: 32px;
 
     color: $light-text-color;
 
     .Score {
-        font-size: 3rem;
+        font-size: 48px;
         font-weight: 600;
 
-        margin-top: 0.2rem;
-        margin-bottom: 0.05rem;
+        margin-top: 3.2px;
+        margin-bottom: 0.8px;
     }
 
     .Continue {
         b {
-            margin-left: 0.3rem;
-            margin-left: 0.3rem;
+            margin-left: 4.8px;
+            margin-left: 4.8px;
         }
         &.hide {
             color: $light-background;

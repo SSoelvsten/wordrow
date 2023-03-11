@@ -1,7 +1,7 @@
 @import '../common.scss';
 
-$input-font-size: 2rem;
-$input-gap: 1rem;
+$input-font-size: 32px;
+$input-gap: 16px;
 
 $input-medium-factor: 0.65;
 $input-small-factor: 0.4;
@@ -30,7 +30,7 @@ $input-small-factor: 0.4;
     }
 
     /* Overwrite values in 'borderedCharBox' for blink on successful guess. */
-    border-width: 0.2rem;
+    border-width: 3.2px;
     border-color: $light-background;
 
     /* Input Specific Styling */
