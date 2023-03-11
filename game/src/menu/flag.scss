@@ -6,7 +6,7 @@
 
     margin: 16px;
 
-    $flag-scale: 0.4px;
+    $flag-scale: 0.5px;
     $flag-width: (320 * $flag-scale);
     $flag-height: (160 * $flag-scale);
 
@@ -37,7 +37,7 @@
 
         font-size: 16px;
         @media screen and (max-width: $medium-screen-width) {
-            font-size: 11.2px;
+            font-size: 11px;
         }
     }
 }

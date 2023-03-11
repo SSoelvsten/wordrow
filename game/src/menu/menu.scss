@@ -31,7 +31,7 @@
         /* Slightly Modified version of Word.Letter */
         .Letter {
             $letter-font-size: 48px;
-            $letter-gap: 4.8px;
+            $letter-gap: 5px;
             @include borderedCharBox($letter-font-size, $letter-gap);
 
             $letter-medium-factor: 0.7;
@@ -103,8 +103,7 @@
         cursor: pointer;
 
         b {
-            margin-left: 4.8px;
-            margin-left: 4.8px;
+            margin-left: 5px;
         }
     }
 

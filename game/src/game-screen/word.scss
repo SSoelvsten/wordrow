@@ -21,7 +21,7 @@
     /* Individual Letter styling */
     .Letter {
         $letter-font-size: 16px;
-        $letter-gap: 4.8px;
+        $letter-gap: 5px;
         @include borderedCharBox($letter-font-size, $letter-gap);
         margin-top: $letter-font-size;
 

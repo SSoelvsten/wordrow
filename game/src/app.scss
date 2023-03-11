@@ -7,14 +7,14 @@
 
     /* Fixed Buttons */
     .TopButtons {
-        $button-gap: 6.4px;
+        $button-gap: 6px;
 
         position: fixed;
         top: $button-gap;
 
         .Button {
             border: none;
-            font-size: 19.2px;
+            font-size: 19px;
             @media screen and (max-width: $small-screen-width) {
                 font-size: 16px;
             }

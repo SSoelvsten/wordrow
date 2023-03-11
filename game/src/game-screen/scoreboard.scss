@@ -2,8 +2,8 @@
 
 .ScoreBoard {
     @include not-selectable();
-    $scoreboard-font-size: 19.2px;
-    $scoreboard-font-size-large: 25.6px;
+    $scoreboard-font-size: 19px;
+    $scoreboard-font-size-large: 25px;
     $scoreboard-small-factor: 0.8;
 
     $top-buttons-width: 64px;
@@ -22,9 +22,9 @@
         font-size: $scoreboard-small-factor*$scoreboard-font-size;
     }
 
-    margin-top: 3.2px;
+    margin-top: 3px;
 
-    min-height: $scoreboard-font-size-large + 14.4px;
+    min-height: $scoreboard-font-size-large + 14px;
     @media screen and (max-width: $tiny-screen-width) {
         min-height: $scoreboard-small-factor*(2*$scoreboard-font-size + $scoreboard-font-size-large) + 24px;
     }
