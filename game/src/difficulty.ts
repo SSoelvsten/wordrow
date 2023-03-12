@@ -56,6 +56,13 @@ export const DifficultyName = (d: Difficulty, l: Language | undefined) : string 
         case Difficulty.TIME_SPRINT:    return "Tidsspurt";
         }
         break;
+    case Language.DE:
+        switch (d) {
+            case Difficulty.UNLIMITED_TIME: return "Unbeschränkte Zeit";
+            case Difficulty.TIMED:          return "Zeit";
+            case Difficulty.TIME_SPRINT:    return "Zeit-Sprint";
+        }
+        break;
     case Language.EN:
         switch (d) {
         case Difficulty.UNLIMITED_TIME: return "Unlimited Time";

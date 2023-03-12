@@ -23,6 +23,11 @@ const EndScreen = ({ language, qualified, score, showContinue, onClickContinue }
         failed_text   = <>Desværre! Find et ord, der bruger alle bogstaver, for at kvalificere til den næste runde.</>;
         continue_text = <><b>Klik her</b> eller <b>tryk enter</b> for at fortsætte.</>
         break;
+    case Language.DE:
+        success_text  = <>Glückwunsch! Sie haben sich für die nächste Runde qualifiziert.</>;
+        failed_text   = <>Schade! Um dich für die nächste Runde zu qualifizieren, finden sie ein Wort, das alle Buchstaben verwendet.</>;
+        continue_text = <><b> Klicken sie hier </b> oder <b> drücken sie die Eingabeteste, </b> um fortzufahren.</>
+        break;
     case Language.EN:
         success_text  = <>Congratulations! You qualify for the next round.</>;
         failed_text   = <>Sorry! Find a word that uses all letters to qualify for the next round.</>;
