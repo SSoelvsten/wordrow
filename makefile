@@ -16,6 +16,9 @@ build:
 	make $(MAKE_FLAGS) build/dict DICT=da-DK
 	mv out build/dict/da-DK
 
+	make $(MAKE_FLAGS) build/dict DICT=de-DE
+	mv out build/dict/de-DE
+
 	make $(MAKE_FLAGS) build/dict DICT=en-US
 	mv out build/dict/en-US
 

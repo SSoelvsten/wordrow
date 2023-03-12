@@ -68,6 +68,11 @@ const Menu = ({ difficulty, setDifficulty, language, setLanguage, startGame } : 
         select_language   = <>Sprog</>;
         select_difficulty = <>Spiltype</>
         break;
+    case Language.DE:
+        start_text        = <><b> Klicken sie hier </b> oder <b> drücken sie die Eingabeteste, </b> um zu beginnen.</>
+        select_language   = <>Sprache</>;
+        select_difficulty = <>Spielmodus</>
+        break;
     case Language.EN:
         start_text        = <><b> Click here </b> or <b> press enter </b> to start.</>
         select_language   = <>Language</>;

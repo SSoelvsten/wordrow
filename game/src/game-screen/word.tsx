@@ -15,6 +15,8 @@ const word_url = (language: Language, word: string) => {
     switch (language) {
     case Language.DK:
         return `https://www.ordnet.dk/ddo/ordbog?query=${word}`;
+    case Language.DE:
+        return `https://www.duden.de/suchen/flexion/${word}`;
     case Language.EN:
         return `https://www.merriam-webster.com/dictionary/${word}`;
     default:
