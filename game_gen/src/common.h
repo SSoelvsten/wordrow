@@ -20,7 +20,7 @@ inline unsigned long int duration_of(const time_point &before, const time_point 
 
 size_t word_size(const std::string& w) {
   // Regex of all characters that actually are two letters.
-  std::regex double_char("æ|ø|å");
+  std::regex double_char("æ|ø|å|ä|ö|ü|ß");
 
   // https://stackoverflow.com/a/8283994
   const size_t double_chars = std::distance(std::sregex_iterator(w.begin(), w.end(), double_char),
