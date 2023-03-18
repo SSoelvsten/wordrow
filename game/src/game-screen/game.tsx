@@ -115,7 +115,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     // GAME LOGIC
     const actionShuffle = () => {
         setChars(charShuffle(chars));
-    }
+    };
 
     const actionDelete = (idx: number = selected_length - 1) => {
         if (idx < 0 || selected_length <= idx) return;
@@ -123,11 +123,11 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
         setChars(chars.map(([c,i]) => i === null || i === idx ? [c,null]
                                     : i < idx                 ? [c,i]
                                                               : [c,i-1]));
-    }
+    };
 
     const actionClear = () => {
         setChars(chars.map(([c, _]) => ([c, null])));
-    }
+    };
 
     const actionSubmit = () => {
         const emptySelection : boolean = !selected[0];
@@ -170,7 +170,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
             }
             setChars(chars.map(([c,i]) => [c,null]));
         }
-    }
+    };
 
     const actionType = (char: string) => {
         // Ignore non-char inputs
@@ -191,16 +191,16 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
                 }
             }));
         }
-    }
+    };
 
     const actionNextGame = () => {
         if (!activatePressToContinue) { return; }
         onRequestNextGame({ qualified, score: currScore });
-    }
+    };
 
     const onTimeout = () => {
         setGameEnd(true);
-    }
+    };
 
     const gameEndDelay = 2000;
     useEffect(() => {
