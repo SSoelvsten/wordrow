@@ -104,6 +104,7 @@ int main(int argc, char* argv[])
   size_t idx = 0;
   size_t skipped__short_keys = 0;
   size_t skipped__short_games = 0;
+  size_t skipped__long_games = 0;
   size_t anagrams__time = 0;
 
   for (std::string k : keys) {
@@ -131,6 +132,12 @@ int main(int argc, char* argv[])
       continue;
     }
 
+    // Ignore long games (def: 'long' more than 'six times nine')
+    if (game.size() > 54) {
+      skipped__long_games += 1;
+      continue;
+    }
+
     out_file << gen_json(a.anagrams_of(k));
 
     idx++;
@@ -152,4 +159,5 @@ int main(int argc, char* argv[])
   std::cout << "Created " << idx << " games in '.out/'" << std::endl;
   std::cout << "| Skipped " << skipped__short_keys << " keys that were too short." << std::endl;
   std::cout << "| Skipped " << skipped__short_games << " games that were too short." << std::endl;
+  std::cout << "| Skipped " << skipped__long_games << " games that were too long." << std::endl;
 }
