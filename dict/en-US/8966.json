@@ -1,23 +1,14 @@
 {
   "anagrams": [
     "abb",
-    "age",
     "alb",
     "ale",
     "bae",
-    "bag",
     "bal",
-    "beg",
     "bel",
     "ebb",
-    "gab",
-    "gae",
-    "gal",
-    "gel",
     "lab",
-    "lag",
     "lea",
-    "leg",
     "abbe",
     "able",
     "albe",
@@ -27,16 +18,8 @@
     "beal",
     "blab",
     "blae",
-    "blag",
     "bleb",
-    "egal",
-    "gale",
-    "geal",
     "babel",
-    "bagel",
-    "belga",
-    "gable",
-    "gleba",
-    "gabble"
+    "babble"
   ]
 }
