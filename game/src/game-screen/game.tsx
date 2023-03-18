@@ -91,7 +91,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     const qualified: boolean = !!guessed.find((v,idx) => v && anagrams[idx].length === maxWordLength);
 
     // Derive selected word and its true length (i.e. the last index that is non-null)
-    var selected_length: number = maxWordLength;
+    var selectedLength: number = maxWordLength;
     const selected: (string | null)[] = chars
         // Create a copy of the array
         .map(_ => _)
@@ -104,7 +104,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
         // Display character, if selected. Otherwise, decrement 'selected_length'
         .map(([c,i]) => {
             if (i === null) {
-                selected_length--;
+                selectedLength--;
                 return null;
             }
             return c;
@@ -117,8 +117,8 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
         setChars(charShuffle(chars));
     };
 
-    const actionDelete = (idx: number = selected_length - 1) => {
-        if (idx < 0 || selected_length <= idx) return;
+    const actionDelete = (idx: number = selectedLength - 1) => {
+        if (idx < 0 || selectedLength <= idx) return;
 
         setChars(chars.map(([c,i]) => i === null || i === idx ? [c,null]
                                     : i < idx                 ? [c,i]
@@ -172,6 +172,20 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
         }
     };
 
+    const actionClick = (idx: number) => {
+        // Ignore invalid indices
+        if (idx < 0) { return; }
+        if (maxWordLength <= idx) { return; }
+
+        // Stop early, if index is already chosen
+        if (chars[idx][1] !== null) { return; }
+
+        // Update selection
+        setChars(chars.map(([c,i], c_idx) => {
+            return c_idx === idx ? [c,selectedLength] : [c,i];
+        }));
+    };
+
     const actionType = (char: string) => {
         // Ignore non-char inputs
         if (char.length !== 1) return;
@@ -179,18 +193,12 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
         // Allow the user to write upper case letters
         char = char.toLocaleLowerCase();
 
-        // Find and update the requested letter (if any)
-        if (chars.filter(([c,i]) => i === null).map(([c,i]) => c).includes(char)) {
-            var hasSelected: boolean = false;
-            setChars(chars.map(([c,i]) => {
-                if (!hasSelected && i === null && c === char) {
-                    hasSelected = true;
-                    return [c,selected_length];
-                } else {
-                    return [c,i];
-                }
-            }));
-        }
+        // Find the left-most index of an unselected occurence of 'char'
+        const idx = chars.reduceRight(
+            (acc, [c,i], idx) => c === char && i === null ? idx : acc,
+            maxWordLength
+        );
+        actionClick(idx);
     };
 
     const actionNextGame = () => {
@@ -335,8 +343,8 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
                             <InputButton icon={faSolid.faXmark} onClick={actionClear} />
                             {selected.map((c,idx) => (
                                 <InputLetter content={c || ""}
-                                            key={idx}
-                                            onClick={() => actionDelete(idx)}
+                                             key={idx}
+                                             onClick={() => actionDelete(idx)}
                                 />)
                             )}
                             <InputButton icon={faSolid.faCaretRight} onClick={actionSubmit} />
@@ -344,8 +352,8 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
                         <div className={`Row`}>
                             {chars.map(([c,i],idx) => (
                                 <InputLetter content={i === null ? c : "_"}
-                                            key={idx}
-                                            onClick={() => { if (i === null) actionType(c); } }
+                                             key={idx}
+                                             onClick={() => actionClick(idx)}
                                 />))}
                         </div>
                     </>
