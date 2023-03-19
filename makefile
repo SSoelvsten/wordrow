@@ -26,6 +26,7 @@ build:
 	mv out build/dict/en-US
 	
     # Add CNAME record
+    # https://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages
 	echo "wordrow.io" > build/CNAME
 	
 # ---------------------------------------------------------------------------- #
