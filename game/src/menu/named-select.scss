@@ -4,10 +4,6 @@
     color: $light-text-color;
 
     width: max-content;
-    min-width: 310px;
-    @media screen and (max-width: $medium-screen-width) {
-        min-width: 192px;
-    }
     cursor: pointer;
 
     font-size: 24px;
