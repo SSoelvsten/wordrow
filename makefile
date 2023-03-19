@@ -6,11 +6,14 @@ MAKE_FLAGS=-j $$(nproc)
 #     Complete build script.
 # ---------------------------------------------------------------------------- #
 build:
+    # Build React Page
 	make $(MAKE_FLAGS) clean
 	make $(MAKE_FLAGS) build/game
-
+	
+    # Remove Developer games
 	rm -rf build/dict/**
 
+    # Build Dictionaries
 	make $(MAKE_FLAGS) build/game_gen
 
 	make $(MAKE_FLAGS) build/dict DICT=da-DK
@@ -21,7 +24,10 @@ build:
 
 	make $(MAKE_FLAGS) build/dict DICT=en-US
 	mv out build/dict/en-US
-
+	
+    # Add CNAME record
+	echo "wordrow.io" > build/CNAME
+	
 # ---------------------------------------------------------------------------- #
 #     Build React application.
 # ---------------------------------------------------------------------------- #
