@@ -18,7 +18,7 @@ const word_url = (language: Language, word: string) => {
     case Language.DE:
         return `https://www.duden.de/suchen/flexion/${word}`;
     case Language.EN:
-        return `https://www.merriam-webster.com/dictionary/${word}`;
+        return `https://www.collinsdictionary.com/dictionary/english/${word}`;
     default:
         throw new Error(`Unknown Language: ${language}`);
     }
