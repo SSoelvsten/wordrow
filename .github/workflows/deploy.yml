@@ -22,7 +22,7 @@ jobs:
     runs-on: ubuntu-latest
 
     needs: [skip_trivial]
-    if: ${{ needs.skip_trivial.outputs.should_skip == 'true' }}
+    if: ${{ needs.skip_trivial.outputs.should_skip != 'true' }}
 
     steps:
     # Git repo set up
