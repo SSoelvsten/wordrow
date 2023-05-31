@@ -1,6 +1,5 @@
 import { ReactNode } from 'react';
 import localize from './localize';
-import './localize/language';
 import { Language } from './localize/language';
 
 export enum Difficulty {
@@ -17,26 +16,26 @@ export const Difficulties: Difficulty[] = [
 
 export interface DifficultyLogic {
   initialTime: number;
-  addTime: (word_length: number) => number;
+  addTime: (wordLength: number) => number;
 }
 
 export const GetDifficultyLogic = (
-  d: Difficulty,
+  difficulty: Difficulty,
   numberOfChars: number
 ): DifficultyLogic => {
-  const minimumTime = 2 * 60 * 1000; // 02:00:000
+  const minimumTime = 2 * 60 * 1000; // 2 minutes
   const totalTime = Math.max(minimumTime, numberOfChars * 1000);
 
-  switch (d) {
+  switch (difficulty) {
     case Difficulty.UNLIMITED_TIME:
       return {
         initialTime: Infinity,
-        addTime: (word_length: number) => 0,
+        addTime: () => 0,
       };
     case Difficulty.TIMED:
       return {
         initialTime: totalTime,
-        addTime: (word_length: number) => 0,
+        addTime: () => 0,
       };
     case Difficulty.TIME_SPRINT:
       const initialTime = Math.max(30 * 1000 /* 30s */, totalTime / 7);
@@ -44,7 +43,7 @@ export const GetDifficultyLogic = (
 
       return {
         initialTime: initialTime,
-        addTime: (word_length: number) => word_length * timePerChar,
+        addTime: (wordLength: number) => wordLength * timePerChar,
       };
   }
 };

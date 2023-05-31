@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as faRegular from '@fortawesome/free-regular-svg-icons';
 import * as faSolid from '@fortawesome/free-solid-svg-icons';
-import { Language } from './localize/language';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useState } from 'react';
+import './app.scss';
 import { Difficulty } from './difficulty';
 import GameSession from './game-screen/game-session';
-import './app.scss';
+import { Language } from './localize/language';
 import Menu from './menu/menu';
 
 const LS_KEYS = {
@@ -16,81 +16,44 @@ const LS_KEYS = {
 };
 
 const App = () => {
-  // ------------------------------------------------------------------------
-  // USER SETTINGS
-  const [darkMode, setDarkMode] = useState<boolean>(() => {
-    // Consult local storage for state from previous page
-    const ls_res = localStorage.getItem(LS_KEYS.DarkMode);
-    if (ls_res) {
-      return ls_res === 'true';
-    }
+  const [isDarkMode, setIsDarkMode] = useState(getIsDarkMode);
+  const [language, setLanguage] = useState(getLanguage);
+  const [difficulty, setDifficulty] = useState(getDifficulty);
+  const [inGame, setInGame] = useState(getIsInGame);
 
-    // Ask browser, whether it wants to use dark mode
-    return (
-      window.matchMedia &&
-      window.matchMedia('(prefers-color-scheme: dark)').matches
-    );
-  });
+  const switchColorMode = () => {
+    localStorage.setItem(LS_KEYS.DarkMode, `${isDarkMode}`);
+    setIsDarkMode((isDarkMode) => !isDarkMode);
+  };
 
-  const [language, setLanguage] = useState<Language>(() => {
-    // Consult local storage for state from previous page
-    const ls_res = localStorage.getItem(LS_KEYS.Language);
-    if (ls_res) {
-      return ls_res as Language;
-    }
-
-    // Otherwise, just leave it unchecked
-    return Language.EN;
-  });
-
-  const [difficulty, setDifficulty] = useState<Difficulty>(() => {
-    // Consult local storage for state from previous page
-    const ls_res = localStorage.getItem(LS_KEYS.Difficulty);
-    if (ls_res) {
-      return ls_res as Difficulty;
-    }
-
-    // Otherwise, just leave it unchecked
-    return Difficulty.UNLIMITED_TIME;
-  });
-
-  const [inGame, setInGame] = useState<boolean>(() => {
-    // Go directly into a game, if settings have already been set
-    const ls_res = localStorage.getItem(LS_KEYS.HasPlayed);
-    return ls_res !== null;
-  });
-
-  // ------------------------------------------------------------------------
-  // SAVE USER SETTINGS
-  const updateLocalStorage = () => {
-    localStorage.setItem(LS_KEYS.DarkMode, `${darkMode}`);
+  const updateLanguage = (newLanguage: Language) => {
     if (language !== undefined) {
       localStorage.setItem(LS_KEYS.Language, language);
     }
-    if (difficulty !== undefined) {
-      localStorage.setItem(LS_KEYS.Difficulty, difficulty);
-    }
+    setLanguage(newLanguage);
   };
 
-  useEffect(updateLocalStorage, [darkMode, language, difficulty]);
+  const updateDifficulty = (newDifficulty: Difficulty) => {
+    localStorage.setItem(LS_KEYS.Difficulty, difficulty);
+    setDifficulty(newDifficulty);
+  };
 
-  useEffect(() => {
+  const updateIsInGame = (isInGame: boolean) => () => {
     if (inGame) {
       localStorage.setItem(LS_KEYS.HasPlayed, 'true');
     }
-  }, [inGame]);
+    setInGame(isInGame);
+  };
 
-  // ------------------------------------------------------------------------
-  // VISUAL
   return (
-    <div className={`App ${darkMode ? 'DarkMode' : ''}`}>
+    <div className={`App ${isDarkMode ? 'DarkMode' : ''}`}>
       {!inGame && (
         <Menu
           language={language}
-          setLanguage={setLanguage}
+          setLanguage={updateLanguage}
           difficulty={difficulty}
-          setDifficulty={setDifficulty}
-          startGame={() => setInGame(true)}
+          setDifficulty={updateDifficulty}
+          startGame={updateIsInGame(true)}
         />
       )}
       {inGame && language && difficulty && (
@@ -99,21 +62,57 @@ const App = () => {
       <div className="TopButtons Left">
         <button
           className="Button"
-          onClick={() => setInGame(false)}
+          onClick={updateIsInGame(false)}
           disabled={!inGame}
         >
           <FontAwesomeIcon
-            icon={darkMode ? faSolid.faCaretLeft : faSolid.faCaretLeft}
+            icon={isDarkMode ? faSolid.faCaretLeft : faSolid.faCaretLeft}
           />
         </button>
-        <button className="Button" onClick={() => setDarkMode(!darkMode)}>
+        <button className="Button" onClick={switchColorMode}>
           <FontAwesomeIcon
-            icon={darkMode ? faSolid.faMoon : faRegular.faMoon}
+            icon={isDarkMode ? faSolid.faMoon : faRegular.faMoon}
           />
         </button>
       </div>
     </div>
   );
+};
+
+const getIsDarkMode = (): boolean => {
+  const isDarkMode = localStorage.getItem(LS_KEYS.DarkMode);
+  if (isDarkMode) {
+    return isDarkMode === 'true';
+  }
+
+  // Ask browser, whether it wants to use dark mode
+  return (
+    window.matchMedia &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches
+  );
+};
+
+const getLanguage = (): Language => {
+  const language = localStorage.getItem(LS_KEYS.Language);
+  if (language) {
+    return language as Language;
+  }
+
+  return Language.EN;
+};
+
+const getDifficulty = (): Difficulty => {
+  const difficulty = localStorage.getItem(LS_KEYS.Difficulty);
+  if (difficulty) {
+    return difficulty as Difficulty;
+  }
+
+  return Difficulty.UNLIMITED_TIME;
+};
+
+const getIsInGame = (): boolean => {
+  const inGame = localStorage.getItem(LS_KEYS.HasPlayed);
+  return inGame !== null;
 };
 
 export default App;
