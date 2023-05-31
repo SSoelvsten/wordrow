@@ -1,9 +1,9 @@
-import '../language.ts';
+import '../localize/language.js';
 
 export interface GameIndex {
-    instances: number;
+  instances: number;
 }
 
 export interface GameInstance {
-    anagrams: string[];
+  anagrams: string[];
 }
