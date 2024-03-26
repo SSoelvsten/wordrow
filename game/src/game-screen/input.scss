@@ -12,18 +12,21 @@ $input-small-factor: 0.4;
     color: $light-text-color;
 
     @include borderedCharBox($input-font-size, $input-gap);
+
     @media screen and (max-width: $medium-screen-width) {
         @include borderedCharBox($input-medium-factor*$input-font-size,
-                                 $input-medium-factor*$input-gap);
+            $input-medium-factor*$input-gap);
     }
+
     @media screen and (max-width: $small-screen-width) {
         @include borderedCharBox($input-small-factor*$input-font-size,
-                                 $input-small-factor*$input-gap);
+            $input-small-factor*$input-gap);
     }
 
     /* Overwrite values in 'borderedCharBox' for vertical gap */
     margin-bottom: $input-gap/2;
     margin-top: $input-gap/2;
+
     @media screen and (max-width: $medium-screen-width) {
         margin-bottom: $input-medium-factor*$input-gap/2;
         margin-top: $input-medium-factor*$input-gap/2;
@@ -37,6 +40,7 @@ $input-small-factor: 0.4;
     &.Letter {
         background-color: $light-input;
     }
+
     &.Button {
         background-color: $light-background;
     }
@@ -45,6 +49,7 @@ $input-small-factor: 0.4;
     &:not(.Disabled) {
         cursor: pointer;
     }
+
     &:not(:hover) {
         opacity: 80%;
     }
@@ -52,10 +57,19 @@ $input-small-factor: 0.4;
 
 .HasGood .Input.Letter {
     @keyframes InputSuccessLight {
+
         /* flash animation when guessed */
-        0%   { border-color: $light-background; }
-        50%  { border-color: $light-good; }
-        100% { border-color: $light-background; }
+        0% {
+            border-color: $light-background;
+        }
+
+        50% {
+            border-color: $light-good;
+        }
+
+        100% {
+            border-color: $light-background;
+        }
     }
 
     animation-name: InputSuccessLight;
@@ -70,6 +84,7 @@ $input-small-factor: 0.4;
     &.Letter {
         background-color: $dark-input;
     }
+
     &.Button {
         background-color: $dark-background;
     }
@@ -77,10 +92,19 @@ $input-small-factor: 0.4;
 
 .DarkMode .HasGood .Input.Letter {
     @keyframes InputSuccessDark {
+
         /* flash animation when guessed */
-        0%   { border-color: $dark-background; }
-        50%  { border-color: $dark-good; }
-        100% { border-color: $dark-background; }
+        0% {
+            border-color: $dark-background;
+        }
+
+        50% {
+            border-color: $dark-good;
+        }
+
+        100% {
+            border-color: $dark-background;
+        }
     }
 
     animation-name: InputSuccessDark;

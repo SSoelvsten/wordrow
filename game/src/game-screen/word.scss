@@ -4,17 +4,21 @@
     flex: 0;
     display: flex;
     margin: 0 16px;
+
     @media screen and (max-width: $small-screen-width) {
         margin: 0 8px;
     }
 
     /* Cursor interaction */
-    &.Guessed, &.Show {
+    &.Guessed,
+    &.Show {
         cursor: help;
     }
 
     opacity: 90%;
-    &.Guessed:hover, &.Show:hover {
+
+    &.Guessed:hover,
+    &.Show:hover {
         opacity: 100%;
     }
 
@@ -26,16 +30,18 @@
         margin-top: $letter-font-size;
 
         $letter-medium-factor: 0.7;
+
         @media screen and (max-width: $medium-screen-width) {
             @include borderedCharBox($letter-medium-factor*$letter-font-size,
-                                     $letter-medium-factor*$letter-gap);
+                $letter-medium-factor*$letter-gap);
             margin-top: $letter-medium-factor*$letter-font-size;
         }
 
         $letter-small-factor: 0.5;
+
         @media screen and (max-width: $small-screen-width) {
             @include borderedCharBox($letter-small-factor*$letter-font-size,
-                                     $letter-small-factor*$letter-gap);
+                $letter-small-factor*$letter-gap);
             margin-top: $letter-small-factor*$letter-font-size;
         }
 
@@ -46,9 +52,15 @@
         background-color: $light-good;
 
         @keyframes WordRevealLight {
+
             /* flash animation when guessed */
-            from { background-color: $light-background; }
-            to { background-color: $light-good; }
+            from {
+                background-color: $light-background;
+            }
+
+            to {
+                background-color: $light-good;
+            }
         }
 
         animation-name: WordRevealLight;
@@ -65,9 +77,15 @@
         background-color: $dark-good;
 
         @keyframes WordRevealDark {
+
             /* flash animation when guessed */
-            from { background-color: $dark-background; }
-            to { background-color: $dark-good; }
+            from {
+                background-color: $dark-background;
+            }
+
+            to {
+                background-color: $dark-good;
+            }
         }
 
         animation-name: WordRevealDark;

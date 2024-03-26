@@ -28,8 +28,10 @@
             font-size: 24px;
         }
     }
+
     &:not(.Selected) {
         opacity: $opacity-unselected;
+
         &:hover {
             opacity: $opacity-hover;
         }

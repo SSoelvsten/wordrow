@@ -23,6 +23,7 @@
         @media screen and (max-width: $medium-screen-width) {
             font-size: 24px;
         }
+
         @media screen and (max-width: $small-screen-width) {
             font-size: 16px;
         }
@@ -36,9 +37,11 @@
             margin-left: 5px;
             margin-left: 5px;
         }
+
         &.hide {
             color: $light-background;
         }
+
         &.show {
             cursor: pointer;
         }

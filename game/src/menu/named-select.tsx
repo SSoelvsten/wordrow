@@ -8,7 +8,7 @@ export interface NamedSelectProps {
     onClick: () => void;
 }
 
-export const NamedSelect = ({ selected, text, onClick } : NamedSelectProps) =>  (
+export const NamedSelect = ({ selected, text, onClick }: NamedSelectProps) => (
     <div className={`NamedSelect ${selected ? "Selected" : ""}`} onClick={onClick}>
         {text}
     </div>

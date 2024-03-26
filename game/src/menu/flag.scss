@@ -7,39 +7,45 @@
     margin: 16px;
 
     $flag-scale: 0.5px;
-    $flag-width: (320 * $flag-scale);
-    $flag-height: (160 * $flag-scale);
+    $flag-width: (
+        320 * $flag-scale
+    );
+$flag-height: (
+    160 * $flag-scale
+);
 
+width: $flag-width;
+
+img {
+    opacity: $opacity-selected;
     width: $flag-width;
+    max-width: $flag-width;
 
-    img {
-        opacity: $opacity-selected;
-        width: $flag-width;
-        max-width: $flag-width;
+    $flag-medium-factor: 0.7;
 
-        $flag-medium-factor: 0.7;
-        @media screen and (max-width: $medium-screen-width) {
-            width: $flag-medium-factor*$flag-width;
-            max-width: $flag-medium-factor*$flag-width;
-        }
-
-        border-radius: 5%;
-        border: 0.32px;
-        border-color: $light-text-color;
+    @media screen and (max-width: $medium-screen-width) {
+        width: $flag-medium-factor*$flag-width;
+        max-width: $flag-medium-factor*$flag-width;
     }
 
-    .Index {
-        opacity: $opacity-selected;
-        color: $light-text-color;
+    border-radius: 5%;
+    border: 0.32px;
+    border-color: $light-text-color;
+}
 
-        margin: auto;
-        text-align: center;
+.Index {
+    opacity: $opacity-selected;
+    color: $light-text-color;
 
-        font-size: 16px;
-        @media screen and (max-width: $medium-screen-width) {
-            font-size: 11px;
-        }
+    margin: auto;
+    text-align: center;
+
+    font-size: 16px;
+
+    @media screen and (max-width: $medium-screen-width) {
+        font-size: 11px;
     }
+}
 }
 
 .Flag:not(.Selected) {
@@ -47,14 +53,17 @@
         opacity: $opacity-unselected;
         filter: grayscale(100%);
     }
+
     .Index {
         opacity: $opacity-unselected;
     }
+
     &:hover {
         img {
             opacity: $opacity-hover;
             filter: grayscale(40%);
         }
+
         .Index {
             opacity: $opacity-hover;
         }
@@ -65,6 +74,7 @@
     img {
         border-color: $dark-text-color;
     }
+
     .Index {
         color: $dark-text-color;
     }

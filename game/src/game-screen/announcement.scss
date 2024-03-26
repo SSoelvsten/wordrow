@@ -18,13 +18,26 @@
     background-color: $light-background;
 
     text-align: center;
+
     .Content {
         position: relative;
+
         @keyframes AnnouncementTextReveal {
-            0%   { left: -100% }
-            20%  { left: 0% }
-            80%  { left: 0% }
-            100% { left: 100%; }
+            0% {
+                left: -100%
+            }
+
+            20% {
+                left: 0%
+            }
+
+            80% {
+                left: 0%
+            }
+
+            100% {
+                left: 100%;
+            }
         }
 
         left: -100%;
@@ -39,10 +52,21 @@
     }
 
     @keyframes AnnouncementReveal {
-        0%   { height: $height-hidden; }
-        10%  { height: $height-full; }
-        90%  { height: $height-full; }
-        100% { height: $height-hidden; }
+        0% {
+            height: $height-hidden;
+        }
+
+        10% {
+            height: $height-full;
+        }
+
+        90% {
+            height: $height-full;
+        }
+
+        100% {
+            height: $height-hidden;
+        }
     }
 
     animation-name: AnnouncementReveal;
@@ -51,6 +75,7 @@
 
 .DarkMode .Announcement {
     background-color: $dark-background;
+
     .Content {
         color: $dark-text-color;
     }

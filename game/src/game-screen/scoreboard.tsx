@@ -31,13 +31,10 @@ const ScoreBoard = ({ endTime, gameEnd, language, qualified, round, score, onTim
         const seconds = Math.floor((timeLeft / 1000) % 60);
         const minutes = Math.floor((timeLeft / 1000) / 60);
 
-        return `${
-            minutes.toLocaleString(undefined, { minimumIntegerDigits: 2 })
-        }:${
-            seconds.toLocaleString(undefined, { minimumIntegerDigits: 2 })
-        }:${
-            millis.toLocaleString(undefined, { minimumIntegerDigits: 3 })
-        }`;
+        return `${minutes.toLocaleString(undefined, { minimumIntegerDigits: 2 })
+            }:${seconds.toLocaleString(undefined, { minimumIntegerDigits: 2 })
+            }:${millis.toLocaleString(undefined, { minimumIntegerDigits: 3 })
+            }`;
     };
 
     // TODO: stop timer update when 'won'.
@@ -66,17 +63,17 @@ const ScoreBoard = ({ endTime, gameEnd, language, qualified, round, score, onTim
 
     return (
         <div className="ScoreBoard">
-            { isTimed &&
+            {isTimed &&
                 <div className={`Time ${timeAlarm ? "Alarm" : ""}`}>{formatTimeleft()}</div>
             }
             <div className="RoundNumber">
-                { isTimed && <div className="Bar">|</div>}
-                    <FontAwesomeIcon icon={qualified ? faSolid.faFlag : faRegular.faFlag} flip={"horizontal"} />
-                    {round}
-                    <FontAwesomeIcon icon={qualified ? faSolid.faFlag : faRegular.faFlag} />
+                {isTimed && <div className="Bar">|</div>}
+                <FontAwesomeIcon icon={qualified ? faSolid.faFlag : faRegular.faFlag} flip={"horizontal"} />
+                {round}
+                <FontAwesomeIcon icon={qualified ? faSolid.faFlag : faRegular.faFlag} />
                 <div className="Bar">|</div>
             </div>
-            <div className="Score">{Math.round(score).toLocaleString(language, {minimumIntegerDigits: 7 })}</div>
+            <div className="Score">{Math.round(score).toLocaleString(language, { minimumIntegerDigits: 7 })}</div>
         </div>
     );
 }

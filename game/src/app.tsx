@@ -9,10 +9,10 @@ import './app.scss';
 import Menu from './menu/menu';
 
 const LS_KEYS = {
-  DarkMode:   "DarkMode",
+  DarkMode: "DarkMode",
   Difficulty: "Difficulty",
-  Language:   "Language",
-  HasPlayed:  "HasPlayed",
+  Language: "Language",
+  HasPlayed: "HasPlayed",
 }
 
 const App = () => {
@@ -78,24 +78,24 @@ const App = () => {
   // ------------------------------------------------------------------------
   // VISUAL
   return (
-      <div className={`App ${darkMode ? "DarkMode" : ""}`}>
-        { !inGame &&
-          <Menu language={language} setLanguage={setLanguage}
-                difficulty={difficulty} setDifficulty={setDifficulty}
-                startGame={() => setInGame(true)} />
-        }
-        { inGame && language && difficulty &&
-          <GameSession difficulty={difficulty} language={language} />
-        }
-        <div className="TopButtons Left">
-          <button className="Button" onClick={() => setInGame(false)} disabled={!inGame}>
-              <FontAwesomeIcon icon={darkMode ? faSolid.faCaretLeft : faSolid.faCaretLeft} />
-            </button>
-          <button className="Button" onClick={() => setDarkMode(!darkMode)}>
-            <FontAwesomeIcon icon={darkMode ? faSolid.faMoon : faRegular.faMoon} />
-          </button>
-        </div>
+    <div className={`App ${darkMode ? "DarkMode" : ""}`}>
+      {!inGame &&
+        <Menu language={language} setLanguage={setLanguage}
+          difficulty={difficulty} setDifficulty={setDifficulty}
+          startGame={() => setInGame(true)} />
+      }
+      {inGame && language && difficulty &&
+        <GameSession difficulty={difficulty} language={language} />
+      }
+      <div className="TopButtons Left">
+        <button className="Button" onClick={() => setInGame(false)} disabled={!inGame}>
+          <FontAwesomeIcon icon={darkMode ? faSolid.faCaretLeft : faSolid.faCaretLeft} />
+        </button>
+        <button className="Button" onClick={() => setDarkMode(!darkMode)}>
+          <FontAwesomeIcon icon={darkMode ? faSolid.faMoon : faRegular.faMoon} />
+        </button>
       </div>
+    </div>
   );
 }
 

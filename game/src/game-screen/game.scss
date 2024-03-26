@@ -26,9 +26,11 @@
         &::-webkit-scrollbar {
             width: 3px;
         }
+
         &::-webkit-scrollbar-track {
             background: $light-input;
         }
+
         &::-webkit-scrollbar-thumb {
             background-color: $light-input;
             border-radius: 1px;
@@ -43,6 +45,7 @@
         @media screen and (max-width: $medium-screen-width) {
             height: 130px;
         }
+
         @media screen and (max-width: $small-screen-width) {
             height: 110px;
         }
@@ -67,6 +70,7 @@
         &::-webkit-scrollbar-track {
             background: $dark-input;
         }
+
         &::-webkit-scrollbar-thumb {
             background-color: $dark-input;
             border: solid $dark-text-color;

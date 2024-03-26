@@ -18,28 +18,37 @@
 
     text-align: center;
     font-size: $scoreboard-font-size;
+
     @media screen and (max-width: $small-screen-width) {
         font-size: $scoreboard-small-factor*$scoreboard-font-size;
     }
 
     margin-top: 3px;
 
-    min-height: $scoreboard-font-size-large + 14px;
+    min-height: $scoreboard-font-size-large +14px;
+
     @media screen and (max-width: $tiny-screen-width) {
         min-height: $scoreboard-small-factor*(2*$scoreboard-font-size + $scoreboard-font-size-large) + 24px;
     }
 
     color: $light-text-color;
+
     div {
         display: inline-block;
+
         @media screen and (max-width: $tiny-screen-width) {
             display: block;
         }
 
         &.Time.Alarm {
             @keyframes timeAlarmLight {
-                from { color: $light-text-color; }
-                to { color: $light-bad; }
+                from {
+                    color: $light-text-color;
+                }
+
+                to {
+                    color: $light-bad;
+                }
             }
 
             animation-name: timeAlarmLight;
@@ -51,6 +60,7 @@
         &.RoundNumber {
             margin: 0 8px;
             font-size: $scoreboard-font-size-large;
+
             @media screen and (max-width: $small-screen-width) {
                 font-size: $scoreboard-small-factor*$scoreboard-font-size-large;
             }
@@ -61,6 +71,7 @@
 
                 $flag-icon-size: $scoreboard-font-size;
                 font-size: $flag-icon-size;
+
                 @media screen and (max-width: $small-screen-width) {
                     font-size: $scoreboard-small-factor*$flag-icon-size;
                 }
@@ -75,7 +86,7 @@
             }
         }
 
-        &.Score { }
+        &.Score {}
     }
 }
 
@@ -84,9 +95,15 @@
 
     div.Time.Alarm {
         @keyframes timeAlarmDark {
-            from { color: $dark-text-color; }
-            to   { color: $dark-bad; }
+            from {
+                color: $dark-text-color;
+            }
+
+            to {
+                color: $dark-bad;
+            }
         }
+
         animation-name: timeAlarmDark;
     }
 

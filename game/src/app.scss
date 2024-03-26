@@ -15,6 +15,7 @@
         .Button {
             border: none;
             font-size: 19px;
+
             @media screen and (max-width: $small-screen-width) {
                 font-size: 16px;
             }
@@ -30,6 +31,7 @@
                     opacity: 80%;
                 }
             }
+
             &:disabled {
                 opacity: 20%;
             }
@@ -40,6 +42,7 @@
         &.Left {
             left: $button-gap;
         }
+
         &.Right {
             right: $button-gap;
         }
