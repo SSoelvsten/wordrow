@@ -62,27 +62,37 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     // ------------------------------------------------------------------------
     // GAME STATE
 
+    // Letters, their order, and their indices in the chosen word.
     const [chars, setChars] = useState<CharIdx[]>(
         () => charShuffle(anagrams[words - 1].split('').map((c) => [c, null]))
     );
+    // Boolean array of which words have been guessed
     const [guessed, setGuessed] = useState<boolean[]>(
         () => Array(words).fill(false)
     );
+    // String of the latest correct guess. This is used to trigger animations.
     const [latestGuessed, setLatestGuessed] = useState<string | null>(
         () => null
     );
+    // Latest guessed word for the ability to recreate them.
     const [guessCache, setGuessCache] = useState<(string | null)[]>(
         () => Array(words).fill(null)
     );
+    // Time at which the game will end (if no additional time is obtained)
     const [endTime, setEndTime] = useState<number>(
         () => new Date().getTime() + timerSetting.initialTime
     );
+    // Whether the game has ended.
     const [gameEnd, setGameEnd] = useState<boolean>(
         () => false
     );
+    // Whether the 'Press to Continue' button should be shown/active. This is
+    // separate from `gameEnd` to defer it by a small fraction of time.
     const [activatePressToContinue, setActivatePressToContinue] = useState<boolean>(
         () => false
     );
+    // Whether the page has been drawn. This is used to trigger computing the
+    // layout of the columns.
     const [isDrawn, setIsDrawn] = useState<boolean>(
         () => false
     );
