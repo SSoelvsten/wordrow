@@ -112,6 +112,8 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
         });
     ;
 
+    const emptySelection: boolean = !selected[0];
+
     // ------------------------------------------------------------------------
     // GAME LOGIC
     const actionShuffle = () => {
@@ -131,8 +133,6 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     };
 
     const actionSubmit = () => {
-        const emptySelection: boolean = !selected[0];
-
         // If nothing is selected, recreate the indices for the word in 'guessCache'
         if (emptySelection) {
             let charsCopy: CharIdx[] = chars.map(_ => _);
@@ -341,7 +341,8 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
                     {!gameEnd &&
                         <>
                             <div className={`Row ${guessed.includes(true) ? 'HasGood' : ''}`} key={latestGuessed}>
-                                <InputButton icon={faSolid.faXmark} onClick={actionClear} />
+                                {emptySelection && <InputButton icon={faSolid.faRotate} onClick={actionShuffle} />}
+                                {!emptySelection && <InputButton icon={faSolid.faXmark} onClick={actionClear} />}
                                 {selected.map((c, idx) => (
                                     <InputLetter content={c || ""}
                                         key={idx}
