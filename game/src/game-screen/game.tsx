@@ -28,6 +28,23 @@ export interface GameProps {
 
 type CharIdx = [string, number | null];
 
+const deriveSelected = (chars: CharIdx[]) => {
+    return chars
+        // Create a copy of the array
+        .map(_ => _)
+        // Sort by selection-index, leaving 'null' at the end
+        .sort(([_ca, ia], [_cb, ib]) => {
+            return ia === null && ib === null ? 0
+                : ia === null ? 1
+                    : ib === null ? -1
+                        : ia - ib
+        })
+        // Keep character, if selected.
+        .map(([c, i]) => i === null ? "" : c)
+        // Merge into a single string
+        .join("");
+}
+
 const charShuffle = (chars: CharIdx[]) => {
     let charsCopy = chars.map(c => c);
     charsCopy.sort(
@@ -75,7 +92,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
         () => null
     );
     // Latest guessed word for the ability to recreate them.
-    const [guessCache, setGuessCache] = useState<(string | null)[]>(
+    const [guessCache, setGuessCache] = useState<(number | null)[]>(
         () => Array(words).fill(null)
     );
     // Time at which the game will end (if no additional time is obtained)
@@ -97,41 +114,41 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
         () => false
     );
 
-    const currScore: number = (!guessed.includes(false) ? 2 : 1) * anagrams.filter((w, i) => guessed[i]).reduce((acc, w) => acc + scoreWord(w), 0);
-    const qualified: boolean = !!guessed.find((v, idx) => v && anagrams[idx].length === maxWordLength);
+    const currScore: number =
+        (!guessed.includes(false) ? 2 : 1) * anagrams.filter((w, i) => guessed[i]).reduce((acc, w) => acc + scoreWord(w), 0);
+
+    const qualified: boolean =
+        !!guessed.find((v, idx) => v && anagrams[idx].length === maxWordLength);
 
     // Derive selected word and its true length (i.e. the last index that is non-null)
-    var selectedLength: number = maxWordLength;
-    const selected: (string | null)[] = chars
-        // Create a copy of the array
-        .map(_ => _)
-        // Sort by selection-index, leaving 'null' at the end
-        .sort(([_ca, ia], [_cb, ib]) => {
-            return ia === null && ib === null ? 0
-                : ia === null ? 1
-                    : ib === null ? -1
-                        : ia - ib
-        })
-        // Display character, if selected. Otherwise, decrement 'selected_length'
-        .map(([c, i]) => {
-            if (i === null) {
-                selectedLength--;
-                return null;
-            }
-            return c;
-        });
-    ;
-
-    const emptySelection: boolean = !selected[0];
+    const selected = deriveSelected(chars);
+    const emptySelection: boolean = selected.length === 0;
 
     // ------------------------------------------------------------------------
     // GAME LOGIC
     const actionShuffle = () => {
-        setChars(charShuffle(chars));
+        const cachedWord: string = deriveSelected(guessCache.map(((s, idx) => [chars[idx][0], s])));
+        const shuffledChars: CharIdx[] = charShuffle(chars);
+
+        var shuffledCache: (number | null)[] = Array(maxWordLength).fill(null);
+
+        cachedWord.split('').forEach((cached_char, cached_idx) => {
+            // Find and update unused matching character in 'shuffledChars'
+            shuffledChars.findIndex(([choice_char, _], choice_idx) => {
+                if (cached_char === choice_char && shuffledCache[choice_idx] === null) {
+                    shuffledCache[choice_idx] = cached_idx;
+                    return true;
+                }
+                return false;
+            });
+        });
+
+        setChars(shuffledChars);
+        setGuessCache(shuffledCache);
     };
 
-    const actionDelete = (idx: number = selectedLength - 1) => {
-        if (idx < 0 || selectedLength <= idx) return;
+    const actionDelete = (idx: number = selected.length - 1) => {
+        if (idx < 0 || selected.length <= idx) return;
 
         setChars(chars.map(([c, i]) => i === null || i === idx ? [c, null]
             : i < idx ? [c, i]
@@ -143,37 +160,27 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     };
 
     const actionSubmit = () => {
-        // If nothing is selected, recreate the indices for the word in 'guessCache'
-        if (emptySelection) {
-            let charsCopy: CharIdx[] = chars.map(_ => _);
-            guessCache.forEach((s, si) => {
-                for (let idx = 0; s && idx < maxWordLength; idx++) {
-                    const [c, i] = charsCopy[idx];
-                    if (i === null && c === s) {
-                        charsCopy[idx][1] = si;
-                        break;
-                    }
-                }
-            });
-            setChars(charsCopy);
+        // If nothing is selected, recreate the indices for the word in 'guessCache' if any
+        if (emptySelection && guessCache) {
+            setChars(chars.map(([c, _], idx) => [c, guessCache[idx]]));
         } else {
             // Save current selected word in 'guessCache'
-            setGuessCache(selected);
+            var newGuessCache = chars.map((c) => c[1]);
+            setGuessCache(newGuessCache);
 
             // Collapse guess from a char[] to a string
-            const guess: string = selected.map(c => c === null ? "" : c).join("");
-            if (anagrams.includes(guess)) {
+            if (anagrams.includes(selected)) {
                 let guessedANewWord = false;
                 const newGuessed: boolean[] = guessed.map((v: boolean, idx: number) => {
-                    const match = anagrams[idx] === guess;
+                    const match = anagrams[idx] === selected;
                     if (match) guessedANewWord = v === false;
-                    return v || anagrams[idx] === guess;
+                    return v || anagrams[idx] === selected;
                 });
 
                 setGuessed(newGuessed);
                 if (guessedANewWord) {
-                    setLatestGuessed(guess);
-                    setEndTime(endTime + timerSetting.addTime(guess.length));
+                    setLatestGuessed(selected);
+                    setEndTime(endTime + timerSetting.addTime(selected.length));
 
                     const remainingWords = guessed.reduce((acc, v) => acc + (!v ? 1 : 0), 0);
                     setGameEnd(remainingWords <= 1);
@@ -193,7 +200,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
 
         // Update selection
         setChars(chars.map(([c, i], c_idx) => {
-            return c_idx === idx ? [c, selectedLength] : [c, i];
+            return c_idx === idx ? [c, selected.length] : [c, i];
         }));
     };
 
@@ -353,8 +360,8 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
                             <div className={`Row ${guessed.includes(true) ? 'HasGood' : ''}`} key={latestGuessed}>
                                 {emptySelection && <InputButton icon={faSolid.faRotate} onClick={actionShuffle} />}
                                 {!emptySelection && <InputButton icon={faSolid.faXmark} onClick={actionClear} />}
-                                {selected.map((c, idx) => (
-                                    <InputLetter content={c || ""}
+                                {selected.padEnd(maxWordLength, ' ').split('').map((c, idx) => (
+                                    <InputLetter content={c}
                                         key={idx}
                                         onClick={() => actionDelete(idx)}
                                     />)
