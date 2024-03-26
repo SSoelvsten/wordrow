@@ -349,7 +349,10 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
                                         onClick={() => actionDelete(idx)}
                                     />)
                                 )}
-                                <InputButton icon={faSolid.faCaretRight} onClick={actionSubmit} />
+                                <InputButton
+                                    icon={emptySelection ? faSolid.faRedo : faSolid.faCaretRight}
+                                    onClick={actionSubmit}
+                                />
                             </div>
                             <div className={`Row`}>
                                 {chars.map(([c, i], idx) => (
