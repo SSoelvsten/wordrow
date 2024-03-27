@@ -24,12 +24,12 @@ $input-small-factor: 0.4;
     }
 
     /* Overwrite values in 'borderedCharBox' for vertical gap */
-    margin-bottom: $input-gap/2;
-    margin-top: $input-gap/2;
+    margin-bottom: calc($input-gap / 2);
+    margin-top: calc($input-gap / 2);
 
     @media screen and (max-width: $medium-screen-width) {
-        margin-bottom: $input-medium-factor*$input-gap/2;
-        margin-top: $input-medium-factor*$input-gap/2;
+        margin-bottom: calc($input-medium-factor*$input-gap / 2);
+        margin-top: calc($input-medium-factor*$input-gap / 2);
     }
 
     /* Overwrite values in 'borderedCharBox' for blink on successful guess. */
