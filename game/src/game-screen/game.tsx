@@ -1,15 +1,21 @@
-import React, { ReactElement, useEffect, useRef, useState } from 'react';
+import React, { ReactElement, useContext, useEffect, useRef, useState } from 'react';
+import useSound from 'use-sound';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import * as faSolid from '@fortawesome/free-solid-svg-icons'
+
 import { GameInstance } from './game-instance';
 import { Language } from '../language';
 import { Difficulty, DifficultyLogic, GetDifficultyLogic } from '../difficulty';
+import { SoundContext, endKey, guessKey, randomHitKey, randomMissKey, soundMap, soundPath } from '../sound';
+
 import { InputButton, InputLetter } from './input';
 import Word from './word';
 import shuffle from '../shuffle';
 import ScoreBoard from './scoreboard';
 import EndScreen from './end-screen';
 import Announcement from './announcement';
+
 import './game.scss';
 
 export interface GameReport {
@@ -125,8 +131,14 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     const emptySelection: boolean = selected.length === 0;
 
     // ------------------------------------------------------------------------
+    // SOUND
+    const [play] = useSound(soundPath, { sprite: soundMap, soundEnabled: useContext(SoundContext) });
+
+    // ------------------------------------------------------------------------
     // GAME LOGIC
     const actionShuffle = () => {
+        play({ id: "button" });
+
         const cachedWord: string = deriveSelected(guessCache.map(((s, idx) => [chars[idx][0], s])));
         const shuffledChars: CharIdx[] = charShuffle(chars);
 
@@ -150,20 +162,27 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     const actionDelete = (idx: number = selected.length - 1) => {
         if (idx < 0 || selected.length <= idx) return;
 
+        play({ id: randomMissKey() });
         setChars(chars.map(([c, i]) => i === null || i === idx ? [c, null]
             : i < idx ? [c, i]
                 : [c, i - 1]));
     };
 
     const actionClear = () => {
+        if (selected.length === 0) return;
+
+        play({ id: "button" });
         setChars(chars.map(([c, _]) => ([c, null])));
     };
 
     const actionSubmit = () => {
         // If nothing is selected, recreate the indices for the word in 'guessCache' if any
         if (emptySelection && guessCache) {
+            play({ id: "button" });
             setChars(chars.map(([c, _], idx) => [c, guessCache[idx]]));
         } else {
+            play({ id: "submit" });
+
             // Save current selected word in 'guessCache'
             var newGuessCache = chars.map((c) => c[1]);
             setGuessCache(newGuessCache);
@@ -179,6 +198,8 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
 
                 setGuessed(newGuessed);
                 if (guessedANewWord) {
+                    play({ id: guessKey(selected.length === maxWordLength && !qualified) });
+
                     setLatestGuessed(selected);
                     setEndTime(endTime + timerSetting.addTime(selected.length));
 
@@ -192,13 +213,18 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
 
     const actionClick = (idx: number) => {
         // Ignore invalid indices
-        if (idx < 0) { return; }
-        if (maxWordLength <= idx) { return; }
+        if (idx < 0 || maxWordLength <= idx) {
+            play({ id: randomMissKey() });
+            return;
+        }
 
         // Stop early, if index is already chosen
-        if (chars[idx][1] !== null) { return; }
+        if (chars[idx][1] !== null) {
+            return;
+        }
 
         // Update selection
+        play({ id: randomHitKey() });
         setChars(chars.map(([c, i], c_idx) => {
             return c_idx === idx ? [c, selected.length] : [c, i];
         }));
@@ -221,6 +247,8 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
 
     const actionNextGame = () => {
         if (!activatePressToContinue) { return; }
+
+        play({ id: "button" });
         onRequestNextGame({ qualified, score: currScore });
     };
 
@@ -228,11 +256,14 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
         setGameEnd(true);
     };
 
-    const gameEndDelay = 2000;
     useEffect(() => {
-        if (gameEnd)
+        if (gameEnd) {
+            play({ id: endKey(qualified) });
+
+            const gameEndDelay = 2000;
             setTimeout(() => setActivatePressToContinue(true), gameEndDelay);
-    }, [gameEnd]);
+        }
+    }, [gameEnd, play, qualified]);
 
     // ------------------------------------------------------------------------
     // KEY LISTENER
@@ -397,6 +428,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
                     <button className={`Button`}
                         onClick={() => {
                             if (gameEnd) {
+                                play({ id: "button" });
                                 onRequestNextGame({ qualified, score: currScore });
                             } else {
                                 setGameEnd(true);

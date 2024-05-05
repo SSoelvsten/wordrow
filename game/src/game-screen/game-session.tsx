@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { GameIndex, GameInstance } from './game-instance';
+
 import { Language } from '../language';
+import { Difficulty } from '../difficulty';
+import { random } from '../random';
+
+import { GameIndex, GameInstance } from './game-instance';
 import Game, { GameReport } from './game';
 import './game-session.scss';
-import { Difficulty } from '../difficulty';
 
 const JSONHeader = { headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' } };
 
@@ -23,7 +26,7 @@ const GameSession = ({ difficulty, language }: GameSessionProps) => {
       // Convert response as a GameIndex object
       .then((resp: Response) => resp.json())
       // Randomly choose an index
-      .then((data: GameIndex) => Math.round(Math.random() * (data.instances - 1)))
+      .then((data: GameIndex) => Math.round(random(0, data.instances - 1)))
       // Fetch specific game based on language and index
       .then((gameIdx: number) => fetch(`dict/${language}/${gameIdx}.json`, JSONHeader))
       // Convert response to GameInstance object

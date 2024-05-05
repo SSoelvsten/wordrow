@@ -1,9 +1,14 @@
-import React, { ReactElement, useEffect, useRef } from 'react';
+import React, { ReactElement, useContext, useEffect, useRef } from 'react';
+import useSound from 'use-sound';
+
 import { Difficulties, Difficulty, DifficultyName } from '../difficulty';
 import { Language, languages } from '../language';
+import { SoundContext, soundKey, soundMap, soundPath } from '../sound';
+
 import Flag from './flag';
-import './menu.scss';
 import NamedSelect from './named-select';
+
+import './menu.scss';
 
 export interface MenuProps {
   difficulty: Difficulty;
@@ -17,17 +22,27 @@ const Menu = ({ difficulty, setDifficulty, language, setLanguage, startGame }: M
   const mayBegin = language !== undefined && difficulty !== undefined;
 
   // ------------------------------------------------------------------------
+  // Sound
+  const [play] = useSound(soundPath, { sprite: soundMap, soundEnabled: useContext(SoundContext) });
+  const soundKey : soundKey = "button";
+
+  // ------------------------------------------------------------------------
   // MENU LOGIC
   const actionLanguage = (l: Language) => {
+    play({ id: soundKey });
     setLanguage(l);
   }
 
   const actionDifficulty = (d: Difficulty) => {
+    play({ id: soundKey });
     setDifficulty(d);
   }
 
   const actionStartGame = () => {
-    if (mayBegin) startGame();
+    if (mayBegin) {
+      play({ id: soundKey });
+      startGame();
+    }
   }
 
   // ------------------------------------------------------------------------
