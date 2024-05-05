@@ -99,7 +99,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
     );
     // Latest guessed word for the ability to recreate them.
     const [guessCache, setGuessCache] = useState<(number | null)[]>(
-        () => Array(words).fill(null)
+        () => Array(maxWordLength).fill(null)
     );
     // Time at which the game will end (if no additional time is obtained)
     const [endTime, setEndTime] = useState<number>(
