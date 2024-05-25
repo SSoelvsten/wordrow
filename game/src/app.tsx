@@ -64,7 +64,7 @@ const App = () => {
       if (ls_res) { return ls_res as Difficulty; }
 
       // Otherwise, just leave it unchecked
-      return Difficulty.UNLIMITED_TIME;
+      return Difficulty.UNLIMITED;
     }
   );
 
