@@ -93,6 +93,11 @@ const Menu = ({ difficulty, setDifficulty, language, setLanguage, startGame }: M
       select_language = <>Language</>;
       select_difficulty = <>Game Mode</>;
       break;
+    case Language.ES:
+      start_text = <><b> Haz click aquí </b> o <b> pulsa Intro </b> para comenzar.</>
+      select_language = <>Idioma</>;
+      select_difficulty = <>Modo de juego</>;
+      break;
     default:
       throw new Error(`Unknown Language: ${language}`);
   }
