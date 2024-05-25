@@ -340,6 +340,7 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
         case Language.DK: round_text = <>Runde {round}</>; break;
         case Language.DE: round_text = <>Runde {round}</>; break;
         case Language.EN: round_text = <>Round {round}</>; break;
+        case Language.ES: round_text = <>Ronda {round}</>; break;
         default:
             throw new Error(`Unknown Language: ${language}`);
     }

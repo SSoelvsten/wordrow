@@ -33,6 +33,11 @@ const EndScreen = ({ language, qualified, score, showContinue, onClickContinue }
             failed_text = <>Sorry! Find a word that uses all letters to qualify for the next round.</>;
             continue_text = <><b>Click here</b> or <b>press enter</b> to continue.</>;
             break;
+        case Language.ES:
+            success_text = <>¡Enhorabuena! Pasas a la siguente ronda.</>;
+            failed_text = <>¡Lo sentimos! Encuentra una palabra que use todas las letras para pasar a la siguente ronda.</>;
+            continue_text = <><b> Haz click aquí </b> o <b> pulsa Intro </b> para continuar.</>;
+            break;
         default:
             throw new Error(`Unknown Language: ${language}`);
     }

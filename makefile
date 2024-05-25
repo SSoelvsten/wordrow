@@ -25,6 +25,9 @@ build:
 	make $(MAKE_FLAGS) build/dict DICT=en-US
 	mv out build/dict/en-US
 	
+	make $(MAKE_FLAGS) build/dict DICT=es-ES
+	mv out build/dict/es-ES
+
     # Add CNAME record
     # https://stackoverflow.com/questions/9082499/custom-domain-for-github-project-pages
 	echo "wordrow.io" > build/CNAME

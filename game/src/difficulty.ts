@@ -70,6 +70,13 @@ export const DifficultyName = (d: Difficulty, l: Language | undefined) : string 
         case Difficulty.TIME_SPRINT:    return "Time Sprint";
         }
         break;
+    case Language.ES:
+        switch (d) {
+        case Difficulty.UNLIMITED_TIME: return "Ilimitado";
+        case Difficulty.TIMED:          return "Contrarreloj";
+        case Difficulty.TIME_SPRINT:    return "Relámpago";
+        }
+        break;
     default:
         throw new Error(`Unknown Language: ${l}`);
     }
