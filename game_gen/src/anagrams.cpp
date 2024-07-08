@@ -1,19 +1,92 @@
+#include "common.h"
+
+#include <fstream>
+#include <memory>
+
+#include <unicode/utypes.h>
+#include <unicode/unistr.h>
+#include <unicode/translit.h>
+
 #include <anatree.h>
 
-#include "common.h"
-#include <fstream>
+namespace utf8
+{
+  using string    = icu::UnicodeString;
+  using char_type = char16_t;
 
-std::string gen_json(const std::unordered_set<std::string> &words)
+  /// \brief Decode data in a `std::string` with UTF8.
+  ///
+  /// This code is borrowed from: https://stackoverflow.com/a/13071166
+  string
+  decode(const std::string& in)
+  {
+    return string::fromUTF8(in);
+  }
+
+  /// \brief Encode data as UTF8 into a `std::string`.
+  ///
+  /// This code is borrowed from: https://stackoverflow.com/a/13071166
+  std::string
+  encode(const string& in)
+  {
+    std::string out;
+    in.toUTF8String(out);
+    return out;
+  }
+
+  /// \brief Remove all accents from characters.
+  ///
+  /// This code is borrowed from: https://stackoverflow.com/a/13071166
+  string
+  normalize(const string& x)
+  {
+    string x_copy = x;
+
+    UErrorCode status = U_ZERO_ERROR;
+    std::unique_ptr<icu::Transliterator> accentsConverter(
+      icu::Transliterator::createInstance("NFD; [:M:] Remove; NFC",
+                                          UTRANS_FORWARD,
+                                          status));
+    accentsConverter->transliterate(x_copy);
+
+    if (status != U_ZERO_ERROR) {
+      throw std::runtime_error("Normalization error: " + std::to_string(status));
+    }
+
+    return x_copy;
+  }
+
+  struct lexicographical_lt
+  {
+    bool operator()(const string &a, const string &b)
+    {
+      const size_t a_length = a.length();
+      const size_t b_length = b.length();
+      return a_length != b_length ? a_length < b_length : a < b;
+    }
+  };
+}
+
+template<>
+struct std::hash<utf8::string>
+{
+  std::size_t operator()(const utf8::string& x) const noexcept
+  {
+    return x.hashCode();
+  }
+};
+
+std::string gen_json(const std::unordered_set<utf8::string> &words)
 {
   std::vector words_sorted(words.begin(), words.end());
-  std::sort(words_sorted.begin(), words_sorted.end(), lexicographical_lt());
+  std::sort(words_sorted.begin(), words_sorted.end(), utf8::lexicographical_lt());
 
   std::stringstream ss;
   ss << "{" << std::endl
      << "  \"anagrams\": [" << std::endl;
 
-  for (const std::string &w : words_sorted) {
-    ss << "    \"" << w << "\"," << std::endl;
+  for (const utf8::string &w : words_sorted) {
+    ss << "    \"" << utf8::encode(w) << "\"," << std::endl;
   }
   ss.seekp(-2,ss.cur);
   ss << std::endl
@@ -44,7 +117,7 @@ int main(int argc, char* argv[])
   // -----------------------------------------------------------------
   // Open dictionary and populate Anatree
   std::fstream dict_stream(file_path);
-  anatree a;
+  anatree<utf8::string> a;
 
   size_t total_words = 0u, used_words = 0u;
   size_t total_chars = 0u, used_chars = 0u;
@@ -56,13 +129,14 @@ int main(int argc, char* argv[])
   while(dict_stream.peek() != EOF) {
     line_number++;
 
-    std::string w;
-    if (!std::getline(dict_stream, w)) {
+    std::string w_raw;
+    if (!std::getline(dict_stream, w_raw)) {
       std::cerr << "File stream reading error on line: " << line_number << std::endl;
       return -1;
     };
+    utf8::string w = utf8::decode(w_raw);
 
-    const size_t w_size = word_size(w);
+    const size_t w_size = w.length();
 
     total_words += 1;
     total_chars += w_size;
@@ -77,11 +151,12 @@ int main(int argc, char* argv[])
       anatree_insert__time += duration_of(insert__start_time, insert__end_time);
     }
   }
+  exit(-1);
 
   // -----------------------------------------------------------------
   // Get all leaves in the Anatree
   const time_point keys__start_time = get_timestamp();
-  std::unordered_set<std::string> keys = a.keys();
+  std::unordered_set<utf8::string> keys = a.keys();
   const time_point keys__end_time = get_timestamp();
 
   std::cout << "Dictionary:" << std::endl
@@ -107,14 +182,14 @@ int main(int argc, char* argv[])
   size_t skipped__long_games = 0;
   size_t anagrams__time = 0;
 
-  for (std::string k : keys) {
+  for (utf8::string k : keys) {
     // Ignore keys that would lead to a game with the longest word not being of
     // MAX length
-    if (word_size(k) < MAX_LENGTH) {
+    if (k.length() < MAX_LENGTH) {
       skipped__short_keys += 1;
       continue;
     }
-    assert(word_size(k) == MAX_LENGTH);
+    assert(k.length() == MAX_LENGTH);
 
     std::stringstream ss;
     ss << "./out/" << idx << ".json";
@@ -122,7 +197,7 @@ int main(int argc, char* argv[])
     std::ofstream out_file(ss.str());
 
     const time_point anagrams__start_time = get_timestamp();
-    std::unordered_set<std::string> game = a.anagrams_of(k);
+    std::unordered_set<utf8::string> game = a.anagrams_of(k);
     const time_point anagrams__end_time = get_timestamp();
     anagrams__time += duration_of(anagrams__start_time, anagrams__end_time);
 
