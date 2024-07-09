@@ -11,8 +11,154 @@
 
 namespace utf8
 {
-  using string    = icu::UnicodeString;
-  using char_type = char16_t;
+  using __string__value_type = char16_t;
+
+  //////////////////////////////////////////////////////////////////////////////
+  class __string__char_ref
+  {
+  private:
+    icu::UnicodeString& _str;
+    const int _pos;
+
+  public:
+    __string__char_ref()                          = delete;
+    __string__char_ref(const __string__char_ref&) = default;
+    __string__char_ref(__string__char_ref&&)      = default;
+
+    __string__char_ref(icu::UnicodeString& us, const int pos)
+      : _str(us), _pos(pos)
+    {}
+
+  public:
+    /// \brief Implicit conversion to its content
+    operator __string__value_type() const
+    {
+      return this->_str.charAt(this->_pos);
+    }
+
+    /// \brief Assignment to index.
+    operator= (const __string__value_type& ch)
+    {
+      this->_str.setCharAt(this->_pos, ch);
+    }
+  };
+
+  //////////////////////////////////////////////////////////////////////////////
+  class __string__iterator
+  {
+  private:
+    icu::UnicodeString& _str;
+    icu::StringCharacterIterator _iter;
+
+  private:
+    // TODO
+  };
+
+  //////////////////////////////////////////////////////////////////////////////
+  /// \brief Adapter to make `icu::UnicodeString` have an API equivalent to the
+  ///        `std::string`.
+  //////////////////////////////////////////////////////////////////////////////
+  class string
+  {
+  private:
+    icu::UnicodeString _str;
+
+  public:
+    using value_type     = __string__value_type;
+    using iterator       = __string__iterator;
+    using const_iterator = const __string__iterator;
+
+  public:
+    /// \brief Default constructor.
+    string() = default;
+
+    /// \brief Copy-constructor.
+    string(const string&) = default;
+
+    /// \brief Move-constructor.
+    string(string&&) = default;
+
+    /// \brief Wrap a *raw* `icu::UnicodeString` into a STD api.
+    string(const icu::UnicodeString& icu_string)
+      : _str(icu_string)
+    {}
+
+    /// \brief Copy-assignment.
+    operator= (const string&) = default;
+
+    /// \brief Move-assignment.
+    operator= (string&&) = default;
+
+  public:
+    /// \brief The number of symbols in the unicode string.
+    size_type
+    size() const
+    {
+      return this->_str.length();
+    }
+
+    /// \brief The number of symbols in the unicode string.
+    size_type
+    length() const
+    {
+      return this->size();
+    }
+
+    /// \brief Whether the string is empty
+    bool
+    empty() const
+    {
+      return this->size() == 0;
+    }
+
+  public:
+    /// \brief Return the code unit at offset `pos`.
+    __string__char_ref
+    at(size_type pos) const
+    {
+      if (pos >= this->size()) { throw std::out_of_range("'offset' is out of range"); }
+      return *this[offset];
+    }
+
+    /// \brief Return the code unit at offset `pos`.
+    __string__char_ref
+    operator[](size_type pos) const
+    {
+      return __string__char_ref(this->_str, pos);
+    }
+
+    /// \brief Access the first character.
+    __string__char_ref
+    first() const
+    {
+      if (this->empty()) { throw std::out_of_range("no 'first()' in empty string"); }
+      return *this[0];
+    }
+
+    /// \brief Access the last character.
+    __string__char_ref
+    last() const
+    {
+      if (this->empty()) { throw std::out_of_range("no 'first()' in empty string"); }
+      return *this[this->size()-1];
+    }
+
+  public:
+    /// \brief Clears the contents.
+    void
+    clear()
+    {
+      this->_str.remove();
+    }
+  };
+
+
+
+
+
+
+
+
 
   /// \brief Decode data in a `std::string` with UTF8.
   ///
