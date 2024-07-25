@@ -122,7 +122,7 @@ int main(int argc, char* argv[])
     std::ofstream out_file(ss.str());
 
     const time_point anagrams__start_time = get_timestamp();
-    std::unordered_set<std::string> game = a.anagrams_of(k);
+    std::unordered_set<std::string> game = a.subanagrams_of(k);
     const time_point anagrams__end_time = get_timestamp();
     anagrams__time += duration_of(anagrams__start_time, anagrams__end_time);
 
