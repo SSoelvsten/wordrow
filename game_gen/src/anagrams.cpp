@@ -108,8 +108,7 @@ int main(int argc, char* argv[])
   size_t anagrams__time = 0;
 
   for (std::string k : keys) {
-    // Ignore keys that would lead to a game with the longest word not being of
-    // MAX length
+    // Ignore keys that would lead to a game with the longest word not being of MAX length
     if (word_size(k) < MAX_LENGTH) {
       skipped__short_keys += 1;
       continue;
