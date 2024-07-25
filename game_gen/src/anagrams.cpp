@@ -92,7 +92,7 @@ int main(int argc, char* argv[])
 
   std::cout << "Anatree:" << std::endl
             << "| # Words:           " << used_words << " words (" << used_chars << " characters)." << std::endl
-            << "| # Nodes:           " << a.size() << std::endl
+            << "| # Nodes:           " << a.tree_size() << std::endl
             << "| # Keys:            " << keys.size() << std::endl
             << "| Time:              " << std::endl
             << "| | Insertion:       " << anatree_insert__time << " ns" << std::endl
