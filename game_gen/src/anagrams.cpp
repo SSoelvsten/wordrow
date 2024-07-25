@@ -137,7 +137,7 @@ int main(int argc, char* argv[])
       continue;
     }
 
-    out_file << gen_json(a.anagrams_of(k));
+    out_file << gen_json(game);
 
     idx++;
   }
