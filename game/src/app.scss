@@ -4,6 +4,7 @@
     @include fullscreen();
 
     background-color: $light-background;
+    color: $light-text-color;
 
     /* Fixed Buttons */
     .TopButtons {
