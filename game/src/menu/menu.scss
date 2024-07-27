@@ -3,8 +3,6 @@
 .Menu {
     @include fullscreen;
 
-    color: $light-text-color;
-
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
@@ -112,8 +110,6 @@
 }
 
 .DarkMode .Menu {
-    color: $dark-text-color;
-
     .GameTitle {
         .Letter {
             color: $dark-text-color;
