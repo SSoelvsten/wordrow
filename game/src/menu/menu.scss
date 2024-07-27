@@ -3,7 +3,6 @@
 .Menu {
     @include fullscreen;
 
-    background-color: $light-background;
     color: $light-text-color;
 
     display: flex;
@@ -111,7 +110,6 @@
 }
 
 .DarkMode .Menu {
-    background-color: $dark-background;
     color: $dark-text-color;
 
     .GameTitle {
