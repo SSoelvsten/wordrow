@@ -9,6 +9,8 @@
     flex-direction: column;
     flex-wrap: nowrap;
 
+    overflow: auto;
+
     /* -------------------- Game Title -------------------- */
     .GameTitle {
         flex: 0;
