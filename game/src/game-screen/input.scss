@@ -4,7 +4,8 @@ $input-font-size: 32px;
 $input-gap: 16px;
 
 $input-medium-factor: 0.65;
-$input-small-factor: 0.4;
+$input-small-factor: 0.5;
+$input-tiny-factor: 0.35;
 
 .Input {
     flex: 0;
@@ -21,6 +22,11 @@ $input-small-factor: 0.4;
     @media screen and (max-width: $small-screen-width) {
         @include borderedCharBox($input-small-factor*$input-font-size,
             $input-small-factor*$input-gap);
+    }
+
+    @media screen and (max-width: $tiny-screen-width) {
+        @include borderedCharBox($input-tiny-factor*$input-font-size,
+            $input-tiny-factor*$input-gap);
     }
 
     /* Overwrite values in 'borderedCharBox' for vertical gap */
