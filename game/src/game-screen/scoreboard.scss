@@ -5,6 +5,7 @@
     $scoreboard-font-size: 19px;
     $scoreboard-font-size-large: 25px;
     $scoreboard-small-factor: 0.8;
+    $scoreboard-tiny-factor: 0.6;
 
     $top-buttons-width: 64px;
 
@@ -22,13 +23,19 @@
     @media screen and (max-width: $small-screen-width) {
         font-size: $scoreboard-small-factor*$scoreboard-font-size;
     }
+    @media screen and (max-width: $tiny-screen-width) {
+        font-size: $scoreboard-tiny-factor*$scoreboard-font-size;
+    }
 
     margin-top: 3px;
 
     min-height: $scoreboard-font-size-large + 14px;
 
-    @media screen and (max-width: $tiny-screen-width) {
+    @media screen and (max-width: $small-screen-width) {
         min-height: $scoreboard-small-factor*(2*$scoreboard-font-size + $scoreboard-font-size-large) + 24px;
+    }
+    @media screen and (max-width: $tiny-screen-width) {
+        min-height: $scoreboard-tiny-factor*(2*$scoreboard-font-size + $scoreboard-font-size-large) + 24px;
     }
 
     color: $light-text-color;
@@ -36,7 +43,7 @@
     div {
         display: inline-block;
 
-        @media screen and (max-width: $tiny-screen-width) {
+        @media screen and (max-width: $small-screen-width) {
             display: block;
         }
 
@@ -80,7 +87,7 @@
             }
 
             .Bar {
-                @media screen and (max-width: $tiny-screen-width) {
+                @media screen and (max-width: $small-screen-width) {
                     display: none;
                 }
             }
