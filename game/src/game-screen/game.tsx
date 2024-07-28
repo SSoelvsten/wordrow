@@ -263,7 +263,8 @@ const Game = ({ instance: { anagrams }, difficulty, language, accScore, round, o
             const gameEndDelay = 2000;
             setTimeout(() => setActivatePressToContinue(true), gameEndDelay);
         }
-    }, [gameEnd, play, qualified]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [gameEnd]);
 
     // ------------------------------------------------------------------------
     // KEY LISTENER
