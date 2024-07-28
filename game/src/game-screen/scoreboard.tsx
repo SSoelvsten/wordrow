@@ -37,7 +37,6 @@ const ScoreBoard = ({ endTime, gameEnd, language, qualified, round, score, onTim
             }`;
     };
 
-    // TODO: stop timer update when 'won'.
     useEffect(() => {
         if (!isTimed || gameEnd) return;
 
@@ -46,14 +45,18 @@ const ScoreBoard = ({ endTime, gameEnd, language, qualified, round, score, onTim
             setCurrTime(tick);
         }, 50);
         return () => clearInterval(timerId);
-    }, [isTimed, gameEnd]);
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [gameEnd]);
 
     useEffect(() => {
         if (!isTimed || gameEnd) return;
 
         const timeLeft = endTime - currTime;
         if (timeLeft < 0) onTimeout();
-    }, [isTimed, gameEnd, currTime, endTime, onTimeout]);
+
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [currTime]);
 
     const timeLeft = endTime - currTime;
     const timeAlarm: boolean = 0 < timeLeft && timeLeft < 10 * 1000;
