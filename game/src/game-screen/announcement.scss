@@ -1,48 +1,38 @@
 @import '../common.scss';
+@import './word.scss';
 
 .Announcement {
+    $height-hidden: 0;
+    $height-full_large: 130px;
+
     position: absolute;
 
     white-space: nowrap;
     overflow: hidden;
 
-    left: 5px;
-    top: 150px;
-    width: calc(100% - 10px);
-
-    $height-hidden: 0;
-    $height-full: 112px;
-
+    width: 100%;
     height: $height-hidden;
 
-    background-color: $light-background;
+    left: 0;
+    top: calc(round(nearest, 35vh - ($height-full_large / 2), 44px) + 5px);
 
-    text-align: center;
+    z-index: 999;
+
+    background-color: $light-background;
 
     .Content {
         position: relative;
 
         @keyframes AnnouncementTextReveal {
-            0% {
-                left: -100%
-            }
-
-            20% {
-                left: 0%
-            }
-
-            80% {
-                left: 0%
-            }
-
-            100% {
-                left: 100%;
-            }
+            0%   { left: -100% }
+            20%  { left: 0% }
+            80%  { left: 0% }
+            100% { left: 100%; }
         }
 
         left: -100%;
         color: $light-text-color;
-        font-size: 80px;
+        font-size: $height-full_large - 20px;
         text-align: center;
         text-transform: uppercase;
 
@@ -52,21 +42,10 @@
     }
 
     @keyframes AnnouncementReveal {
-        0% {
-            height: $height-hidden;
-        }
-
-        10% {
-            height: $height-full;
-        }
-
-        90% {
-            height: $height-full;
-        }
-
-        100% {
-            height: $height-hidden;
-        }
+        0%   { height: $height-hidden; }
+        10%  { height: $height-full_large; }
+        90%  { height: $height-full_large; }
+        100% { height: $height-hidden; }
     }
 
     animation-name: AnnouncementReveal;
