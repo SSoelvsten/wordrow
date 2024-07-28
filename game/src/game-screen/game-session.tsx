@@ -35,14 +35,15 @@ const GameSession = ({ difficulty, language }: GameSessionProps) => {
       .then((data: GameInstance) => setGameInstance(data));
   }
 
-  useEffect(getGame, [language]);
-
   const getNextGame = (previousGame: GameReport) => {
     setGameInstance(undefined);
     setRound(previousGame.qualified ? round + 1 : 1);
     setAccScore(previousGame.qualified ? accScore + previousGame.score : 0);
     getGame();
   }
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  useEffect(getGame, [/* Run once to get the first game */]);
 
   return (
     <>
