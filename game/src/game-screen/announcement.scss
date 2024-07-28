@@ -3,7 +3,19 @@
 
 .Announcement {
     $height-hidden: 0;
+
     $height-full_large: 130px;
+    --announcement_height: #{$height-full_large};
+
+    $height-full_medium: 100px;
+    @media screen and (max-width: $medium-screen-width) {
+        --announcement_height: #{$height-full_medium};
+    }
+
+    $height-full_small: 70px;
+    @media screen and (max-width: $small-screen-width) {
+        --announcement_height: #{$height-full_small};
+    }
 
     position: absolute;
 
@@ -14,9 +26,38 @@
     height: $height-hidden;
 
     left: 0;
-    top: calc(round(nearest, 35vh - ($height-full_large / 2), 44px) + 5px);
 
-    z-index: 999;
+    $top-letter-rounding_large: 44px;
+    $top-letter-offset_large: 5px;
+
+    --announcement_top_rounding: #{$top-letter-rounding_large};
+    --announcement_top_offset: #{$top-letter-offset_large};
+
+    $top-letter-rounding_medium: 31.4px;
+    $top-letter-offset_medium: 15px;
+    @media screen and (max-width: $medium-screen-width) {
+        --announcement_top_rounding: #{$top-letter-rounding_medium};
+        --announcement_top_offset: #{$top-letter-offset_medium};
+    }
+
+    $top-letter-rounding_small: 23px;
+    $top-letter-offset_small: 12px;
+    @media screen and (max-width: $small-screen-width) {
+        --announcement_top_rounding: #{$top-letter-rounding_small};
+        --announcement_top_offset: #{$top-letter-offset_small};
+    }
+
+    $top-letter-rounding_tiny: $top-letter-rounding_small;
+    $top-letter-offset_tiny: 12px;
+    @media screen and (max-width: $tiny-screen-width) {
+        --announcement_top_rounding: #{$top-letter-rounding_tiny};
+        --announcement_top_offset: #{$top-letter-rounding_tiny};
+    }
+
+    top: calc(var(--announcement_top_offset)
+                + round(nearest,
+                        35vh - (var(--announcement_height) / 2),
+                         var(--announcement_top_rounding)));
 
     background-color: $light-background;
 
@@ -32,7 +73,7 @@
 
         left: -100%;
         color: $light-text-color;
-        font-size: $height-full_large - 20px;
+        font-size: calc(var(--announcement_height) * 0.8);
         text-align: center;
         text-transform: uppercase;
 
@@ -43,11 +84,10 @@
 
     @keyframes AnnouncementReveal {
         0%   { height: $height-hidden; }
-        10%  { height: $height-full_large; }
-        90%  { height: $height-full_large; }
+        10%  { height: var(--announcement_height); }
+        90%  { height: var(--announcement_height); }
         100% { height: $height-hidden; }
     }
-
     animation-name: AnnouncementReveal;
     animation-duration: 2s;
 }
