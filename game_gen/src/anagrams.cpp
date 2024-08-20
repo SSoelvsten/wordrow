@@ -53,6 +53,7 @@ int main(int argc, char* argv[])
 
   size_t line_number = 0u;
 
+  const time_point insert__start_time = get_timestamp();
   while(dict_stream.peek() != EOF) {
     line_number++;
 
@@ -71,12 +72,11 @@ int main(int argc, char* argv[])
       used_words += 1;
       used_chars += w_size;
 
-      const time_point insert__start_time = get_timestamp();
       a.insert(w);
-      const time_point insert__end_time = get_timestamp();
-      anatree_insert__time += duration_of(insert__start_time, insert__end_time);
     }
   }
+  const time_point insert__end_time = get_timestamp();
+  anatree_insert__time += duration_of(insert__start_time, insert__end_time);
 
   // -----------------------------------------------------------------
   // Get all leaves in the Anatree
@@ -107,6 +107,7 @@ int main(int argc, char* argv[])
   size_t skipped__long_games = 0;
   size_t anagrams__time = 0;
 
+  const time_point anagrams__start_time = get_timestamp();
   for (std::string k : keys) {
     // Ignore keys that would lead to a game with the longest word not being of MAX length
     if (word_size(k) < MAX_LENGTH) {
@@ -120,10 +121,7 @@ int main(int argc, char* argv[])
 
     std::ofstream out_file(ss.str());
 
-    const time_point anagrams__start_time = get_timestamp();
     std::unordered_set<std::string> game = a.subanagrams_of(k);
-    const time_point anagrams__end_time = get_timestamp();
-    anagrams__time += duration_of(anagrams__start_time, anagrams__end_time);
 
     // Ignore small games (def: 'small' less than half the answer)
     if (game.size() < 21) {
@@ -141,6 +139,11 @@ int main(int argc, char* argv[])
 
     idx++;
   }
+  const time_point anagrams__end_time = get_timestamp();
+  anagrams__time += duration_of(anagrams__start_time, anagrams__end_time);
+
+  std::cout << "| | Anagrams:        " << anagrams__time << " ns" << std::endl;
+
   {
     std::stringstream ss;
     ss << "./out/index.json";
@@ -151,8 +154,6 @@ int main(int argc, char* argv[])
              << "}" << std::endl;
       ;
   }
-
-  std::cout << "| | Anagrams:        " << anagrams__time << " ns" << std::endl;
 
   std::cout << std::endl;
   std::cout << "Created " << idx << " games in '.out/'" << std::endl;
